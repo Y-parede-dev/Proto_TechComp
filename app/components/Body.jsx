@@ -10,7 +10,17 @@ export const metadata = {
         template:'%s | TechComparateur PC Portable : Sélection Expert',
         default: 'TechComparateur PC Portable : Sélection Expert'
     },
-    description: "Découvrez les meilleurs PC portables sur TechComparateur le site comparateur de pc portable. Faites le choix éclairé pour vos besoins en informatique."
+    description: "Découvrez les meilleurs PC portables sur TechComparateur le site comparateur de pc portable. Faites le choix éclairé pour vos besoins en informatique.",
+    robots: {
+        index: false,
+        follow: false,
+        nocache: true,
+        googleBot: {
+            index: false,
+            follow: false,
+            noimageindex: true
+        },
+    }
 }
 
 const Body = ({children}) => {
