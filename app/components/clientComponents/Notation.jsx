@@ -1,7 +1,7 @@
 'use client'
 import { useRef, useState } from 'react'
 import styles from './Notation.module.css'
-import Note from '@/app/components/notationStyled/note'
+import Note from '../notationStyled/Note'
 
 const Notation = ({produit, param}) =>{
     const [noteActive, setNoteActive] = useState(true)

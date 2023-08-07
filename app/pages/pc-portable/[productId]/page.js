@@ -5,17 +5,15 @@ import iconRam from './inconsConfig/icon_ram.png'
 import iconGpu from './inconsConfig/icon_gpu.png'
 import iconScreen from './inconsConfig/icon_screen.png'
 import iconStockage from './inconsConfig/icon_stockage.png'
-import iconOS from './inconsConfig/icon_os.png'
+import iconOS from './inconsConfig/icon_OS.png'
 import produits from '@/data/dataProduits/produits.json' assert { type: 'json' }
-import Link from 'next/link'
 import Image from 'next/image'
 import Notation from '@/app/components/clientComponents/Notation'
-import InjectPointsCLefHTML from '@/app/components/clientComponents/InjectPointsClefHTML'
-import BarStyled from '@/app/components/detailsProductBarStyled/BarStyled'
-import ProductSearch from '@/lib/ProductSearch'
-import Product from '../page'
+// import InjectPointsCLefHTML from '@/app/components/clientComponents/InjectPointsClefHTML'
+// import BarStyled from '@/app/components/detailsProductBarStyled/BarStyled'
 import SuggestionMap from '@/app/components/suggesttion/SuggestionMap'
 import PointsCles from '@/app/components/pointsCles/PointsCles'
+
 const data = produits.produits
 
 export async function generateMetadata({ params }) {
