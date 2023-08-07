@@ -55,7 +55,7 @@ const ProductPage = ({params}) => {
       <div className={styles.carac}>
         <h2>Caractéristique</h2>
         <div>
-          <p className={styles.caracTxt}>Cet ordinateur portable de la marque <strong className={styles.spanCaracComputer}>{produit.marque}</strong> possède un écran de <strong className={styles.spanCaracComputer}>{produit.config.screen}"</strong>, <span>{produit.conseil}</span>. L'ordinateur portable <strong className={styles.spanCaracComputer}>{produit.title}</strong> obtient une moyenne de <strong>{(produit.noteDesc.int+produit.noteGaming.int)/2}/10</strong>.</p>    {/*pour <strong className={styles.spanCaracComputer}>{produit.usage}.</strong>*/}
+          <p className={styles.caracTxt}>Cet ordinateur portable de la marque <strong className={styles.spanCaracComputer}>{produit.marque}</strong> possède un écran de <strong className={styles.spanCaracComputer}>{produit.config.screen}"</strong>, <span>{produit.conseil}</span>. L'ordinateur portable <strong className={styles.spanCaracComputer}>{produit.title}</strong> obtient une moyenne de <strong>{((produit.noteDesc.int + produit.noteGaming.int) / 2).toFixed(1)}/10</strong>.</p>    {/*pour <strong className={styles.spanCaracComputer}>{produit.usage}.</strong>*/}
           <table className={styles.tablecute}>
             <tbody>
               <tr>
