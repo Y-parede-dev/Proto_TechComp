@@ -1,0 +1,213 @@
+.containerListOtherItems {
+    position: relative;
+}
+.listCarroussel{
+    scroll-behavior: smooth;
+    transition-duration: 490ms;
+    padding: 15px 5px;
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: none /*solid 1px var(--color-border-first);*/
+    
+}
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: -10px;right: -10px;
+    top: calc(50%);
+    /* width: 100%; */
+}
+.arrows button{
+    transition-duration: 250ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 18px;
+    height: 55px;
+    width: 52px;
+    font-size: 1.5rem;
+    border: solid 1px rgba(0,0,0,.1);
+    border-radius: 12px;
+}
+.arrows button:hover{
+    background: var(--color-first);
+    color: white;
+}
+
+.listCarroussel::-webkit-scrollbar{
+    background: none;
+    height: 8px;
+}
+.listCarroussel::-webkit-scrollbar-thumb:hover{
+    background: var(--color-scrollbar-btn);
+
+}
+.listCarroussel::-webkit-scrollbar-thumb{
+    background: none;
+}
+.litsItemCarroussel{
+    position: relative;
+    background: var(--color-back);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    padding: 12px;
+    max-width: 350px;
+    min-width: 270px;
+    border: solid 1px var(--color-border-first) ;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px -6px black;
+    transition-duration: 200ms;
+    /* outline: solid; */
+}
+.t{
+    background: red;
+    font-weight: 900;
+}
+.litsItemCarroussel>img{
+    position: relative;
+}
+.litsItemCarroussel:hover{
+    transform: scale(1.008);
+    box-shadow: 0 0 10px -2px var(--color-first);
+
+}
+.litsItemCarroussel>* {
+    padding: 8px 0;
+}
+.litsItemCarroussel>*:last-child{
+    padding: 8px 0 0;
+} 
+.LinkProduit {
+    display: contents;
+    /* width: fit-content; */
+    text-decoration: none;
+    color: black;
+}
+.prix {
+    color: var(--color-first);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.btnContainer {
+    padding: 8px 0;
+    display: flex;
+    gap: 1rem;
+}
+/*page pc portable*/
+
+.listItemsResult{
+    /* .listCarousel*/
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.resultSearchContainer{
+    background: white;
+    padding: 50px;
+    /* width: 80%; */
+}
+
+.spanTags, .spanTagsTitle {
+    font-weight: 600;
+}
+.spanTags {
+    font-size: 1.05rem;
+}
+
+.resultSearchContainerListItems{
+}
+.btnContainer{
+    position: relative;
+}
+
+.listMarquesSearch {
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.listMarquesSearch li{
+    cursor: pointer;
+    border: 1px solid;
+    padding: 8px;
+}
+.btn{
+    list-style: none;
+    height: fit-content;
+    padding: 5px 0;
+}
+.btn button{
+    transition-duration: 200ms;
+    border-radius: 8px;
+    border: none;
+    padding: 9px 12px;
+    font-size: 1.13rem;
+    font-weight: 300;
+    outline: solid transparent 1px;
+
+}
+.btn button:hover {
+    outline: solid rgba(0,0,0,.4) 1px;
+}
+.contentSearchByBtn{
+    position: relative;
+    height: max-content;
+}
+.containerBtn {
+    min-height: max-content;
+}
+.contentBtn{
+    position: relative;
+    height: max-content;
+    width: 100%;
+}
+.contentBtn>.childCtBtn{
+    position: relative;
+    right: 0;left: 0;
+    padding: 18px 8px;
+}
+
+
+
+
+.contentModalFound{
+    position: relative;
+    display: flex;
+    gap:.5rem;
+    padding: 25px 3px;
+}
+.triezPar{
+
+}
+.spanFoundBy {
+    font-weight: 600;
+}
+.listFoundBy {
+    top: 45px;
+    left: 4px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    list-style: none;
+    padding: 15px;
+    border-radius: 25px;
+    border: solid rgba(0,0,0,.2) 1px ;
+    gap: .5rem;
+}
+.listFoundBy > li {
+    padding: 10px;
+    border-radius: 15px;
+}
+.listFoundBy > li:hover {
+    background: rgba(231,231,231,1);
+}

@@ -1,0 +1,29 @@
+{
+  "name": "proto_v_1.1.0",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
+    "@next/eslint-plugin-next": "^13.4.6",
+    "babel-preset-next": "^1.4.0",
+    "eslint-config-next": "^13.4.6",
+    "next": "^13.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "eslint": "^8.43.0"
+  }
+}

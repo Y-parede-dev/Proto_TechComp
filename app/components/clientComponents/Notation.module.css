@@ -1,0 +1,89 @@
+.containerNoteDetails{
+    width: fit-content;
+    margin: 15px auto;
+}
+.choiseNote{
+    display: flex;
+    justify-content: flex-start;
+}
+.note{
+    list-style: none;
+    padding: 10px;
+    transform: scale(1);
+    background: var(--color-back);
+    outline: solid 1px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition-duration: 200ms;
+    /* list-style: none; */
+}
+.note:hover{
+    outline: solid 1px rgba(0,0,0,.15);
+    background: var(--color-back);
+}
+.noteInactive{
+    z-index: 1;
+    background: var(--color-table-even);
+}
+.noteBureau{
+    border-radius: 15px 0 0 0;
+}
+.noteGaming{
+    border-radius: 0 15px 0 0;
+}
+.ListDetail {
+    padding:15px 0
+}
+.ListDetail li{
+    margin-left: 20px;
+    padding: 5px 8px;
+}
+.goodNote {
+    list-style: "✅";
+}
+.badNote {
+    list-style: '❌';
+}
+.details{
+    width: max-content;
+    min-width: 400px;
+    z-index: 4;
+    outline: solid 1px rgba(0,0,0,.1);
+    padding: 15px 45px;
+    background: white;
+}
+@media screen and (max-width: 800px) {
+    .details{
+        padding: 10px;
+        min-width: 290px;
+        max-width: 310px;
+    }
+}
+.detailsInactive{
+    display: none;
+}
+.detail{
+    transform-origin: -5px;
+}
+.detailGaming {
+    animation: 1800ms ShowDetailStepByStep 200ms infinite;
+
+}
+.notes_contentOnSugg {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+}
+.noteOnSugg {
+
+}
+@keyframes ShowDetailStepByStep {
+    from{
+        opacity: 0%;
+        transform: scaleX(0);
+        
+    }to{
+        opacity: 100%;
+        transform: scaleX(1);
+    }
+}

@@ -1,0 +1,133 @@
+.section {
+  /* background: var(--color-back-main); */
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 6rem; */
+  min-height: 100vh;
+}
+.product_card{
+  width: 1240px;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:  "image array"
+                        "hr hr"
+                        "note carac"
+                        "hr2 hr2"
+                        "pointsCles pointsCles"
+                        "hr3 hr3"
+                        "suggestion suggestion"
+                        "hr4 hr4"
+                        ;
+  padding: 10px 25px;
+  background: var(--color-back);
+  /* border: solid 1px; */
+  border-radius: 22px;
+  box-shadow: 0 0 10px -6px black ;
+  flex-direction: row;
+}
+.product_card_title{
+  padding: 3rem 0;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.imageContainer{
+  grid-area: image;
+  display: flex;
+  justify-content: flex-end;
+}
+.image {
+  object-fit: cover;
+}
+.array{
+  grid-area: array;
+  justify-content: center;
+}
+.array, .notes_content, .carac{
+  display: flex;
+  flex-direction: column;
+}
+
+.array_price_title{
+  font-size: 18px;
+  text-align: left;
+  font-weight: 300;
+}
+.hr{
+  margin:0 0 25px;
+  grid-area: hr;
+}
+.hr2, .hr3, .hr4 {
+  margin: 25px 0;
+}
+.hr2{
+  grid-area: hr2;
+}
+.hr3{
+  grid-area: hr3;
+}
+.hr4{
+  grid-area: hr4;
+}
+.notes_content{
+  grid-area: note;
+  /* justify-content: center; */
+
+}
+.notes {
+  display: flex;
+  gap: 5px;
+}
+.carac {
+  grid-area: carac;
+  
+}
+.notes_content, .carac{
+  align-items: flex-start;
+}
+.caracTxt {
+  margin: 15px 0 30px;
+}
+.spanCaracComputer {
+  font-weight: 900;
+}
+table.tablecute {
+  width: 100%;
+  border-collapse: separate;
+  font-family: Arial,sans-serif;
+  border-radius: 0 0 var(--border-radius-table) var(--border-radius-table);
+  border: var(--border-soft);
+}
+.tablecute > tbody>:nth-child(odd) {
+  background-color: var(--color-table-odd);
+}
+.tablecute > tbody>:nth-child(even) {
+  background-color: var(--color-table-even);
+}
+.tablecute td {
+  padding: var(--table-cute-padding);
+}
+.tablecute .configItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tablecute td img{
+  position: absolute;
+}
+.configItem > p{
+  padding-left: 47px;
+}
+.pointsCles {
+  grid-area: pointsCles;
+}
+.suggestions{
+  grid-area: suggestion;
+}

@@ -1,0 +1,35 @@
+.pointsCles {
+    grid-area: pointsCles;
+    padding: 7px 0 15px 0;
+}
+.pointsClesTitle {
+    padding: 8px 0;
+}
+.PointsClesList{
+    height: 220px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.PointsClesListElt {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pointsClesSugContainer{
+    width: max-content;
+    max-width: 350px;
+}
+.pointCleOnSug{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 2rem; */
+    align-items: center;
+    justify-content: space-between;
+}
+.pointCleOnSug > div{
+    max-width: 100px;
+    width: 100px;
+}

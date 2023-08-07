@@ -1,0 +1,27 @@
+.NavLeft{
+    z-index: 2;
+    grid-area: nav;
+    position: sticky;
+    top: var(--height-header);
+    bottom: 0;
+    height: calc(100vh - var(--height-header));
+    background: var(--color-back);
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0 18px;
+    max-width: 500px;
+    border-right: 1px solid var(--color-border-first);
+}
+.NavLeft ul{
+    list-style: none;
+}
+.NavLeft>ul>li{
+    padding: 50px 0;
+}
+.listTitles {
+    padding: 0 35px;
+}
+.listItems > li {
+    padding: 25px;
+    width: fit-content;
+}

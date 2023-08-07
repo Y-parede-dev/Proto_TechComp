@@ -1,0 +1,67 @@
+.formSearch {
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form_item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: solid var(--color-border-first) 1px;
+    width: 500px;
+    height: 44px;
+    border-radius: 30px;
+}
+.form_item > svg {
+    padding: 0 10px;
+    font-size: 1.8rem;
+    fill: var(--color-border-first);
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+.form_item > svg:hover {
+    font-size: 2rem;
+    fill: var(--color-scrollbar-btn-x);
+}
+.iconClear{
+    position: absolute;
+    right: 0px;
+}
+svg.iconClear:hover{
+    fill: var(--color-error);
+}
+.label_search{
+    cursor: auto;
+    color: var(--color-first);
+    opacity: .3;
+    top: calc(50% - 9.5px);
+    position: absolute;
+    font-size: 1rem;
+    transition-duration: 200ms;
+    left: 50px;
+}
+.label_search_alt{
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+    
+}
+.input_search{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-first);
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    border: none;
+    
+}
+
+.input_search:focus{
+    outline: none;
+}
+.icone{
+    content: 'e8b6';
+}
