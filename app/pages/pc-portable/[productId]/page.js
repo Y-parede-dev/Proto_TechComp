@@ -1,5 +1,6 @@
 
 import styles from './page.module.css'
+import ImageAndLinkAffiliate from "./clientComponents/ImageAndLinkAffiliate"
 import iconCpu from './inconsConfig/icon_cpu.png'
 import iconRam from './inconsConfig/icon_ram.png'
 import iconGpu from './inconsConfig/icon_gpu.png'
@@ -37,17 +38,26 @@ const ProductPage = ({params}) => {
       return(produit)
     }})
     console.log(produit)
-  const imageAndComparateur = (
-    <>
-      <div className={styles.imageContainer}>
-        <Image alt={`${produit.title}`} className={styles.image} width={400} height={400} src={produit.images[0]}/>
-      </div>
-      <div className={styles.array}>
-        <p className={styles.array_price_title}>Meilleurs prix du marché</p>
-        <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component>
-      </div>
-    </>
-  )
+    let t = false
+  const openVideo = () => {
+
+  }
+  // const imageAndComparateur = (
+  //   <>
+  //     <div className={styles.imageContainer}>
+  //       <div >
+  //         {">"}
+  //         {t&& 
+  //         <iframe title='360 video' src={produit.bonus}></iframe>}
+  //       </div>
+  //       <Image alt={`${produit.title}`} className={styles.image} width={400} height={400} src={produit.images[0]}/>
+  //     </div>
+  //     <div className={styles.array}>
+  //       <p className={styles.array_price_title}>Meilleurs prix du marché</p>
+  //       <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component>
+  //     </div>
+  //   </>
+  // )
   const caract = (
     <>
       <div className={styles.carac}>
@@ -113,9 +123,8 @@ const ProductPage = ({params}) => {
     <section className={styles.section}> 
       <h1 className={styles.product_card_title}>{produit.title}</h1>
         <div className={styles.product_card}>
-          <>
-            {imageAndComparateur}
-          </>
+          <ImageAndLinkAffiliate produit={produit}/>
+            
           <hr className={styles.hr}/>
           <>
             <Notation produit={produit}/>

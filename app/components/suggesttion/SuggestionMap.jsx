@@ -199,7 +199,6 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                             :
                             <>
                             {
-                                
                                 <>
                                     {` pour: "`}
                                     {CTX.TAG.map(tag=>[

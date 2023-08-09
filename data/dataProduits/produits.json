@@ -9,7 +9,8 @@
             "tags":["Asus ROG Strix","Ryzen 9", "all", "moyen", "G513","G513QM-HF432T", "gaming"],
             "prix":1699,
             "loading":"lazy",
-            "images":["/test/asus.webp"],
+            "images":["https://urlz.fr/naZS", "https://urlz.fr/naZM", "https://urlz.fr/naZQ"],
+            "bonus":"https://urlz.fr/naJM",
             "pointsClef":[
                 {
                     "rapidite":{
@@ -93,7 +94,8 @@
             "tags":["Acer Nitro 5","core I5", "intel I5", "all","moins", "gaming"],
             "prix":820,
             "loading":"lazy",
-            "images":["/test/acerNitroAn515.avif"],
+            "images":["/test/acerNitroAn515.avif", "/test/acerNitroAN517-54Perspective.webp", "/test/acerNitroAN517-54Up.webp"],
+            "bonus":null,
             "pointsClef":[
                 {
                     "gaming":{
@@ -175,6 +177,7 @@
             "prix":199,
             "loading":"lazy",
             "images":["/test/Yonis.webp"],
+            "bonus":null,
             "pointsClef":[
                 {
                     "gaming":{
@@ -255,6 +258,7 @@
             "tags":["Asus ROG Strix G814","I9", "all", "i9-13980HX","RTX 4070", "4k", "gaming"],
             "prix":3720,
             "loading":"lazy",
+            "bonus":null,
             "images":["/test/AsusG18Gl814JI-N6076W18.webp"],
             "pointsClef":[
                 {
@@ -341,6 +345,7 @@
             "prix":2909.99,
             "loading":"lazy",
             "images":["/test/AsusG16WQXA240HZ.webp",""],
+            "bonus":null,
             "pointsClef":[
                 {
                     "gaming":{

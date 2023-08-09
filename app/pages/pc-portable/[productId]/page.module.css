@@ -38,7 +38,7 @@
   font-size: 2rem;
 }
 
-.imageContainer{
+/* .imageContainer{
   grid-area: image;
   display: flex;
   justify-content: flex-end;
@@ -49,17 +49,19 @@
 .array{
   grid-area: array;
   justify-content: center;
-}
-.array, .notes_content, .carac{
+  display: flex;
+  flex-direction: column;
+} */
+.notes_content, .carac{
   display: flex;
   flex-direction: column;
 }
 
-.array_price_title{
+/* .array_price_title{
   font-size: 18px;
   text-align: left;
   font-weight: 300;
-}
+} */
 .hr{
   margin:0 0 25px;
   grid-area: hr;

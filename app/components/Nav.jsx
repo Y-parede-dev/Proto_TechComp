@@ -55,7 +55,7 @@ const Nav = () => {
                     <ul className={styles.listItems}>
                         <li><Link href={"/"}>🏠 Accueil</Link></li>
                         <li onClick={()=>handle("all", "tag")}>
-                            <Link href={urlPcPortable}>💻 PC portable</Link>
+                            <p>💻 PC portable</p>
                         </li>
                         <li></li>
                         <li></li>
@@ -72,8 +72,8 @@ const Nav = () => {
                                     <li onClick={()=>handle(499, "price")}>moins de 500€
                                     {/* <Link href={urlPcPortable}>moins de 500€</Link> */}
                                     </li>
-                                    <li onClick={()=>handle(999, "price")}><Link href={urlPcPortable}>moins de 1000€</Link></li>
-                                    <li onClick={()=>handle(1999, "price")}><Link href={urlPcPortable}>moins de 2000€</Link></li>
+                                    <li onClick={()=>handle(999, "price")}><p>moins de 1000€</p></li>
+                                    <li onClick={()=>handle(1999, "price")}><p>moins de 2000€</p></li>
                                 </>
                                 }
 
