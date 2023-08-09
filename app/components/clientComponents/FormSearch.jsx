@@ -44,7 +44,7 @@ const FormSearch = () => {
     useEffect(()=>{
         if(sub===true){
             CTX.setTAG(searchTags)
-            router.push(`${config.host}/pages/pc-portable`)
+            router.push(`/pages/pc-portable`)
             setSub(false)
         }
     },[idSearch])

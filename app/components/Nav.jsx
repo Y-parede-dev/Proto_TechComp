@@ -45,7 +45,7 @@ const Nav = () => {
         setSea(true)
         setBy(by)
         setinptUser(input)
-        router.push(`${config.host}/pages/pc-portable`)
+        router.push(`/pages/pc-portable`)
     }
     return (
         <nav className={styles.NavLeft}>
