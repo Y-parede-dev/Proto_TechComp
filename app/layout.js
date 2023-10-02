@@ -1,7 +1,7 @@
 import './globals.css'
 import Script from 'next/script'
 import Body from './components/Body'
-
+// refactor a faire
 const RootLayout = ({children}) => {
   return (
     <html lang="fr">

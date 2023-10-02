@@ -1,5 +1,5 @@
 .header{
-    z-index: 2;
+    z-index: 3;
     grid-area: header;
     background: var(--color-back);
     margin: 0;
@@ -11,7 +11,7 @@
     justify-content: left;
     height: max-content;
     border-bottom: solid 1px var(--color-border-first);
-    height: var(--height-header - padding);
+    height: (var(--height-header) - padding);
     /* width: 100%; */
 }
 .title{

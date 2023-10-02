@@ -1,4 +1,5 @@
 'use client'
+// refactor a faire
 import { useRef, useState } from 'react'
 import styles from './Notation.module.css'
 import Note from '../notationStyled/Note'

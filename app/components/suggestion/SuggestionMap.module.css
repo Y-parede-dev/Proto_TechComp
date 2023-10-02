@@ -211,3 +211,9 @@
 .listFoundBy > li:hover {
     background: rgba(231,231,231,1);
 }
+
+
+/* affilizz */
+div.affilizz-cta > a {
+    padding: 0;
+}

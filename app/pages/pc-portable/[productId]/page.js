@@ -1,4 +1,4 @@
-
+// refactor a faire
 import styles from './page.module.css'
 import ImageAndLinkAffiliate from "./clientComponents/ImageAndLinkAffiliate"
 import iconCpu from './inconsConfig/icon_cpu.png'
@@ -12,10 +12,12 @@ import Image from 'next/image'
 import Notation from '@/app/components/clientComponents/Notation'
 // import InjectPointsCLefHTML from '@/app/components/clientComponents/InjectPointsClefHTML'
 // import BarStyled from '@/app/components/detailsProductBarStyled/BarStyled'
-import SuggestionMap from '@/app/components/suggesttion/SuggestionMap'
+import SuggestionMap from '@/app/components/suggestion/SuggestionMap'
 import PointsCles from '@/app/components/pointsCles/PointsCles'
+import GetByJson from '@/lib/GetByJson'
 
-const data = produits.produits
+const data = GetByJson()
+
 
 export async function generateMetadata({ params }) {
   let recTitleDesc = {}
@@ -37,7 +39,7 @@ const ProductPage = ({params}) => {
       produit={...e}
       return(produit)
     }})
-    console.log(produit)
+    // console.log(produit)
     let t = false
   const openVideo = () => {
 
@@ -63,7 +65,7 @@ const ProductPage = ({params}) => {
       <div className={styles.carac}>
         <h2>Caractéristique</h2>
         <div>
-          <p className={styles.caracTxt}>Cet ordinateur portable de la marque <strong className={styles.spanCaracComputer}>{produit.marque}</strong> possède un écran de <strong className={styles.spanCaracComputer}>{produit.config.screen}"</strong>, <span>{produit.conseil}</span>. L'ordinateur portable <strong className={styles.spanCaracComputer}>{produit.title}</strong> obtient une moyenne de <strong>{((produit.noteDesc.int + produit.noteGaming.int) / 2).toFixed(1)}/10</strong>.</p>    {/*pour <strong className={styles.spanCaracComputer}>{produit.usage}.</strong>*/}
+          <p className={styles.caracTxt}>Cet ordinateur portable de la marque <strong className={styles.spanCaracComputer}>{produit.brand}</strong> possède un écran de <strong className={styles.spanCaracComputer}>{produit.config.screen}"</strong>, <span>{produit.conseil}</span>. L'ordinateur portable <strong className={styles.spanCaracComputer}>{produit.title}</strong> obtient une moyenne de <strong>{((produit.noteDesc.int + produit.noteGaming.int) / 2).toFixed(1)}/10</strong>.</p>    {/*pour <strong className={styles.spanCaracComputer}>{produit.usage}.</strong>*/}
           <table className={styles.tablecute}>
             <tbody>
               <tr>
@@ -120,7 +122,7 @@ const ProductPage = ({params}) => {
   )
   
   const content = (
-    <section className={styles.section}> 
+    <section className={styles.section}>
       <h1 className={styles.product_card_title}>{produit.title}</h1>
         <div className={styles.product_card}>
           <ImageAndLinkAffiliate produit={produit}/>
@@ -138,7 +140,7 @@ const ProductPage = ({params}) => {
           <>
             <div className={styles.suggestions}>
               <h2>suggestions d'autres produits</h2>
-              <SuggestionMap searchSepar={produit.marque} titreRecherche={"PC portable de la même marque"}/>
+              <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portable de la même marque"}/>
               <SuggestionMap searchSepar={"gaming"} titreRecherche={"PC portable gamer"}/>
               <SuggestionMap searchSepar={"4k"} titreRecherche={"PC portable avec écran 4K"}/>
             </div>

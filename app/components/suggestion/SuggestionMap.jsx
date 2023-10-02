@@ -52,6 +52,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             })
         }
     }catch(err){
+        console.error(err)
     }
     const handleChange = (e, newValue) => {
         setValue(newValue)
@@ -78,7 +79,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
     
             const changeResult = (e, elt) => {
                 let searchTags = [elt]
-                const [id, data] = ProductSearchByTag({searchTags})
+                const [id, nothing] = ProductSearchByTag({searchTags})
                 CTX.setSEARCH(id)
                 CTX.setTAG(searchTags)
                 e.target.classList.add(styles.t)
@@ -102,7 +103,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             )
         }
     };
-    const ButonSearch = ({params}) => {
+    const ButonSearch = ({params}) => { // cres un fichier pour cette fonction
         const styleBtnBold = {
             fontWeight:`700`
         }
@@ -122,7 +123,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             </div>
         )
     }
-    const openCloseModale = (value) => {
+    const openCloseModale = (value) => { // cres un fichier pour cette fonction
         switch(value){
             case "prix":
                 setModaleOpen(!modaleOpen)
@@ -138,14 +139,15 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             break;
         }
     }
-    const FoundBy = () => {
+    const FoundBy = () => { // cres un fichier pour cette fonction
+
         const [modal,setModal] = useState(false)
         const [order,setOrder] = useState("Note gaming")
         const byOrder = (e) => {
             setOrder(e.target.textContent)
         }
         useEffect(()=>{
-            if(modal){console.log(CTX)}
+            // if(modal){console.log(CTX)}
             
             let arrTemp = []
             if(CTX.IDPRESENT){
@@ -165,7 +167,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             arrTemp.map((elt)=>{
                 arrTempR.push(elt.id)
             })
-            console.log(arrTempR)
+            // console.log(arrTempR)
             // CTX.setSEARCH(arrTempR)
 
             setModal(false)
@@ -257,6 +259,10 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                                         <Notation produit={produitElt} param={produitElt.usage}/>
                                         <PointsCles produit={produitElt} param={produitElt.usage}/>
                                         <p className={styles.prix}>{produitElt.prix}€</p>
+                                        <p>test: 
+                                            {
+                                            /* <affilizz-rendering-component publication-content-id={produitElt.btn.publicationContentId} loading={produitElt.loading}></affilizz-rendering-component> */}
+                                            </p>
                                     </li>
                                 </Link>
                             ])

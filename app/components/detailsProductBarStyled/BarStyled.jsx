@@ -1,5 +1,5 @@
 import styles from './BarStyled.module.css'
-
+// refactor a faire
 const BarStyled = ({note, param}) => {
     const styleDynNoteBarBack = {
         transform: `scaleX(${note / 10})`, background:`var(--color-note-${Math.round(note)})`

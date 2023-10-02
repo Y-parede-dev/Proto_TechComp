@@ -1,10 +1,15 @@
 "use client"
+import styles from './Body.module.css'
+// refactor a faire
 import Header from './Header'
 import Footer from './Footer'
 import Nav from './Nav'
 import { SearchCTX } from '../context/SearchCTX'
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 // import { useClient } from 'next/client';
+
 export const metadata = {
     title: {
         template:'%s | TechComparateur PC Portable : Sélection Expert',
@@ -24,6 +29,7 @@ export const metadata = {
 }
 
 const Body = ({children}) => {
+    
     const [SEARCH, setSEARCH] = useState("")
     const [TAG, setTAG] = useState("")
     const [IDPRESENT, SETIDPRESENT] = useState(false)
@@ -39,7 +45,12 @@ const Body = ({children}) => {
             <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT}} >
                 <Header/>
                 <Nav />
-                <div >{children}</div>
+                <main className={styles.mainOnBody}>
+                    <Link href='https://www.acer.com'>
+                        <div className={styles.AdsContainer}>PUB</div>
+                    </Link>
+                    <div className={styles.content}>{children}</div>
+                </main>
                 <Footer/>
             </SearchCTX.Provider>
         </>

@@ -1,5 +1,5 @@
 import styles from './Note.module.css'
-
+// refactor a faire
 const Note = (params) => {
     return(
         <div className={styles.container}>

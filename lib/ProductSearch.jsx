@@ -11,13 +11,12 @@ import GetByJson from './GetByJson'
  */
 
 const DATA = GetByJson()
-
+const returnSearch = (arr, id) => {
+    arr.push(id)
+    return arr = (arr.filter((x,i)=>arr.indexOf(x)===i))
+}
 export const ProductSearchByTag = (param) => {
     let idPresent = []
-    const returnSearch = (arr, id) => {
-        arr.push(id)
-        return arr = (arr.filter((x,i)=>arr.indexOf(x)===i))
-    }
         try{
             DATA.map(pc=>{
                 param.searchTags.length===0?
@@ -34,9 +33,9 @@ export const ProductSearchByTag = (param) => {
                     })
                 })
             })
-            console.log("Verification fin du try Effectuer ")
+            console.log("Verification fin du try Effectuer pour ProductSearchByTag")
         }catch(err){
-            console.error("error sur le catch ", err)
+            console.error("error sur le catch pour ProductSearchByTag", err)
             console.error("PARAM (catch error) :", param)
 
         }
@@ -44,20 +43,35 @@ export const ProductSearchByTag = (param) => {
 }
 export const ProductSearchByPrice = (param) => {
     let idPresent = []
-    const returnSearch = (arr, id) => {
-        arr.push(id)
-        return arr = (arr.filter((x,i)=>arr.indexOf(x)===i))
-    }
         try{
             DATA.map(pc=>{
-                if(param.searchPrice >= pc.prix){
+                if(param.searchPrice > pc.prix){
                     param.CTX.setSEARCH(returnSearch(idPresent, pc.id))
                     return returnSearch(idPresent, pc.id)
                 }
             })
-            console.log("Verification fin du try Effectuer ")
+            console.log("Verification fin du try Effectuer pour ProductSearchByPrice")
         }catch(err){
-            console.error("error sur le catch ", err ,"PARAM :", param)
+            console.error("error sur le catch pour ProductSearchByPrice", err ,"PARAM :", param)
         }
         return [ idPresent ]
+}
+
+export const ProductSearchByBrand = (param) => {
+    let idPresent = []
+        try{
+            DATA.map(pc=>{
+                if(param.searchBrand >= pc.Brand){
+                    param.CTX.setSEARCH(returnSearch(idPresent, pc.id))
+                    return returnSearch(idPresent, pc.id)
+                }
+            })
+            console.log("Verification fin du try Effectuer pour ProductSearchByBrand")
+        }catch(err){
+            console.error("error sur le catch pour ProductSearchByBrand", err ,"PARAM :", param)
+        }
+        return [ idPresent ]
+}
+export const ClearSearch = (param) => {
+    return [ param ]
 }

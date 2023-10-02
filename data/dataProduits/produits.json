@@ -2,7 +2,7 @@
     "produits":[
         {
             "id":"Asus-ROG-Strix-G15-G513QM-HF432T",
-            "marque":"Asus",
+            "brand":"Asus",
             "resolution":"1920X180",
             "title":"Asus ROG Strix G513QM-HF432T",
             "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG Strix G15 G513QM-HF432T sur notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG Strix G15 G513QM-HF432T",
@@ -81,12 +81,15 @@
             "array":{
                 "publicationContentId":"6492ebf4b648912cb09d8019"
             },
+            "btn":{
+                "publicationContentId":"64f5961c32fa2c56140f005a"
+            },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming"
         },
         {
             "id":"Acer-Nitro-5-AN515-57-521Z",
-            "marque":"Acer",
+            "brand":"Acer",
             "model":"Nitro 5 AN515-57-521Z",
             "resolution":"1920X180",
             "title":"Acer Nitro 5 AN515-57-521Z 15.6",
@@ -163,17 +166,20 @@
             "array":{
                 "publicationContentId":"649ecfecb2d90579928bbcb3"
             },
+            "btn":{
+                "publicationContentId":"64f5969cdb8c90038e5d4639"
+            },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming"
         },
         {
             "id":"Yonis-7-1-HDMI-10-1",
-            "marque":"Yonis",
+            "brand":"Yonis",
             "model":"Yonis 7.1 HDMI 10.1 Pouces",
             "resolution":"1280x800",
             "title":"Yonis 7.1 HDMI 10.1 Pouces",
             "description":"Comparez les caractéristiques, performances et tarifs du Yonis android 7.1 sur notre plateforme de comparaison.",
-            "tags":["Yonis","Allwinner A64 Quad Core 1.3GHz", "all", "moins"],
+            "tags":["Yonis","Allwinner A64 Quad Core 1.3GHz", "all", "moins", "bureau"],
             "prix":199,
             "loading":"lazy",
             "images":["/test/Yonis.webp"],
@@ -241,16 +247,18 @@
             "card":{
                     "publicationContentId":"64ac1ec0b2d90579928bc3c2"
             },
-            
             "array":{
                 "publicationContentId":"64ac1ed4b2d90579928bc3c4"
+            },
+            "btn":{
+                "publicationContentId":"64f596d032fa2c56140f005b"
             },
             "conseil":"il est conseillé pour les application de bureau",
             "usage":"usage Bureau"
         },
         {
             "id":"AsusG18Gl814JI-N6076W18",
-            "marque":"Asus",
+            "brand":"Asus",
             "model":"G814 - STRIX-G18-G814JI-N6076W",
             "resolution":"2560 x 1600",
             "title":"Asus ROG Strix G814JI-N6076W",
@@ -331,12 +339,16 @@
             "array":{
                 "publicationContentId":"64ad1164b2d90579928bc42a"
             },
+            "btn":{
+                "publicationContentId":"64f596f732fa2c56140f005c"
+            },
+            
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming"
         },
         {
             "id":"ASUS-ROG-Strix-G16-WQXGA-240Hz",
-            "marque":"Asus",
+            "brand":"Asus",
             "model":"G16 - Strix-G16-WQXGA",
             "resolution":"2560 x 1600",
             "title":"Asus ROG Strix G16 WQXGA 240Hz",
@@ -344,7 +356,7 @@
             "tags":["Asus ROG Strix G16","I9", "all", "i9-13980HX","RTX 4070", "4k", "gaming"],
             "prix":2909.99,
             "loading":"lazy",
-            "images":["/test/AsusG16WQXA240HZ.webp",""],
+            "images":["/test/AsusG16WQXA240HZ.webp"],
             "bonus":null,
             "pointsClef":[
                 {
@@ -413,9 +425,11 @@
             "card":{
                     "publicationContentId":"64ad115e72400b5daf88f954"
             },
-            
             "array":{
                 "publicationContentId":"64ba8e9aff212e3e2e1b2b0f"
+            },
+            "btn":{
+                "publicationContentId":"64f59719db8c90038e5d463a"
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming"

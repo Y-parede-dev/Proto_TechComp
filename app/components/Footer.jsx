@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from './Footer.module.css'
+// refactor a faire
 import config from "@/config/config.json" assert{type:'json'}
 const Footer = () => {
     

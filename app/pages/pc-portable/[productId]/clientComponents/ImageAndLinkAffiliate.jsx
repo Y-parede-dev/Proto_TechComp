@@ -17,7 +17,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
     }
     const changeImage = (item) => {
         let url = `/_${item.target.src.split('/_')[1]}`
-        console.log(url)
+        // console.log(url)
         setUrlImageDefault(url)
     }
     return(

@@ -7,6 +7,21 @@
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
-  padding: 6rem;
-  height: calc(100vh - var(--height-header));
+  max-width: 100%;
+  /* padding: 6rem; */
+  min-height: calc(100vh - var(--height-header));
+}
+.mainContent{
+  background: var(--color-back-main);
+
+  max-width: 91%;
+}
+.titlePage {
+  padding: 25px 0;
+}
+.top10{
+  padding: 5px 0;
+}
+.listesTop10 {
+  list-style: none;
 }
