@@ -25,8 +25,12 @@ const Nav = () => {
     const CTX = useContext(SearchCTX);
 
     const urlPcPortable = "/pages/pc-portable";
-    window.onresize = ()=>{
-        setwidthScreenCss(screen.width);
+    try{
+        window.onresize = ()=>{
+            setwidthScreenCss(screen.width);
+        }
+    }catch(err){
+        
     };
 
     useEffect(()=>{
