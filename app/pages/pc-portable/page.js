@@ -9,7 +9,7 @@ const Product = () => {
   const content = (
     <section className={styles.section}>
       <h1 className={styles.titlePagePcPortable}>Comparateur PC portables</h1>
-      <p></p>
+      <div className={styles.ILLUSTRATOR}>NEED ILLUSTRATION PC PORTABLE</div>
       <ListeProduitsPagePcPortable page={`pcPortable`}/>
     </section>
   )

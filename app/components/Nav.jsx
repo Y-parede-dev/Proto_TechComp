@@ -10,17 +10,38 @@ import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/NoRepeat';
 // refactor a faire
 const Nav = () => {
+    const [widthScreen, setwidthScreenCss] = useState(0)
     const [inptUser, setinptUser] = useState([]);
     const [by, setBy] = useState("");
     const [moinsCher,setMoinsCher] = useState(false);
     const [pcGamer,setPcGamer] = useState(false);
     const [pcBureau,setPcBureau] = useState(false);
     const [PcMarque,setPcMarque] = useState(false);
+    const [desktopDesign, setDesktopDesign] = useState(true);
+    const [showNavBar, setshowNavBar] = useState(false);
+
     const router = useRouter();
     const [sea,setSea] = useState(false);
     const CTX = useContext(SearchCTX);
 
     const urlPcPortable = "/pages/pc-portable";
+    window.onresize = ()=>{
+        setwidthScreenCss(screen.width);
+    };
+
+    useEffect(()=>{
+        setwidthScreenCss(screen.width);
+    },[]);
+    useEffect(()=>{
+        if(widthScreen<= 1369){
+            setDesktopDesign(false);
+        }
+        if(widthScreen> 1369){
+            setDesktopDesign(true);
+        }
+    },[widthScreen]);
+
+
     useEffect(()=>{
         if(sea){
             let idPresent, DATA;
@@ -40,11 +61,15 @@ const Nav = () => {
             idPresent = FilterNoRepeat(idPresent);
             CTX.setSEARCH(idPresent);
             setSea(false);
-        }
+        };
     },[inptUser]);
+
+
     useEffect(()=>{
 
     }, [moinsCher]);
+
+
     const handle = (input, by)=>{
         setSea(true);
         setBy(by);
@@ -52,9 +77,9 @@ const Nav = () => {
         if(by!=="tag"){
             router.push(`/pages/pc-portable`);
         };
-    }
-    return (
-        <nav className={styles.NavLeft}>
+    };
+    const navBar = (
+        <nav className={`${styles.NavLeft} ${showNavBar? styles.NavShow:''}`}>
             <ul className={styles.listTitles}>
                 <li>
                     {/* NAVIGATION */}
@@ -104,7 +129,17 @@ const Nav = () => {
                     </ul>
                 </li>
             </ul>
+            {!desktopDesign?<div onClick={()=>toggleShowNav()} className={styles.btnNavBarForMobile}><p>{showNavBar?"<<":">>"}</p></div>:""}
+            
         </nav>
+    );
+    const toggleShowNav = () => {
+        setshowNavBar(!showNavBar);
+    };
+    return (
+        <>
+            {navBar}
+        </>
     );
 };
 export default Nav;
