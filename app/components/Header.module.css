@@ -33,12 +33,12 @@
     
     margin-right: 3px;
     font-style: italic;
-    color: white;
+    color: var(--color-back);
     background: var(--color-first);
     height: 100%;
     padding: 0 4px;
     border-radius: 8px;
-    text-shadow: 1px 1px #FFBE71;
+    text-shadow: 1px 1px var(--color-second);
 }
 .title_second_letter{
     color: var(--color-first);;

@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-  --color-first: #FF7A00;
-  --color-second: #EE3900;
-  --color-third: #ffa500;
+  /*de base*/
+/* --color-first: #FF7A00; */
+/* --color-second: #EE3900; */
+/* --color-third: #ffa500; */
+
+/*higt tech*/
+  --color-third: #a9a9a9;
+  --color-first: #1a1a1a;
+  --color-second: #337AB7;
+  --color-hover :var(--color-second);/*#337AB7*/
+  
+  --color-titles-nav: #3b3a3a;
+
+  --default-txt: #000;
   --color-back:#fff;
   --color-back-main:#F0F3F7;
   --color-border-first:#dee2e6;
 
   --color-back-scrollbar-main: #F0F3F7;
-  --color-back-scrollbar-nav: var(--color-back); /*#fff*/
+  --color-back-scrollbar-nav: var(--color-back); /*#f8f8f8*/
+  --color-back-scrollbar-btn-x: var(--color-scrollbar-btn); /*#D1D1D1*/
   --color-scrollbar-btn: #D1D1D1;
   --color-scrollbar-btn-x: #727272;
-  --color-back-scrollbar-btn-x: var(--color-scrollbar-btn); /*#D1D1D1*/
 
-  --color-table-odd: var(--color-back);/*#fff*/
+  --color-table-odd: var(--color-back);/*#f8f8f8*/
   --color-table-even: #f5f5f5;
 
   --color-note-0 :#EE3900;
@@ -95,6 +106,7 @@
 }
 *{
   font-family: 'Roboto', sans-serif;
+  color: var(--default-txt);
   padding: 0;
   margin: 0;
 }
@@ -136,7 +148,28 @@ body{
 }
 
 /* end_ scrollbar */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-third: #a9a9a9;
+    --color-first: #1a1a1a;
+    --color-second: #337AB7;        
+    --color-hover :var(--color-second);
+    
+    --color-back:rgba(36,36,36,1);
+    --default-txt: #f2f2f2;
+    --color-back-main:#222223;
+    --color-border-first:#363839;
 
+    --color-back-scrollbar-main: #F0F3F7;
+    --color-back-scrollbar-nav: var(--color-back);
+    --color-back-scrollbar-btn-x: var(--color-scrollbar-btn);
+    --color-scrollbar-btn: #D1D1D1;
+    --color-scrollbar-btn-x: #727272;
+
+    --color-table-odd: var(--color-back);
+    --color-table-even:  var(--color-back-main);
+  }
+} */
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

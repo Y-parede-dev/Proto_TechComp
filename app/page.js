@@ -10,6 +10,8 @@ const Home = () => {
         <div className={styles.mainContent}>
           <div className={`${styles.containerAds} ${styles.leaderBoardAdsContainer}`}></div>
           <h1 className={styles.titlePage}>Votre comparateur pour ordinateur portable au meilleurs prix</h1>
+          <p className={styles.txtPresentation}>ici un texte de presentation</p>
+          
           {/* <p>
             <Link href="/pages/pc-portable">Tous les pc portables</Link>
           </p> */}

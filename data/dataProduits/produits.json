@@ -10,7 +10,7 @@
             "prix":1699,
             "loading":"lazy",
             "images":["https://urlz.fr/naZS", "https://urlz.fr/naZM", "https://urlz.fr/naZQ"],
-            "bonus":"https://urlz.fr/naJM",
+            "bonus":"naJM",
             "pointsClef":[
                 {
                     "rapidite":{

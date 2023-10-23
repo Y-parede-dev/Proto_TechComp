@@ -115,6 +115,7 @@ table.tablecute {
 }
 .tablecute td {
   padding: var(--table-cute-padding);
+  /* background: var(--td-backgroud); */
 }
 .tablecute .configItem {
   display: flex;

@@ -42,6 +42,9 @@ const Nav = () => {
             setSea(false);
         }
     },[inptUser]);
+    useEffect(()=>{
+
+    }, [moinsCher]);
     const handle = (input, by)=>{
         setSea(true);
         setBy(by);
@@ -55,49 +58,47 @@ const Nav = () => {
             <ul className={styles.listTitles}>
                 <li>
                     {/* NAVIGATION */}
-                    <p>navigation</p>
+                    <h2 className={styles.titleCategoryListItem}>navigation</h2>
                     <ul className={styles.listItems}>
-                        <li><Link href={"/"}>🏠 Accueil</Link></li>
-                        <li onClick={()=>handle("all", "tag")}>
-                            <Link href={urlPcPortable}>💻 Tous nos PC portable</Link>
+                        <li className={styles.linkOnNav}><Link href={"/"} >🏠 Accueil</Link></li>
+                        <li onClick={()=>handle("all", "tag")} className={styles.linkOnNav}>
+                            <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
                         </li>
-                        <li>Catégories</li>
-                        <li>Comparaisons </li>
+                        <li className={styles.linkOnNav}>Catégories</li>
+                        <li className={styles.linkOnNav}>Comparaisons </li>
                     </ul>
                 </li>
                 <li>
-                    <p>classements</p>
+                    <h2 className={styles.titleCategoryListItem}>classements</h2>
                     <ul className={styles.listItems}>
                         <li>
                             <ul>
-                                <li onClick={()=>setMoinsCher(!moinsCher)}>PC portable moins chers</li>
+                                <li onClick={()=>setMoinsCher(!moinsCher)} className={styles.linkOnNav}>PC portable moins chers</li>
                                 {moinsCher && 
                                 <>
-                                    <li onClick={()=>handle(500, "price")}>moins de 500€
-                                    {/* <Link href={urlPcPortable}>moins de 500€</Link> */}
-                                    </li>
-                                    <li onClick={()=>handle(1000, "price")}><p>moins de 1000€</p></li>
-                                    <li onClick={()=>handle(2000, "price")}><p>moins de 2000€</p></li>
+                                    <li onClick={()=>handle(500, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 500€</p></li>
+                                    <li onClick={()=>handle(1000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 1000€</p></li>
+                                    <li onClick={()=>handle(2000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 2000€</p></li>
                                 </>
                                 }
 
                             </ul>
                         </li>
-                        <li>PC portable Gaming</li>
-                        <li>PC portable Bureau</li>
-                        <li onClick={()=>handle("all", "tag")}><Link href={urlPcPortable}>Tous les PC portable</Link></li>
+                        <li><p className={styles.linkOnNav}>PC portable Gaming</p></li>
+                        <li><p className={styles.linkOnNav}>PC portable Bureau</p></li>
+                        <li onClick={()=>handle("all", "tag")} ><Link href={urlPcPortable} className={styles.linkOnNav}>Tous les PC portable</Link></li>
                         <li></li>
                         <li></li>
                         <li></li>
                     </ul>
                 </li>
                 <li>
-                    <p>contact</p>
+                    <h2 className={styles.titleCategoryListItem}>contact</h2>
                     <ul className={styles.listItems}>
-                        <li>
+                        <li className={styles.linkOnNav}>
                             À propos 
                         </li>
-                        <li>
+                        <li className={styles.linkOnNav}>
                             Contact  
                         </li>
                     </ul>

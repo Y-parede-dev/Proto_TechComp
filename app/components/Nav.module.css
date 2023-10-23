@@ -18,10 +18,42 @@
 .NavLeft>ul>li{
     padding: 50px 0;
 }
+.titleCategoryListItem{
+    font-size: 1.2rem;
+    color: var(--color-titles-nav);
+    text-transform: uppercase;
+    font-weight: 800;
+    background: var(--color-third);/*rgba(142,142,142,1);*/
+    border-radius: 22px;
+    max-width: fit-content;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+
+}
 .listTitles {
     padding: 0 35px;
 }
 .listItems > li {
-    padding: 25px;
+    /* padding: 25px; */
     width: fit-content;
+}
+.listItems a {
+    text-decoration: none;
+}
+.linkOnNav{
+
+   color: var(--color-hover); 
+   padding: 25px;
+   margin-left: 13px;
+   border-radius: 0;
+   transition-duration: 250ms;
+}
+.linkOnNav:hover{
+    background: var(--color-hover);
+    color: var(--color-third);
+    border-radius: 38px;
+    
+}
+.onPriceLink{
+    padding-left: 40px;
 }

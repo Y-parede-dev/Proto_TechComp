@@ -187,91 +187,91 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             </div>
         )
     }
-    if(page==='pcPortable'){
-        return(
-            <div className={styles.resultSearchContainer}>
-                {CTX.TAG && 
-                <>
-                    <h2 className={styles.resultSearchTitle}>Comparatif pc portable
-                        <span className={styles.titleDynSearch}>
+    // if(page==='pcPortable'){
+    //     return(
+    //         <div className={styles.resultSearchContainer}>
+    //             {CTX.TAG && 
+    //             <>
+    //                 <h2 className={styles.resultSearchTitle}>Comparatif pc portable
+    //                     <span className={styles.titleDynSearch}>
                         
-                        { 
-                            typeof(CTX.TAG)==="number"?
-                            <span className={styles.spanTagsTitle}> {` à moins de  ${CTX.TAG}€ `} </span>
-                            :
-                            <>
-                            {
-                                <>
-                                    {` pour: "`}
-                                    {CTX.TAG.map(tag=>[
-                                        tag==" " || tag==""?<></>:
-                                            <span className={styles.spanTagsTitle}>
-                                                {CTX.TAG.findLast(()=>tag)?
-                                                <>{` ${tag}`}</>:
-                                                <>{` ${tag} - `}</>
-                                                }
-                                            </span>
-                                    ])}
-                                    {`"`}
-                                </>
-                            }
-                            </>
-                            }
+    //                     { 
+    //                         typeof(CTX.TAG)==="number"?
+    //                         <span className={styles.spanTagsTitle}> {` à moins de  ${CTX.TAG}€ `} </span>
+    //                         :
+    //                         <>
+    //                         {
+    //                             <>
+    //                                 {` pour: "`}
+    //                                 {CTX.TAG.map(tag=>[
+    //                                     tag==" " || tag==""?<></>:
+    //                                         <span className={styles.spanTagsTitle}>
+    //                                             {CTX.TAG.findLast(()=>tag)?
+    //                                             <>{` ${tag}`}</>:
+    //                                             <>{` ${tag} - `}</>
+    //                                             }
+    //                                         </span>
+    //                                 ])}
+    //                                 {`"`}
+    //                             </>
+    //                         }
+    //                         </>
+    //                         }
                             
-                        </span>
-                    </h2>
+    //                     </span>
+    //                 </h2>
                     
-                    <p>Tous les pc portable 
-                        {
-                        typeof(CTX.TAG)==="number"?
-                        <span className={styles.spanTags}>{` à moins de ${CTX.TAG}€`} </span>:
-                        CTX.TAG.map(tag=>[
-                        tag==" " || tag==""?<></>:
+    //                 <p>Tous les pc portable 
+    //                     {
+    //                     typeof(CTX.TAG)==="number"?
+    //                     <span className={styles.spanTags}>{` à moins de ${CTX.TAG}€`} </span>:
+    //                     CTX.TAG.map(tag=>[
+    //                     tag==" " || tag==""?<></>:
                         
-                        <span className={styles.spanTags}>{` ${tag},`} </span> ])}
+    //                     <span className={styles.spanTags}>{` ${tag},`} </span> ])}
                     
-                    </p>
-                </>
-                }
+    //                 </p>
+    //             </>
+    //             }
 
                 
-                <div className={styles.resultSearchContainerListItems}>
-                    <h3>{titreRecherche}</h3>
-                    <div className={styles.btnContainer}>
-                        <ButonSearch params={{value:"prix"}}/>
-                        <ButonSearch params={{value:"marque"}}/>
-                    </div>
-                    <>
-                        <Content params={{value:"prix"}}/>
-                        <Content params={{value:"marque"}}/>
-                    </>
-                    <>
-                        <FoundBy/>
-                    </>
-                    <ul className={styles.listItemsResult}>
-                        {data.map(produitElt=> [
-                            ids.map(idSearchReturn=>[
-                                produitElt.id==idSearchReturn&&
-                                <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
-                                    <li className={styles.litsItemCarroussel}>
-                                        <Image alt={`Produit de la marque: ${produitElt.marque} `} width={200} height={200} src={produitElt.images[0]}/>
-                                        <h4>{produitElt.title}</h4>
-                                        <Notation produit={produitElt} param={produitElt.usage}/>
-                                        <PointsCles produit={produitElt} param={produitElt.usage}/>
-                                        <p className={styles.prix}>{produitElt.prix}€</p>
-                                        <p>test: 
-                                            {
-                                            /* <affilizz-rendering-component publication-content-id={produitElt.btn.publicationContentId} loading={produitElt.loading}></affilizz-rendering-component> */}
-                                            </p>
-                                    </li>
-                                </Link>
-                            ])
-                        ])}
-                    </ul>
-                </div>
-            </div>
-        )
-    }
+    //             <div className={styles.resultSearchContainerListItems}>
+    //                 <h3>{titreRecherche}</h3>
+    //                 <div className={styles.btnContainer}>
+    //                     <ButonSearch params={{value:"prix"}}/>
+    //                     <ButonSearch params={{value:"marque"}}/>
+    //                 </div>
+    //                 <>
+    //                     <Content params={{value:"prix"}}/>
+    //                     <Content params={{value:"marque"}}/>
+    //                 </>
+    //                 <>
+    //                     <FoundBy/>
+    //                 </>
+    //                 <ul className={styles.listItemsResult}>
+    //                     {data.map(produitElt=> [
+    //                         ids.map(idSearchReturn=>[
+    //                             produitElt.id==idSearchReturn&&
+    //                             <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
+    //                                 <li className={styles.litsItemCarroussel}>
+    //                                     <Image alt={`Produit de la marque: ${produitElt.marque} `} width={200} height={200} src={produitElt.images[0]}/>
+    //                                     <h4>{produitElt.title}</h4>
+    //                                     <Notation produit={produitElt} param={produitElt.usage}/>
+    //                                     <PointsCles produit={produitElt} param={produitElt.usage}/>
+    //                                     <p className={styles.prix}>{produitElt.prix}€</p>
+    //                                     <p>test: 
+    //                                         {
+    //                                         /* <affilizz-rendering-component publication-content-id={produitElt.btn.publicationContentId} loading={produitElt.loading}></affilizz-rendering-component> */}
+    //                                         </p>
+    //                                 </li>
+    //                             </Link>
+    //                         ])
+    //                     ])}
+    //                 </ul>
+    //             </div>
+    //         </div>
+    //     )
+    // }
     return(
     <div className={styles.suggestions}>
         <div className={styles.containerListOtherItems}>
