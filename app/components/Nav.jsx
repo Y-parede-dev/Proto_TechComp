@@ -9,15 +9,16 @@ import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/NoRepeat';
 // refactor a faire
-const Nav = () => {
-    const [widthScreen, setwidthScreenCss] = useState(0)
+const Nav = ({responsive}) => {
+    // const [widthScreen, setwidthScreenCss] = useState(0)
+    // const [desktopDesign, setDesktopDesign] = useState(true);
+   console.log(responsive)
     const [inptUser, setinptUser] = useState([]);
     const [by, setBy] = useState("");
     const [moinsCher,setMoinsCher] = useState(false);
     const [pcGamer,setPcGamer] = useState(false);
     const [pcBureau,setPcBureau] = useState(false);
     const [PcMarque,setPcMarque] = useState(false);
-    const [desktopDesign, setDesktopDesign] = useState(true);
     const [showNavBar, setshowNavBar] = useState(false);
 
     const router = useRouter();
@@ -27,23 +28,23 @@ const Nav = () => {
     const urlPcPortable = "/pages/pc-portable";
     try{
         window.onresize = ()=>{
-            setwidthScreenCss(screen.width);
+            responsive.setwidthScreenCss(screen.width);
         }
     }catch(err){
         
     };
 
     useEffect(()=>{
-        setwidthScreenCss(screen.width);
+        responsive.setwidthScreenCss(screen.width);
     },[]);
     useEffect(()=>{
-        if(widthScreen<= 1369){
-            setDesktopDesign(false);
+        if(responsive.widthScreen<= 1369){
+            responsive.setDesktopDesign(false);
         }
-        if(widthScreen> 1369){
-            setDesktopDesign(true);
+        if(responsive.widthScreen> 1369){
+            responsive.setDesktopDesign(true);
         }
-    },[widthScreen]);
+    },[responsive.widthScreen]);
 
 
     useEffect(()=>{
@@ -84,6 +85,7 @@ const Nav = () => {
     };
     const navBar = (
         <nav className={`${styles.NavLeft} ${showNavBar? styles.NavShow:''}`}>
+            {!responsive.desktopDesign&&<FormSearch/>}
             <ul className={styles.listTitles}>
                 <li>
                     {/* NAVIGATION */}
@@ -133,7 +135,7 @@ const Nav = () => {
                     </ul>
                 </li>
             </ul>
-            {!desktopDesign?<div onClick={()=>toggleShowNav()} className={styles.btnNavBarForMobile}><p>{showNavBar?"<<":">>"}</p></div>:""}
+            {!responsive.desktopDesign?<div onClick={()=>toggleShowNav()} className={styles.btnNavBarForMobile}><p>{showNavBar?"<<":">>"}</p></div>:""}
             
         </nav>
     );

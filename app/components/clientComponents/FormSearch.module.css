@@ -65,3 +65,11 @@ svg.iconClear:hover{
 .icone{
     content: 'e8b6';
 }
+@media screen and (max-width:1365px) {
+    .formSearch {
+        padding: 50px 0;
+    }
+    .form_item{
+    width: 235px;
+    }
+}

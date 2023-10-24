@@ -123,8 +123,7 @@
     font-size: 1.05rem;
 }
 
-.resultSearchContainerListItems{
-}
+
 .btnContainer{
     position: relative;
 }
@@ -218,3 +217,17 @@
 div.affilizz-cta > a {
     padding: 0;
 }
+
+@media screen and (max-width:1369px) {
+    .listCarroussel{
+        padding: 5px 15px;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: center;
+    }
+
+    .arrows{
+        display: none;
+    }
+  }

@@ -33,6 +33,10 @@ const Body = ({children}) => {
     const [SEARCH, setSEARCH] = useState("")
     const [TAG, setTAG] = useState("")
     const [IDPRESENT, SETIDPRESENT] = useState(false)
+
+    const [widthScreen, setwidthScreenCss] = useState(0)
+    const [desktopDesign, setDesktopDesign] = useState(true);
+
     useEffect(()=>{
         if(SEARCH.length > 0){
             SETIDPRESENT(true)
@@ -43,8 +47,8 @@ const Body = ({children}) => {
     return (
         <>
             <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT}} >
-                <Header/>
-                <Nav />
+                <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
+                <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
                     <Link href='https://www.acer.com'>
                         <div className={styles.AdsContainer}>PUB</div>
