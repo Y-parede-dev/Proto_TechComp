@@ -3,7 +3,7 @@ import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByNoteGaming} fro
 import styles from "./SuggestionMap.module.css"
 import Image from 'next/image'
 import Notation from "../clientComponents/Notation"
-import PointsCles from "../pointsCles/PointsCles"
+import PointsCles from "../../pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles"
 import Link from "next/link"
 import { useEffect, useState, useContext, useRef } from "react"
 import { SearchCTX } from "@/app/context/SearchCTX"

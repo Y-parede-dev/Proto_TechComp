@@ -1,5 +1,5 @@
-import InjectPointsCLefHTML from "../clientComponents/InjectPointsClefHTML"
-import BarStyled from "../detailsProductBarStyled/BarStyled"
+import InjectPointsCLefHTML from "../../../../../components/clientComponents/InjectPointsClefHTML"
+import BarStyled from "../../../../../components/detailsProductBarStyled/BarStyled"
 import styles from "./PointsCles.module.css"
 // refactor a faire
 const PointsCles = ({produit, param}) => {

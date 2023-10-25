@@ -13,7 +13,7 @@ import Notation from '@/app/components/clientComponents/Notation'
 // import InjectPointsCLefHTML from '@/app/components/clientComponents/InjectPointsClefHTML'
 // import BarStyled from '@/app/components/detailsProductBarStyled/BarStyled'
 import SuggestionMap from '@/app/components/suggestion/SuggestionMap'
-import PointsCles from '@/app/components/pointsCles/PointsCles'
+import PointsCles from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles'
 import GetByJson from '@/lib/GetByJson'
 
 const data = GetByJson()

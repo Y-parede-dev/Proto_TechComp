@@ -33,3 +33,10 @@
     max-width: 100px;
     width: 100px;
 }
+
+@media screen and (max-width:1369px) {
+    .PointsClesList{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+}

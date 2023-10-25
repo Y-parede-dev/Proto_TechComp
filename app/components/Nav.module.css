@@ -77,8 +77,10 @@
         height: 100%;
         z-index: 3;
         position: fixed;
-        transform: translateX(-348px);
+        transform: translateX(-100%);
         transition-duration: 800ms;
+        /* overflow-x: visible;
+        overflow-y: hidden; */
     }
     .NavShow{
         transform: translateX(00px);
