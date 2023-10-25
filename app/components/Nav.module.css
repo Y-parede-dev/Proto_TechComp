@@ -1,4 +1,4 @@
-.NavLeft{
+.ContainerNavLeft{
     z-index: 2;
     grid-area: nav;
     position: sticky;
@@ -6,11 +6,15 @@
     bottom: 0;
     height: calc(100vh - var(--height-header));
     background: var(--color-back);
-    /* overflow-y: scroll; */
     margin: 0;
-    padding: 0 18px;
     max-width: 500px;
     border-right: 1px solid var(--color-border-first);
+    
+}
+.NavLeft{
+    padding: 0 18px;
+    height: 100%;
+    overflow-y: scroll;
 }
 .NavLeft ul{
     list-style: none;
@@ -73,7 +77,7 @@
         border-left: none;
         border-radius: 0 25px 25px 0;
     }
-    .NavLeft{
+    .ContainerNavLeft{
         height: 100%;
         z-index: 3;
         position: fixed;
@@ -82,6 +86,7 @@
         /* overflow-x: visible;
         overflow-y: hidden; */
     }
+  
     .NavShow{
         transform: translateX(00px);
 

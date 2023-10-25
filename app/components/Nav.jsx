@@ -84,64 +84,72 @@ const Nav = ({responsive}) => {
         };
     };
     const navBar = (
-        <nav className={`${styles.NavLeft} ${showNavBar? styles.NavShow:''}`}>
-            {!responsive.desktopDesign&&<FormSearch/>}
-            <ul className={styles.listTitles}>
-                <li>
-                    {/* NAVIGATION */}
-                    <h2 className={styles.titleCategoryListItem}>navigation</h2>
-                    <ul className={styles.listItems}>
-                        <li className={styles.linkOnNav}><Link href={"/"} >🏠 Accueil</Link></li>
-                        <li onClick={()=>handle("all", "tag")} className={styles.linkOnNav}>
-                            <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
-                        </li>
-                        <li className={styles.linkOnNav}>Catégories</li>
-                        <li className={styles.linkOnNav}>Comparaisons </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 className={styles.titleCategoryListItem}>classements</h2>
-                    <ul className={styles.listItems}>
-                        <li>
-                            <ul>
-                                <li onClick={()=>setMoinsCher(!moinsCher)} className={styles.linkOnNav}>PC portable moins chers</li>
-                                {moinsCher && 
-                                <>
-                                    <li onClick={()=>handle(500, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 500€</p></li>
-                                    <li onClick={()=>handle(1000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 1000€</p></li>
-                                    <li onClick={()=>handle(2000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 2000€</p></li>
-                                </>
-                                }
+        <div className={`${styles.ContainerNavLeft} ${showNavBar? styles.NavShow:''}`}>
+            <nav className={`${styles.NavLeft}`}>
+                {!responsive.desktopDesign&&<FormSearch/>}
+                <ul className={styles.listTitles}>
+                    <li>
+                        {/* NAVIGATION */}
+                        <h2 className={styles.titleCategoryListItem}>navigation</h2>
+                        <ul className={styles.listItems}>
+                            <li className={styles.linkOnNav}><Link href={"/"} >🏠 Accueil</Link></li>
+                            <li onClick={()=>handle("all", "tag")} className={styles.linkOnNav}>
+                                <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
+                            </li>
+                            <li className={styles.linkOnNav}>Catégories</li>
+                            <li className={styles.linkOnNav}>Comparaisons </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 className={styles.titleCategoryListItem}>classements</h2>
+                        <ul className={styles.listItems}>
+                            <li>
+                                <ul>
+                                    <li onClick={()=>setMoinsCher(!moinsCher)} className={styles.linkOnNav}>PC portable moins chers</li>
+                                    {moinsCher && 
+                                    <>
+                                        <li onClick={()=>handle(500, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 500€</p></li>
+                                        <li onClick={()=>handle(1000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 1000€</p></li>
+                                        <li onClick={()=>handle(2000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 2000€</p></li>
+                                    </>
+                                    }
 
-                            </ul>
-                        </li>
-                        <li><p className={styles.linkOnNav}>PC portable Gaming</p></li>
-                        <li><p className={styles.linkOnNav}>PC portable Bureau</p></li>
-                        <li onClick={()=>handle("all", "tag")} ><Link href={urlPcPortable} className={styles.linkOnNav}>Tous les PC portable</Link></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 className={styles.titleCategoryListItem}>contact</h2>
-                    <ul className={styles.listItems}>
-                        <li className={styles.linkOnNav}>
-                            À propos 
-                        </li>
-                        <li className={styles.linkOnNav}>
-                            Contact  
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                                </ul>
+                            </li>
+                            <li><p className={styles.linkOnNav}>PC portable Gaming</p></li>
+                            <li><p className={styles.linkOnNav}>PC portable Bureau</p></li>
+                            <li onClick={()=>handle("all", "tag")} ><Link href={urlPcPortable} className={styles.linkOnNav}>Tous les PC portable</Link></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 className={styles.titleCategoryListItem}>contact</h2>
+                        <ul className={styles.listItems}>
+                            <li className={styles.linkOnNav}>
+                                À propos 
+                            </li>
+                            <li className={styles.linkOnNav}>
+                                Contact  
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </nav>
             {!responsive.desktopDesign?<div onClick={()=>toggleShowNav()} className={styles.btnNavBarForMobile}><p>{showNavBar?"<<":">>"}</p></div>:""}
-            
-        </nav>
+        </div>
     );
     const toggleShowNav = () => {
         setshowNavBar(!showNavBar);
     };
+    const dontShowNav = ()=> { //voir si utilisation
+        setshowNavBar(false);
+    }
+    const showNav = ()=> { //voir si utilisation
+        setshowNavBar(true);
+    }
     return (
         <>
             {navBar}
