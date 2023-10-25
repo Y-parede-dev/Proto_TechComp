@@ -134,3 +134,23 @@ table.tablecute {
 .suggestions{
   grid-area: suggestion;
 }
+
+@media screen and (max-width:1369px) {
+  .product_card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:  "image"
+                          "array"
+                          "hr"
+                          "note"
+                          "carac"
+                          "hr2"
+                          "pointsCles"
+                          "hr3"
+                          "suggestion"
+                          "hr4"
+                          ;
+    padding: 25px 10px;
+  }
+  
+}

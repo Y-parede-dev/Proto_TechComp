@@ -59,3 +59,12 @@
 .closeVideo * {
     fill: white;
 }
+
+@media screen and (max-width:1369px) {
+    .imageContainer {
+        flex-direction: column-reverse;
+    }
+    .imagesList{
+        flex-direction: row;
+    }
+}

@@ -226,7 +226,10 @@ div.affilizz-cta > a {
         overflow-x: hidden;
         align-items: center;
     }
+    .listItemsResult{
 
+        grid-template-columns: 1fr;
+    }
     .arrows{
         display: none;
     }

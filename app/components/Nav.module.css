@@ -42,11 +42,11 @@
 }
 .linkOnNav{
 
-   color: var(--color-hover); 
-   /* padding: 25px; */
-   margin-left: 13px;
-   border-radius: 0;
-   transition-duration: 250ms;
+    color: var(--color-hover); 
+    /* padding: 25px; */
+    margin-left: 13px;
+    border-radius: 0;
+    transition-duration: 250ms;
 }
 .linkOnNav:hover{
     background: var(--color-hover);
