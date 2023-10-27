@@ -5,7 +5,7 @@ import styles from './Header.module.css'
 const Header = ({responsive}) => {
     return (
         <header className={styles.header}>
-            <p className={styles.title}><Link className={styles.tilteLink} href='/'><span className={styles.title_first_letter}>tech</span><span className={styles.title_second_letter}>C</span>omparateur</Link></p>
+            <p className={styles.title}><Link className={styles.tilteLink} href='/'><span className={styles.title_first_letter}>itech</span><span className={styles.title_second_letter}>C</span>omparateur</Link></p>
             {responsive.desktopDesign?
                 <>
                     <FormSearch />
