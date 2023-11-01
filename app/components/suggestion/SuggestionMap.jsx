@@ -286,7 +286,8 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                         <h4>{produitElt.title}</h4>
                         <Notation produit={produitElt} param={produitElt.usage}/>
                         <PointsCles produit={produitElt} param={produitElt.usage}/>
-                        <p className={styles.prix}>{produitElt.prix}€</p>
+                        <div className={styles.prix}> <p className={styles.prixMin}>à partir de</p> <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={produitElt.btn.publicationContentId} loading="lazy"></affilizz-rendering-component></div>
+
                     </li>
                 </Link>
                 ])

@@ -8,6 +8,7 @@ import { SearchCTX } from '../context/SearchCTX'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import TestFont from './Tests/TestFont/TestFont'
 // import { useClient } from 'next/client';
 
 export const metadata = {
@@ -48,6 +49,8 @@ const Body = ({children}) => {
         <>
             <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT}} >
                 <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
+                <TestFont/>
+                
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
                     <Link href='https://www.acer.com'>
