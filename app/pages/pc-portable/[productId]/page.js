@@ -16,8 +16,9 @@ import SuggestionMap from '@/app/components/suggestion/SuggestionMap'
 import PointsCles from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles'
 import GetByJson from '@/lib/GetByJson'
 
-const data = GetByJson()
+import {SaveFav} from '@/app/cookies/favorisStorage'
 
+const data = GetByJson()
 
 export async function generateMetadata({ params }) {
   let recTitleDesc = {}
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }) {
     description:recTitleDesc.description
   }
 }
+
 const ProductPage = ({params}) => {
   let produit ={}
   data.map(e=>{

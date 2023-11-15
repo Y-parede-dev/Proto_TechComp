@@ -7,11 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: static;
     width: 100%;
     top: 0;
     right: 0;
-    position: fixed;
     z-index: 999;
     height: max-content;
     background: rgba(11, 11, 11, 0.934);
@@ -52,28 +51,7 @@
     font-size: 2rem;
     color: white;
 }
-.button{
-    cursor: pointer;
 
-    margin: 8px;
-    bottom: 0;
-    width: 250px;
-    height: 50px;
-    background: #f0efef;
-    z-index: 1999;
-    font-weight: 700;
-    font-size: 2rem;
-    border: none;
-    box-shadow: 0 0 12px -4px black;
-    transition-duration: 250ms;
-
-}
-.button:hover{
-    color: white;
-    border-radius: 20px;
-    font-size: 2.2rem;
-    background: rgb(245, 2, 2);
-}
 .Arimo{
     font-family: 'Arimo', sans-serif!important;
 }
@@ -100,8 +78,11 @@
 }
 
 .e{
+    /* transform: translateY(-294px); */
     transform-origin: top right;
-    transform: translateY(-294px);
+    right: 100%;
+    position: relative;
+
     width: 260px;
     right: 0;
     
@@ -113,4 +94,7 @@
 .e .button:hover {
 
     background: rgba(49, 49, 222, 0.57);
+}
+.e h2, .e ul{
+    display: none;
 }

@@ -5,17 +5,20 @@
 /* --color-second: #EE3900; */
 /* --color-third: #ffa500; */
 
-/*higt tech*/
-  --color-third: #a9a9a9;
+  --default-txt: #000;
+  --color-txt-second:var(--default-txt);
+  --color-third: #393939;
   --color-first: #1a1a1a;
   --color-second: #337AB7;
-  --color-hover :var(--color-second);/*#337AB7*/
+  --color-hover :#5EB1EF;/*#337AB7*/
   
-  --color-titles-nav: #3b3a3a;
-
-  --default-txt: #000;
   --color-back:#fff;
+  --color-titles-nav: var(--color-back);
+
   --color-back-main:#F0F3F7;
+
+  --color-back-cards: #fff;
+
   --color-border-first:#dee2e6;
 
   --color-back-scrollbar-main: #F0F3F7;
@@ -132,6 +135,7 @@ body{
   right: 0;
   top: 77px;
   width: 5px;
+  min-height: 100%;
 }
 
 /* Track

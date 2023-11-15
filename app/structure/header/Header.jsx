@@ -1,5 +1,5 @@
 import Link from "next/link"
-import FormSearch from "./clientComponents/FormSearch"
+import FormSearch from "../../components/clientComponents/FormSearch"
 import styles from './Header.module.css'
 // refactor a faire
 const Header = ({responsive}) => {

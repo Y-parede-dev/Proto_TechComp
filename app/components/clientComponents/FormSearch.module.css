@@ -35,7 +35,7 @@ svg.iconClear:hover{
 }
 .label_search{
     cursor: auto;
-    color: var(--color-first);
+    color: var(--color-third);
     opacity: .3;
     top: calc(50% - 9.5px);
     position: absolute;
@@ -51,7 +51,7 @@ svg.iconClear:hover{
 .input_search{
     font-size: 1.1rem;
     font-weight: 300;
-    color: var(--color-first);
+    color: var(--default-txt);
     background: transparent;
     height: 100%;
     width: 100%;
@@ -67,7 +67,7 @@ svg.iconClear:hover{
 }
 @media screen and (max-width:1365px) {
     .formSearch {
-        padding: 50px 0;
+        padding: 38px 0 0;
     }
     .form_item{
     width: 235px;

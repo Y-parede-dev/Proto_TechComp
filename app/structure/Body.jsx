@@ -1,14 +1,16 @@
 "use client"
 import styles from './Body.module.css'
 // refactor a faire
-import Header from './Header'
-import Footer from './Footer'
-import Nav from './Nav'
+import Header from './header/Header'
+import Footer from './footer/Footer'
+import Nav from './navigation/Nav'
 import { SearchCTX } from '../context/SearchCTX'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import TestFont from './Tests/TestFont/TestFont'
+import { Test as Tests } from '../components/Tests/Tests'
+import { FavExist } from '../cookies/favorisStorage'
+
 // import { useClient } from 'next/client';
 
 export const metadata = {
@@ -32,12 +34,16 @@ export const metadata = {
 const Body = ({children}) => {
     
     const [SEARCH, setSEARCH] = useState("")
+    const [NUMBERFAVACTUAL, setNUMBERFAVACTUAL] = useState(0)
     const [TAG, setTAG] = useState("")
     const [IDPRESENT, SETIDPRESENT] = useState(false)
 
     const [widthScreen, setwidthScreenCss] = useState(0)
     const [desktopDesign, setDesktopDesign] = useState(true);
 
+    useEffect(()=>{
+        FavExist()
+    },[])
     useEffect(()=>{
         if(SEARCH.length > 0){
             SETIDPRESENT(true)
@@ -47,9 +53,9 @@ const Body = ({children}) => {
     },[TAG])
     return (
         <>
-            <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT}} >
+            <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT, NUMBERFAVACTUAL, setNUMBERFAVACTUAL}} >
                 <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
-                <TestFont/>
+                <Tests/>
                 
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>

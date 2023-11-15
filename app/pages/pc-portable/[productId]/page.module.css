@@ -26,11 +26,11 @@
                         "hr4 hr4"
                         ;
   padding: 10px 25px;
-  background: var(--color-back);
+  background: var(--color-back-cards);
   /* border: solid 1px; */
   border-radius: 22px;
   box-shadow: 0 0 10px -6px black ;
-  flex-direction: row;
+  gap: 0.8rem;
 }
 .product_card_title{
   padding: 3rem 0;

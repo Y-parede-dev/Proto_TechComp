@@ -4,7 +4,7 @@
   padding: 25px;
   font-size: 1.7rem;
   font-weight: 600;
-  color: orange;
+  color: var(--default-txt);
   margin: auto;
 }
 

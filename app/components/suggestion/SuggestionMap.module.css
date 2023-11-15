@@ -34,8 +34,10 @@
     font-size: 1.5rem;
     border: solid 1px rgba(0,0,0,.1);
     border-radius: 12px;
+    opacity: 0.3;
 }
 .arrows button:hover{
+    opacity: 0.9;
     background: var(--color-first);
     color: var(--color-back);
 }
@@ -53,7 +55,7 @@
 }
 .litsItemCarroussel{
     position: relative;
-    background: var(--color-back);
+    background: var(--color-back-cards);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,8 +191,9 @@
 }
 .spanFoundBy {
     font-weight: 600;
+    cursor: pointer;
 }
-.listFoundBy {
+.listFoundBy{
     top: 45px;
     left: 4px;
     z-index: 2;
@@ -204,11 +207,14 @@
     border: solid rgba(0,0,0,.2) 1px ;
     gap: .5rem;
 }
-.listFoundBy > li {
+.listFoundByNote{
+    left: 70px;
+}
+.listFoundBy > li{
     padding: 10px;
     border-radius: 15px;
 }
-.listFoundBy > li:hover {
+.listFoundBy > li:hover{
     background: rgba(231,231,231,1);
 }
 

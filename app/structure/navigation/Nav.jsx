@@ -1,18 +1,21 @@
 "use client";
 import Link from 'next/link';
 import styles from './Nav.module.css';
-import FormSearch from './clientComponents/FormSearch';
+import FormSearch from '../../components/clientComponents/FormSearch';
 import { useContext, useState, useEffect} from 'react';
-import { SearchCTX } from '../context/SearchCTX';
+import { SearchCTX } from '../../context/SearchCTX';
 import { ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
 import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/NoRepeat';
+import Cookies from 'js-cookie';
 // refactor a faire
 const Nav = ({responsive}) => {
-    // const [widthScreen, setwidthScreenCss] = useState(0)
-    // const [desktopDesign, setDesktopDesign] = useState(true);
-   console.log(responsive)
+   
+    // let t = Cookies.get('Favoris')
+    // console.log(t)
+    const [numberOfFav, setnumberOfFav] = useState(0);
+    const [DifNumberFav, setDifNumberFav] = useState(false);
     const [inptUser, setinptUser] = useState([]);
     const [by, setBy] = useState("");
     const [moinsCher,setMoinsCher] = useState(false);
@@ -20,6 +23,8 @@ const Nav = ({responsive}) => {
     const [pcBureau,setPcBureau] = useState(false);
     const [PcMarque,setPcMarque] = useState(false);
     const [showNavBar, setshowNavBar] = useState(false);
+    
+       
 
     const router = useRouter();
     const [sea,setSea] = useState(false);
@@ -33,7 +38,12 @@ const Nav = ({responsive}) => {
     }catch(err){
         
     };
-
+        useEffect(()=>{
+            if(localStorage.getItem('favoris')!=null){
+                const nombreFav = localStorage.getItem('favoris').split(',').length 
+                CTX.setNUMBERFAVACTUAL(nombreFav)
+            }
+        }, [CTX])
     useEffect(()=>{
         responsive.setwidthScreenCss(screen.width);
     },[]);
@@ -54,14 +64,11 @@ const Nav = ({responsive}) => {
             if(by==="tag"){
                 [idPresent, DATA] = ProductSearchByTag({searchTags:[inptUser]});
                 syntax = [inptUser];
-                // console.log(syntax)
-                // console.log(idPresent)
+
             }if(by==="price"){
                 [idPresent, DATA] = ProductSearchByPrice({searchPrice: inptUser, CTX});
                 syntax = inptUser;
             }
-            console.log(typeof(syntax));              
-            console.log((syntax));              
             CTX.setTAG(syntax);
             idPresent = FilterNoRepeat(idPresent);
             CTX.setSEARCH(idPresent);
@@ -79,9 +86,6 @@ const Nav = ({responsive}) => {
         setSea(true);
         setBy(by);
         setinptUser(input);
-        if(by!=="tag"){
-            router.push(`/pages/pc-portable`);
-        };
     };
     const navBar = (
         <div className={`${styles.ContainerNavLeft} ${showNavBar? styles.NavShow:''}`}>
@@ -93,11 +97,13 @@ const Nav = ({responsive}) => {
                         <h2 className={styles.titleCategoryListItem}>navigation</h2>
                         <ul className={styles.listItems}>
                             <li className={styles.linkOnNav}><Link href={"/"} >🏠 Accueil</Link></li>
-                            <li onClick={()=>handle("all", "tag")} className={styles.linkOnNav}>
+                            <li onClick={()=>handle("pc portable", "tag")} className={styles.linkOnNav}>
                                 <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
                             </li>
                             <li className={styles.linkOnNav}>Catégories</li>
                             <li className={styles.linkOnNav}>Comparaisons </li>
+                            <li className={styles.linkOnNav}>
+                                <Link href={"/pages/favoris"}>Favoris ⭐({CTX.NUMBERFAVACTUAL})</Link></li>
                         </ul>
                     </li>
                     <li>
@@ -105,23 +111,22 @@ const Nav = ({responsive}) => {
                         <ul className={styles.listItems}>
                             <li>
                                 <ul>
-                                    <li onClick={()=>setMoinsCher(!moinsCher)} className={styles.linkOnNav}>PC portable moins chers</li>
+                                    <li onClick={()=>setMoinsCher(!moinsCher)} className={styles.linkOnNav}>
+                                        <Link href={" "}>PC portable moins chers</Link></li>
                                     {moinsCher && 
                                     <>
-                                        <li onClick={()=>handle(500, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 500€</p></li>
-                                        <li onClick={()=>handle(1000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 1000€</p></li>
-                                        <li onClick={()=>handle(2000, "price")}><p className={`${styles.linkOnNav} ${styles.onPriceLink}`}>moins de 2000€</p></li>
+                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(500, "price")}><Link href={urlPcPortable}>moins de 500€</Link></li>
+                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(1000, "price")}><Link href={urlPcPortable}>moins de 1000€</Link></li>
+                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(2000, "price")}><Link href={urlPcPortable}>moins de 2000€</Link></li>
                                     </>
                                     }
 
                                 </ul>
                             </li>
-                            <li><p className={styles.linkOnNav}>PC portable Gaming</p></li>
-                            <li><p className={styles.linkOnNav}>PC portable Bureau</p></li>
-                            <li onClick={()=>handle("all", "tag")} ><Link href={urlPcPortable} className={styles.linkOnNav}>Tous les PC portable</Link></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li className={styles.linkOnNav}><Link href={urlPcPortable}>PC portable Gaming</Link></li>
+                            <li className={styles.linkOnNav}><Link href={urlPcPortable}>PC portable Bureau</Link></li>
+                            <li className={styles.linkOnNav} onClick={()=>handle("pc portable", "tag")}><Link href={urlPcPortable}>Tous les PC portable</Link></li>
+                            
                         </ul>
                     </li>
                     <li>

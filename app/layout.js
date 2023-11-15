@@ -1,6 +1,6 @@
 import './globals.css'
 import Script from 'next/script'
-import Body from './components/Body'
+import Body from './structure/Body'
 // refactor a faire
 const RootLayout = ({children}) => {
   return (

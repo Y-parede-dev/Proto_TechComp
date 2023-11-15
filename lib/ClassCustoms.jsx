@@ -4,3 +4,9 @@ export class Font {
         this.className = className;
     };
 };
+export class Color {
+    constructor(name, hexa) {
+        this.name = name;
+        this.hexa = hexa;
+    };
+};

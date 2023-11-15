@@ -12,11 +12,12 @@
     text-decoration: none;
     color: white;
 }
+
 .linkFooter:hover > a{
     text-decoration: underline;
 }
-.txtFooter{
-
+.txtFooter p{
+    color: white;
 }
 .linkFooter, .txtFooter{
     display: flex;

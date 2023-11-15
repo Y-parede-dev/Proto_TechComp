@@ -1,5 +1,5 @@
 "use client"
-import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByNoteGaming} from "@/lib/ProductSearch"
+import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByNoteGaming, ProductSearchById} from "@/lib/ProductSearch"
 import styles from "./SuggestionMap.module.css"
 import Image from 'next/image'
 import Notation from "../clientComponents/Notation"
@@ -13,16 +13,15 @@ import { FilterNoRepeat } from "@/lib/NoRepeat"
 
 const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre recherche'})=> {
     const CTX = useContext(SearchCTX)
-    const [modaleOpen,setModaleOpen]= useState(false)
-    const [modaleOpenMarque,setModaleOpenMarque]= useState(false)
-    // const [modaleOpen,setModaleOpen]= useState(false)
-    // const [modaleOpen,setModaleOpen]= useState(false)
-    const [value,setValue]= useState(5000)
     const scrollElement = useRef(null)
     const keyElt = useRef()
-
-    let ids = CTX.SEARCH
-    let searchTags = CTX.TAG
+    // let [ids, data]
+    let ids, data;
+    // // let searchTags = CTX.TAG
+    let searchTags=[searchSepar]
+    let searchId = searchSepar;
+    console.log(searchId)
+    // console.log(searchSepar.split(','))
 
     const scrollOnX = (direction) => {
         if(direction === 'left'){
@@ -31,14 +30,22 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             scrollElement.current.scrollLeft += 315
         }
     }
+    console.log(by)
+    if(by=="tag"){
+        // console.log(searchSepar)
+        [ids, data] = ProductSearchByTag({searchTags})
+    }
+    // useEffect(()=>{
+    if(by=="id"){
 
-    if(page!=='pcPortable'){
-        searchTags=[searchSepar]
+        [ids, data] = ProductSearchById({searchId, CTX})
+        // ids=searchId
+        console.log(searchId)
+        console.log(data[0])
     }
-    let [idPresent, data] = ProductSearchByTag({searchTags})
-    if(page!=='pcPortable'){
-        ids=idPresent
-    }
+    // },[searchId])
+    
+    console.log(data)
     function isEmpty(obj) {
         return Object.keys(obj).length === 0;
     }
@@ -59,230 +66,19 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
         let searchPrice=newValue
         ProductSearchByPrice({searchPrice, CTX})
     }
-    const Content = ({params}) => {
-        if(params.value=='prix'){
-            return(
-                modaleOpen&&
-                <div className={styles.contentBtn}>
-                    <div className={styles.childCtBtn}>
-                        <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-                            <Slider valueLabelDisplay="auto" min={100} max={5000} aria-label="Prix" value={value} onChange={handleChange} />
-                        </Stack>
-                    
-                        <p>{value}€</p>
-                    </div>
-                </div>
-            )
-        }
-        if(params.value=="marque"){
-            const [select, setSelect] = useState(false)
     
-            const changeResult = (e, elt) => {
-                let searchTags = [elt]
-                const [id, nothing] = ProductSearchByTag({searchTags})
-                CTX.setSEARCH(id)
-                CTX.setTAG(searchTags)
-                e.target.classList.add(styles.t)
-                setSelect(true)
-            }
-            let arrTemp = []
-            let v = 0
-            data.map((prod)=>{
-                arrTemp.push(prod.marque)
-                arrTemp = FilterNoRepeat(arrTemp)
-            })
-            return(
-                modaleOpenMarque&&
-                <div className={styles.contentBtn}>
-                    <ul className={`${styles.listMarquesSearch} ${styles.childCtBtn}`}>
-                    {arrTemp.map((elt)=>[
-                        <li key={elt} onClick={(e)=>changeResult(e,elt)}>{elt}</li>
-                    ])}
-                    </ul>
-                </div>
-            )
-        }
-    };
-    const ButonSearch = ({params}) => { // cres un fichier pour cette fonction
-        const styleBtnBold = {
-            fontWeight:`700`
-        }
-        const styleBtn = {
-            fontWeight:`300`
-        }
-        
-        return(
-            <div>
-                <ul>
-                    <li className={styles.btn} style={{ height: `max-content`}}>
-                        <button onClick={()=>openCloseModale(params.value)} value={params.value}>
-                            {params.value}
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        )
-    }
-    const openCloseModale = (value) => { // cres un fichier pour cette fonction
-        switch(value){
-            case "prix":
-                setModaleOpen(!modaleOpen)
-                setModaleOpenMarque(false)
-            break;
-            case "marque":
-                setModaleOpenMarque(!modaleOpenMarque)
-                setModaleOpen(false)
-            break;
-            default:
-                setModaleOpenMarque(false)
-                setModaleOpen(false)
-            break;
-        }
-    }
-    const FoundBy = () => { // cres un fichier pour cette fonction
-
-        const [modal,setModal] = useState(false)
-        const [order,setOrder] = useState("Note gaming")
-        const byOrder = (e) => {
-            setOrder(e.target.textContent)
-        }
-        useEffect(()=>{
-            // if(modal){console.log(CTX)}
-            
-            let arrTemp = []
-            if(CTX.IDPRESENT){
-                data.map((produit)=>{
-                    CTX.SEARCH.map(idOnCtx=>{
-                        if(idOnCtx === produit.id){
-                            arrTemp.push({id:produit.id, note:produit.noteDesc.int})
-                            
-                        }
-                    })
-                })
-            }
-            console.log("arrtemp BEFORE!", arrTemp)
-
-            arrTemp.sort((a,b)=> b.note - a.note)
-            const arrTempR=[]
-            arrTemp.map((elt)=>{
-                arrTempR.push(elt.id)
-            })
-            // console.log(arrTempR)
-            // CTX.setSEARCH(arrTempR)
-
-            setModal(false)
-        },[order])
-        return(
-            <div className={styles.contentModalFound}>
-                <p className={styles.triezPar} onClick={()=>setModal(!modal)}>triez par:<span className={styles.spanFoundBy}> {order}</span>
-                </p>
-                {modal&&
-                <ul className={styles.listFoundBy}>
-                    <li onClick={(e)=>byOrder(e)}>Note gaming</li>
-                    <li onClick={(e)=>byOrder(e)}>Note bureau</li>
-                    <li onClick={(e)=>byOrder(e)}>Prix croisant</li>
-                    <li onClick={(e)=>byOrder(e)}>Prix décroisant</li>
-                </ul>
-                }
-            </div>
-        )
-    }
-    // if(page==='pcPortable'){
-    //     return(
-    //         <div className={styles.resultSearchContainer}>
-    //             {CTX.TAG && 
-    //             <>
-    //                 <h2 className={styles.resultSearchTitle}>Comparatif pc portable
-    //                     <span className={styles.titleDynSearch}>
-                        
-    //                     { 
-    //                         typeof(CTX.TAG)==="number"?
-    //                         <span className={styles.spanTagsTitle}> {` à moins de  ${CTX.TAG}€ `} </span>
-    //                         :
-    //                         <>
-    //                         {
-    //                             <>
-    //                                 {` pour: "`}
-    //                                 {CTX.TAG.map(tag=>[
-    //                                     tag==" " || tag==""?<></>:
-    //                                         <span className={styles.spanTagsTitle}>
-    //                                             {CTX.TAG.findLast(()=>tag)?
-    //                                             <>{` ${tag}`}</>:
-    //                                             <>{` ${tag} - `}</>
-    //                                             }
-    //                                         </span>
-    //                                 ])}
-    //                                 {`"`}
-    //                             </>
-    //                         }
-    //                         </>
-    //                         }
-                            
-    //                     </span>
-    //                 </h2>
-                    
-    //                 <p>Tous les pc portable 
-    //                     {
-    //                     typeof(CTX.TAG)==="number"?
-    //                     <span className={styles.spanTags}>{` à moins de ${CTX.TAG}€`} </span>:
-    //                     CTX.TAG.map(tag=>[
-    //                     tag==" " || tag==""?<></>:
-                        
-    //                     <span className={styles.spanTags}>{` ${tag},`} </span> ])}
-                    
-    //                 </p>
-    //             </>
-    //             }
-
-                
-    //             <div className={styles.resultSearchContainerListItems}>
-    //                 <h3>{titreRecherche}</h3>
-    //                 <div className={styles.btnContainer}>
-    //                     <ButonSearch params={{value:"prix"}}/>
-    //                     <ButonSearch params={{value:"marque"}}/>
-    //                 </div>
-    //                 <>
-    //                     <Content params={{value:"prix"}}/>
-    //                     <Content params={{value:"marque"}}/>
-    //                 </>
-    //                 <>
-    //                     <FoundBy/>
-    //                 </>
-    //                 <ul className={styles.listItemsResult}>
-    //                     {data.map(produitElt=> [
-    //                         ids.map(idSearchReturn=>[
-    //                             produitElt.id==idSearchReturn&&
-    //                             <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
-    //                                 <li className={styles.litsItemCarroussel}>
-    //                                     <Image alt={`Produit de la marque: ${produitElt.marque} `} width={200} height={200} src={produitElt.images[0]}/>
-    //                                     <h4>{produitElt.title}</h4>
-    //                                     <Notation produit={produitElt} param={produitElt.usage}/>
-    //                                     <PointsCles produit={produitElt} param={produitElt.usage}/>
-    //                                     <p className={styles.prix}>{produitElt.prix}€</p>
-    //                                     <p>test: 
-    //                                         {
-    //                                         /* <affilizz-rendering-component publication-content-id={produitElt.btn.publicationContentId} loading={produitElt.loading}></affilizz-rendering-component> */}
-    //                                         </p>
-    //                                 </li>
-    //                             </Link>
-    //                         ])
-    //                     ])}
-    //                 </ul>
-    //             </div>
-    //         </div>
-    //     )
-    // }
+    // 
     return(
     <div className={styles.suggestions}>
         <div className={styles.containerListOtherItems}>
             <h3>{titreRecherche}</h3>
             <ul className={styles.listCarroussel} ref={scrollElement}>
-            {data.map(produitElt=> [
-                ids.map(idSearchReturn=>[
+            {data&&data.map(produitElt=> [
+                ids&&ids.map(idSearchReturn=>[
                 produitElt.id==idSearchReturn&&
                 <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
                     <li className={styles.litsItemCarroussel}>
-                        <Image  alt={`Produit de la marque: ${produitElt.marque} `} width={200} height={200} src={produitElt.images[0]}/>
+                        <Image  alt={`Produit de la marque: ${produitElt.brand} `} width={200} height={200} src={produitElt.images[0]}/>
                         <h4>{produitElt.title}</h4>
                         <Notation produit={produitElt} param={produitElt.usage}/>
                         <PointsCles produit={produitElt} param={produitElt.usage}/>

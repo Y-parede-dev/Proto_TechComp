@@ -16,6 +16,7 @@
     width: 100%;
     position: absolute;
     background: url(https://www.laptopspirit.fr/wp-content/uploads/new/2023/09/acer30s.png) no-repeat scroll center top transparent;
+    background-size: 100% 100%;
     background-color: var(--color-first);
 }
 .content {

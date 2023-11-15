@@ -9,7 +9,7 @@
     margin: 0;
     max-width: 500px;
     border-right: 1px solid var(--color-border-first);
-    
+
 }
 .NavLeft{
     padding: 0 18px;
@@ -20,14 +20,15 @@
     list-style: none;
 }
 .NavLeft>ul>li{
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 .titleCategoryListItem{
     font-size: 1.2rem;
     color: var(--color-titles-nav);
     text-transform: uppercase;
     font-weight: 800;
-    background: var(--color-third);/*rgba(142,142,142,1);*/
+    /* background: var(--color-third); */
+    background: var(--default-txt);
     border-radius: 22px;
     max-width: fit-content;
     padding: 8px 15px;
@@ -36,41 +37,57 @@
 }
 .listTitles {
     padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    height:100%
 }
 .listItems > li {
-    padding: 25px;
-    width: fit-content;
+    padding: 25px 8px 0;
+}
+.listItems, .listItems ul{
+    padding: 6px 0;
 }
 .listItems a {
     text-decoration: none;
+    width: fit-content;
+    padding: 10px;
 }
 .linkOnNav{
+    /* margin-left: 13px; */
+    color: var(--default-txt);
+    /* color: var(--color-txt-second);  */
+}
+.linkOnNav a{
+    color: var(--default-txt);
 
-    color: var(--color-hover); 
+    /* color: var(--color-txt-second);  */
+
+    /* color: var(--color-hover);  */
     /* padding: 25px; */
-    margin-left: 13px;
     border-radius: 0;
     transition-duration: 250ms;
 }
-.linkOnNav:hover{
-    background: var(--color-hover);
-    color: var(--color-third);
+.linkOnNav a:hover{
+    background: var(--color-txt-second);
+    color: var(--color-back);
     border-radius: 38px;
-    
+
 }
 /* .linkOnNav a {
     padding: 25px;
 } */
 .onPriceLink{
-    padding-left: 40px;
+    padding: 15px 0 0px 20px;
 }
 
 @media screen and (max-width:1369px) {
     .btnNavBarForMobile{
         position: absolute;
-        right: -49.4px;
+        right: -52.4px;
         top:86px;
-        z-index: 10;
+        z-index: -2;
         background: white;
         padding: 18.5px 22px 18.5px 10px ;
         border: 1px solid var(--color-border-first);
@@ -78,7 +95,7 @@
         border-radius: 0 25px 25px 0;
     }
     .ContainerNavLeft{
-        height: 100%;
+        height: calc(100%- var(--height-header));
         z-index: 3;
         position: fixed;
         transform: translateX(-100%);
@@ -91,7 +108,7 @@
         transform: translateX(00px);
 
     }
-    
+
 
     .NavLeft:hover{
 

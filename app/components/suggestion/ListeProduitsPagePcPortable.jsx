@@ -1,28 +1,29 @@
 "use client"
 // refactor a faire
-import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByBrand, ProductSearchByNoteGaming} from "@/lib/ProductSearch";
+import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByPriceInOrder, ProductSearchByPriceInDisorder,ProductSearchByBrand, ProductSearchByNoteGaming} from "@/lib/ProductSearch";
 import styles from "./SuggestionMap.module.css";
 import Image from 'next/image';
 import Notation from "../clientComponents/Notation";
 import PointsCles from "../../pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles";
 import Link from "next/link";
-import { useEffect, useState, useContext, useRef } from "react";
+import { useEffect, useState, useContext, useRef, use } from "react";
 import { SearchCTX } from "@/app/context/SearchCTX";
 import { Modal, Slider } from '@mui/material';
 import {Stack} from '@mui/material';
 import { FilterNoRepeat } from "@/lib/NoRepeat";
 
-const ListeProduitsPagePcPortable = ({searchSepar, page, by = "tag", titreRecherche='votre recherche'})=> {
+const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherche='votre recherche'})=> {
     const CTX = useContext(SearchCTX);
-    const [modaleOpen,setModaleOpen]= useState(false);
+    const [modaleOpenPrix,setModaleOpenPrix]= useState(false);
     const [modaleOpenMarque,setModaleOpenMarque]= useState(false);
-
+    let idPresent, data
     const [value,setValue]= useState(5000);
     
     let ids = CTX.SEARCH ;
     let searchTags = CTX.TAG;
-
-    let [idPresent, data] = ProductSearchByTag({searchTags});
+    if(by =="tag"){
+        [idPresent, data] = ProductSearchByTag({searchTags});
+    }
     function isEmpty(obj) {
         return Object.keys(obj).length === 0;
     };
@@ -46,7 +47,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by = "tag", titreRecher
     const Content = ({params}) => {
         if(params.value=='prix'){
             return(
-                modaleOpen&&
+                modaleOpenPrix&&
                 <div className={styles.contentBtn}>
                     <div className={styles.childCtBtn}>
                         <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
@@ -110,64 +111,111 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by = "tag", titreRecher
     const openCloseModale = (value) => { // cres un fichier pour cette fonction
         switch(value){
             case "prix":
-                setModaleOpen(!modaleOpen);
+                setModaleOpenPrix(!modaleOpenPrix);
                 setModaleOpenMarque(false);
             break;
             case "marque":
                 setModaleOpenMarque(!modaleOpenMarque);
-                setModaleOpen(false);
+                setModaleOpenPrix(false);
             break;
             default:
                 setModaleOpenMarque(false);
-                setModaleOpen(false);
+                setModaleOpenPrix(false);
             break;
         };
     };
     const FoundBy = () => { // cres un fichier pour cette fonction
         
         const [modal,setModal] = useState(false);
-        const [order,setOrder] = useState("Note gaming");
+        const [modalNote,setModalNote] = useState(false);
+        const [byNote, setbyNote] = useState(false);
+        const [order,setOrder] = useState("Faites votre choix");
+        const [noteCat,setNoteCat] = useState("Faites votre choix")
         const byOrder = (e) => {
             setOrder(e.target.textContent);
         }
+        const byNoteChoice = (e) => {
+            setNoteCat(e.target.textContent);
+        }
         useEffect(()=>{
-            // if(modal){console.log(CTX)}
+            switch(order){
+                case "Note":
+                    setbyNote(true)
+                    return console.log("note")
+                break;
+                case 'Prix croisant':
+                    setbyNote(false)
+                    ProductSearchByPriceInOrder({searchPrice:order, CTX})
+                break;
+                case 'Prix décroisant':
+                    setbyNote(false)
+                    ProductSearchByPriceInDisorder({searchPrice:order, CTX})
+                break;
+                default:
+                    setbyNote(false)
+                    return console.log('default')
+                break;
+            }
             
-            let arrTemp = [];
-            if(CTX.IDPRESENT){
-                data.map((produit)=>{
-                    CTX.SEARCH.map(idOnCtx=>{
-                        if(idOnCtx === produit.id){
-                            arrTemp.push({id:produit.id, note:produit.noteDesc.int});
+            if(order == 'Note'){
+                // ProductSearchByPrice("croisant")
+                setbyNote(true)
+            }else{
+                setbyNote(false)
+            }
+        }, [order])
+        // useEffect(()=>{
+        //     // if(modal){console.log(CTX)}
+            
+        //     let arrTemp = [];
+        //     if(CTX.IDPRESENT){
+        //         data.map((produit)=>{
+        //             CTX.SEARCH.map(idOnCtx=>{
+        //                 if(idOnCtx === produit.id){
+        //                     arrTemp.push({id:produit.id, note:produit.noteDesc.int});
                             
-                        };
-                    });
-                });
-            };
-            // console.log("arrtemp BEFORE!", arrTemp)
+        //                 };
+        //             });
+        //         });
+        //     };
+        //     // console.log("arrtemp BEFORE!", arrTemp)
 
-            arrTemp.sort((a,b)=> b.note - a.note);
-            const arrTempR=[];
-            arrTemp.map((elt)=>{
-                arrTempR.push(elt.id);
-            });
-            // console.log(arrTempR)
-            // CTX.setSEARCH(arrTempR)
+        //     arrTemp.sort((a,b)=> b.note - a.note);
+        //     const arrTempR=[];
+        //     arrTemp.map((elt)=>{
+        //         arrTempR.push(elt.id);
+        //     });
+        //     // console.log(arrTempR)
+        //     // CTX.setSEARCH(arrTempR)
 
-            setModal(false);
-        },[order]);
+        //     setModal(false);
+        // },[order]);
         return(
             <div className={styles.contentModalFound}>
                 <p className={styles.triezPar} onClick={()=>setModal(!modal)}>triez par:<span className={styles.spanFoundBy}> {order}</span>
                 </p>
-                {modal&&
-                <ul className={styles.listFoundBy}>
-                    <li onClick={(e)=>byOrder(e)}>Note gaming</li>
-                    <li onClick={(e)=>byOrder(e)}>Note bureau</li>
-                    <li onClick={(e)=>byOrder(e)}>Prix croisant</li>
-                    <li onClick={(e)=>byOrder(e)}>Prix décroisant</li>
-                </ul>
+                <>
+                    {modal&&
+                    <ul className={styles.listFoundBy}>
+                        <li onClick={(e)=>byOrder(e)}>Note</li>
+                        <li onClick={(e)=>byOrder(e)}>Prix croisant</li>
+                        <li onClick={(e)=>byOrder(e)}>Prix décroisant</li>
+                        
+                    </ul>
+                    }
+                    {byNote&&
+                    <>
+                    <p className={styles.triezPar} onClick={()=>setModalNote(!modalNote)}> - <span className={styles.spanFoundBy}> {noteCat}</span></p>
+                    {modalNote&&
+                    <ul className={`${styles.listFoundBy} ${styles.listFoundByNote}`}>
+                        <li onClick={(e)=>byNoteChoice(e)}>Tous</li>
+                        <li onClick={(e)=>byNoteChoice(e)}>Gaming</li>
+                        <li onClick={(e)=>byNoteChoice(e)}>Bureau</li>
+                    </ul>
+                    }
+                    </>
                 }
+                </>
             </div>
         );
     };
@@ -188,7 +236,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by = "tag", titreRecher
                                 {` pour: "`}
                                 {CTX.TAG.map(tag=>[
                                     tag==" " || tag==""?<></>:
-                                        <span className={styles.spanTagsTitle}>
+                                        <span key={tag} className={styles.spanTagsTitle}>
                                             {CTX.TAG.findLast(()=>tag)?
                                             <>{` ${tag}`}</>:
                                             <>{` ${tag} - `}</>
@@ -211,7 +259,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by = "tag", titreRecher
                     CTX.TAG.map(tag=>[
                     tag==" " || tag==""?<></>:
                     
-                    <span className={styles.spanTags}>{` ${tag},`} </span> ])}
+                    <span key={tag} className={styles.spanTags}>{` ${tag},`} </span> ])}
                 
                 </p>
             </>

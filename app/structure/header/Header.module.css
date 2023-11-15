@@ -34,14 +34,14 @@
     margin-right: 3px;
     font-style: italic;
     color: var(--color-back);
-    background: var(--color-first);
+    background: var(--default-txt);
     height: 100%;
     padding: 0 4px;
     border-radius: 8px;
-    text-shadow: 1px 1px var(--color-second);
+    text-shadow: 1px 1px var(--color-border-first);
 }
 .title_second_letter{
-    color: var(--color-first);;
+    color: var(--default-txt);;
 }
 .headerDisclamer{
     margin: 0;
