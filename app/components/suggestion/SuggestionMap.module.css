@@ -10,7 +10,7 @@
     gap: 1.35rem;
     overflow-x: scroll;
     overflow-y: hidden;
-    border: none /*solid 1px var(--color-border-first);*/
+    border: none 
     
 }
 .arrows{

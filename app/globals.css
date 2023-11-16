@@ -2,17 +2,19 @@
 :root {
   
   --height-header:77px;
-  --color-first: #1a1a1a;
-  --color-second: #337AB7;
+  --color-first: #113264;
+  --color-second: #0588F0;
   --color-third: #393939;
   
-  --color-back:#fff;
+  --color-back:#F9F9F9;
   
   --color-props: #393939;
   --default-txt: #000;
 
   --color-form: #fff;
 
+  --font-family-first: 'Exo 2', sans-serif;
+  --font-family-second: 'Lato', sans-serif;
   /*START::NAV*/
   --color-link: var(--color-first);
   --color-link-hover: var(--color-back);
@@ -38,8 +40,7 @@
 
   --color-back-cards: #fff;
 
-  --color-border-first:#dee2e6;
-  --color-border:#dee2e6;
+  --color-border:#8EC8F6;
 
   --color-button:var(--color-first);
   --color-button-hover:var(--color-back);
@@ -102,6 +103,7 @@
   margin: 0;
 }
 body{
+  font-family: var(--font-family-first);
   background: var(--color-table-even);
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -152,6 +154,7 @@ body{
     --default-txt: #f2f2f2;
     --color-back-main:#222223;
     --color-border-first:#363839;
+    --color-border:#363839;
 
     --color-back-scrollbar-main: #F0F3F7;
     --color-back-scrollbar-nav: var(--color-back);
