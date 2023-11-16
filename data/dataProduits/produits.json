@@ -760,7 +760,7 @@
                     "gaming":{
                         "nom":"Gaming",
                         "note":6.9,
-                        "description":"Cet ordinateur portable ACER Nitro 5 AN517-54-52ED de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéosles plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
+                        "description":"Cet ordinateur portable ACER Nitro 5 AN517-54-52ED de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéos les plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
                     }
                 },
                 {
@@ -843,7 +843,7 @@
                     "gaming":{
                         "nom":"Gaming",
                         "note":8.7,
-                        "description":"Cet ordinateur portable ACER Nitro 5 AN515-45-R715 de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéosles plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
+                        "description":"Cet ordinateur portable ACER Nitro 5 AN515-45-R715 de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3080</strong> de ce pc portable, vous permet de jouer au jeux vidéos les plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming."
                     }
                 },
                 {
@@ -893,7 +893,7 @@
                     "Les series RTX 3XXX consoment plus d'énergie que les RTX 4XXX"
                 ],
                 "good": [
-                    "La Nvidia GeForce RTX 3080 Offre des performence exelente en jeux",
+                    "La Nvidia GeForce RTX 3080 Offre des performance exelente en jeux",
                     "Sont écran de 17 Pouces et très apréciable dans les jeux compétitif, ni trop grand, ni trop petit",
                     "Un processeur robuste AMD Ryzen 9 - 5900HX", 
                     "Une carte graphique performante RTX 3080",
@@ -919,16 +919,16 @@
             "title":"ACER PREDATOR HELIOS 300 ",
             "description":"Découvrez et comparez les spécifications, performances et prix de l'ACER PREDATOR HELIOS 300 sur itek-comparateur.fr notre site de comparateur. Cet ACER PREDATOR HELIOS 300 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ACER PREDATOR HELIOS 300",
             "tags":["ACER PREDATOR HELIOS 300" ,"AMD Ryzen 9", "pc portable", "Haut", "RTX 3080", "Gaming"],
-            "prix":1300,
+            "prix":1799,
             "loading":"lazy",
-            "images":["https://urlz.fr/ouya","https://urlz.fr/ouyd", "https://urlz.fr/ouyc","https://urlz.fr/ouyb"],
+            "images":["https://urlz.fr/ouCQ","https://urlz.fr/ouCT", "https://urlz.fr/ouCU","https://urlz.fr/ouCW"],
             "bonus":"naJM",
             "pointsClef":[
                 {
                     "gaming":{
                         "nom":"Gaming",
-                        "note":8.7,
-                        "description":"Cet ordinateur portable ACER PREDATOR HELIOS 300 de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéosles plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
+                        "note":9.1,
+                        "description":"Cet ordinateur portable ACER PREDATOR HELIOS 300 de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3070Ti</strong> de ce pc portable, vous permet de jouer au jeux vidéos les plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming."
                     }
                 },
                 {
@@ -956,30 +956,29 @@
                 
                 "cpu":"AMD Ryzen 9 - 5900HX",
                 "screen":"15.6",
-                "gpu":"Nvidia RTX 3080",
-                "ram":"32GO || DDR4",
+                "gpu":"Nvidia RTX 3070 Ti",
+                "ram":"16GO || DDR5",
                 "stockage":"512GO | SSD",
-                "os":"Windows 10"
+                "os":"Windows 11"
             },
             "noteDesc":{
                 "int": 9.9,
                 "bad": [
-                    "Le PC est un peu lourd 2.3Kg"
+                    "Le PC est un peu lourd 2.5Kg"
                 ],
                 "good": [
                     "Un Pc parfait pour travailler et jouer",
-                    "La mémoire vive est excellente 32 GO / DDR4",
+                    "La mémoire vive est excellente 32 GO / DDR5",
                     "La résolution de l'écran est très bonne (2K/1440p)"
                 ]
             },
             "noteGaming":{
-                "int": 8.7,
+                "int": 9.1,
                 "bad": [
                     "Les series RTX 3XXX consoment plus d'énergie que les RTX 4XXX"
                 ],
                 "good": [
-                    "La Nvidia GeForce RTX 3080 Offre des performence exelente en jeux",
-                    "Sont écran de 17 Pouces et très apréciable dans les jeux compétitif, ni trop grand, ni trop petit",
+                    "La Nvidia GeForce RTX RTX 3070 Ti Offre de bonne performance en jeux",
                     "Un processeur robuste AMD Ryzen 9 - 5900HX", 
                     "Une carte graphique performante RTX 3080",
                     "Et un écran avec un haut taux de rafraîchissement 165Hz"

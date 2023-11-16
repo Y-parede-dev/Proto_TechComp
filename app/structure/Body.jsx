@@ -55,7 +55,7 @@ const Body = ({children}) => {
         <>
             <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT, NUMBERFAVACTUAL, setNUMBERFAVACTUAL}} >
                 <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
-                <Tests/>
+                {/* <Tests/> */}
                 
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
