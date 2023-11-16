@@ -1,29 +1,29 @@
 {
     "produits":[
         {
-            "id":"Asus-ROG-Strix-G15-G513QM-HF432T",
+            "id":"Asus-ROG-STRIX-G16-G614JU-N3186W",
             "brand":"Asus",
-            "resolution":"1920X180",
-            "title":"Asus ROG Strix G513QM-HF432T",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG Strix G15 G513QM-HF432T sur notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG Strix G15 G513QM-HF432T",
-            "tags":["Asus ROG Strix","Ryzen 9", "pc portable", "moyen", "G513","G513QM-HF432T", "gaming"],
-            "prix":1749,
+            "resolution":"1920x1200 (WUXGA)",
+            "title":"Asus ROG STRIX G16 G614JU-N3186W",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG STRIX G16 G614JU-N3186W sur itek-comparateur.fr notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG STRIX G16 G614JU-N3186W",
+            "tags":["Asus ROG Strix"," i7", "pc portable", "moyen", "G614", "G16","G614JU-N3186W", "gaming"],
+            "prix":1799,
             "loading":"lazy",
-            "images":["https://urlz.fr/naZS", "https://urlz.fr/naZM", "https://urlz.fr/naZQ"],
+            "images":["https://urlz.fr/ouji", "https://urlz.fr/oujs", "https://urlz.fr/oujy", "https://urlz.fr/oujK"],
             "bonus":"naJM",
             "pointsClef":[
                 {
-                    "rapidite":{
+                    "gaming":{
                         "nom":"Gaming",
-                        "note":6.6,
-                        "description":"Cet ordinateur portable Strix de chez Asus est conçu principalement pour les gamers. La configuration <strong>milieu de gamme de ce PC</strong> vous permettra de jouer aux jeux récents, sans pouvoir toutefois pousser les paramètres graphique des jeux les plus gourmands en ressource à leurs maximum."
+                        "note":7.2,
+                        "description":"Cet ordinateur portable Strix de chez Asus est conçu principalement pour les gamers. La configuration <strong>milieu/Haut de gamme de ce PC</strong> vous permettra de jouer aux jeux récents, sans pouvoir toutefois pousser les paramètres graphique des jeux les plus gourmands en ressource à leurs maximum."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
                         "note":10,
-                        "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son AMD Ryzen 9 5900HX (via ses 8 très bons coeurs), ses 16 Go de RAM et à son disque SSD rapide. Ce PC est un <strong>choix de premier ordre pour votre productivité !</strong>"
+                        "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son AMD Ryzen 9 5900HX (via ses 8 très bons coeurs), ses 16 Go de RAM en DDR5 et à son disque SSD NVMe rapide. Ce PC est un <strong>choix de premier ordre pour votre productivité !</strong>"
                     }
                 },{
                     "durabilite":{
@@ -35,18 +35,18 @@
                 {
                     "confort":{
                         "nom":"Confort",
-                        "note":6.6,
-                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son écran IPS qui assure un <strong>bon confort visuel.</strong>"
+                        "note":7.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design épuré et sa touche RGB  <strong>excellent confort en général.</strong>"
                     }
                 }
             ],
             "config":{
                 
-                "cpu":"Ryzen 9 5900HX",
-                "screen":"15.6",
-                "gpu":"Nvidia RTX3060",
-                "ram":"16GO",
-                "stockage":"512GO | SSD",
+                "cpu":"I7 13650HX 2.6GHz",
+                "screen":16.0,
+                "gpu":"Nvidia RTX 4050",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD NVMe",
                 "os":"Windows 10"
             },
             "noteDesc":{
@@ -58,381 +58,945 @@
                     "La mémoire vive est excellente",
                     "La dalle de l'écran (ips) offre une bonne qualité d'image",
                     "La résolution de l'écran est satisfaisante (1K/1080p)",
-                    "Le Ryzen 9 5900HX offre d'excellentes performances",
+                    "Le I7 13650Hx offre d'excellentes performances",
                     "La capacité de stockage est excellente"
                 ]
             },
             "noteGaming":{
-                "int": 6.6,
+                "int": 7.2,
                 "bad": [
                     "Pas d'inconvénients particuliers."
                 ],
                 "good": [
-                    "La Geforce Rtx 3060 offre d'excellentes performances",
-                    "La capacité de stockage est excellente",
-                    "La mémoire vive est suffisante pour tous les jeux",
+                    "La Geforce Rtx 4050 offre des performances correctes",
+                    "La capacité de stockage est correcte",
+                    "La mémoire vive est excellente pour les jeux vidéo",
                     "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "Le Ryzen 9 5900HX offre d'excellentes performances"
+                    "Le I7 13650Hx offre d'excellentes performances"
                 ]
             },
             "card":{
-                "publicationContentId":"6492eb68b648912cb09d8018"
+                "publicationContentId":"65563723ab255a06af3053fe"
             },
             "array":{
-                "publicationContentId":"6492ebf4b648912cb09d8019"
+                "publicationContentId":"65563723ab255a06af3053fd"
             },
             "btn":{
-                "publicationContentId":"64f5961c32fa2c56140f005a"
+                "publicationContentId":"65563723ab255a06af3053fc"
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming"
+            
         },
         {
-            "id":"Acer-Nitro-5-AN515-57-521Z",
-            "brand":"Acer",
-            "model":"Nitro 5 AN515-57-521Z",
-            "resolution":"1920X180",
-            "title":"Acer Nitro 5 AN515-57-521Z 15.6",
-            "description":"Comparez les caractéristiques, performances et tarifs du PC portable Acer Nitro 5 sur notre plateforme de comparaison. Conçu pour les amateurs de jeux, cet ordinateur portable offre une combinaison parfaite de puissance, de graphismes immersifs et de portabilité. Trouvez la meilleure offre et choisissez le Lenovo IdeaPad Gaming 3 15.6 qui correspond à vos besoins en matière de jeu et de budget.",
-            "tags":["Acer Nitro 5","core I5", "intel I5", "pc portable","moins", "gaming"],
-            "prix":1099,
+            "id":"ASUS-Zenbook-14-UX3402ZA-KN778W",
+            "brand":"Asus",
+            "resolution":"2880 x 1800",
+            "title":"ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook 14 evo OLED touch sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch offre une expérience immersive avec son écran OLED Touch et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch",
+            "tags":["Tactile","ASUS Zenbook","OLED"," i7", "pc portable", "moyen", "UX3402ZA", "UX340", "Laptop"],
+            "prix":999,
             "loading":"lazy",
-            "images":["/test/acerNitroAn515.avif", "/test/acerNitroAN517-54Perspective.webp", "/test/acerNitroAN517-54Up.webp"],
-            "bonus":null,
+            "images":["https://urlz.fr/ounh", "https://urlz.fr/ounl", "https://urlz.fr/ouno", "https://urlz.fr/ounr", "https://urlz.fr/ounu"],
+            "bonus":"naJM",
             "pointsClef":[
                 {
                     "gaming":{
                         "nom":"Gaming",
-                        "note":5.6,
-                        "description":"Cet ordinateur portable Strix de chez Asus est conçu principalement pour les gamers. La configuration <strong>milieu de gamme de ce PC</strong> vous permettra de jouer aux jeux récents, sans pouvoir toutefois pousser les paramètres graphique des jeux les plus gourmands en ressource à leurs maximum."
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus Zenbook 14 evo OLED touch de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans carte graphique</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
-                        "note":8.0,
-                        "description":"Cet ordinateur est <strong>rapide et offre d'excellentes performances</strong>. Grâce à son disque SSD rapide entre autres. Vous apprécierez sans doutes ses <strong>courts temps de chargement</strong>."
+                        "note":8,
+                        "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son I7 1260P (via ses 12 très bons coeurs), ses 16 Go de RAM en DDR4 et à son disque SSD rapide. Ce PC est un <strong>choix de premier ordre pour votre productivité !</strong>"
                     }
                 },{
                     "durabilite":{
                         "nom":"Durabilité",
-                        "note":7.0,
-                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 3 ans</strong> (de 3 à 4 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                        "note":8.4,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
                     }
                 },
                 {
                     "confort":{
                         "nom":"Confort",
-                        "note":6.6,
-                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son écran IPS qui assure un <strong>bon confort visuel.</strong>"
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design épuré ainsi que son poid de 1300 grammes en fait un pc portable avec un <strong>excellent confort en général.</strong>"
                     }
                 }
             ],
             "config":{
-                "cpu":"Intel Core i5-11400H",
-                "screen":"10.1",
-                "gpu":"Nvidia RTX3060",
-                "ram":"8GO",
+                
+                "cpu":"I7 1260P 2.1GHz",
+                "screen":"14",
+                "gpu":"intégrée au CPU",
+                "ram":"16GO | DDR4",
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
             "noteDesc":{
-                "int": 7.4,
+                "int": 8.0,
                 "bad": [
-                    "Pas d'inconvénients particuliers."
+                    "L'écran étant très brillant il reflete beaucoup en exterieur."
                 ],
                 "good": [
-                    "La capacité de stockage est excellente",
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "Le Core I5 I5-11400H offre d'excellentes performances",
+                    "La mémoire vive est excellente",
+                    "La dalle tactile OLED offre une bonne qualité d'image",
+                    "La résolution de l'écran est satisfaisante (2K/1800p)",
+                    "Le I7 1260p offre de bonnes performances",
+                    "La capacité de stockage est excellente"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    
+                    "Ce pc portable n'est pas fait pour une utilisation gaming."
+                ]
+            },
+            "card":{
+                "publicationContentId":"65561ad6fc8c4d5801143b0f"
+            },
+            "array":{
+                "publicationContentId":"65561aeefc8c4d5801143b13"
+            },
+            "btn":{
+                "publicationContentId":"65561b2cfc8c4d5801143b14"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau"
+            
+        },
+        {
+            "id":"ASUS-VivoBook-X1404ZA-EB273W-14",
+            "brand":"Asus",
+            "resolution":"1920 x 1080",
+            "title":"ASUS VivoBook X1404ZA-EB273W 14",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l' ASUS VivoBook X1404ZA-EB273W 14 sur itek-comparateur.fr notre site de comparateur. CetASUS VivoBook X1404ZA-EB273W 14 offre une expérience immersive avec son prix bas et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS VivoBook X1404ZA-EB273W 14",
+            "tags":["ASUS VivoBook"," i3", "pc portable", "petit", "X1404ZA", "X140","VivoBook-X140", "Laptop"],
+            "prix":650,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ouzM", "https://urlz.fr/ouzO", "https://urlz.fr/ouzP", "https://urlz.fr/ouzQ" ],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable ASUS VivoBook X1404ZA-EB273W 14 de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permét pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":4,
+                        "description":"Cet ordinateur figure parmi la moyene basse du marché. Avec son I3 1215U, ses 8 Go de RAM en DDR4 et à son disque SSD rapide. Ce PC est un <strong>choix peut couteux et logique</strong> si vous rechercher simplement a naviguer sur internet, avoir une utilisation bureautique clasique."
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":9.6,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>Fonctionel pendant 5 ans</strong> voir plus."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design simple et épuré ainsi que son poid de 1300 grammes qui en fait un pc portable avec un <strong>excellent confort en général.</strong>"
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"I3 1215U",
+                "screen":"14",
+                "gpu":"Intel UHD Graphics",
+                "ram":"8GO | DDR4",
+                "stockage":"256GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 6.0,
+                "bad": [
+                    "Un pc portable peut puissant.",
+                    "Une faible capacité de stockage"
+                ],
+                "good": [
+                    "La mémoire vive est moyene",
                     "La résolution de l'écran est satisfaisante (1K/1080p)"
                 ]
             },
             "noteGaming":{
-                "int": 5.6,
+                "int": 0,
                 "bad": [
-                    "les 8Go de mémoire sont rapidement utilisée."
                 ],
                 "good": [
-                    "La Geforce Rtx 3060 offre d'excellentes performances",
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La capacité de stockage est excellente",
-                    "Le Core I5 I5-11400H offre d'excellentes performances"
+                    
+                    "Ce pc portable n'est pas fait pour une utilisation gaming."
                 ]
             },
             "card":{
-                    "publicationContentId":"649ecfce72400b5daf88f0dc"
+                "publicationContentId":"65561c49ab255a06af3053ad"
             },
             "array":{
-                "publicationContentId":"649ecfecb2d90579928bbcb3"
+                "publicationContentId":"65561c5ffc8c4d5801143b15"
             },
             "btn":{
-                "publicationContentId":"64f5969cdb8c90038e5d4639"
+                "publicationContentId":"65561c68ab255a06af3053ae"
             },
-            "conseil":"il est conseillé pour les jeux vidéo",
-            "usage":"usage gaming"
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau"
+            
         },
         {
-            "id":"Yonis-7-1-HDMI-10-1",
-            "brand":"Yonis",
-            "model":"Yonis 7.1 HDMI 10.1 Pouces",
-            "resolution":"1280x800",
-            "title":"Yonis 7.1 HDMI 10.1 Pouces",
-            "description":"Comparez les caractéristiques, performances et tarifs du Yonis android 7.1 sur notre plateforme de comparaison.",
-            "tags":["Yonis","Allwinner A64 Quad Core 1.3GHz", "pc portable", "moins", "bureau"],
-            "prix":223,
+            "id":"ASUS-TUF-Gaming-A15-FHD-144Hz-RTX-4060-8Go",
+            "brand":"Asus",
+            "resolution":"1920 x 1080",
+            "title":"ASUS TUF Gaming A15",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l' ASUS TUF Gaming A15 sur itek-comparateur.fr notre site de comparateur. Cet ASUS TUF Gaming A15 offre une expérience immersive avec ses composants gaming et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS TUF Gaming A15",
+            "tags":["ASUS TUF","AMD Ryzen 7", "pc portable", "moyen", "TUF", "TUF","RTX 4060", "Gaming"],
+            "prix":1100,
             "loading":"lazy",
-            "images":["/test/Yonis.webp"],
-            "bonus":null,
+            "images":["https://urlz.fr/oups", "https://urlz.fr/oupv", "https://urlz.fr/oupy", "https://urlz.fr/oupM"],
+            "bonus":"naJM",
             "pointsClef":[
                 {
                     "gaming":{
                         "nom":"Gaming",
-                        "note":0.0,
-                        "description":"Cet ordinateur n'est pas fait pour jouer et n'offre pas beaucoup performances."
+                        "note":7.8,
+                        "description":"Cet ordinateur portable ASUS TUF Gaming A15 de chez Asus est conçu pour une utilisation gaming optimal. La configuration de ce pc portable avec sa <strong>RTX4060</strong>, vous permet de jouer au derniers jeux sortie."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
-                        "note":2.0,
-                        "description":"Cet ordinateur n'est <strong>pas rapide et n'offre pas d'excellentes performances</strong>. Avec seulement 2GO de ram il met assez longtemps pour éffectuer des taches simple."
+                        "note":9,
+                        "description":"Cet ordinateur figure parmi les plus rapide du marché. Avec son AMD Ryzen 7 7735HS, ses 16 Go de RAM en DDR5 et à son disque SSD M.2 rapide. Ce PC est un <strong>choix logique</strong> si vous rechercher a jouer au dernier jeux sortie avec un temp de chargement réduit grace a son SSD M.2."
                     }
                 },{
                     "durabilite":{
                         "nom":"Durabilité",
-                        "note":1.9,
-                        "description":"La configuration de cet ordinateur ne lui permet pas d'etre compétitif face a ses concurents."
+                        "note":8.2,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
                     }
                 },
                 {
                     "confort":{
                         "nom":"Confort",
-                        "note":3.5,
-                        "description":"Tout est trop petit "
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
                     }
                 }
             ],
             "config":{
-                "cpu":"Allwinner A64 Quad Core 1.3GHz",
-                "screen":"15.6",
-                "gpu":"ARM Mali 400MP2",
-                "ram":"8GO",
-                "stockage":"30GO",
-                "os":"Android"
+                
+                "cpu":"AMD Ryzen 7 7735HS / 3.2 GHZ",
+                "screen":"15.6 || 144 Hz",
+                "gpu":"Nvidia RTX 4060 140W max",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD M.2",
+                "os":"Windows 11"
             },
             "noteDesc":{
-                "int": 1.6,
+                "int": 9.0,
                 "bad": [
-                    "très peut de puissance.",
-                    "très peut de RAM",
-                    "trop petit"
+                    "Un clavier un peut petit."
                 ],
                 "good": [
-                    "Faible consomation"
+                    "Très léger pour un PC portable gaming perfomant",
+                    "La mémoire vive est excellente pour les jeux vidéo",
+                    "La résolution de l'écran est satisfaisante (1K/1080p)"
                 ]
             },
             "noteGaming":{
-                "int": 0.6,
-                "bad": [ 
-                    "très peut de puissance.",
-                    "très peut de RAM",
-                    "trop petit",
-                    "Les seuls jeux pouvant être joué sont les jeux du play store."
+                "int": 7.3,
+                "bad": [
+                    "un clavier un peut petit"
                 ],
                 "good": [
-                    "Faible consomation"
+                    "Les 144 Hz sont une exelente idée pour les jeux compétitif",
+                    "Une exelente combinaison de composants pour des performance optimales",
+                    "Un choix qualité prix optimal"
                 ]
             },
             "card":{
-                    "publicationContentId":"64ac1ec0b2d90579928bc3c2"
+                "publicationContentId":"65561d3cab255a06af3053af"
             },
             "array":{
-                "publicationContentId":"64ac1ed4b2d90579928bc3c4"
+                "publicationContentId":"65561da1fc8c4d5801143b19"
             },
             "btn":{
-                "publicationContentId":"64f596d032fa2c56140f005b"
+                "publicationContentId":"65561d9efc8c4d5801143b18"
             },
-            "conseil":"il est conseillé pour les application de bureau",
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage gaming"
+        },
+        {
+            "id":"ASUS-VivoBook-Pro-15-OLED-RTX30504GO",
+            "brand":"Asus",
+            "resolution":"1920 x 1080",
+            "title":"ASUS VivoBook Pro 15 OLED S3500",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS VivoBook Pro 15 OLED S3500 sur itek-comparateur.fr notre site de comparateur. Cet ASUS VivoBook Pro 15 OLED S3500 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS VivoBook Pro 15 OLED S3500",
+            "tags":["ASUS VivoBook","pro" ,"OLED","AMD Ryzen 7","AMD Ryzen 7 5800H", "pc portable", "moyen", "RTX 3050", "Laptop"],
+            "prix":900,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ousL", "https://urlz.fr/ousK", "https://urlz.fr/ousN", "https://urlz.fr/ousP", "https://urlz.fr/ousR"],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":5,
+                        "description":"Cet ordinateur portable ASUS VivoBook Pro 15 OLED de chez Asus est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>RTX3050</strong>, vous permet de jouer a certain jeux."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.5,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son AMD Ryzen 7 5800H, ses 16 Go de RAM soudé et à son disque SSD M.2 rapide. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, Le ASUS VivoBook Pro 15 OLED S3500 Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.2,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 7 7735HS / 3.2 GHZ",
+                "screen":"15.6 || 144 Hz",
+                "gpu":"Nvidia RTX 3050",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD M.2",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un clavier un peut petit."
+                ],
+                "good": [
+                    "Très léger pour un PC portable gaming perfomant",
+                    "La mémoire vive est excellente pour les jeux vidéo",
+                    "La résolution de l'écran est satisfaisante (1K/1080p)"
+                ]
+            },
+            "noteGaming":{
+                "int": 7.3,
+                "bad": [
+                    "un clavier un peut petit"
+                ],
+                "good": [
+                    "Les 144 Hz sont une exelente idée pour les jeux compétitif",
+                    "Une exelente combinaison de composants pour des performance optimales",
+                    "Un choix qualité prix optimal"
+                ]
+            },
+            "card":{
+                "publicationContentId":"65563b01ab255a06af305407"
+            },
+            "array":{
+                "publicationContentId":"65563b01ab255a06af305406"
+            },
+            "btn":{
+                "publicationContentId":"65563b01ab255a06af305405"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
             "usage":"usage Bureau"
         },
         {
-            "id":"AsusG18Gl814JI-N6076W18",
+            "id":"Asus-zenbook-14-ux3402za",
             "brand":"Asus",
-            "model":"G814 - STRIX-G18-G814JI-N6076W",
-            "resolution":"2560 x 1600",
-            "title":"Asus ROG Strix G814JI-N6076W",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG Strix G814 STRIX-G18-G814JI-N6076W sur notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG Strix G814 STRIX-G18-G814JI-N6076W",
-            "tags":["Asus ROG Strix G814","I9", "pc portable", "i9-13980HX","RTX 4070", "4k", "gaming"],
-            "prix":3299,
+            "resolution":"2800 x 1800",
+            "title":"Asus zenbook 14 ux3402za",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook 14 OLED ux3402za sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook 14 OLED ux3402za offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS Zenbook 14 OLED ux3402za",
+            "tags":["tactile","ASUS Zenbook","OLED" ,"I7", "pc portable", "moyen", "Intégré", "Laptop"],
+            "prix":999,
             "loading":"lazy",
-            "bonus":null,
-            "images":["/test/AsusG18Gl814JI-N6076W18.webp"],
+            "images":["https://urlz.fr/outb","https://urlz.fr/outi","https://urlz.fr/outk", "https://urlz.fr/outl"],
+            "bonus":"naJM",
             "pointsClef":[
                 {
                     "gaming":{
                         "nom":"Gaming",
-                        "note":8.3,
-                        "description":"Cet ordinateur portable Asus ROG Strix G814JI-N6076W de chez Asus est conçu principalement pour les gamers. La configuration haut de gamme de ce modèle gaming vous permettra de profiter <strong>sans problèmes de tous les derniers jeux </strong>avec une excellente qualité visuelle."
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus zenbook 14 ux3402za de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
-                        "note":10,
-                        "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son Intel Core i9-13980HX (via ses 24 excellents coeurs), ses 16 Go de RAM et à son disque SSD rapide. Ce PC est <strong>un choix de premier ordre pour votre productivité !</strong>"
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I7 1260p, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, Le ASUS Zenbook 14 OLED ux3402za Vous offre une rapidité optimale"
                     }
                 },{
                     "durabilite":{
                         "nom":"Durabilité",
-                        "note":10,
+                        "note":5.9,
                         "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
                     }
                 },
                 {
                     "confort":{
                         "nom":"Confort",
-                        "note":5,
-                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son écran IPS qui assure un <strong>exelent confort visuel</strong>. "
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
                     }
                 }
             ],
             "config":{
-                "cpu":"i9-13980HX 2.2 GHZ",
-                "screen":"18",
-                "gpu":"NVIDIA GeForce RTX 4070 8GO",
-                "ram":"16GO (32GO MAX)",
-                "stockage":"1TO | NVMe SSD",
+                
+                "cpu":"I7 1260P 2.1GHz",
+                "screen":"14 | Tactile",
+                "gpu":"intégrée au CPU",
+                "ram":"16GO | DDR4",
+                "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
             "noteDesc":{
-                "int": 10,
+                "int": 9.0,
                 "bad": [
-                    "Le PC est lourd (3.0 kg)"
+                    "Le ventilateur fait un peut de bruit qund le pc portable et beaucoup soliciter."
                 ],
                 "good": [
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La résolution de l'écran est excellente",
+                    "Le Pc compact et léger parfait pour travailler et bouger",
                     "La mémoire vive est excellente",
-                    "La capacité de stockage est excellente",
-                    "Le Core i9 i9-13980HX offre d'excellentes performances"
+                    "La résolution de l'écran est exelente (2K/1800p)"
                 ]
             },
             "noteGaming":{
-                "int": 8.3,
-                "bad": [ 
-                    "Pas d'inconvénients particuliers."
+                "int": 0,
+                "bad": [
                 ],
                 "good": [
-                    "La Geforce Rtx 4070 offre d'excellentes performances",
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La résolution de l'écran est excellente",
-                    "La mémoire vive est suffisante pour tous les jeux",
-                    "La capacité de stockage est excellente",
-                    "Le Core i9 i9-13980HX offre d'excellentes performances"
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
                 ]
             },
             "card":{
-                    "publicationContentId":"64ad115e72400b5daf88f954"
+                "publicationContentId":"65567778ab255a06af30547f"
             },
-            
             "array":{
-                "publicationContentId":"64ad1164b2d90579928bc42a"
+                "publicationContentId":"6556777aab255a06af305480"
             },
             "btn":{
-                "publicationContentId":"64f596f732fa2c56140f005c"
+                "publicationContentId":"65567775fc8c4d5801143bde"
             },
-            
-            "conseil":"il est conseillé pour les jeux vidéo",
-            "usage":"usage gaming"
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau"
         },
         {
-            "id":"ASUS-ROG-Strix-G16-WQXGA-240Hz",
-            "brand":"Asus",
-            "model":"G16 - Strix-G16-WQXGA",
-            "resolution":"2560 x 1600",
-            "title":"Asus ROG Strix G16 WQXGA 240Hz",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG Strix G16 WQXGA 240Hz sur notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG Strix G16 WQXGA 240Hz",
-            "tags":["Asus ROG Strix G16","I9", "pc portable", "i9-13980HX","RTX 4070", "4k", "gaming"],
-            "prix":2479.99,
+            "id":"Acer-Aspire-Vero-AV15-51",
+            "brand":"Acer",
+            "resolution":"1920 x 1080",
+            "title":"Acer Aspire Vero AV15-51",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Acer Aspire Vero AV15-51 sur itek-comparateur.fr notre site de comparateur. Cet Acer Aspire Vero AV15-51 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'Acer Aspire Vero AV15-51",
+            "tags":["ACER Aspire" ,"I5", "pc portable", "bas", "Intel Iris Xe Graphics", "Laptop"],
+            "prix":499,
             "loading":"lazy",
-            "images":["/test/AsusG16WQXA240HZ.webp"],
-            "bonus":null,
+            "images":["https://urlz.fr/ouuD","https://urlz.fr/ouuE","https://urlz.fr/ouuF", "https://urlz.fr/ouuJ"],
+            "bonus":"naJM",
             "pointsClef":[
                 {
                     "gaming":{
                         "nom":"Gaming",
-                        "note":8.9,
-                        "description":"Cet ordinateur portable Asus ROG Strix G16 WQXGA 240Hz de chez Asus est conçu principalement pour les gamers. La configuration <strong>haut de gamme</strong> de ce modèle gaming vous permettra de profiter sans problèmes de tous les derniers jeux avec une <strong>excellente qualité visuelle</strong>."
+                        "note":0,
+                        "description":"Cet ordinateur portable Acer Aspire Vero AV15-51 de chez Acer n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
-                        "note":10,
-                        "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son Intel Core i9-13980HX (via ses 24 excellents coeurs), ses 16 Go de RAM et à son disque SSD rapide. Ce PC est <strong>un choix de premier ordre pour votre productivité !</strong>"
+                        "note":7.5,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I5-1155G7, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, Le Acer Aspire Vero AV15-51 Vous offre une bonne rapidité"
                     }
                 },{
                     "durabilite":{
                         "nom":"Durabilité",
-                        "note":10,
-                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                        "note":5.2,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
                     }
                 },
                 {
                     "confort":{
                         "nom":"Confort",
-                        "note":5.2,
-                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son écran IPS qui assure un <strong>assez bon confort visuel</strong>. "
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
                     }
                 }
             ],
             "config":{
-                "cpu":"i9-13980HX 2.2 GHZ",
-                "screen":"16",
-                "gpu":"NVIDIA GeForce RTX 4070 8GO",
-                "ram":"32GO (2 X 16GO)",
-                "stockage":"1TO | NVMe SSD",
+                
+                "cpu":" I5-1155G7",
+                "screen":"15.6",
+                "gpu":"intégrée au CPU",
+                "ram":"16GO | DDR4",
+                "stockage":"512GO | SSD NVMe",
                 "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 8.6,
+                "bad": [
+                    " le port USB-C de ce PC ne disposait pas de l'option display"
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte (1K/1080p)"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "card":{
+                "publicationContentId":"65563c00ab255a06af30540f"
+            },
+            "array":{
+                "publicationContentId":"65563c00ab255a06af30540e"
+            },
+            "btn":{
+                "publicationContentId":"65563c00ab255a06af30540d"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau"
+        },
+        {
+            "id":"ACER-Swift-Air-16p",
+            "brand":"Acer",
+            "resolution":"3840 x 2400",
+            "title":"ACER Swift Air - 16",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ACER Swift Air 16 sur itek-comparateur.fr notre site de comparateur. Cet ACER Swift Air 16 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ACER Swift Air 16",
+            "tags":["Intégré","4K","ACER Swift air 16" ,"AMD Ryzen 5 ", "pc portable", "moyen", "AMD Radeon Graphics", "laptop"],
+            "prix":1282,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ouvs","https://urlz.fr/ouvt", "https://urlz.fr/ouvw"],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":3,
+                        "description":"Cet ordinateur portable ACER Swift Air 16 de chez Acer n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet de jouer a des jeux vidéos mais pas de façon optimale nous vous le déconseillons si vous rechercher une experience gaming."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.5,
+                        "description":"Cet ordinateur figure parmi les meilleurs du marché. Avec son AMD Ryzen 5 6600U, ses 16 Go de RAM et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, Le ACER Swift Air Vous offre une bonne rapidité"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":6.7,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 3 à 6 ans). La moyenne pour les PC Portables en vente est de 4 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 5 6600U",
+                "screen":"16",
+                "gpu":"Radeon Graphics",
+                "ram":"16GO",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.5,
+                "bad": [
+                    "Rien de particulier a redire pour une utilisation Bureautique"
+                ],
+                "good": [
+                    "Un Pc léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est exelente (4K/2400p)"
+                ]
+            },
+            "noteGaming":{
+                "int": 3,
+                "bad": [
+                    "Ce Pc portable a une carte graphique intégré ce qui ne permet pas de bonne perfomance en jeux",
+                    "Il chaufe rapidement"
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "card":{
+                "publicationContentId":"65563c38fc8c4d5801143b70"
+            },
+            "array":{
+                "publicationContentId":"65563c38fc8c4d5801143b6f"
+            },
+            "btn":{
+                "publicationContentId":"65563c38fc8c4d5801143b6e"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau"
+        },
+        {
+            "id":"ACER-SWIFT-EDGE-SFA16-41-R59X",
+            "brand":"Acer",
+            "resolution":"3840 x 2400",
+            "title":"ACER SWIFT EDGE SFA16-41-R59X",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ACER SWIFT EDGE SFA16-41-R59X sur itek-comparateur.fr notre site de comparateur. Cet ACER SWIFT EDGE SFA16-41-R59X offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ACER SWIFT EDGE SFA16-41-R59X",
+            "tags":["4K","OLED","ACER SWIFT EDGE SFA16-41-R59X" ,"AMD Ryzen 7 ", "pc portable", "moyen", "AMD Radeon Graphics", "laptop", "Intégré"],
+            "prix":1549,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ouwH","https://urlz.fr/ouwM", "https://urlz.fr/ouwP","https://urlz.fr/ouwQ"],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":3,
+                        "description":"Cet ordinateur portable ACER SWIFT EDGE SFA16-41-R59X de chez Acer n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet de jouer a des jeux vidéos mais pas de façon optimale nous vous le déconseillons si vous rechercher une experience gaming."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":8.5,
+                        "description":"Cet ordinateur figure parmi les meilleurs du marché. Avec son AMD Ryzen 7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, Le ACER SWIFT EDGE SFA16-41-R59X Vous offre une bonne rapidité"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":6.7,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 3 à 6 ans). La moyenne pour les PC Portables en vente est de 4 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 7 6850U",
+                "screen":"16 || OLED",
+                "gpu":"Radeon Graphics",
+                "ram":"16GO || DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.5,
+                "bad": [
+                    "Rien de particulier a redire pour une utilisation Bureautique"
+                ],
+                "good": [
+                    "Un Pc léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est exelente (4K/2400p)"
+                ]
+            },
+            "noteGaming":{
+                "int": 3,
+                "bad": [
+                    "Ce Pc portable a une carte graphique intégré ce qui ne permet pas de bonne perfomance en jeux",
+                    "Il chaufe rapidement"
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "card":{
+                "publicationContentId":"65563c5cab255a06af305414"
+            },
+            "array":{
+                "publicationContentId":"65563c5cab255a06af305413"
+            },
+            "btn":{
+                "publicationContentId":"65563c5cab255a06af305412"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau"
+        },
+        {
+            "id":"ACER-Nitro-5-AN515-54-52ED",
+            "brand":"Acer",
+            "resolution":"1920 x 1080",
+            "title":"ACER Nitro 5 RTX 3060",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ACER Nitro 5 AN517-54-52ED sur itek-comparateur.fr notre site de comparateur. Cet ACER Nitro 5 AN517-54-52ED offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ACER Nitro 5 AN517-54-52ED",
+            "tags":["144Hz","ACER Nitro 5 AN517-54-52ED" ,"Intel Core i5 11400H ", "pc portable", "moyen", "RTX 3060", "Gaming"],
+            "prix":900,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ouxA","https://urlz.fr/ouxB", "https://urlz.fr/ouxC","https://urlz.fr/ouxD"],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":6.9,
+                        "description":"Cet ordinateur portable ACER Nitro 5 AN517-54-52ED de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéosles plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":8.6,
+                        "description":"Cet ordinateur figure parmi les meilleurs du marché. Avec son Intel Core i5 11400H, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming, Le ACER Nitro 5 AN517-54-52ED Vous offre une bonne rapidité."
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":6.7,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 3 à 6 ans). La moyenne pour les PC Portables en vente est de 4 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i5 11400H",
+                "screen":"17.3",
+                "gpu":"Nvidia RTX 3060",
+                "ram":"16GO || DDR4",
+                "stockage":"512GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.5,
+                "bad": [
+                    "Le PC est un peu lourd 2.7Kg"
+                ],
+                "good": [
+                    "Un Pc parfait pour travailler et jouer",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte (1K/1080p)"
+                ]
+            },
+            "noteGaming":{
+                "int": 6.9,
+                "bad": [
+                    "Il chaufe rapidement",
+                    "Les series RTX 3XXX consoment plus d'énergie que les RTX 4XXX"
+                ],
+                "good": [
+                    "La Nvidia GeForce RTX 3060 Offre des performance corect en jeux",
+                    "Sont écran de 17 Pouces et très apréciable dans les jeux compétitif, ni trop grand, ni trop petit"
+                ]
+            },
+            "card":{
+                "publicationContentId":"65563caafc8c4d5801143b75"
+            },
+            "array":{
+                "publicationContentId":"65563caafc8c4d5801143b74"
+            },
+            "btn":{
+                "publicationContentId":"65563caafc8c4d5801143b73"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming"
+        },
+        {
+            "id":"ACER-Nitro-5-AN515-45-R715",
+            "brand":"Acer",
+            "resolution":"2560 x 1440",
+            "title":"ACER Nitro 5 RTX 3080 32GO Ram",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ACER Nitro 5 AN515-45-R715 sur itek-comparateur.fr notre site de comparateur. Cet ACER Nitro 5 AN515-45-R715 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ACER Nitro 5 AN515-45-R715",
+            "tags":["165Hz","ACER Nitro 5 AN515-45-R715" ,"AMD Ryzen 9", "pc portable", "Haut", "RTX 3080", "Gaming"],
+            "prix":3000,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ouya","https://urlz.fr/ouyd", "https://urlz.fr/ouyc","https://urlz.fr/ouyb"],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.7,
+                        "description":"Cet ordinateur portable ACER Nitro 5 AN515-45-R715 de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéosles plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":8.6,
+                        "description":"Cet ordinateur figure parmi les meilleurs du marché. Avec son Intel Core i5 11400H, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming, Le ACER Nitro 5 AN515-45-R715 Vous offre une bonne rapidité."
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":6.7,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 3 à 6 ans). La moyenne pour les PC Portables en vente est de 4 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 9 - 5900HX",
+                "screen":"15.6",
+                "gpu":"Nvidia RTX 3080",
+                "ram":"32GO || DDR4",
+                "stockage":"512GO | SSD",
+                "os":"Windows 10"
             },
             "noteDesc":{
                 "int": 9.9,
                 "bad": [
-                    "Le PC est lourd (2.8 kg)"
+                    "Le PC est un peu lourd 2.3Kg"
                 ],
                 "good": [
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La résolution de l'écran est excellente",
-                    "La mémoire vive est excellente",
-                    "La capacité de stockage est excellente",
-                    "Le Core i9 i9-13980HX offre d'excellentes performances"
+                    "Un Pc parfait pour travailler et jouer",
+                    "La mémoire vive est excellente 32 GO / DDR4",
+                    "La résolution de l'écran est très bonne (2K/1440p)"
                 ]
             },
             "noteGaming":{
-                "int": 8.3,
-                "bad": [ 
-                    "Pas d'inconvénients particuliers."
+                "int": 8.7,
+                "bad": [
+                    "Les series RTX 3XXX consoment plus d'énergie que les RTX 4XXX"
                 ],
                 "good": [
-                    "La Geforce Rtx 4070 offre d'excellentes performances",
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La résolution de l'écran est excellente",
-                    "La mémoire vive est suffisante pour tous les jeux",
-                    "La capacité de stockage est excellente",
-                    "Le Core i9 i9-13980HX offre d'excellentes performances"
+                    "La Nvidia GeForce RTX 3080 Offre des performence exelente en jeux",
+                    "Sont écran de 17 Pouces et très apréciable dans les jeux compétitif, ni trop grand, ni trop petit",
+                    "Un processeur robuste AMD Ryzen 9 - 5900HX", 
+                    "Une carte graphique performante RTX 3080",
+                    "Et un écran avec un haut taux de rafraîchissement 165Hz"
                 ]
             },
             "card":{
-                    "publicationContentId":"64ad115e72400b5daf88f954"
+                "publicationContentId":"65563cd7ab255a06af30541a"
             },
             "array":{
-                "publicationContentId":"64ba8e9aff212e3e2e1b2b0f"
+                "publicationContentId":"65563cd7ab255a06af305419"
             },
             "btn":{
-                "publicationContentId":"64f59719db8c90038e5d463a"
+                "publicationContentId":"65563cd7ab255a06af305418"
             },
             "conseil":"il est conseillé pour les jeux vidéo",
-            "usage":"usage gaming"
+            "usage":"usage Gaming"
+        },
+        {
+            "id":"ACER-PREDATOR-HELIOS-300-PH315-55",
+            "brand":"Acer",
+            "resolution":"1920 x 1080",
+            "title":"ACER PREDATOR HELIOS 300 ",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ACER PREDATOR HELIOS 300 sur itek-comparateur.fr notre site de comparateur. Cet ACER PREDATOR HELIOS 300 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ACER PREDATOR HELIOS 300",
+            "tags":["ACER PREDATOR HELIOS 300" ,"AMD Ryzen 9", "pc portable", "Haut", "RTX 3080", "Gaming"],
+            "prix":1300,
+            "loading":"lazy",
+            "images":["https://urlz.fr/ouya","https://urlz.fr/ouyd", "https://urlz.fr/ouyc","https://urlz.fr/ouyb"],
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.7,
+                        "description":"Cet ordinateur portable ACER PREDATOR HELIOS 300 de chez Acer est conçu pour une utilisation gaming. La configuration avec sa <strong>RTX 3060</strong> de ce pc portable, vous permet de jouer au jeux vidéosles plus recent de façon optimale nous vous le conseillons si vous rechercher une experience gaming sans pour autant avoir les meilleurs graphismes."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":8.6,
+                        "description":"Cet ordinateur figure parmi les meilleurs du marché. Avec son Intel Core i5 11400H, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming, Le ACER PREDATOR HELIOS 300 Vous offre une bonne rapidité."
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":6.7,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 3 à 6 ans). La moyenne pour les PC Portables en vente est de 4 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design éfficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 9 - 5900HX",
+                "screen":"15.6",
+                "gpu":"Nvidia RTX 3080",
+                "ram":"32GO || DDR4",
+                "stockage":"512GO | SSD",
+                "os":"Windows 10"
+            },
+            "noteDesc":{
+                "int": 9.9,
+                "bad": [
+                    "Le PC est un peu lourd 2.3Kg"
+                ],
+                "good": [
+                    "Un Pc parfait pour travailler et jouer",
+                    "La mémoire vive est excellente 32 GO / DDR4",
+                    "La résolution de l'écran est très bonne (2K/1440p)"
+                ]
+            },
+            "noteGaming":{
+                "int": 8.7,
+                "bad": [
+                    "Les series RTX 3XXX consoment plus d'énergie que les RTX 4XXX"
+                ],
+                "good": [
+                    "La Nvidia GeForce RTX 3080 Offre des performence exelente en jeux",
+                    "Sont écran de 17 Pouces et très apréciable dans les jeux compétitif, ni trop grand, ni trop petit",
+                    "Un processeur robuste AMD Ryzen 9 - 5900HX", 
+                    "Une carte graphique performante RTX 3080",
+                    "Et un écran avec un haut taux de rafraîchissement 165Hz"
+                ]
+            },
+            "card":{
+                "publicationContentId":"65563d16fc8c4d5801143b79"
+            },
+            "array":{
+                "publicationContentId":"65563d16fc8c4d5801143b78"
+            },
+            "btn":{
+                "publicationContentId":"65563d16fc8c4d5801143b77"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming"
         }
+
     ]
 }

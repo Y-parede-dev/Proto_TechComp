@@ -1,25 +1,50 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;400&display=swap'); */
 :root {
-/* de base */
-/* --color-first: #FF7A00; */
-/* --color-second: #EE3900; */
-/* --color-third: #ffa500; */
-
-  --default-txt: #000;
-  --color-txt-second:var(--default-txt);
-  --color-third: #393939;
+  
+  --height-header:77px;
   --color-first: #1a1a1a;
   --color-second: #337AB7;
-  --color-hover :#5EB1EF;/*#337AB7*/
+  --color-third: #393939;
   
   --color-back:#fff;
-  --color-titles-nav: var(--color-back);
+  
+  --color-props: #393939;
+  --default-txt: #000;
 
+  --color-form: #fff;
+
+  /*START::NAV*/
+  --color-link: var(--color-first);
+  --color-link-hover: var(--color-back);
+  --color-link-back-hover: var(--color-first);
+
+  --color-back-cat-nav: var(--color-first);
+  --color-cat-nav: var(--color-back);
+  /*END::NAV*/
+
+  --color-titles-nav: #fff;
+  
+  
+  --color-txt-second: #3e3e3e;
+
+
+  --color-hover :#5EB1EF;/*#337AB7*/
+  
+
+  --color-box-shadow: var(--color-first);
+  --color-back-second-elt: #000;
+  
   --color-back-main:#F0F3F7;
 
   --color-back-cards: #fff;
 
   --color-border-first:#dee2e6;
+  --color-border:#dee2e6;
+
+  --color-button:var(--color-first);
+  --color-button-hover:var(--color-back);
+  --color-background-button:var(--color-back);
+  --color-background-button-hover:var(--color-first);
 
   --color-back-scrollbar-main: #F0F3F7;
   --color-back-scrollbar-nav: var(--color-back); /*#f8f8f8*/
@@ -30,6 +55,26 @@
   --color-table-odd: var(--color-back);/*#f8f8f8*/
   --color-table-even: #f5f5f5;
 
+
+  
+  --color-barContentPointsCles:#d2d2e6;
+  --color-barBackDefaut: #000000;
+  --color-pointContentPointsCles: #969696;
+  --color-pointPointsCles: #d2d2d2;
+  
+  --color-table-odd: var(--color-back);/*#f8f8f8*/
+  --color-table-even: #f5f5f5;
+
+  --table-cute-padding: 15px;
+  --table-soft-padding: 15px 0 15px 30px;
+
+  
+  --border-radius-table:10px;
+  --border-soft: 1px solid rgba(0,0,0,0.09);
+  
+  --note-active-with: 22px;
+  --note-active-height: 33px;
+  
   --color-note-0 :#EE3900;
   --color-note-1 :#ee4b1a;
   --color-note-2: #ff6d5a;
@@ -48,67 +93,10 @@
   --color-note-7-8: #AED888;
   --color-note-9-10: #79C9A1;
 
-  --color-barContentPointsCles:#d2d2e6;
-  --color-barBackDefaut: #000000;
-  --color-pointContentPointsCles: #969696;
-  --color-pointPointsCles: #d2d2d2;
-  
-
-  --table-cute-padding: 15px;
-  --table-soft-padding: 15px 0 15px 30px;
-
   --color-error: #c91010;
-  --height-header:77px;
 
-  --border-radius-table:10px;
-  --border-soft: 1px solid rgba(0,0,0,0.09);
-
-  --note-active-with: 22px;
-  --note-active-height: 33px;
-
-
-  /* --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135; */
 }
 *{
-  /* font-family: 'Montserrat', sans-serif; */
   color: var(--default-txt);
   padding: 0;
   margin: 0;
@@ -121,8 +109,6 @@ body{
                         "nav content"
                         "nav content"
                         "nav footer" ;
-  /* display: grid;
-  grid-template-columns: 1fr 3fr ; */
   width: 100%;
   height: 100%;
 }

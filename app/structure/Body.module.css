@@ -1,7 +1,7 @@
 .mainOnBody{
     position: relative;
     display: grid;
-    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-columns: .5fr 2.5fr .5fr;
     grid-template-rows: 160px 20fr 1fr;
     /* grid-template-areas: 
     "pub pub pub"
@@ -17,12 +17,12 @@
     position: absolute;
     background: url(https://www.laptopspirit.fr/wp-content/uploads/new/2023/09/acer30s.png) no-repeat scroll center top transparent;
     background-size: 100% 100%;
-    background-color: var(--color-first);
+    background-color: var(--color-back);
 }
 .content {
     grid-area: 2 / 2 / 4 / 3;
-    max-width: 1020.27px;
-    
+    max-width: 1113.3px;
+    width: 100%;
 }
 
 @media screen and (max-width:1369px) {

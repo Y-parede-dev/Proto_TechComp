@@ -6,17 +6,44 @@
     padding: 8px 0;
 }
 .PointsClesList{
-    height: 220px;
+    height: max-content;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding: 16px;
 }
 .PointsClesListElt {
     list-style: none;
+    gap: .66rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 13px;
+    /* background: var(--color-back); */
+    background: #f1f1f1;
+}
+.PointsClesListElt:nth-child(odd){
+}
+.PointsClesListElt:nth-child(1){
+    border-radius: 25px 0 0 0;
+}
+.PointsClesListElt:nth-child(2){
+    border-radius: 0 25px 0 0;
+}
+.PointsClesListElt:nth-child(even){
+}
+.PointsClesListElt:nth-child(4){
+    border-radius: 0 0 25px 0;
+
+}.PointsClesListElt:nth-child(3){
+    border-radius: 0 0 0 25px;
+}
+.PointsClesListElt > p {
+    padding: 8px 4px;
 }
 .pointsClesSugContainer{
     width: max-content;

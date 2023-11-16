@@ -34,10 +34,12 @@ const ImageAndLinkAffiliate = ({produit}) => {
             <div className={styles.imageContainer}>
                 <div className={styles.imagesList}>
                     {produit.images.map((imageUrl) => (
-                        <Image key={`${produit.title} - ${imageUrl}`} alt={`${produit.title}`} onClick={(e)=>changeImage(e)} className={styles.imageTiny} width={100} height={100} src={imageUrl}/>
+                        <Image key={`${produit.title} - ${imageUrl}`} alt={`${produit.title}`} onClick={(e)=>changeImage(e)} className={styles.imageTiny} width={130} height={100} src={imageUrl}/>
                     ))}
                 </div>
-                <Image alt={`${produit.title}`} className={styles.image} width={400} height={400} src={urlImageDefault}/>
+                <Image alt={`${produit.title}`} className={styles.image} 
+                    width={400} height={300}
+                    src={urlImageDefault}/>
             </div>
             <div className={styles.array}>
                 <button onClick={()=>AddProductOnFav(produit.id)} className={styles.btnFav}>FAV</button>

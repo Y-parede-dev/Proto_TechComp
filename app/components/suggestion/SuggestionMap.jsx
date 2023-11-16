@@ -25,9 +25,9 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
 
     const scrollOnX = (direction) => {
         if(direction === 'left'){
-            scrollElement.current.scrollLeft -= 315
+            scrollElement.current.scrollLeft -= 350
         }else{
-            scrollElement.current.scrollLeft += 315
+            scrollElement.current.scrollLeft += 350
         }
     }
     console.log(by)

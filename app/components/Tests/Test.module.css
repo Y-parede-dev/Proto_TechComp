@@ -36,7 +36,7 @@
     font-weight: 700;
     font-size: 1.8rem;
     border: none;
-    box-shadow: 0 0 12px -4px black;
+    box-shadow: 0 0 12px -4px var(--color-box-shadow);
     transition-duration: 250ms;
 
 }

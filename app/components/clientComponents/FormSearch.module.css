@@ -10,21 +10,23 @@
     display: flex;
     align-items: center;
     position: relative;
-    border: solid var(--color-border-first) 1px;
+    border: solid var(--color-border) 1px;
     width: 500px;
     height: 44px;
     border-radius: 30px;
+    background-color: var(--color-form);
+
 }
 .form_item > svg {
     padding: 0 10px;
     font-size: 1.8rem;
-    fill: var(--color-border-first);
+    fill: var(--color-border);
     transition-duration: 250ms;
     cursor: pointer;
 }
 .form_item > svg:hover {
     font-size: 2rem;
-    fill: var(--color-scrollbar-btn-x);
+    fill: var(--color-first);
 }
 .iconClear{
     position: absolute;
@@ -51,7 +53,7 @@ svg.iconClear:hover{
 .input_search{
     font-size: 1.1rem;
     font-weight: 300;
-    color: var(--default-txt);
+    color: var(--color-first);
     background: transparent;
     height: 100%;
     width: 100%;

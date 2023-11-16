@@ -18,6 +18,7 @@
 }
 .image {
     object-fit: cover;
+    margin: auto;
 }
 .array{
     grid-area: array;

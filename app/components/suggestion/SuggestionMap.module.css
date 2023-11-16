@@ -4,10 +4,10 @@
 .listCarroussel{
     scroll-behavior: smooth;
     transition-duration: 490ms;
-    padding: 15px 5px;
+    padding: 15px 10px;
     display: flex;
     position: relative;
-    gap: 1rem;
+    gap: 1.35rem;
     overflow-x: scroll;
     overflow-y: hidden;
     border: none /*solid 1px var(--color-border-first);*/
@@ -19,6 +19,7 @@
     position: absolute;
     left: -10px;right: -10px;
     top: calc(50%);
+    height: 0px;
     /* width: 100%; */
 }
 .arrows button{
@@ -27,7 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--color-back);
+    color: var(--color-button);
+    background: var(--color-background-button);
     padding: 18px;
     height: 55px;
     width: 52px;
@@ -38,8 +40,8 @@
 }
 .arrows button:hover{
     opacity: 0.9;
-    background: var(--color-first);
-    color: var(--color-back);
+    background: var(--color-background-button-hover);
+    color: var(--color-button-hover);
 }
 
 .listCarroussel::-webkit-scrollbar{
@@ -61,11 +63,11 @@
     align-items: center;
     width: max-content;
     padding: 12px;
-    max-width: 350px;
-    min-width: 270px;
-    border: solid 1px var(--color-border-first) ;
+    max-width: 298px;
+    min-width: 293px;
+    border: solid 1px var(--color-border) ;
     border-radius: .5rem;
-    box-shadow: 0 0 10px -6px black;
+    box-shadow: 0 0 10px -6px var(--color-box-shadow);
     transition-duration: 200ms;
     /* outline: solid; */
 }
@@ -76,10 +78,14 @@
 }
 .litsItemCarroussel>img{
     position: relative;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 80%;
+    /* height: auto; */
 }
 .litsItemCarroussel:hover{
     transform: scale(1.008);
-    box-shadow: 0 0 10px -2px var(--color-first);
+    box-shadow: 0 0 10px -2px var(--color-box-shadow);
 
 }
 .litsItemCarroussel>* {
@@ -92,10 +98,9 @@
     display: contents;
     /* width: fit-content; */
     text-decoration: none;
-    color: black;
 }
 .prix {
-    color: var(--color-first);
+    /* color: var(--color-second); */
     font-weight: 900;
     font-size: 1.2rem;
 }

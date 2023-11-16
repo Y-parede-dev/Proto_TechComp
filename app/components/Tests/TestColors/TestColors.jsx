@@ -22,7 +22,7 @@ const TestColors = ({props}) => {
         name: "gray",
         ["Bleu/Argent"]:"#F9F9F9",
         ["Black/White"]:"white",
-        ["Grey/Orange"]:"Grey",
+        ["Grey/Orange"]:"#343434",
     };
     const Border = {
         name: "blue light",
@@ -57,12 +57,12 @@ const TestColors = ({props}) => {
         setTheme(elt.target.textContent)
         themesContent.map((theme)=>{
             if(theme.name == elt.target.textContent){
-                root.style.setProperty('--default-txt', theme.text);
-                root.style.setProperty('--color-txt-second', theme.textSecond);
-                root.style.setProperty("--color-border-first",theme.border )
-                root.style.setProperty("--color-back-main",theme.background )
+                root.style.setProperty('--color-first', theme.text);
+                root.style.setProperty('--color-second', theme.textSecond);
+                root.style.setProperty("--color-border",theme.border )
+                // root.style.setProperty("--color-back-main",theme.background )
                 root.style.setProperty("--color-back",theme.background )
-                root.style.setProperty('--color-first', theme.background);
+                // root.style.setProperty('--color-first', theme.background);
             }
         })
     }

@@ -285,7 +285,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                             produitElt.id==idSearchReturn&&
                             <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
                                 <li className={styles.litsItemCarroussel}>
-                                    <Image alt={`Produit de la marque: ${produitElt.brand} `} width={200} height={200} src={produitElt.images[0]}/>
+                                    <Image alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={produitElt.images[0]}/>
                                     <h4>{produitElt.title}</h4>
                                     <Notation produit={produitElt} param={produitElt.usage}/>
                                     <PointsCles produit={produitElt} param={produitElt.usage}/>

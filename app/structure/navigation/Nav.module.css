@@ -8,7 +8,7 @@
     background: var(--color-back);
     margin: 0;
     max-width: 500px;
-    border-right: 1px solid var(--color-border-first);
+    border-right: 1px solid var(--color-border);
 
 }
 .NavLeft{
@@ -24,11 +24,11 @@
 }
 .titleCategoryListItem{
     font-size: 1.2rem;
-    color: var(--color-titles-nav);
+    color: var(--color-cat-nav);
     text-transform: uppercase;
     font-weight: 800;
     /* background: var(--color-third); */
-    background: var(--default-txt);
+    background: var(--color-back-cat-nav);
     border-radius: 22px;
     max-width: fit-content;
     padding: 8px 15px;
@@ -56,11 +56,11 @@
 }
 .linkOnNav{
     /* margin-left: 13px; */
-    color: var(--default-txt);
+    color: var(--color-link);
     /* color: var(--color-txt-second);  */
 }
 .linkOnNav a{
-    color: var(--default-txt);
+    color: var(--color-link);
 
     /* color: var(--color-txt-second);  */
 
@@ -70,8 +70,8 @@
     transition-duration: 250ms;
 }
 .linkOnNav a:hover{
-    background: var(--color-txt-second);
-    color: var(--color-back);
+    background: var(--color-link-back-hover);
+    color: var(--color-link-hover);
     border-radius: 38px;
 
 }
@@ -103,14 +103,7 @@
         /* overflow-x: visible;
         overflow-y: hidden; */
     }
-
     .NavShow{
         transform: translateX(00px);
-
-    }
-
-
-    .NavLeft:hover{
-
     }
 }
