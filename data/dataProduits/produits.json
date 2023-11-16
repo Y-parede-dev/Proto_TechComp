@@ -421,29 +421,29 @@
             "usage":"usage Bureau"
         },
         {
-            "id":"Asus-zenbook-14-ux3402za",
+            "id":"ASUS-Zenbook-S-13-OLED",
             "brand":"Asus",
-            "resolution":"2800 x 1800",
-            "title":"Asus zenbook 14 ux3402za",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook 14 OLED ux3402za sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook 14 OLED ux3402za offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS Zenbook 14 OLED ux3402za",
+            "resolution":"1920 x 1080",
+            "title":"ASUS Zenbook S 13 ",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook S 13 OLED UM5302TA-LX624X sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook S 13 OLED UM5302TA-LX624X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS Zenbook S 13 OLED UM5302TA-LX624X",
             "tags":["tactile","ASUS Zenbook","OLED" ,"I7", "pc portable", "moyen", "Intégré", "Laptop"],
-            "prix":999,
+            "prix":1300,
             "loading":"lazy",
-            "images":["https://urlz.fr/outb","https://urlz.fr/outi","https://urlz.fr/outk", "https://urlz.fr/outl"],
+            "images":["https://urlz.fr/ouBi","https://urlz.fr/ouBk","https://urlz.fr/ouBm", "https://urlz.fr/ouBn"],
             "bonus":"naJM",
             "pointsClef":[
                 {
                     "gaming":{
                         "nom":"Gaming",
                         "note":0,
-                        "description":"Cet ordinateur portable Asus zenbook 14 ux3402za de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                        "description":"Cet ordinateur portable ASUS Zenbook S 13 de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
                         "note":7.6,
-                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I7 1260p, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, Le ASUS Zenbook 14 OLED ux3402za Vous offre une rapidité optimale"
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Ryzen 7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le ASUS Zenbook S 13 OLED Vous offre une rapidité optimale"
                     }
                 },{
                     "durabilite":{
@@ -462,22 +462,22 @@
             ],
             "config":{
                 
-                "cpu":"I7 1260P 2.1GHz",
-                "screen":"14 | Tactile",
-                "gpu":"intégrée au CPU",
-                "ram":"16GO | DDR4",
+                "cpu":"Ryzen 7",
+                "screen":"13.3",
+                "gpu":"intégrée AMD Radeon 680M",
+                "ram":"16GO | DDR5",
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
             "noteDesc":{
                 "int": 9.0,
                 "bad": [
-                    "Le ventilateur fait un peut de bruit qund le pc portable et beaucoup soliciter."
+                    "Un écran un peu petit."
                 ],
                 "good": [
                     "Le Pc compact et léger parfait pour travailler et bouger",
                     "La mémoire vive est excellente",
-                    "La résolution de l'écran est exelente (2K/1800p)"
+                    "La résolution de l'écran est corecte (1K/1080p)"
                 ]
             },
             "noteGaming":{
@@ -489,13 +489,13 @@
                 ]
             },
             "card":{
-                "publicationContentId":"65567778ab255a06af30547f"
+                "publicationContentId":"65569ff8ab255a06af305492"
             },
             "array":{
-                "publicationContentId":"6556777aab255a06af305480"
+                "publicationContentId":"65569ffeab255a06af305493"
             },
             "btn":{
-                "publicationContentId":"65567775fc8c4d5801143bde"
+                "publicationContentId":"65569ff6fc8c4d5801143c03"
             },
             "conseil":"il n'est pas conseillé pour les jeux vidéo",
             "usage":"usage Bureau"
