@@ -8,8 +8,8 @@
             "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG STRIX G16 G614JU-N3186W sur itek-comparateur.fr notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG STRIX G16 G614JU-N3186W",
             "tags":[
                 "Asus ROG Strix",
-                " i7",
-                " intel",
+                "i7",
+                "intel",
                 "pc portable",
                 "moyen",
                 "G614",
@@ -67,7 +67,7 @@
                 "good": [
                     "La mémoire vive est excellente",
                     "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La résolution de l'écran est satisfaisante (1K/1080p)",
+                    "La résolution de l'écran est satisfaisante 2K 2880X1800",
                     "Le I7 13650Hx offre d'excellentes performances",
                     "La capacité de stockage est excellente"
                 ]
@@ -250,7 +250,7 @@
                 ],
                 "good": [
                     "La mémoire vive est moyene",
-                    "La résolution de l'écran est satisfaisante (1K/1080p)"
+                    "La résolution de l'écran est satisfaisante 2K 2880X1800"
                 ]
             },
             "noteGaming":{
@@ -336,7 +336,7 @@
                 "good": [
                     "Très léger pour un PC portable gaming perfomant",
                     "La mémoire vive est excellente pour les jeux vidéo",
-                    "La résolution de l'écran est satisfaisante (1K/1080p)"
+                    "La résolution de l'écran est satisfaisante 2K 2880X1800"
                 ]
             },
             "noteGaming":{
@@ -426,7 +426,7 @@
                 "good": [
                     "Très léger pour un PC portable gaming perfomant",
                     "La mémoire vive est excellente pour les jeux vidéo",
-                    "La résolution de l'écran est satisfaisante (1K/1080p)"
+                    "La résolution de l'écran est satisfaisante 2K 2880X1800"
                 ]
             },
             "noteGaming":{
@@ -515,7 +515,7 @@
                 "good": [
                     "Le Pc compact et léger parfait pour travailler et bouger",
                     "La mémoire vive est excellente",
-                    "La résolution de l'écran est corecte (1K/1080p)"
+                    "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
             "noteGaming":{
@@ -544,6 +544,7 @@
             "tags":[
                 "asus",
                 "scar",
+                "18",
                 "rog",
                 "strix",
                 "I9",
@@ -633,6 +634,7 @@
             "tags":[
                 "asus",
                 "scar",
+                "17",
                 "rog",
                 "strix",
                 "Ryzen9",
@@ -722,6 +724,7 @@
                 "rog",
                 "strix",
                 "scar",
+                "17",
                 "I9",
                 "Intel",
                 "3080 TI",
@@ -811,6 +814,7 @@
                 "rog",
                 "strix",
                 "scar",
+                "16",
                 "I9",
                 "Intel",
                 "4090",
@@ -901,6 +905,7 @@
                 "strix",
                 "13980",
                 "scar",
+                "16",
                 "I9",
                 "Intel",
                 "4080",
@@ -980,24 +985,25 @@
             "images":["1.jpg"]
         },
         {
-            "id":"ASUS-ROG-Strix-SCAR-16-WQXGA-240Hz",
+            "id":"Asus-ROG-Strix-Scar-16-G634JY-NM001W",
             "brand":"asus",
             "resolution":"2500 x 1600",
-            "title":"ASUS ROG Strix SCAR 16 WQXGA 240Hz - RTX 4080 12Go",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS ROG Strix SCAR 16 WQXGA 240Hz sur itek-comparateur.fr notre site de comparateur. Cet ASUS ROG Strix SCAR 16 WQXGA 240Hz offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS ROG Strix SCAR 16 WQXGA 240Hz",
+            "title":" Asus ROG Strix Scar 16 G634JY-NM001W",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG Strix Scar 16 G634JY-NM001W sur itek-comparateur.fr notre site de comparateur. Cet Asus ROG Strix Scar 16 G634JY-NM001W offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'Asus ROG Strix Scar 16 G634JY-NM001W",
             "tags":[
                 "asus",
                 "rog",
                 "strix",
                 "13980",
                 "scar",
+                "16",
                 "I9",
                 "Intel",
-                "4080",
+                "4090",
                 "pc portable",
                 "Ultra",
                 "Gaming"],
-            "prix":3299,
+            "prix":4500,
             "loading":"lazy",
             "bonus":"naJM",
             "pointsClef":[
@@ -1005,14 +1011,14 @@
                     "gaming":{
                         "nom":"Gaming",
                         "note":9.9,
-                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>ASUS ROG Strix SCAR 16 WQXGA 240Hz</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>Asus ROG Strix Scar 16 G634JY-NM001W</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
                         "note":10,
-                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I9, ses 32 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le ASUS ROG Strix SCAR 16 WQXGA 240Hz Vous offre une bonne rapidité non égalable"
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel i9-13980HX, ses 32 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Asus ROG Strix Scar 16 G634JY-NM001W Vous offre une bonne rapidité non égalable"
                     }
                 },{
                     "durabilite":{
@@ -1030,11 +1036,11 @@
                 }
             ],
             "config":{
-                "cpu":"I9",
+                "cpu":"I9-13980HX",
                 "screen":"16",
-                "gpu":"NVIDIA GeForce RTX 4080",
+                "gpu":"NVIDIA GeForce RTX 4090",
                 "ram":"32GO | DDR5",
-                "stockage":"1TO | SSD",
+                "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
             "noteDesc":{
@@ -1060,35 +1066,35 @@
                 ]
             },
             "array":{
-                "publicationContentId":"656e344faa6aec63f90bb0de"
+                "publicationContentId":"656e344faa6aec63f90bb0df"
             },
             "btn":{
-                "publicationContentId":"656e4feb4af4d4192c5782e5"
+                "publicationContentId":"656e4fef4af4d4192c5782e6"
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming",
-            "images":["1.jpg"]
-        }
-        ,
+            "images":["1.jpeg"]
+        },
         {
-            "id":"ASUS-ROG-Strix-SCAR-16-WQXGA-240Hz",
+            "id":"Asus-ROG-SCAR16-G634JZ-NM015W-16",
             "brand":"asus",
             "resolution":"2500 x 1600",
-            "title":"ASUS ROG Strix SCAR 16 WQXGA 240Hz - RTX 4080 12Go",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS ROG Strix SCAR 16 WQXGA 240Hz sur itek-comparateur.fr notre site de comparateur. Cet ASUS ROG Strix SCAR 16 WQXGA 240Hz offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS ROG Strix SCAR 16 WQXGA 240Hz",
+            "title":" Asus ROG SCAR16-G634JZ-NM015W 16",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG SCAR16-G634JZ-NM015W 16 sur itek-comparateur.fr notre site de comparateur. Cet Asus ROG SCAR16-G634JZ-NM015W 16 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'Asus ROG SCAR16-G634JZ-NM015W 16",
             "tags":[
                 "asus",
                 "rog",
                 "strix",
                 "13980",
                 "scar",
+                "16",
                 "I9",
                 "Intel",
                 "4080",
                 "pc portable",
                 "Ultra",
                 "Gaming"],
-            "prix":3299,
+            "prix":3799,
             "loading":"lazy",
             "bonus":"naJM",
             "pointsClef":[
@@ -1096,14 +1102,14 @@
                     "gaming":{
                         "nom":"Gaming",
                         "note":9.9,
-                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>ASUS ROG Strix SCAR 16 WQXGA 240Hz</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>Asus ROG SCAR16-G634JZ-NM015W 16</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
                     }
                 },
                 {
                     "rapidite":{
                         "nom":"Rapidité",
                         "note":10,
-                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I9, ses 32 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le ASUS ROG Strix SCAR 16 WQXGA 240Hz Vous offre une bonne rapidité non égalable"
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel i9-13980HX, ses 32 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Asus ROG SCAR16-G634JZ-NM015W 16 Vous offre une bonne rapidité non égalable"
                     }
                 },{
                     "durabilite":{
@@ -1121,7 +1127,7 @@
                 }
             ],
             "config":{
-                "cpu":"I9",
+                "cpu":"I9-13980HX",
                 "screen":"16",
                 "gpu":"NVIDIA GeForce RTX 4080",
                 "ram":"32GO | DDR5",
@@ -1134,7 +1140,7 @@
                     "Le PC est un peu lourd"
                 ],
                 "good": [
-                    "La Geforce Rtx 4090 offre d'excellentes performances",
+                    "La Geforce Rtx 4080 offre d'excellentes performances",
                     "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
@@ -1145,20 +1151,1331 @@
                     "Le PC est un peu lourd"
                 ],
                 "good": [
-                    "La Geforce Rtx 4090 offre d'excellentes performances",
+                    "La Geforce Rtx 4080 offre d'excellentes performances",
                     "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
             "array":{
-                "publicationContentId":"656e344faa6aec63f90bb0de"
+                "publicationContentId":"656e344faa6aec63f90bb0e0"
             },
             "btn":{
-                "publicationContentId":"656e4feb4af4d4192c5782e5"
+                "publicationContentId":"656e4ff44af4d4192c5782e7"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage gaming",
+            "images":["1.jpeg"]
+        },
+        {
+            "id":"Asus-ROG-SCAR15-G533ZW-LN086W-15",
+            "brand":"asus",
+            "resolution":"2500 x 1600",
+            "title":"Asus ROG SCAR15-G533ZW-LN086W 15.6",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG SCAR15-G533ZW-LN086W sur itek-comparateur.fr notre site de comparateur. Cet Asus ROG SCAR15-G533ZW-LN086W offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'Asus ROG SCAR15-G533ZW-LN086W",
+            "tags":[
+                "asus",
+                "rog",
+                "strix",
+                "scar",
+                "15",
+                "I9",
+                "Intel",
+                "3070",
+                "pc portable",
+                "Ultra",
+                "Gaming"],
+            "prix":2679,
+            "loading":"lazy",
+            "bonus":"1 mois d'abonnement Xbox Game Pass inclut à l'achat de l'apareil", 
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":9.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>Asus ROG SCAR15-G533ZW-LN086W</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel i9-12900H, ses 32 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Asus ROG SCAR15-G533ZW-LN086W Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                "cpu":"I9-12900H",
+                "screen":"15.6",
+                "gpu":"NVIDIA GeForce RTX 3070",
+                "ram":"32GO | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 3070 offre de très bonnes performances",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "noteGaming":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4080 offre d'excellentes performances",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e1"
+            },
+            "btn":{
+                "publicationContentId":"656e4ff8aa6aec63f90bb0fd"
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage gaming",
             "images":["1.jpg"]
+        },
+        {
+            "id":"Asus-ROG-STRIX-SCAR-15-G532LWS-HF076T",
+            "brand":"asus",
+            "resolution":"2500 x 1600",
+            "title":"Asus ROG STRIX SCAR 15 G532LWS-HF076T",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG STRIX SCAR 15 G532LWS-HF076T sur itek-comparateur.fr notre site de comparateur. Cet Asus ROG STRIX SCAR 15 G532LWS-HF076T offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'Asus ROG STRIX SCAR 15 G532LWS-HF076T",
+            "tags":[
+                "asus",
+                "rog",
+                "strix",
+                "scar",
+                "15",
+                "I9",
+                "Intel",
+                "2070 Super",
+                "pc portable",
+                "Ultra",
+                "Gaming"],
+            "prix":2499,
+            "loading":"lazy",
+            "bonus":"1 mois d'abonnement Xbox Game Pass inclut à l'achat de l'apareil", 
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":9.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>Asus ROG STRIX SCAR 15 G532LWS-HF076T</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel i9-10980HK, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Asus ROG STRIX SCAR 15 G532LWS-HF076T Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                "cpu":"I9-10980HK",
+                "screen":"15.6",
+                "gpu":"NVIDIA GeForce RTX 2070 Super",
+                "ram":"16GO | DDR4",
+                "stockage":"2TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 2070 Super offre de très bonnes performances",
+                    "Les 16 Go de Mémoire en DDR4 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "noteGaming":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4080 offre d'excellentes performances",
+                    "Les 16 Go de Mémoire en DDR4 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e2"
+            },
+            "btn":{
+                "publicationContentId":"656e4ffd4af4d4192c5782e8"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage gaming",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"ASUS-ROG-SCAR17-G733PYV-LL052W17.3",
+            "brand":"asus",
+            "resolution":"2500 x 1600",
+            "title":"ASUS ROG SCAR17-G733PYV-LL052W - 17.3",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS ROG SCAR17-G733PYV-LL052W - 17.3 sur itek-comparateur.fr notre site de comparateur. Cet ASUS ROG SCAR17-G733PYV-LL052W - 17.3 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS ROG SCAR17-G733PYV-LL052W - 17.3",
+            "tags":[
+                "asus",
+                "rog",
+                "strix",
+                "scar",
+                "17",
+                "Ryzen9",
+                "AMD",
+                "4090",
+                "pc portable",
+                "Ultra",
+                "Gaming"],
+            "prix":4499,
+            "loading":"lazy",
+            "bonus":"naJM", 
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":9.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>ASUS ROG SCAR17-G733PYV-LL052W - 17.3</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel AMD Ryzen 9 7945HX3D, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le ASUS ROG SCAR17-G733PYV-LL052W - 17.3 Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                "cpu":"AMD Ryzen 9 7945HX3D",
+                "screen":"17.3",
+                "gpu":"NVIDIA GeForce RTX 4090",
+                "ram":"16GO | DDR5",
+                "stockage":"2TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4090 offre de très bonnes performances",
+                    "Les 16 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "noteGaming":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4090 offre d'excellentes performances",
+                    "Les 16 Go de Mémoire en DDR4 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e3"
+            },
+            "btn":{
+                "publicationContentId":"656e5001aa6aec63f90bb0fe"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage gaming",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"Asus-ROG-Strix-SCAR-G634JY-NM011W",
+            "brand":"asus",
+            "resolution":"2500 x 1600",
+            "title":"Asus ROG Strix SCAR G634JY-NM011W",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG Strix SCAR G634JY-NM011W - 17.3 sur itek-comparateur.fr notre site de comparateur. Cet Asus ROG Strix SCAR G634JY-NM011W - 17.3 offre une expérience immersive avec ses composants et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'Asus ROG Strix SCAR G634JY-NM011W - 17.3",
+            "tags":[
+                "asus",
+                "rog",
+                "strix",
+                "scar",
+                "17",
+                "13980",
+                "Intel",
+                "4090",
+                "pc portable",
+                "Ultra",
+                "Gaming"],
+            "prix":4000,
+            "loading":"lazy",
+            "bonus":"naJM", 
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":9.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>Asus ROG Strix SCAR G634JY-NM011W - 17.3</strong> et sa <strong>config gaming</strong> est un choix logique si vous rechercher une experience gaming de qualité."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I9 13980hx, ses 64 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Asus ROG Strix SCAR G634JY-NM011W - 17.3 Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                "cpu":"I9 13980hx",
+                "screen":"16",
+                "gpu":"NVIDIA GeForce RTX 4090",
+                "ram":"64GO | DDR5",
+                "stockage":"2TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4090 offre de très bonnes performances",
+                    "Les 64 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "noteGaming":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4090 offre d'excellentes performances",
+                    "Les 64 Go de Mémoire en DDR4 vous offre une rapidité extreme",
+                    "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e5"
+            },
+            "btn":{
+                "publicationContentId":"656e50094af4d4192c5782ea"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage gaming",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"ASUS-Zenbook-S-13-OLED-UM5302TA-LX376W",
+            "brand":"asus",
+            "resolution":"1920 x 1080",
+            "title":"'Asus Zenbook S 13 OLED UM5302TA-LX376W' ",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l''Asus Zenbook S 13 OLED UM5302TA-LX376W' OLED UM5302TA-LX376W sur itek-comparateur.fr notre site de comparateur. Cet 'Asus Zenbook S 13 OLED UM5302TA-LX376W' OLED UM5302TA-LX376W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l''Asus Zenbook S 13 OLED UM5302TA-LX376W' OLED UM5302TA-LX376W",
+            "tags":[
+                "tactile",
+                "ASUS Zenbook",
+                "OLED",
+                "AMD Ryzen 7",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":1632,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus Zenbook S 13 OLED UM5302TA-LX376W de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Ryzen 7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le Asus Zenbook S 13 OLED UM5302TA-LX376W OLED Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Ryzen 7",
+                "screen":"13.3",
+                "gpu":"intégrée AMD Radeon 680M",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e7"
+            },
+            "btn":{
+                "publicationContentId":"656e5012aa6aec63f90bb100"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"ASUS-Zenbook-S-13-OLED-UM5302TA-LX376W",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"Asus Zenbook S 13 OLED UM5302TA-LX376W ",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook S 13 OLED UM5302TA-LX376W sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook S 13 OLED UM5302TA-LX376W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "tactile",
+                "ASUS Zenbook",
+                "OLED",
+                "AMD Ryzen 7",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":1190,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus Zenbook S 13 OLED UM5302TA-LX376W de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Ryzen 7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le Asus Zenbook S 13 OLED UM5302TA-LX376W Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Ryzen 7",
+                "screen":"13.3",
+                "gpu":"intégrée AMD Radeon 680M",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e8"
+            },
+            "btn":{
+                "publicationContentId":"656e50174af4d4192c5782eb"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"Asus-Zenbook-S-13-OLED-UX5304VA-NQ258W",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"Asus Zenbook S 13 OLED UX5304VA-NQ258W ",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook S 13 OLED UX5304VA-NQ258W sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook S 13 OLED UX5304VA-NQ258W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook",
+                "OLED",
+                "i7",
+                "intel",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":1591,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus Zenbook S 13 OLED UX5304VA-NQ258W de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel I7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le Asus Zenbook S 13 OLED UX5304VA-NQ258W Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"I7 - 13555U",
+                "screen":"13.3",
+                "gpu":"intégrée intel Iris Xe graphics.M",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0e9"
+            },
+            "btn":{
+                "publicationContentId":"656e501c4af4d4192c5782ec"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"ASUS-ZENBOOK-S-13-OLED-UX5304VA-NQ189X",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X ",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X sur itek-comparateur.fr notre site de comparateur. Cet ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook",
+                "OLED",
+                "I5",
+                "intel",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":1299,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel I5, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"I5",
+                "screen":"13.3",
+                "gpu":"intégrée",
+                "ram":"16GO | DDR5",
+                "stockage":"512GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0ea"
+            },
+            "btn":{
+                "publicationContentId":"656e50204af4d4192c5782ed"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["AsZS13.1.webp"]
+        },
+        {
+            "id":"ASUS-PC-PORTABLE-UM3504DA-NX147W-15",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"ASUS PC PORTABLE UM3504DA-NX147W 15",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS PC PORTABLE UM3504DA-NX147W 15 sur itek-comparateur.fr notre site de comparateur. Cet ASUS PC PORTABLE UM3504DA-NX147W 15 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook",
+                "OLED",
+                "AMD Ryzen 7",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":1299,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable ASUS PC PORTABLE UM3504DA-NX147W 15 de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel AMD Ryzen 7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le ASUS PC PORTABLE UM3504DA-NX147W 15 Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 7",
+                "screen":"15",
+                "gpu":"intégrée",
+                "ram":"16GO | DDR5",
+                "stockage":"1000GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0eb"
+            },
+            "btn":{
+                "publicationContentId":"656e50264af4d4192c5782ee"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["As.1.webp"]
+        },
+        {
+            "id":"ASUS-Zenbook-14-UX3402ZA-KN778W-OLED-Touch",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook",
+                "OLED",
+                "AMD Ryzen 7",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":858,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel AMD Ryzen 7, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"AMD Ryzen 7",
+                "screen":"15",
+                "gpu":"intégrée",
+                "ram":"16GO | DDR4",
+                "stockage":"1000GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0ed"
+            },
+            "btn":{
+                "publicationContentId":"656e50304af4d4192c5782ef"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"Asus-Zenbook-14X-OLED-UX5401-Space-Edition",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"Asus Zenbook 14X OLED UX5401 Space Edition",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook 14X OLED UX5401 Space Edition sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook 14X OLED UX5401 Space Edition offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook",
+                "OLED",
+                "Intel Core i7 12700H",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":1600,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus Zenbook 14X OLED UX5401 Space Edition de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Intel Core i7 12700H, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le Asus Zenbook 14X OLED UX5401 Space Edition Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i7 12700H",
+                "screen":"15",
+                "gpu":"intégrée",
+                "ram":"16GO | DDR4",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0ee"
+            },
+            "btn":{
+                "publicationContentId":"656e50344af4d4192c5782f0"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"Asus-ZENBOOK-14-OLED-i-i-5",
+            "brand":"asus",
+            "resolution":"2880 X 1800",
+            "title":"Asus ZENBOOK 14 OLED intel core i5",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ZENBOOK 14 OLED sur itek-comparateur.fr notre site de comparateur. Cet Asus ZENBOOK 14 OLED offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook",
+                "OLED",
+                "Intel Core i5-1240P",
+                "pc portable",
+                "moyen",
+                "Intégré",
+                "bureau"
+            ],
+            "prix":850,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Asus ZENBOOK 14 OLED de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":7.6,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Intel Core i5-1240P, ses 16 Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le Asus ZENBOOK 14 OLED Vous offre une rapidité optimale"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":5.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i5-1240P",
+                "screen":"15",
+                "gpu":"intégrée",
+                "ram":"16GO | DDR4",
+                "stockage":"512GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 9.0,
+                "bad": [
+                    "Un écran un peu petit."
+                ],
+                "good": [
+                    "Le Pc compact et léger parfait pour travailler et bouger",
+                    "La mémoire vive est excellente",
+                    "La résolution de l'écran est corecte 2K 2880X1800"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                ],
+                "good": [
+                    "Ce pc portable n'est pas fait pour une utilisation gaming"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0ef"
+            },
+            "btn":{
+                "publicationContentId":"656e5038aa6aec63f90bb102"
+            },
+            "conseil":"il n'est pas conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["1.jpg"]
+        },
+        {
+            "id":"ASUS-Zenbook-pro-UX7602BZ-MY009W",
+            "brand":"asus",
+            "resolution":"3200 X 2000",
+            "title":"ASUS Zenbook pro UX7602BZ-MY009W",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook pro UX7602BZ-MY009W sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook pro UX7602BZ-MY009W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook pro S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook pro",
+                "OLED",
+                "Tactile",
+                "Intel Core i9 13905H",
+                "pc portable",
+                "Ultra",
+                "Nvidia GeForce RTX 4080",
+                "bureau"
+            ],
+            "prix":3799,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>ASUS Zenbook pro UX7602BZ-MY009W</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming de plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I9 13905H, ses 32 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le ASUS Zenbook pro UX7602BZ-MY009W Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i9 13905H",
+                "screen":"15",
+                "gpu":"Nvidia RTX 4080",
+                "ram":"32GO | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4080 offre d'excellentes performances",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 4080 offre d'excellentes performances",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0f0"
+            },
+            "btn":{
+                "publicationContentId":"656e503eaa6aec63f90bb103"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming/Bureau",
+            "images":["GZP_1.avif"]
+        },
+        {
+            "id":"Asus-ZenBook-ProDuo-OLED-4K",
+            "brand":"asus",
+            "resolution":"3200 X 2000",
+            "title":"Asus ZenBook ProDuo OLED 4K 15.6",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ZenBook ProDuo OLED 4K 15.6 sur itek-comparateur.fr notre site de comparateur. Cet Asus ZenBook ProDuo OLED 4K 15.6 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook pro S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook pro",
+                "OLED",
+                "Tactile",
+                "Intel Core i9 13905H",
+                "pc portable",
+                "Ultra",
+                "Nvidia GeForce RTX 4080",
+                "bureau"
+            ],
+            "prix":2099,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>Asus ZenBook ProDuo OLED 4K 15.6</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming de plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":9,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Intel I9 13905H, ses 16Go de RAM en DDR4 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Asus ZenBook ProDuo OLED 4K 15.6 Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i9 13905H",
+                "screen":"15",
+                "gpu":"NVIDIA GeForce RTX 3070 / Intel UHD Graphics",
+                "ram":"16GO | DDR4 - (soudée)",
+                "stockage":"1TO | SSD M.2",
+                "os":"Windows 10"
+            },
+            "noteDesc":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 3070 offre de très bonnes performances",
+                    "Les 16Go de Mémoire en DDR4 vous offre une rapidité extreme",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 8,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 3070 offre de très bonnes performances",
+                    "Les 16Go de Mémoire en DDR4 vous offre une rapidité extreme",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0f1"
+            },
+            "btn":{
+                "publicationContentId":"656e5042aa6aec63f90bb104"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming/Bureau",
+            "images":["GZP_1.avif"]
+        },
+        {
+            "id":"ASUS Zenbook Pro Duo 15 OLED H2056X",
+            "brand":"asus",
+            "resolution":"3200 X 2000",
+            "title":"ASUS Zenbook Pro Duo 15 OLED H2056X",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook Pro Duo 15 OLED H2056X sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook Pro Duo 15 OLED H2056X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook pro S 13 OLED UM5302TA-LX376W'",
+            "tags":[
+                "ASUS Zenbook pro",
+                "OLED",
+                "Tactile",
+                "Intel Core i7 10870H",
+                "pc portable",
+                "Ultra",
+                "Nvidia GeForce RTX 3070",
+                "bureau"
+            ],
+            "prix":3799,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"C'est l'ordinateur portable gaming par excellence le <strong>ASUS Zenbook Pro Duo 15 OLED H2056X</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming de plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core i7 10870H, ses 16go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le ASUS Zenbook Pro Duo 15 OLED H2056X Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i7 10870H",
+                "screen":"15",
+                "gpu":"Nvidia RTX 3070",
+                "ram":"16go | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 3070 offre de très bonnes performances",
+                    "Les 16go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce Rtx 3070 offre de très bonnes performances",
+                    "Les 16go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0f2"
+            },
+            "btn":{
+                "publicationContentId":"656e50474af4d4192c5782f1"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming/Bureau",
+            "images":["GZP_1.avif"]
         }
     ]
 }
