@@ -13,15 +13,12 @@ import { FilterNoRepeat } from "@/lib/NoRepeat"
 
 const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre recherche'})=> {
     const CTX = useContext(SearchCTX)
+    console.log(CTX)
     const scrollElement = useRef(null)
     const keyElt = useRef()
-    // let [ids, data]
     let ids, data;
-    // // let searchTags = CTX.TAG
     let searchTags=[searchSepar]
     let searchId = searchSepar;
-    console.log(searchId)
-    // console.log(searchSepar.split(','))
 
     const scrollOnX = (direction) => {
         if(direction === 'left'){
@@ -30,7 +27,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             scrollElement.current.scrollLeft += 350
         }
     }
-    console.log(by)
+    // console.log(by)
     if(by=="tag"){
         // console.log(searchSepar)
         [ids, data] = ProductSearchByTag({searchTags})
@@ -40,12 +37,12 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
 
         [ids, data] = ProductSearchById({searchId, CTX})
         // ids=searchId
-        console.log(searchId)
-        console.log(data[0])
+        // console.log(searchId)
+        // console.log(data[0])
     }
     // },[searchId])
     
-    console.log(data)
+    // console.log(data)
     function isEmpty(obj) {
         return Object.keys(obj).length === 0;
     }
@@ -78,7 +75,8 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 produitElt.id==idSearchReturn&&
                 <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
                     <li className={styles.litsItemCarroussel}>
-                        <Image  alt={`Produit de la marque: ${produitElt.brand} `} width={200} height={200} src={produitElt.images[0]}/>
+                        {/* <Image  alt={`Produit de la marque: ${produitElt.brand} `} width={200} height={200} src={produitElt.images[0]}/> */}
+                        <Image alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
                         <h4>{produitElt.title}</h4>
                         <Notation produit={produitElt} param={produitElt.usage}/>
                         <PointsCles produit={produitElt} param={produitElt.usage}/>

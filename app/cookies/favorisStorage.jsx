@@ -23,7 +23,7 @@ export const SaveFav = (props) => {
     }
     localStorage.setItem('favoris', favoris);
     Cookies.set('favoris', favoris)
-    console.log(localStorageElt)
+    // console.log(localStorageElt)
 };
 export function FavExist(){
     const favorisCookies = Cookies.get('favoris')
@@ -38,6 +38,6 @@ export function FavExist(){
     }
     else{
         console.log('favorisCookies is '+ favorisCookies)
-        console.log(lsFavActual)
+        // console.log(lsFavActual)
     }
 }

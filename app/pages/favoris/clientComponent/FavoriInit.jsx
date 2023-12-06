@@ -26,9 +26,9 @@ export const FavoriInit = () => {
         setIds(id)
         
     },[fav])
-    console.log(typeof(fav))
-    console.log((fav))
-    console.log((data))
+    // console.log(typeof(fav))
+    // console.log((fav))
+    // console.log((data))
     return(
         <div className={styles.suggestions}>
             <div className={styles.containerListOtherItems}>

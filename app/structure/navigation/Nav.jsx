@@ -14,14 +14,14 @@ const Nav = ({responsive}) => {
    
     // let t = Cookies.get('Favoris')
     // console.log(t)
-    const [numberOfFav, setnumberOfFav] = useState(0);
-    const [DifNumberFav, setDifNumberFav] = useState(false);
+    // const [numberOfFav, setnumberOfFav] = useState(0);
+    // const [DifNumberFav, setDifNumberFav] = useState(false);
     const [inptUser, setinptUser] = useState([]);
     const [by, setBy] = useState("");
     const [moinsCher,setMoinsCher] = useState(false);
-    const [pcGamer,setPcGamer] = useState(false);
-    const [pcBureau,setPcBureau] = useState(false);
-    const [PcMarque,setPcMarque] = useState(false);
+    // const [pcGamer,setPcGamer] = useState(false);
+    // const [pcBureau,setPcBureau] = useState(false);
+    // const [PcMarque,setPcMarque] = useState(false);
     const [showNavBar, setshowNavBar] = useState(false);
     
        
@@ -100,10 +100,9 @@ const Nav = ({responsive}) => {
                             <li onClick={()=>handle("pc portable", "tag")} className={styles.linkOnNav}>
                                 <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
                             </li>
-                            <li className={styles.linkOnNav}>Catégories</li>
-                            <li className={styles.linkOnNav}>Comparaisons </li>
-                            <li className={styles.linkOnNav}>
-                                <Link href={"/pages/favoris"}>Favoris ⭐({CTX.NUMBERFAVACTUAL})</Link></li>
+                            <li className={styles.linkOnNav}>marques</li>
+                            {/* <li className={styles.linkOnNav}>
+                                <Link href={"/pages/favoris"}>Favoris ⭐({CTX.NUMBERFAVACTUAL})</Link></li> */}
                         </ul>
                     </li>
                     <li>
@@ -123,8 +122,8 @@ const Nav = ({responsive}) => {
 
                                 </ul>
                             </li>
-                            <li className={styles.linkOnNav}><Link href={urlPcPortable}>PC portable Gaming</Link></li>
-                            <li className={styles.linkOnNav}><Link href={urlPcPortable}>PC portable Bureau</Link></li>
+                            <li className={styles.linkOnNav} onClick={()=>handle("pc gaming", "tag")}><Link href={urlPcPortable}>PC portable Gaming</Link></li>
+                            <li className={styles.linkOnNav} onClick={()=>handle("pc bureau", "tag")}><Link href={urlPcPortable}>PC portable Bureau</Link></li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc portable", "tag")}><Link href={urlPcPortable}>Tous les PC portable</Link></li>
                             
                         </ul>

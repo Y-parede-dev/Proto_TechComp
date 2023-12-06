@@ -285,7 +285,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                             produitElt.id==idSearchReturn&&
                             <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
                                 <li className={styles.litsItemCarroussel}>
-                                    <Image alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={produitElt.images[0]}/>
+                                    <Image alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
                                     <h4>{produitElt.title}</h4>
                                     <Notation produit={produitElt} param={produitElt.usage}/>
                                     <PointsCles produit={produitElt} param={produitElt.usage}/>

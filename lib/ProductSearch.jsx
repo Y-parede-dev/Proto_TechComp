@@ -109,7 +109,7 @@ export const ClearSearch = (param) => {
     return [ param ];
 };
 export const ProductSearchById = (param) => {
-    console.log(param.searchId)
+    // console.log(param.searchId)
     let idPresent = [];
     let FavExistant = []
         try{
