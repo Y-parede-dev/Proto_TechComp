@@ -14,6 +14,10 @@ import { FilterNoRepeat } from "@/lib/NoRepeat";
 
 const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherche='votre recherche'})=> {
     const CTX = useContext(SearchCTX);
+    const [stateModale, setStatemodales] = useState({
+        modaleOpenPrix: false,
+        modaleOpenMarque: false
+    })
     const [modaleOpenPrix,setModaleOpenPrix]= useState(false);
     const [modaleOpenMarque,setModaleOpenMarque]= useState(false);
     let idPresent, data
@@ -47,7 +51,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
     const Content = ({params}) => {
         if(params.value=='prix'){
             return(
-                modaleOpenPrix&&
+                stateModale.modaleOpenPrix&&
                 <div className={styles.contentBtn}>
                     <div className={styles.childCtBtn}>
                         <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
@@ -77,7 +81,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                 arrTemp = FilterNoRepeat(arrTemp);
             });
             return(
-                modaleOpenMarque&&
+                stateModale.modaleOpenMarque&&
                 <div className={styles.contentBtn}>
                     <ul className={`${styles.listMarquesSearch} ${styles.childCtBtn}`}>
                     {arrTemp.map((elt)=>[
@@ -111,16 +115,22 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
     const openCloseModale = (value) => { // cres un fichier pour cette fonction
         switch(value){
             case "prix":
-                setModaleOpenPrix(!modaleOpenPrix);
-                setModaleOpenMarque(false);
+                setStatemodales({
+                    modaleOpenPrix: !stateModale.modaleOpenPrix,
+                    modaleOpenMarque: false
+                })
             break;
             case "marque":
-                setModaleOpenMarque(!modaleOpenMarque);
-                setModaleOpenPrix(false);
+                setStatemodales({
+                    modaleOpenPrix: false,
+                    modaleOpenMarque: !stateModale.modaleOpenMarque
+                })
             break;
             default:
-                setModaleOpenMarque(false);
-                setModaleOpenPrix(false);
+                setStatemodales({
+                    modaleOpenPrix: false,
+                    modaleOpenMarque: false
+                })
             break;
         };
     };

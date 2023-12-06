@@ -9,27 +9,29 @@ import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/NoRepeat';
 import Cookies from 'js-cookie';
+import GetByJson from '@/lib/GetByJson';
 // refactor a faire
 const Nav = ({responsive}) => {
-   
-    // let t = Cookies.get('Favoris')
-    // console.log(t)
-    // const [numberOfFav, setnumberOfFav] = useState(0);
-    // const [DifNumberFav, setDifNumberFav] = useState(false);
     const [inptUser, setinptUser] = useState([]);
     const [by, setBy] = useState("");
-    const [moinsCher,setMoinsCher] = useState(false);
-    // const [pcGamer,setPcGamer] = useState(false);
-    // const [pcBureau,setPcBureau] = useState(false);
-    // const [PcMarque,setPcMarque] = useState(false);
     const [showNavBar, setshowNavBar] = useState(false);
-    
-       
-
+    const [items, setItems] = useState({
+        marques:['empty']
+    })
+    const [modales, setModales] = useState({
+        moinsCherModale: false,
+        marquesModale: false,
+        clasementMarques: false
+    })
+    useEffect(()=>{
+        const marques = [];
+        GetByJson().map(elt=>marques.push(elt.brand));
+        setItems({marques: FilterNoRepeat(marques)});
+    },[]);
     const router = useRouter();
     const [sea,setSea] = useState(false);
     const CTX = useContext(SearchCTX);
-
+    const arr_MoinsCher = [500, 1000, 1500, 2000, 3000];
     const urlPcPortable = "/pages/pc-portable";
     try{
         window.onresize = ()=>{
@@ -78,8 +80,7 @@ const Nav = ({responsive}) => {
 
 
     useEffect(()=>{
-
-    }, [moinsCher]);
+    }, [modales.moinsCherModale]);
 
 
     const handle = (input, by)=>{
@@ -100,9 +101,19 @@ const Nav = ({responsive}) => {
                             <li onClick={()=>handle("pc portable", "tag")} className={styles.linkOnNav}>
                                 <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
                             </li>
-                            <li className={styles.linkOnNav}>marques</li>
-                            {/* <li className={styles.linkOnNav}>
-                                <Link href={"/pages/favoris"}>Favoris ⭐({CTX.NUMBERFAVACTUAL})</Link></li> */}
+                            <li className={styles.linkOnNav} onClick={()=>setModales({
+                                marquesModale: !modales.marquesModale,
+                                moinsCherModale: modales.moinsCherModale})}>
+                                <Link href={" "}>® Marques</Link>
+                            </li>
+                            <ul className={styles.listBrand}>
+                                {modales.marquesModale && 
+                                    items.marques.map((marque) => [
+                                            <li className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>{marque}</li>
+                                        ]
+                                    )
+                                }
+                            </ul>
                         </ul>
                     </li>
                     <li>
@@ -110,14 +121,21 @@ const Nav = ({responsive}) => {
                         <ul className={styles.listItems}>
                             <li>
                                 <ul>
-                                    <li onClick={()=>setMoinsCher(!moinsCher)} className={styles.linkOnNav}>
-                                        <Link href={" "}>PC portable moins chers</Link></li>
-                                    {moinsCher && 
-                                    <>
-                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(500, "price")}><Link href={urlPcPortable}>moins de 500€</Link></li>
-                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(1000, "price")}><Link href={urlPcPortable}>moins de 1000€</Link></li>
-                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(2000, "price")}><Link href={urlPcPortable}>moins de 2000€</Link></li>
-                                    </>
+                                    <li onClick={()=>setModales({
+                                        moinsCherModale: !modales.moinsCherModale,
+                                        marquesModale: modales.marquesModale})} className={styles.linkOnNav}>
+                                        <Link href={" "}>PC portable moins chers</Link>
+                                    </li>
+                                    {modales.moinsCherModale && 
+                                    <ul>
+                                        {
+                                            arr_MoinsCher.map((prix)=>[
+                                                <li key={`${prix}-${prix.length}`} className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(prix, "price")}><Link href={urlPcPortable}>moins de {prix.toString()}€</Link></li>
+                                            ])
+                                        }
+                                        {/* <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(1000, "price")}><Link href={urlPcPortable}>moins de 1000€</Link></li>
+                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(2000, "price")}><Link href={urlPcPortable}>moins de 2000€</Link></li> */}
+                                    </ul>
                                     }
 
                                 </ul>

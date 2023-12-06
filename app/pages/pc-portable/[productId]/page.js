@@ -145,7 +145,10 @@ const ProductPage = ({params}) => {
               <h2>suggestions d'autres produits</h2>
               <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portable de la même marque"}/>
               <SuggestionMap searchSepar={"gaming"} titreRecherche={"PC portable gamer"}/>
-              <SuggestionMap searchSepar={"4k"} titreRecherche={"PC portable avec écran 4K"}/>
+              <SuggestionMap searchSepar={"ultra"} titreRecherche={"PC portable avec écran 4K"}/>
+              <SuggestionMap searchSepar={"tactile"} titreRecherche={"PC portable avec écran tactile"}/>
+              <SuggestionMap searchSepar={"oled"} titreRecherche={"PC portable avec écran oled"}/>
+
             </div>
           </>
         </div>

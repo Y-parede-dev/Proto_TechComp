@@ -99,7 +99,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
                 <div className={styles.imagesList}>
                     {
                         testSTate.map((imgs)=>[
-                            <Image key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
+                            <Image className={styles.imageItem} key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
 
                         ])
                     }

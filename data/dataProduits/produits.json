@@ -1,100 +1,6 @@
 {
     "produits":[
-        {
-            "id":"Asus-ROG-STRIX-G16-G614JU-N3186W",
-            "brand":"asus",
-            "resolution":"1920x1200 (WUXGA)",
-            "title":"Asus ROG STRIX G16 G614JU-N3186W",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ROG STRIX G16 G614JU-N3186W sur itek-comparateur.fr notre site de comparateur. Ce puissant PC portable gaming offre une expérience immersive avec son écran de haute qualité et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins de jeu avec l'Asus ROG STRIX G16 G614JU-N3186W",
-            "tags":[
-                "Asus ROG Strix",
-                "i7",
-                "intel",
-                "pc portable",
-                "moyen",
-                "G614",
-                "G16",
-                "G614JU-N3186W",
-                "gaming"
-            ],
-            "prix":1799,
-            "loading":"lazy",
-            "images":["asus-pc-strix-g16-g614ju-n3186w-gris-16-intel-c1.webp"],
-            "bonus":"naJM",
-            "pointsClef":[
-                {
-                    "gaming":{
-                        "nom":"Gaming",
-                        "note":7.2,
-                        "description":"Cet ordinateur portable Strix de chez Asus est conçu principalement pour les gamers. La configuration <strong>milieu/Haut de gamme de ce PC</strong> vous permettra de jouer aux jeux récents, sans pouvoir toutefois pousser les paramètres graphique des jeux les plus gourmands en ressource à leurs maximum."
-                    }
-                },
-                {
-                    "rapidite":{
-                        "nom":"Rapidité",
-                        "note":10,
-                        "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son AMD Ryzen 9 5900HX (via ses 8 très bons coeurs), ses 16 Go de RAM en DDR5 et à son disque SSD NVMe rapide. Ce PC est un <strong>choix de premier ordre pour votre productivité !</strong>"
-                    }
-                },{
-                    "durabilite":{
-                        "nom":"Durabilité",
-                        "note":9.6,
-                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-                    }
-                },
-                {
-                    "confort":{
-                        "nom":"Confort",
-                        "note":7.6,
-                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design épuré et sa touche RGB  <strong>excellent confort en général.</strong>"
-                    }
-                }
-            ],
-            "config":{
-                
-                "cpu":"I7 13650HX 2.6GHz",
-                "screen":16.0,
-                "gpu":"Nvidia RTX 4050",
-                "ram":"16GO | DDR5",
-                "stockage":"512GO | SSD NVMe",
-                "os":"Windows 10"
-            },
-            "noteDesc":{
-                "int": 9.4,
-                "bad": [
-                    "Pas d'inconvénients particuliers."
-                ],
-                "good": [
-                    "La mémoire vive est excellente",
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "La résolution de l'écran est satisfaisante 2K 2880X1800",
-                    "Le I7 13650Hx offre d'excellentes performances",
-                    "La capacité de stockage est excellente"
-                ]
-            },
-            "noteGaming":{
-                "int": 7.2,
-                "bad": [
-                    "Pas d'inconvénients particuliers."
-                ],
-                "good": [
-                    "La Geforce Rtx 4050 offre des performances correctes",
-                    "La capacité de stockage est correcte",
-                    "La mémoire vive est excellente pour les jeux vidéo",
-                    "La dalle de l'écran (ips) offre une bonne qualité d'image",
-                    "Le I7 13650Hx offre d'excellentes performances"
-                ]
-            },
-            "array":{
-                "publicationContentId":"656fabf04af4d4192c5784b0"
-            },
-            "btn":{
-                "publicationContentId":"656fabf04af4d4192c5784b1"
-            },
-            "conseil":"il est conseillé pour les jeux vidéo",
-            "usage":"usage gaming"
-            
-        },
+        
         {
             "id":"ASUS-Zenbook-14-UX3402ZA-KN778W",
             "brand":"asus",
@@ -821,7 +727,7 @@
                 "pc portable",
                 "Ultra",
                 "Gaming"],
-            "prix":4060,
+            "prix":3999,
             "loading":"lazy",
             "bonus":"naJM",
             "pointsClef":[
@@ -1454,7 +1360,7 @@
                 "pc portable",
                 "Ultra",
                 "Gaming"],
-            "prix":4000,
+            "prix":4060,
             "loading":"lazy",
             "bonus":"naJM", 
             "pointsClef":[
@@ -1531,7 +1437,7 @@
             "brand":"asus",
             "resolution":"1920 x 1080",
             "title":"'Asus Zenbook S 13 OLED UM5302TA-LX376W' ",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l''Asus Zenbook S 13 OLED UM5302TA-LX376W' OLED UM5302TA-LX376W sur itek-comparateur.fr notre site de comparateur. Cet 'Asus Zenbook S 13 OLED UM5302TA-LX376W' OLED UM5302TA-LX376W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l''Asus Zenbook S 13 OLED UM5302TA-LX376W' OLED UM5302TA-LX376W",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l''Asus Zenbook S 13 OLED UM5302TA-LX376W' sur itek-comparateur.fr notre site de comparateur. Cet 'Asus Zenbook S 13 OLED UM5302TA-LX376W'offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l''Asus Zenbook S 13 OLED UM5302TA-LX376W' ",
             "tags":[
                 "tactile",
                 "ASUS Zenbook",
@@ -1613,97 +1519,11 @@
             "images":["1.jpg"]
         },
         {
-            "id":"ASUS-Zenbook-S-13-OLED-UM5302TA-LX376W",
-            "brand":"asus",
-            "resolution":"2880 X 1800",
-            "title":"Asus Zenbook S 13 OLED UM5302TA-LX376W ",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook S 13 OLED UM5302TA-LX376W sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook S 13 OLED UM5302TA-LX376W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
-            "tags":[
-                "tactile",
-                "ASUS Zenbook",
-                "OLED",
-                "AMD Ryzen 7",
-                "pc portable",
-                "moyen",
-                "Intégré",
-                "bureau"
-            ],
-            "prix":1190,
-            "loading":"lazy",
-            "bonus":"naJM",
-            "pointsClef":[
-                {
-                    "gaming":{
-                        "nom":"Gaming",
-                        "note":0,
-                        "description":"Cet ordinateur portable Asus Zenbook S 13 OLED UM5302TA-LX376W de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."
-                    }
-                },
-                {
-                    "rapidite":{
-                        "nom":"Rapidité",
-                        "note":7.6,
-                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son Ryzen 7, ses 16 Go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, Le Asus Zenbook S 13 OLED UM5302TA-LX376W Vous offre une rapidité optimale"
-                    }
-                },{
-                    "durabilite":{
-                        "nom":"Durabilité",
-                        "note":5.9,
-                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-                    }
-                },
-                {
-                    "confort":{
-                        "nom":"Confort",
-                        "note":8.6,
-                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-                    }
-                }
-            ],
-            "config":{
-                
-                "cpu":"Ryzen 7",
-                "screen":"13.3",
-                "gpu":"intégrée AMD Radeon 680M",
-                "ram":"16GO | DDR5",
-                "stockage":"512GO | SSD",
-                "os":"Windows 11"
-            },
-            "noteDesc":{
-                "int": 9.0,
-                "bad": [
-                    "Un écran un peu petit."
-                ],
-                "good": [
-                    "Le Pc compact et léger parfait pour travailler et bouger",
-                    "La mémoire vive est excellente",
-                    "La résolution de l'écran est corecte 2K 2880X1800"
-                ]
-            },
-            "noteGaming":{
-                "int": 0,
-                "bad": [
-                ],
-                "good": [
-                    "Ce pc portable n'est pas fait pour une utilisation gaming"
-                ]
-            },
-            "array":{
-                "publicationContentId":"656e344faa6aec63f90bb0e8"
-            },
-            "btn":{
-                "publicationContentId":"656e50174af4d4192c5782eb"
-            },
-            "conseil":"il n'est pas conseillé pour les jeux vidéo",
-            "usage":"usage Bureau",
-            "images":["1.jpg"]
-        },
-        {
             "id":"Asus-Zenbook-S-13-OLED-UX5304VA-NQ258W",
             "brand":"asus",
             "resolution":"2880 X 1800",
             "title":"Asus Zenbook S 13 OLED UX5304VA-NQ258W ",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook S 13 OLED UX5304VA-NQ258W sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook S 13 OLED UX5304VA-NQ258W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook S 13 OLED UX5304VA-NQ258W sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook S 13 OLED UX5304VA-NQ258W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec sus Zenbook S 13 OLED UX5304VA-NQ258W'",
             "tags":[
                 "ASUS Zenbook",
                 "OLED",
@@ -1789,7 +1609,7 @@
             "brand":"asus",
             "resolution":"2880 X 1800",
             "title":"ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X ",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X sur itek-comparateur.fr notre site de comparateur. Cet ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X sur itek-comparateur.fr notre site de comparateur. Cet ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec ASUS ZENBOOK S 13 OLED UX5304VA-NQ189X'",
             "tags":[
                 "ASUS Zenbook",
                 "OLED",
@@ -1875,7 +1695,7 @@
             "brand":"asus",
             "resolution":"2880 X 1800",
             "title":"ASUS PC PORTABLE UM3504DA-NX147W 15",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS PC PORTABLE UM3504DA-NX147W 15 sur itek-comparateur.fr notre site de comparateur. Cet ASUS PC PORTABLE UM3504DA-NX147W 15 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS PC PORTABLE UM3504DA-NX147W 15 sur itek-comparateur.fr notre site de comparateur. Cet ASUS PC PORTABLE UM3504DA-NX147W 15 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec ASUS PC PORTABLE UM3504DA-NX147W'",
             "tags":[
                 "ASUS Zenbook",
                 "OLED",
@@ -2045,7 +1865,7 @@
             "brand":"asus",
             "resolution":"2880 X 1800",
             "title":"Asus Zenbook 14X OLED UX5401 Space Edition",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook 14X OLED UX5401 Space Edition sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook 14X OLED UX5401 Space Edition offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus Zenbook 14X OLED UX5401 Space Edition sur itek-comparateur.fr notre site de comparateur. Cet Asus Zenbook 14X OLED UX5401 Space Edition offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Asus Zenbook 14X OLED UX5401 Space Edition'",
             "tags":[
                 "ASUS Zenbook",
                 "OLED",
@@ -2130,7 +1950,7 @@
             "brand":"asus",
             "resolution":"2880 X 1800",
             "title":"Asus ZENBOOK 14 OLED intel core i5",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ZENBOOK 14 OLED sur itek-comparateur.fr notre site de comparateur. Cet Asus ZENBOOK 14 OLED offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ZENBOOK 14 OLED sur itek-comparateur.fr notre site de comparateur. Cet Asus ZENBOOK 14 OLED offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Asus ZENBOOK 14 OLED intel core i5'",
             "tags":[
                 "ASUS Zenbook",
                 "OLED",
@@ -2215,7 +2035,7 @@
             "brand":"asus",
             "resolution":"3200 X 2000",
             "title":"ASUS Zenbook pro UX7602BZ-MY009W",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook pro UX7602BZ-MY009W sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook pro UX7602BZ-MY009W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook pro S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook pro UX7602BZ-MY009W sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook pro UX7602BZ-MY009W offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec ASUS Zenbook pro UX7602BZ-MY009W'",
             "tags":[
                 "ASUS Zenbook pro",
                 "OLED",
@@ -2304,7 +2124,7 @@
             "brand":"asus",
             "resolution":"3200 X 2000",
             "title":"Asus ZenBook ProDuo OLED 4K 15.6",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ZenBook ProDuo OLED 4K 15.6 sur itek-comparateur.fr notre site de comparateur. Cet Asus ZenBook ProDuo OLED 4K 15.6 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook pro S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Asus ZenBook ProDuo OLED 4K 15.6 sur itek-comparateur.fr notre site de comparateur. Cet Asus ZenBook ProDuo OLED 4K 15.6 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec sus ZenBook ProDuo OLED 4K'",
             "tags":[
                 "ASUS Zenbook pro",
                 "OLED",
@@ -2386,14 +2206,14 @@
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage Gaming/Bureau",
-            "images":["GZP_1.avif"]
+            "images":["eGZP_1.avif"]
         },
         {
-            "id":"ASUS Zenbook Pro Duo 15 OLED H2056X",
+            "id":"ASUS-Zenbook-Pro-Duo-15-OLED-H2056X",
             "brand":"asus",
             "resolution":"3200 X 2000",
             "title":"ASUS Zenbook Pro Duo 15 OLED H2056X",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook Pro Duo 15 OLED H2056X sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook Pro Duo 15 OLED H2056X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avecZenbook pro S 13 OLED UM5302TA-LX376W'",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook Pro Duo 15 OLED H2056X sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook Pro Duo 15 OLED H2056X offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec ASUS Zenbook Pro Duo 15 OLED H2056X'",
             "tags":[
                 "ASUS Zenbook pro",
                 "OLED",
@@ -2404,7 +2224,7 @@
                 "Nvidia GeForce RTX 3070",
                 "bureau"
             ],
-            "prix":3799,
+            "prix":3478,
             "loading":"lazy",
             "bonus":"naJM",
             "pointsClef":[
@@ -2452,7 +2272,7 @@
                 ],
                 "good": [
                     "La Geforce Rtx 3070 offre de très bonnes performances",
-                    "Les 16go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
@@ -2463,7 +2283,7 @@
                 ],
                 "good": [
                     "La Geforce Rtx 3070 offre de très bonnes performances",
-                    "Les 16go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
                     "L'écran 4k permet de jouer en ULTRA HD"
                 ]
             },
@@ -2475,7 +2295,97 @@
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage Gaming/Bureau",
-            "images":["GZP_1.avif"]
+            "images":["eGZP_1.avif"]
+        },
+        {
+            "id":"Samsung-Galaxy-Book3-Ultra-16",
+            "brand":"samsung",
+            "resolution":"2800 X 1800",
+            "title":"Samsung Galaxy Book3 Ultra 16",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l'Samsung Galaxy Book3 Ultra 16 sur itek-comparateur.fr notre site de comparateur. Cet Samsung Galaxy Book3 Ultra 16 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "tags":[
+                "samsung galaxy book",
+                "AMOLED",
+                "Tactile",
+                "Intel Core i7 10870H",
+                "pc portable",
+                "Ultra",
+                "Nvidia GeForce RTX4070",
+                "bureau",
+                "gaming"
+            ],
+            "prix":3189,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"Un bon choix pour une utilisation bureautique et gaming le <strong>Samsung Galaxy Book3 Ultra 16</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming de plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core i7 10870H, ses 16go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Samsung Galaxy Book3 Ultra 16 Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i7 10870H",
+                "screen":"15",
+                "gpu":"Nvidia RTX4070",
+                "ram":"16go | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce RTX4070 offre de très bonnes performances",
+                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce RTX4070 offre de très bonnes performances",
+                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e344faa6aec63f90bb0f2"
+            },
+            "btn":{
+                "publicationContentId":"656e50474af4d4192c5782f1"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming/Bureau",
+            "images":["eGZP_1.avif"]
         }
     ]
 }
