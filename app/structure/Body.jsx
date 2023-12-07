@@ -59,7 +59,7 @@ const Body = ({children}) => {
                 
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
-                    <Link href='https://www.acer.com'>
+                    <Link className={styles.adsBanners} href='https://www.acer.com'>
                         <div className={styles.AdsContainer}>PUB</div>
                     </Link>
                     <div className={styles.content}>{children}</div>

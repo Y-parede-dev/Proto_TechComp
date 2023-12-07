@@ -8,6 +8,7 @@
   margin: auto;
   align-items: center;
   min-height: 100vh;
+  margin-top: var(--margin-top-main);
 }
 .product_card{
   /* max-width: 1240px; */

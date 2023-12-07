@@ -21,6 +21,7 @@
   width: 100%;
   /* padding: 6rem; */
   min-height: calc(100vh - var(--height-header));
+  margin-top: var(--margin-top-main);
 }
 .mainContent{
   background: var(--color-back-main);

@@ -96,6 +96,7 @@
 
   --color-error: #c91010;
 
+  --margin-top-main: 142px;
 }
 *{
   color: var(--default-txt);
