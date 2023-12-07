@@ -18,8 +18,6 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
         modaleOpenPrix: false,
         modaleOpenMarque: false
     })
-    const [modaleOpenPrix,setModaleOpenPrix]= useState(false);
-    const [modaleOpenMarque,setModaleOpenMarque]= useState(false);
     let idPresent, data
     const [value,setValue]= useState(5000);
     

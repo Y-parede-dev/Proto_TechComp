@@ -28,45 +28,54 @@ const ImageAndLinkAffiliate = ({produit}) => {
 
     const urlCustom = `https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produit.brand}%2F${produit.id}`;
 
-    useEffect(()=>{
-        list(storageRef)
-            .then((pcPortable)=>{
-                pcPortable.prefixes.forEach((folderRef)=>{
-                    list(folderRef)
-                        .then((resBrand)=>{
-                            resBrand.prefixes.forEach((brandRef)=>{
-                                if(brandRef.name.toLowerCase() === produit.brand.toLowerCase()){
-                                    list(brandRef)
-                                        .then((resFoldByBrand)=>{
-                                            resFoldByBrand.prefixes.forEach((foldItemRef)=>{
-                                                if(foldItemRef.name === produit.id)
-                                                {
-                                                    list(foldItemRef)
-                                                        .then((resItems)=>{
-                                                            const arrayTemp = []
-                                                            resItems.items.map((item)=>{
-                                                                if(!images.arrayImages.includes(item.name)){
-                                                                    arrayTemp.push(item.name)
-                                                                }
-                                                                setImages({url: images.arrayImages[0] ,arrayImages:arrayTemp, default: false})
-                                                                // setUrlImageDefault({image:testSTate[0], default: false})
-                                                            })
-                                                        });
-                                                        
-                                                }
+    useEffect(() => {
+        const getDataFirebase = async () => {
+
+            await list(storageRef)
+                .then((pcPortable)=>{
+                    pcPortable.prefixes.forEach((folderRef)=>{
+                        list(folderRef)
+                            .then((resBrand)=>{
+                                resBrand.prefixes.forEach((brandRef)=>{
+                                    if(brandRef.name.toLowerCase() === produit.brand.toLowerCase()){
+                                        list(brandRef)
+                                            .then((resFoldByBrand)=>{
+                                                resFoldByBrand.prefixes.forEach((foldItemRef)=>{
+                                                    if(foldItemRef.name === produit.id)
+                                                    {
+                                                        list(foldItemRef)
+                                                            .then((resItems)=>{
+                                                                const arrayTemp = []
+                                                                resItems.items.map((item)=>{
+                                                                    if(!images.arrayImages.includes(item.name)){
+                                                                        arrayTemp.push(item.name)
+                                                                    }
+                                                                    setImages({url: images.arrayImages[0] ,arrayImages:arrayTemp, default: false})
+                                                                })
+                                                            });
+                                                            
+                                                    }
+                                                })
                                             })
-                                        })
-                                }
+                                    }
+                                })
                             })
-                        })
+                    })
                 })
-            })
+        }
+        getDataFirebase()
     },[])
+
     const changeImage = (item) => {
         let url = `${item.target.src.split('url=')[1]}`;
         setUrlImageDefault({image:url.split("%252F")[3].split("%3F")[0]})
     }
-
+    const GetByAffiliz = async({prod}) => {
+        
+        return(
+            <affilizz-rendering-component publication-content-id={prod.array.publicationContentId} loading={prod.loading}></affilizz-rendering-component>
+        )
+    } 
     return(
         <>
             <div className={styles.imageContainer}>
@@ -82,7 +91,8 @@ const ImageAndLinkAffiliate = ({produit}) => {
             </div>
             <div className={styles.array}>
                 <p className={styles.array_price_title}>Meilleurs prix du marché</p>
-                <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component>
+                <GetByAffiliz prod={produit}></GetByAffiliz>
+                {/* <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component> */}
             </div>
         </>
     )
