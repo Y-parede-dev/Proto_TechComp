@@ -91,8 +91,8 @@ const ImageAndLinkAffiliate = ({produit}) => {
             </div>
             <div className={styles.array}>
                 <p className={styles.array_price_title}>Meilleurs prix du marché</p>
-                <GetByAffiliz prod={produit}></GetByAffiliz>
-                {/* <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component> */}
+                {/* <GetByAffiliz prod={produit}></GetByAffiliz> */}
+                <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component>
             </div>
         </>
     )
