@@ -3,7 +3,7 @@ import  {listAll} from 'firebase/storage';
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import initFirebaseAndStockage from '@/config/configFirebase/conf.firebase';
+import {initFirebaseAndStockage} from '@/config/configFirebase/conf.firebase';
 
 const GetProductImages = ({setUrlImageDefault, curentProductId, product, url}) => {
     const imageRef = initFirebaseAndStockage();
