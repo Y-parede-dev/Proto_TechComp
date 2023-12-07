@@ -10,7 +10,7 @@ import { useEffect, useState, useContext, useRef, use } from "react";
 import { SearchCTX } from "@/app/context/SearchCTX";
 import { Modal, Slider } from '@mui/material';
 import {Stack} from '@mui/material';
-import { FilterNoRepeat } from "@/lib/NoRepeat";
+import { FilterNoRepeat } from "@/lib/FonctionsUtiles";
 
 const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherche='votre recherche'})=> {
     const CTX = useContext(SearchCTX);
@@ -68,7 +68,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                 CTX.setTAG(searchTags);
                 e.target.classList.add(styles.t);
             };
-            let arrTemp = [];
+            let arrTemp = []; 
             data.map((prod)=>{
                 arrTemp.push(prod.brand);
                 arrTemp = FilterNoRepeat(arrTemp);

@@ -19,10 +19,10 @@ const returnSearch = (arr, id) => {
 export const ProductsByDefault = () => {
     
 };
-export const ProductSearchByTag = (param) => {
+export const ProductSearchByTag =  (param) => {
     let idPresent = [];
         try{
-            DATA.map(pc=>{
+             DATA.map(pc=>{
                 param.searchTags.length===0?
                 returnSearch(idPresent, pc.id)
                 :

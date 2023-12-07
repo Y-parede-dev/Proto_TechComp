@@ -10,7 +10,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import produits from '@/data/dataProduits/produits.json' assert {type: 'json'}
 import config from '@/config/config.json' assert {type: 'json'}
 import { useRouter } from "next/navigation";
-import { FilterNoRepeat } from "@/lib/NoRepeat";
+import { FilterNoRepeat } from "@/lib/FonctionsUtiles";
 import GetByJson from "@/lib/GetByJson";
 
 const FormSearch = () => {

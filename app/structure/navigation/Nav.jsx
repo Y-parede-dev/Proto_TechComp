@@ -7,7 +7,7 @@ import { SearchCTX } from '../../context/SearchCTX';
 import { ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
 import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
-import { FilterNoRepeat } from '@/lib/NoRepeat';
+import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
 import Cookies from 'js-cookie';
 import GetByJson from '@/lib/GetByJson';
 // refactor a faire
