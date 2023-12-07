@@ -7,16 +7,11 @@ import iconGpu from './inconsConfig/icon_gpu.png'
 import iconScreen from './inconsConfig/icon_screen.png'
 import iconStockage from './inconsConfig/icon_stockage.png'
 import iconOS from './inconsConfig/icon_OS.png'
-import produits from '@/data/dataProduits/produits.json' assert { type: 'json' }
 import Image from 'next/image'
 import Notation from '@/app/components/clientComponents/Notation'
-// import InjectPointsCLefHTML from '@/app/components/clientComponents/InjectPointsClefHTML'
-// import BarStyled from '@/app/components/detailsProductBarStyled/BarStyled'
 import SuggestionMap from '@/app/components/suggestion/SuggestionMap'
 import PointsCles from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles'
 import GetByJson from '@/lib/GetByJson'
-
-import {SaveFav} from '@/app/cookies/favorisStorage'
 
 const data = GetByJson()
 
@@ -41,34 +36,13 @@ const ProductPage = ({params}) => {
       produit={...e}
       return(produit)
     }})
-    // console.log(produit)
-    let t = false
-  const openVideo = () => {
 
-  }
-  // const imageAndComparateur = (
-  //   <>
-  //     <div className={styles.imageContainer}>
-  //       <div >
-  //         {">"}
-  //         {t&& 
-  //         <iframe title='360 video' src={produit.bonus}></iframe>}
-  //       </div>
-  //       <Image alt={`${produit.title}`} className={styles.image} width={400} height={400} src={produit.images[0]}/>
-  //     </div>
-  //     <div className={styles.array}>
-  //       <p className={styles.array_price_title}>Meilleurs prix du marché</p>
-  //       <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component>
-  //     </div>
-  //   </>
-  // )
   const caract = (
     <>
       <div className={styles.carac}>
         <h2>Caractéristique</h2>
         <div>
           <p className={styles.caracTxt}>Cet ordinateur portable de la marque <strong className={styles.spanCaracComputer}>{produit.brand}</strong> possède un écran de <strong className={styles.spanCaracComputer}>{produit.config.screen}"</strong>, <span>{produit.conseil}</span>. L'ordinateur portable <strong className={styles.spanCaracComputer}>{produit.title}</strong> obtient une moyenne de <strong>{((produit.noteDesc.int + produit.noteGaming.int) / 2).toFixed(1)}/10</strong>.</p>    
-          {/*pour <strong className={styles.spanCaracComputer}>{produit.usage}.</strong>*/}
           <table className={styles.tablecute}>
             <tbody>
               <tr>

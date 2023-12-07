@@ -32,12 +32,11 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
         return Object.keys(obj).length === 0;
     };
     try{
-        // ids = ids.SEARCH
         if(isEmpty(ids)) {
             ids=[];
             data.map((elt)=>{
                 ids.push(elt.id);
-                ids = FilterNoRepeat(ids); //ids.filter((x,i)=>ids.indexOf(x)===i)
+                ids = FilterNoRepeat(ids);
             });
         };
     }catch(err){
@@ -64,18 +63,14 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
             );
         };
         if(params.value=="marque"){
-            // const [select, setSelect] = useState(false);
-    
             const changeResult = (e, elt) => {
                 let searchTags = [elt];
                 const [id, nothing] = ProductSearchByTag({searchTags});
                 CTX.setSEARCH(id);
                 CTX.setTAG(searchTags);
                 e.target.classList.add(styles.t);
-                // setSelect(true);
             };
             let arrTemp = [];
-            // let v = 0;
             data.map((prod)=>{
                 arrTemp.push(prod.brand);
                 arrTemp = FilterNoRepeat(arrTemp);
@@ -151,7 +146,6 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
             switch(order){
                 case "Note":
                     setbyNote(true)
-                    return console.log("note")
                 break;
                 case 'Prix croisant':
                     setbyNote(false)
@@ -163,43 +157,15 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                 break;
                 default:
                     setbyNote(false)
-                    return console.log('default')
                 break;
             }
             
             if(order == 'Note'){
-                // ProductSearchByPrice("croisant")
                 setbyNote(true)
             }else{
                 setbyNote(false)
             }
         }, [order])
-        // useEffect(()=>{
-        //     // if(modal){console.log(CTX)}
-            
-        //     let arrTemp = [];
-        //     if(CTX.IDPRESENT){
-        //         data.map((produit)=>{
-        //             CTX.SEARCH.map(idOnCtx=>{
-        //                 if(idOnCtx === produit.id){
-        //                     arrTemp.push({id:produit.id, note:produit.noteDesc.int});
-                            
-        //                 };
-        //             });
-        //         });
-        //     };
-        //     // console.log("arrtemp BEFORE!", arrTemp)
-
-        //     arrTemp.sort((a,b)=> b.note - a.note);
-        //     const arrTempR=[];
-        //     arrTemp.map((elt)=>{
-        //         arrTempR.push(elt.id);
-        //     });
-        //     // console.log(arrTempR)
-        //     // CTX.setSEARCH(arrTempR)
-
-        //     setModal(false);
-        // },[order]);
         return(
             <div className={styles.contentModalFound}>
                 <p className={styles.triezPar} onClick={()=>setModal(!modal)}>triez par:<span className={styles.spanFoundBy}> {order}</span>

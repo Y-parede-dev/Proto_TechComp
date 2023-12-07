@@ -2,9 +2,7 @@
 import Cookies from "js-cookie";
 import { useEffect, useState, useRef, useContext } from "react";
 import { SearchCTX } from "../context/SearchCTX";
-
 export const SaveFav = (props) => {
-    
     const localStorageElt = localStorage.getItem('favoris');
     let favoris = [];
     if(localStorageElt==null || localStorageElt.length <1){
@@ -23,7 +21,6 @@ export const SaveFav = (props) => {
     }
     localStorage.setItem('favoris', favoris);
     Cookies.set('favoris', favoris)
-    // console.log(localStorageElt)
 };
 export function FavExist(){
     const favorisCookies = Cookies.get('favoris')
@@ -33,11 +30,6 @@ export function FavExist(){
             localStorage.setItem("favoris",favorisCookies);
         }
         else{
-            console.log('LocalStorage is Allready initialize, this values is: '+ lsFavActual)
         }
-    }
-    else{
-        console.log('favorisCookies is '+ favorisCookies)
-        // console.log(lsFavActual)
     }
 }
