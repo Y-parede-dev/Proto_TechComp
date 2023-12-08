@@ -1,3 +1,5 @@
+import { initializeApp } from "firebase/app";
+
 export const InitFirebase = () => {
     const firebaseConfig = {
         apiKey: process.env.FB_APIKEY,
@@ -8,5 +10,6 @@ export const InitFirebase = () => {
         appId: process.env.FB_APP_ID,
         measurementId: process.env.FB_MEASUREMENT_ID
     };
-    return firebaseConfig;
+    const app = initializeApp(firebaseConfig)
+    return app;
 }

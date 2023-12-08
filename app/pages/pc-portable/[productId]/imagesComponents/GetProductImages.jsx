@@ -4,8 +4,10 @@ import  {listAll} from 'firebase/storage';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import {initFirebaseAndStockage} from '@/config/configFirebase/conf.firebase';
+import { InitFirebase } from '@/config/configFirebase/conf.init.firebase';
 
 const GetProductImages = ({setUrlImageDefault, curentProductId, product, url}) => {
+    // const storageInit = InitFirebase()
     const imageRef = initFirebaseAndStockage();
     // const [curentProductId, setCurentProductId] = useState(null);
     const [curentURL, setCurentURL] = useState(null)

@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
 import Cookies from 'js-cookie';
-import GetByJson from '@/lib/GetByJson';
+import GetByJson, { GetDataOnFireBase } from '@/lib/GetByJson';
 // refactor a faire
 const Nav = ({responsive}) => {
     const [inptUser, setinptUser] = useState([]);
@@ -24,9 +24,15 @@ const Nav = ({responsive}) => {
         clasementMarques: false
     })
     useEffect(()=>{
-        const marques = [];
-        GetByJson().map(elt=>marques.push(elt.brand));
-        setItems({marques: FilterNoRepeat(marques)});
+        const recupData = ()=>{
+            const marques = [];
+            const FullData = GetByJson(); 
+            FullData.map((e)=>{
+                marques.push(e.brand)
+            })
+            setItems({marques: FilterNoRepeat(marques)});
+        }
+        recupData()
     },[]);
     const router = useRouter();
     const [sea,setSea] = useState(false);

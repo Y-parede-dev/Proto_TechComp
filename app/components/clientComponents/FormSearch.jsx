@@ -23,9 +23,9 @@ const FormSearch = () => {
     const [data, setData] = useState([])
     const [search, setSearch] = useState("")
     const router = useRouter()
-    useEffect(()=>{
-        setData(GetByJson())
-    }, [])
+    // useEffect(()=>{
+    //     setData(GetByJson())
+    // }, [])
     useEffect(()=>{
         if(focusinput){
             document.getElementById('labelSearch').classList.add(styles.label_search_alt)

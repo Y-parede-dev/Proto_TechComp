@@ -2301,8 +2301,8 @@
             "id":"Samsung-Galaxy-Book3-Ultra-16",
             "brand":"samsung",
             "resolution":"2800 X 1800",
-            "title":"Samsung Galaxy Book3 Ultra 16",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l'Samsung Galaxy Book3 Ultra 16 sur itek-comparateur.fr notre site de comparateur. Cet Samsung Galaxy Book3 Ultra 16 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "title":"Samsung Galaxy Book 3 Ultra 16 Intel I7",
+            "description":"Découvrez et comparez les spécifications, performances et prix de le Samsung Galaxy Book3 Ultra 16 sur itek-comparateur.fr notre site de comparateur. Ce Samsung Galaxy Book3 Ultra 16 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
             "tags":[
                 "samsung galaxy book",
                 "AMOLED",
@@ -2329,7 +2329,7 @@
                     "rapidite":{
                         "nom":"Rapidité",
                         "note":10,
-                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core i7 10870H, ses 16go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Samsung Galaxy Book3 Ultra 16 Vous offre une bonne rapidité non égalable"
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core i7, ses 32go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Samsung Galaxy Book3 Ultra 16 Vous offre une bonne rapidité non égalable"
                     }
                 },{
                     "durabilite":{
@@ -2348,10 +2348,10 @@
             ],
             "config":{
                 
-                "cpu":"Intel Core i7 10870H",
-                "screen":"15",
-                "gpu":"Nvidia RTX4070",
-                "ram":"16go | DDR5",
+                "cpu":"Intel Core i7 13700H",
+                "screen":"16",
+                "gpu":"Nvidia RTX4050",
+                "ram":"32go | DDR5",
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
@@ -2362,7 +2362,7 @@
                 ],
                 "good": [
                     "La Geforce RTX4070 offre de très bonnes performances",
-                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
@@ -2373,19 +2373,457 @@
                 ],
                 "good": [
                     "La Geforce RTX4070 offre de très bonnes performances",
-                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
                     "L'écran 4k permet de jouer en ULTRA HD"
                 ]
             },
             "array":{
-                "publicationContentId":"656e344faa6aec63f90bb0f2"
+                "publicationContentId":"656e333c4af4d4192c5782c6"
             },
             "btn":{
-                "publicationContentId":"656e50474af4d4192c5782f1"
+                "publicationContentId":"656e50554af4d4192c5782f2"
             },
             "conseil":"il est conseillé pour les jeux vidéo",
             "usage":"usage Gaming/Bureau",
-            "images":["eGZP_1.avif"]
+            "images":["asms.1.webp"]
+        },
+        {
+            "id":"Samsung-Galaxy-Book3-Ultra-16-I9",
+            "brand":"samsung",
+            "resolution":"2800 X 1800",
+            "title":"Samsung Galaxy Book3 Ultra 16",
+            "description":"Découvrez et comparez les spécifications, performances et prix de le Samsung Galaxy Book3 Ultra 16 sur itek-comparateur.fr notre site de comparateur. Cet ordinateur portable Samsung Galaxy Book3 Ultra 16 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "tags":[
+                "samsung galaxy book",
+                "AMOLED",
+                "Tactile",
+                "Intel Core i9",
+                "pc portable",
+                "Ultra",
+                "Nvidia GeForce RTX4070",
+                "bureau",
+                "gaming"
+            ],
+            "prix":2890,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"Un bon choix pour une utilisation bureautique et gaming le <strong>Samsung Galaxy Book3 Ultra 16</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming de plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core I9, ses 32go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Samsung Galaxy Book3 Ultra 16 Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i9 13e Gen",
+                "screen":"16",
+                "gpu":"Nvidia RTX4070",
+                "ram":"32go | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce RTX4070 offre de très bonnes performances",
+                    "Les 32go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La Geforce RTX4070 offre de très bonnes performances",
+                    "Les 32go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e333c4af4d4192c5782c7"
+            },
+            "btn":{
+                "publicationContentId":"656e505aaa6aec63f90bb105"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Gaming/Bureau",
+            "images":["asm.1.jpg"]
+        },
+        {
+            "id":"Samsung-Galaxy-Book3-360-15-Tactile",
+            "brand":"samsung",
+            "resolution":"1920 X 1080",
+            "title":"Samsung Galaxy Book3 360 15,6",
+            "description":"Découvrez et comparez les spécifications, performances et prix de le Samsung Galaxy Book 3 Ultra 16 sur itek-comparateur.fr notre site de comparateur. Cet ordinateur portable Samsung Galaxy Book 3 Ultra 16 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "tags":[
+                "samsung galaxy book 360",
+                "AMOLED",
+                "Tactile",
+                "Intégré",
+                "pc portable",
+                "moyen",
+                "bureau"
+            ],
+            "prix":1399,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Samsung Galaxy Book3 360 15 de chez Samsung est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>configuration</strong>,ne vous permet de jouer a des jeux vidéo gourmand."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":8,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core I7, ses 16go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation bureau, Le Samsung Galaxy Book 3 360 Vous offre une bonne rapidité"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i7 13e Gen",
+                "screen":"16",
+                "gpu":"intégrée au CPU",
+                "ram":"16go | DDR5",
+                "stockage":"500GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 8,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "un ecran tactile d'excellente qualité",
+                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "L'écran 1k permet de regarder de films/vidéo dans dans de bonnes conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                    "la configuration de ce pc ne permet pas de le noter sur la partie gaming",
+                    "Le PC est un peu lourd 1.5kg"
+                ],
+                "good": [
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e333c4af4d4192c5782c8"
+            },
+            "btn":{
+                "publicationContentId":"656e505eaa6aec63f90bb106"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["asm.1.webp"]
+        },
+        {
+            "id":"Samsung-Galaxy-Book3-360-13",
+            "brand":"samsung",
+            "resolution":"1920 X 1080",
+            "title":"Samsung Galaxy Book3 360 13",
+            "description":"Découvrez et comparez les spécifications, performances et prix de le Samsung Galaxy Book 3 Ultra 16 sur itek-comparateur.fr notre site de comparateur. Cet ordinateur portable Samsung Galaxy Book 3 Ultra 16 offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "tags":[
+                "samsung galaxy book 3 360 13",
+                "AMOLED",
+                "Tactile",
+                "Intégré",
+                "pc portable",
+                "moyen",
+                "bureau"
+            ],
+            "prix":1340,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":0,
+                        "description":"Cet ordinateur portable Samsung Galaxy Book3 360 13 de chez Samsung est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>configuration</strong>,ne vous permet de jouer a des jeux vidéo gourmand."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":8,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec son intel Core I7, ses 16go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation bureau, LSamsung Galaxy Book3 360 13 Vous offre une bonne rapidité"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Intel Core i5",
+                "screen":"13.3",
+                "gpu":"intégrée au CPU",
+                "ram":"8go | DDR5",
+                "stockage":"500GO | SSD",
+                "os":"Windows 11"
+            },
+            "noteDesc":{
+                "int": 8,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "un ecran tactile d'excellente qualité",
+                    "Les 16go de Mémoire en DDR5 vous offre une bonne rapidité",
+                    "L'écran 1k permet de regarder de films/vidéo dans dans de bonnes conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 0,
+                "bad": [
+                    "la configuration de ce pc ne permet pas de le noter sur la partie gaming",
+                    "Le PC est un peu lourd 1.5kg"
+                ],
+                "good": [
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e333c4af4d4192c5782c9"
+            },
+            "btn":{
+                "publicationContentId":"656e50624af4d4192c5782f3"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo",
+            "usage":"usage Bureau",
+            "images":["asm.1.webp"]
+        },
+
+        {
+            "id":"Apple-MACBOOK-Pro-16-M3-Max",
+            "brand":"apple",
+            "resolution":"3456 X 2234",
+            "title":"Apple MACBOOK Pro 16 M3 Max",
+            "description":"Découvrez et comparez les spécifications, performances et prix de le Apple MACBOOK Pro 16 M3 Max sur itek-comparateur.fr notre site de comparateur. Ce Apple MACBOOK Pro 16 M3 Max offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "tags":[
+                "Apple MACBOOK Pro 16 M3 Max",
+                "Tactile",
+                "pc portable",
+                "Ultra",
+                "bureau",
+                "gaming"
+            ],
+            "prix":4249,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"Un bon choix pour une utilisation bureautique et gaming le <strong>Apple MACBOOK Pro 16 M3 Max</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec sa puce Apple M3 MAX, ses 32go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Apple MACBOOK Pro 16 M3 Max Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Apple M3 MAX",
+                "screen":"16",
+                "gpu":"Apple M3 MAX",
+                "ram":"32go | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Mac os"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La puce M3 offre de très bonnes performances",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La puce M3 offre de très bonnes performances",
+                    "Les 32 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e326baa6aec63f90bb0c4"
+            },
+            "btn":{
+                "publicationContentId":"656e50aa4af4d4192c5782f9"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo pas trop gourmand",
+            "usage":"usage Gaming/Bureau",
+            "images":["aaple-16-macbook-pro-m3-max-2023-ram-36g.webp"]
+        },
+        {
+            "id":"Apple-MACBOOK-Pro-16-M3-Max-64",
+            "brand":"apple",
+            "resolution":"3456 X 2234",
+            "title":"Apple MACBOOK Pro 16 M3 Max 64GO",
+            "description":"Découvrez et comparez les spécifications, performances et prix de le Apple MACBOOK Pro 16 M3 Max sur itek-comparateur.fr notre site de comparateur. Ce Apple MACBOOK Pro 16 M3 Max offre une expérience immersive avec ses composants  et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Samsung Galaxy Book3 Ultra'",
+            "tags":[
+                "Apple MACBOOK Pro 16 M3 Max",
+                "Tactile",
+                "pc portable",
+                "Ultra",
+                "bureau",
+                "gaming"
+            ],
+            "prix":4803,
+            "loading":"lazy",
+            "bonus":"naJM",
+            "pointsClef":[
+                {
+                    "gaming":{
+                        "nom":"Gaming",
+                        "note":8.9,
+                        "description":"Un bon choix pour une utilisation bureautique et gaming le <strong>Apple MACBOOK Pro 16 M3 Max</strong> et sa <strong>configuration</strong> est un choix logique si vous rechercher une experience gaming plus que correct."
+                    }
+                },
+                {
+                    "rapidite":{
+                        "nom":"Rapidité",
+                        "note":10,
+                        "description":"Cet ordinateur figure dans la moyene du marché. Avec sa puce Apple M3 MAX, ses 64go de RAM en DDR5 et à son disque SSD. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation gaming extreme, Le Apple MACBOOK Pro 16 M3 Max Vous offre une bonne rapidité non égalable"
+                    }
+                },{
+                    "durabilite":{
+                        "nom":"Durabilité",
+                        "note":8.9,
+                        "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+                    }
+                },
+                {
+                    "confort":{
+                        "nom":"Confort",
+                        "note":8.6,
+                        "description":"L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+                    }
+                }
+            ],
+            "config":{
+                
+                "cpu":"Apple M3 MAX",
+                "screen":"16",
+                "gpu":"Apple M3 MAX",
+                "ram":"64go | DDR5",
+                "stockage":"1TO | SSD",
+                "os":"Mac os"
+            },
+            "noteDesc":{
+                "int": 10,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La puce M3 offre de très bonnes performances",
+                    "Les 64 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
+                ]
+            },
+            "noteGaming":{
+                "int": 9,
+                "bad": [
+                    "Le PC est un peu lourd"
+                ],
+                "good": [
+                    "La puce offre de très bonnes performances",
+                    "Les 64 Go de Mémoire en DDR5 vous offre une rapidité extreme",
+                    "L'écran 4k permet de jouer en ULTRA HD"
+                ]
+            },
+            "array":{
+                "publicationContentId":"656e326baa6aec63f90bb0c5"
+            },
+            "btn":{
+                "publicationContentId":"656e50af4af4d4192c5782fa"
+            },
+            "conseil":"il est conseillé pour les jeux vidéo pas trop gourmand",
+            "usage":"usage Gaming/Bureau",
+            "images":["aaple-16-macbook-pro-m3-max-2023-ram-36g.webp"]
         }
+
     ]
 }

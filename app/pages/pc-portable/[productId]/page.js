@@ -30,6 +30,7 @@ export async function generateMetadata({ params }) {
 
 const ProductPage = ({params}) => {
   let produit ={}
+  console.log(data)
   data.map(e=>{
     if(params.productId===e.id ){
 
