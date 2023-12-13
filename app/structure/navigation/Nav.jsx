@@ -1,15 +1,15 @@
 "use client";
 import Link from 'next/link';
 import styles from './Nav.module.css';
-import FormSearch from '../../components/clientComponents/FormSearch';
+import FormSearch from '@/app/components/clientComponents/FormSearch';
 import { useContext, useState, useEffect} from 'react';
-import { SearchCTX } from '../../context/SearchCTX';
+import { SearchCTX } from '@/app/context/SearchCTX';
 import { ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
 import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
 import Cookies from 'js-cookie';
-import GetByJson, { GetDataOnFireBase } from '@/lib/GetByJson';
+import {GET,  GetDataOnFireBase } from '@/lib/GetByJson';
 // refactor a faire
 const Nav = ({responsive}) => {
     const [inptUser, setinptUser] = useState([]);
@@ -24,9 +24,15 @@ const Nav = ({responsive}) => {
         clasementMarques: false
     })
     useEffect(()=>{
-        const recupData = ()=>{
+        const recupData = async ()=>{
+            let dataCust;
             const marques = [];
-            const FullData = GetByJson(); 
+            const FullData = await GET()
+            .then((res)=>{
+                // console.log(res)
+                return res
+            })
+            .catch((error)=>console.error(error))
             FullData.map((e)=>{
                 marques.push(e.brand)
             })
@@ -69,18 +75,21 @@ const Nav = ({responsive}) => {
         if(sea){
             let idPresent, DATA;
             let syntax;
-            if(by==="tag"){
-                [idPresent, DATA] = ProductSearchByTag({searchTags:[inptUser]});
-                syntax = [inptUser];
-
-            }if(by==="price"){
-                [idPresent, DATA] = ProductSearchByPrice({searchPrice: inptUser, CTX});
-                syntax = inptUser;
+            const SetSearch =   async () => {
+                if(by==="tag"){
+                    [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser]});
+                    syntax = [inptUser];
+    
+                }if(by==="price"){
+                    [idPresent, DATA] = await ProductSearchByPrice({searchPrice: inptUser, CTX});
+                    syntax = inptUser;
+                }
+                CTX.setTAG(syntax);
+                idPresent = FilterNoRepeat(idPresent);
+                CTX.setSEARCH(idPresent);
+                setSea(false);
             }
-            CTX.setTAG(syntax);
-            idPresent = FilterNoRepeat(idPresent);
-            CTX.setSEARCH(idPresent);
-            setSea(false);
+            SetSearch()
         };
     },[inptUser]);
 

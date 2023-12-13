@@ -1,6 +1,9 @@
 import Link from 'next/link'
-import styles from './page.module.css'
+const styles = dynamic(()=>{
+  import('./page.module.css').then((result)=>result.default)
+})
 import SuggestionMap from './components/suggestion/SuggestionMap'
+import dynamic from 'next/dynamic'
 // refactor a faire
 const Home = () => {
   

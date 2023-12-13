@@ -8,7 +8,7 @@ const Header = ({responsive}) => {
     
     return (
         <header className={styles.header}>
-            <Link className={styles.tilteLink} href='/'><Image src={logo} alt="tek comparateur" height={70} width={354}/> </Link>
+            <Link className={styles.tilteLink} href='/'><Image src={logo} loading='eager' alt="tek comparateur" height={70} width={354}/> </Link>
             {/* <p className={styles.title}><Link className={styles.tilteLink} href='/'><span className={styles.title_first_letter}>itech</span><span className={styles.title_second_letter}>C</span>omparateur</Link></p> */}
             {responsive.desktopDesign?
                 <>

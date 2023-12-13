@@ -5,17 +5,19 @@ import styles from './Notation.module.css'
 import Note from '../notationStyled/Note'
 
 const Notation = ({produit, param}) =>{
-    const [noteActive, setNoteActive] = useState(true)
-    const [noteActiveGaming, setNoteActiveGamnig] = useState(false)
-    const refSpec = useRef()
+    const [notesState, setNodeState] = useState({
+        noteActive: true,
+        noteActiveGaming: false
+    })
+    const refSpec = useRef();
     const changeDesktopGaming = (e, note) => {
-        if(noteActive&&note=="gaming"){
-            setNoteActive(!noteActive)
-            setNoteActiveGamnig(!noteActiveGaming)
+        if(notesState.noteActive&&note=="gaming"){
+            setNodeState((prevData)=>({...prevData, noteActive: notesState.noteActive}));
+            setNodeState((prevData)=>({...prevData, noteActiveGaming: !notesState.noteActiveGaming}));
         }
-        if(noteActiveGaming&&note=="bureau"){
-            setNoteActive(!noteActive)
-            setNoteActiveGamnig(!noteActiveGaming)
+        if(notesState.noteActiveGaming&&note=="bureau"){
+            setNodeState((prevData)=>({...prevData, noteActiveGaming: notesState.noteActiveGaming}));
+            setNodeState((prevData)=>({...prevData, noteActive: !notesState.noteActive}));
         }
     }
     if(param){
@@ -49,17 +51,17 @@ const Notation = ({produit, param}) =>{
                 <div className={styles.containerNoteDetails}>
                     <div className={styles.tabs}>
                         <ul className={styles.choiseNote}>
-                            <li className={noteActive?`${styles.note} ${styles.noteBureau}`:`${styles.noteBureau} ${styles.note} ${styles.noteInactive}`} onClick={(e)=>changeDesktopGaming(e, "bureau")}>
+                            <li className={notesState.noteActive?`${styles.note} ${styles.noteBureau}`:`${styles.noteBureau} ${styles.note} ${styles.noteInactive}`} onClick={(e)=>changeDesktopGaming(e, "bureau")}>
                                 <p>Note bureau</p>
                                 {Note(produit.noteDesc.int)}
                             </li>
-                            <li className={!noteActiveGaming?`${styles.note} ${styles.noteInactive} ${styles.noteGaming}`: `${styles.noteGaming} ${styles.note}`} onClick={(e)=>changeDesktopGaming(e, "gaming")}>
+                            <li className={!notesState.noteActiveGaming?`${styles.note} ${styles.noteInactive} ${styles.noteGaming}`: `${styles.noteGaming} ${styles.note}`} onClick={(e)=>changeDesktopGaming(e, "gaming")}>
                                 <p>Note Gaming</p>
                                 {Note(produit.noteGaming.int)}
                             </li>
                         </ul>
                     </div>
-                    { noteActive?
+                    { notesState.noteActive?
                         <div className={styles.details}>
                             <h3>Inconvéniants</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>

@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    compress: true,
+    
     env:{
         HOST:process.env.HOST,
         FB_APIKEY:process.env.FB_APIKEY,
@@ -10,6 +12,7 @@ const nextConfig = {
         FB_APP_ID:process.env.FB_APP_ID,
         FB_MEASUREMENT_ID:process.env.FB_MEASUREMENT_ID,
         NEXT_PUBLIC_FB_PROJECT_ID:process.env.NEXT_PUBLIC_FB_PROJECT_ID,
+        GTMID:process.env.GTMID
     },
     images:{
         remotePatterns:[
@@ -21,6 +24,11 @@ const nextConfig = {
     },
     eslint: {
         ignoreDuringBuilds: true
+    },
+    serverRuntimeConfig: {
+        experimental: {
+            useServerComponents: true,
+        },
     },
 }
 

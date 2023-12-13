@@ -3,7 +3,7 @@ import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByNoteGaming, Pro
 import styles from "./SuggestionMap.module.css"
 import Image from 'next/image'
 import Notation from "../clientComponents/Notation"
-import PointsCles from "../../pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles"
+import PointsCles from "@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles"
 import Link from "next/link"
 import { useEffect, useState, useContext, useRef } from "react"
 import { SearchCTX } from "@/app/context/SearchCTX"
@@ -20,7 +20,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
         ListEltLoading: ({nombre}) => {
             const elt = Array.from({length: nombre}, (_, index) => {
                 <li key={index}>
-                     <h4>{'-----'}</h4>
+                    <h4>{'-----'}</h4>
                         <div className={styles.prix}>
                             <p className={styles.prixMin}>Loading ...  </p>
                         </div>
@@ -59,9 +59,10 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
     // },[])
 
     useEffect(()=>{
+        setLoader({...loader,isLoading:true})
         const rechercheProduits = async () => {
             if(by=="tag"){
-                [ids, data] = ProductSearchByTag({searchTags})
+                [ids, data] = await ProductSearchByTag({searchTags})
                 setNeed({ids:ids, data:data});
             }
             if(by=="id"){
@@ -80,9 +81,13 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 console.error(err)
             }
         }
-        rechercheProduits();
-        setLoader({isLoading: false});
-    }, [by])
+        console.log(need.data)
+        rechercheProduits()
+            .finally(()=>{
+                setLoader({...loader,isLoading: false});
+
+            });
+    }, [])
     // function isEmpty(obj) {
     //     return Object.keys(obj).length === 0;
     // }
@@ -101,20 +106,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 <ul className={styles.listCarroussel} ref={scrollElement}>
                     {
                         <loader.ListEltLoading nombre={12}/>
-                        // loader.nbDefaultElt.map(()=>[
-
-                        //     <li className={styles.litsItemCarroussel}>
-                               
-                        //         <h4>{'-----'}</h4>
-
-                        //         <div className={styles.prix}>
-                        //             <p className={styles.prixMin}>Loading ...  </p>
-                        //         </div>
-                        //     </li>
-                        //     ]
-                        // )
                     }
-
                 </ul>
                 <div className={styles.arrows}>
                     <button onClick={()=>scrollOnX('left')}>{"<"}</button>
@@ -133,9 +125,10 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 {need.data.map(produitElt=> [
                     need.ids.map(idSearchReturn=>[
                     produitElt.id==idSearchReturn&&
-                    <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
+                    <Link key={produitElt.id} className={styles.LinkProduit} href={
+                        `/pages/pc-portable/${produitElt.id}`}>
                         <li className={styles.litsItemCarroussel}>
-                            <Image alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
+                            <Image loading="lazy" alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
                             <h4>{produitElt.title}</h4>
                             <Notation produit={produitElt} param={produitElt.usage}/>
                             <PointsCles produit={produitElt} param={produitElt.usage}/>

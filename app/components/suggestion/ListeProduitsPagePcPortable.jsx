@@ -18,21 +18,35 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
         modaleOpenPrix: false,
         modaleOpenMarque: false
     })
-    let idPresent, data
+    const [data, setData] = useState({
+        idPresent: "null",
+        dataFound:[]
+    })
+    // let idPresent, data = [];
     const [value,setValue]= useState(5000);
     
     let ids = CTX.SEARCH ;
     let searchTags = CTX.TAG;
-    if(by =="tag"){
-        [idPresent, data] = ProductSearchByTag({searchTags});
-    }
+    useEffect(()=>{
+        const SetSearch = async () => {
+
+            if(by =="tag"){
+                const [rec__Id, rec__Data] = await ProductSearchByTag({searchTags});
+                setData(()=>({
+                    idPresent:rec__Id,
+                    dataFound: rec__Data
+                }))
+            }
+        }
+        SetSearch();
+    },[by])
     function isEmpty(obj) {
         return Object.keys(obj).length === 0;
     };
     try{
         if(isEmpty(ids)) {
             ids=[];
-            data.map((elt)=>{
+            data.dataFound.map((elt)=>{
                 ids.push(elt.id);
                 ids = FilterNoRepeat(ids);
             });
@@ -61,15 +75,15 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
             );
         };
         if(params.value=="marque"){
-            const changeResult = (e, elt) => {
+            const changeResult = async (e, elt) => {
                 let searchTags = [elt];
-                const [id, nothing] = ProductSearchByTag({searchTags});
+                const [id, nothing] = await ProductSearchByTag({searchTags});
                 CTX.setSEARCH(id);
                 CTX.setTAG(searchTags);
                 e.target.classList.add(styles.t);
             };
             let arrTemp = []; 
-            data.map((prod)=>{
+            data.dataFound.map((prod)=>{
                 arrTemp.push(prod.brand);
                 arrTemp = FilterNoRepeat(arrTemp);
             });
@@ -171,7 +185,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                 <>
                     {modal&&
                     <ul className={styles.listFoundBy}>
-                        <li onClick={(e)=>byOrder(e)}>Note</li>
+                        {/* <li onClick={(e)=>byOrder(e)}>Note</li> */}
                         <li onClick={(e)=>byOrder(e)}>Prix croisant</li>
                         <li onClick={(e)=>byOrder(e)}>Prix décroisant</li>
                         
@@ -254,12 +268,13 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                     <FoundBy/>
                 </>
                 <ul className={styles.listItemsResult}>
-                    {data.map(produitElt=> [
+                    {data.dataFound.map(produitElt=> [
                         ids.map(idSearchReturn=>[
                             produitElt.id==idSearchReturn&&
                             <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
+                                {/* ${produitElt.id} */}
                                 <li className={styles.litsItemCarroussel}>
-                                    <Image alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
+                                    <Image loading="eager" alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
                                     <h4>{produitElt.title}</h4>
                                     <Notation produit={produitElt} param={produitElt.usage}/>
                                     <PointsCles produit={produitElt} param={produitElt.usage}/>

@@ -1,0 +1,410 @@
+{
+  "produits": [
+    {
+      "title": "ASUS VivoBook X1404ZA-EB273W 14 I3 8 Go",
+      "brand": "asus-test",
+      "resolution": "3200 x 1800",
+      "id": "ASUS-VivoBook-X1404ZA-EB273W-14-I3-8-Go",
+      "description": "Découvrez et comparez les spécifications, performances et prix de l' ASUS VivoBook X1404ZA-EB273W 14 I3 8 Go sur itek-comparateur.fr notre site de comparateur. Cet ASUS VivoBook X1404ZA-EB273W 14 I3 8 Go offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec ASUS VivoBook X1404ZA-EB273W 14 I3 8 Go",
+      "tags": [
+        "asus-test",
+        "bureau",
+        "haut",
+        "cpu",
+        "cpu"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "1.jpeg"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "cpu",
+        "screen": "cpu",
+        "gpu": "cpu",
+        "ram": "cpu",
+        "stockage": "cpu",
+        "os": "cpu"
+      },
+      "noteDesc": {
+        "int": 9,
+        "good": [
+          "Le cpu offre de bonnes performances"
+        ],
+        "bad": [
+          "Un pc portable peut puissant."
+        ]
+      },
+      "noteGaming": {
+        "int": 9,
+        "good": [
+          "Le cpu offre d'excellentes performances"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "un clavier un peut petit"
+        ]
+      },
+      "array": {
+        "publicationContentId": "656e510e4af4d4192c578304"
+      },
+      "btn": {
+        "publicationContentId": "65569ff6fc8c4d5801143c03"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 8,
+            "description": "Cet ordinateur portable ASUS VivoBook X1404ZA-EB273W 14 I3 8 Go de chez asus-test est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>cpu</strong>, vous permet de jouer a certain jeux."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 4,
+            "description": "Cet ordinateur figure parmi les plus rapide du marché. Avec son na, ses na et à son disque SSD ultra rapide. Ce PC est un <strong>choix logique</strong> si vous rechercher a jouer au dernier jeux sortie avec un temp de chargement réduit grace a son SSD"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 9,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 7,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "acer f 6589 12 pouces",
+      "brand": "acer-test",
+      "resolution": "2560 x 1440",
+      "id": "acer-f-6589-12-pouces",
+      "description": "Découvrez et comparez les spécifications, performances et prix de l' acer f 6589 12 pouces sur itek-comparateur.fr notre site de comparateur. Cet acer f 6589 12 pouces offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec acer f 6589 12 pouces",
+      "tags": [
+        "acer-test",
+        "bureau",
+        "moyen",
+        "a",
+        "e"
+      ],
+      "prix": 800,
+      "loading": "lazy",
+      "images": [
+        "Acer-Aspire-Vero-AV15-51.jpg"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "a",
+        "screen": "r",
+        "gpu": "e",
+        "ram": "t",
+        "stockage": "y",
+        "os": "u"
+      },
+      "noteDesc": {
+        "int": 0,
+        "bad": [
+          "Une faible capacité de stockage"
+        ],
+        "good": [
+          "La capacité de stockage est excellente - y"
+        ]
+      },
+      "noteGaming": {
+        "int": 0,
+        "good": [
+          "La mémoire vive (RAM) est excellente pour les jeux vidéo"
+        ],
+        "bad": [
+          "Une faible capacité de stockage"
+        ]
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "65569ff6fc8c4d5801143c03"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 2,
+            "description": "Cet ordinateur portable titre par defaut de chez empty n'est pas conçu pour une utilisation gaming. La configuration <strong>na</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 10,
+            "description": "Cet ordinateur figure parmi les plus rapide du marché. Avec son na, ses na et à son disque SSD ultra rapide. Ce PC est un <strong>choix logique</strong> si vous rechercher a jouer au dernier jeux sortie avec un temp de chargement réduit grace a son SSD"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 7,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "lenovo tu est trop beau",
+      "brand": "alenot",
+      "resolution": "2560 x 1440",
+      "id": "lenovo-tu-est-trop-beau",
+      "description": "Découvrez et comparez les spécifications, performances et prix de l' lenovo tu est trop beau sur itek-comparateur.fr notre site de comparateur. Cet lenovo tu est trop beau offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec lenovo tu est trop beau",
+      "tags": [
+        "alenot",
+        "bureau",
+        "moyen",
+        "z",
+        "e"
+      ],
+      "prix": 10,
+      "loading": "lazy",
+      "images": [
+        "lenovo_ls5_16ap_r7_512_4060_s2304187543875A_104204521.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "z",
+        "screen": "d",
+        "gpu": "e",
+        "ram": "c",
+        "stockage": "d",
+        "os": "e"
+      },
+      "noteDesc": {
+        "int": 0,
+        "bad": [
+          "Un pc portable peut puissant."
+        ],
+        "good": [
+          "Le z offre d'excellentes performances"
+        ]
+      },
+      "noteGaming": {
+        "int": 0,
+        "good": [
+          "La e offre de correcte performances"
+        ],
+        "bad": [
+          "Un pc portable peut puissant."
+        ]
+      },
+      "array": {
+        "publicationContentId": "656e510e4af4d4192c578304"
+      },
+      "btn": {
+        "publicationContentId": "656e510e4af4d4192c578304"
+      },
+      "conseil": "null",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable titre par defaut de chez empty n'est pas conçu pour une utilisation gaming. La configuration <strong>na</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure parmi les plus rapide du marché. Avec son na, ses na et à son disque SSD ultra rapide. Ce PC est un <strong>choix logique</strong> si vous rechercher a jouer au dernier jeux sortie avec un temp de chargement réduit grace a son SSD"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "titre par defautASUS VivoBook X1404ZA-EB273W 14 I3 8 Go",
+      "brand": "asus test",
+      "resolution": "2560 x 1440",
+      "id": "titre-par-defautASUS-VivoBook-X1404ZA-EB273W-14-I3-8-Go",
+      "description": "Découvrez et comparez les spécifications, performances et prix de l' titre par defautASUS VivoBook X1404ZA-EB273W 14 I3 8 Go sur itek-comparateur.fr notre site de comparateur. Cet titre par defautASUS VivoBook X1404ZA-EB273W 14 I3 8 Go offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec titre par defautASUS VivoBook X1404ZA-EB273W 14 I3 8 Go",
+      "tags": [
+        "asus test",
+        "null",
+        "moyen",
+        "ddd",
+        "ddd"
+      ],
+      "prix": 5555,
+      "loading": "lazy",
+      "images": [
+        "1.jpg"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "ddd",
+        "screen": "ddd",
+        "gpu": "ddd",
+        "ram": "16GO | DDR5",
+        "stockage": "dddd",
+        "os": "dddd"
+      },
+      "noteDesc": {
+        "int": 0,
+        "bad": [
+          "Un pc portable peut puissant."
+        ],
+        "good": [
+          "Le ddd offre de bonnes performances"
+        ]
+      },
+      "noteGaming": {
+        "int": 6,
+        "good": [
+          "Le ddd offre de bonnes performances"
+        ],
+        "bad": [
+          "un clavier un peut petit"
+        ]
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e510e4af4d4192c578304"
+      },
+      "conseil": "null",
+      "usage": "null",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 8,
+            "description": "Cet ordinateur portable titre par defautASUS VivoBook X1404ZA-EB273W 14 I3 8 Go de chez asus test est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>ddd</strong>, vous permet de jouer a certain jeux."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 7,
+            "description": "Cet ordinateur figure dans la moyene du marché. Avec son ddd, 16GO et à son disque SSD super rapide. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, l' titre par defautASUS VivoBook X1404ZA-EB273W 14 I3 8 Go Vous offre une rapidité optimale"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "titre par defaut ededededed",
+      "brand": "eeee",
+      "resolution": "2560 x 1440",
+      "id": "titre-par-defaut-ededededed",
+      "description": "Découvrez et comparez les spécifications, performances et prix de l' titre par defaut ededededed sur itek-comparateur.fr notre site de comparateur. Cet titre par defaut ededededed offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec titre par defaut ededededed",
+      "tags": [
+        "eeee",
+        "gaming/bureau",
+        "moyen",
+        "eee",
+        "eee"
+      ],
+      "prix": 98569856,
+      "loading": "lazy",
+      "images": [
+        "1.jpg"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "eee",
+        "screen": "eee",
+        "gpu": "eee",
+        "ram": "eee",
+        "stockage": "eee",
+        "os": "eeee"
+      },
+      "noteDesc": {
+        "int": 0,
+        "bad": [],
+        "good": []
+      },
+      "noteGaming": {
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e510e4af4d4192c578304"
+      },
+      "conseil": "null",
+      "usage": "gaming/bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable titre par defaut ededededed de chez eeee est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>eee</strong>, vous permet de jouer a certain jeux."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 10,
+            "description": "Cet ordinateur figure dans la moyene du marché. Avec son eee, eee et à son disque SSD super rapide. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, l' titre par defaut ededededed Vous offre une rapidité optimale"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    }
+  ]
+}

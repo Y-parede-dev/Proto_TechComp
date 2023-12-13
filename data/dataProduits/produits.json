@@ -14,8 +14,7 @@
                 "I5",
                 "pc portable",
                 "moyen",
-                "bureau",
-                "OLED"
+                "bureau"
             ],
             "prix":808,
             "loading":"lazy",
@@ -27,22 +26,17 @@
                         "nom":"Gaming",
                         "note":0,
                         "description":"Cet ordinateur portable ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch de chez Asus n'est pas conçu pour une utilisation gaming. La configuration <strong>Sans carte graphique</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-                    }
-                },
-                {
+                    },
                     "rapidite":{
                         "nom":"Rapidité",
                         "note":8,
                         "description":"Cet ordinateur figure parmi les plus véloces du marché. Grâce à son I7 1260P (via ses 12 très bons coeurs), ses 16 Go de RAM en DDR4 et à son disque SSD rapide. Ce PC est un <strong>choix de premier ordre pour votre productivité !</strong>"
-                    }
-                },{
+                    },
                     "durabilite":{
                         "nom":"Durabilité",
                         "note":8.4,
                         "description":"La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 5 ans</strong> (de 4 à 6 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-                    }
-                },
-                {
+                    },
                     "confort":{
                         "nom":"Confort",
                         "note":8.6,
@@ -182,7 +176,7 @@
             "brand":"asus",
             "resolution":"1920 x 1080",
             "title":"ASUS TUF Gaming A15",
-            "description":"Découvrez et comparez les spécifications, performances et prix de l' ASUS TUF Gaming A15 sur itek-comparateur.fr notre site de comparateur. Cet ASUS TUF Gaming A15 offre une expérience immersive avec ses composants gaming et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS TUF Gaming A15",
+            "description":"Découvrez et comparez les spécifications, performances et prix de l' ASUS TUF Gre site de comparateur. Cet Aaming A15 sur itek-comparateur.fr notSUS TUF Gaming A15 offre une expérience immersive avec ses composants gaming et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l'ASUS TUF Gaming A15",
             "tags":[
                 "ASUS TUF",
                 "AMD Ryzen 7",
@@ -2824,6 +2818,5 @@
             "usage":"usage Gaming/Bureau",
             "images":["aaple-16-macbook-pro-m3-max-2023-ram-36g.webp"]
         }
-
     ]
 }

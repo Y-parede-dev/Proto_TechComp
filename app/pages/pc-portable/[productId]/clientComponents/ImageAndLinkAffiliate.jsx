@@ -5,12 +5,12 @@ import styles from './ImageAndLinkAffiliate.module.css'
 import Image from 'next/image'
 import { SaveFav } from "@/app/cookies/favorisStorage";
 import { SearchCTX } from "@/app/context/SearchCTX";
-import {initFirebaseAndStockage} from "@/config/configFirebase/conf.firebase";
+import {imageRef} from "@/config/configFirebase/conf.firebase";
 import { list } from "firebase/storage";
 
 const ImageAndLinkAffiliate = ({produit}) => {
 
-    const storageRef = initFirebaseAndStockage();
+    const storageRef = imageRef;
     const [clicked, setclicked] = useState(false)
     const [urlImageDefault, setUrlImageDefault] = useState(
         {
@@ -79,11 +79,11 @@ const ImageAndLinkAffiliate = ({produit}) => {
     return(
         <>
             <div className={styles.imageContainer}>
-                <div><Image width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
+                <div><Image loading="eager" width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
                 <div className={styles.imagesList}>
                     {
                         images.arrayImages.map((imgs)=>[
-                            <Image className={styles.imageItem} key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
+                            <Image loading="eager" className={styles.imageItem} key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
 
                         ])
                     }

@@ -7,10 +7,10 @@ import {ProductSearchByTag} from "@/lib/ProductSearch";
 import {SearchCTX, SearchCTXDispach} from '@/app/context/SearchCTX'
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
-import produits from '@/data/dataProduits/produits.json' assert {type: 'json'}
+// import produits from '@/data/dataProduits/produits.json' assert {type: 'json'}
 import config from '@/config/config.json' assert {type: 'json'}
 import { useRouter } from "next/navigation";
-import GetByJson from "@/lib/GetByJson";
+import GET from "@/lib/GetByJson";
 import { FilterNoRepeat } from "@/lib/FonctionsUtiles";
 
 const FormSearch = () => {
@@ -24,7 +24,7 @@ const FormSearch = () => {
     const [search, setSearch] = useState("")
     const router = useRouter()
     // useEffect(()=>{
-    //     setData(GetByJson())
+    //     setData(GET())
     // }, [])
     useEffect(()=>{
         if(focusinput){
@@ -34,12 +34,7 @@ const FormSearch = () => {
         }
     },[focusinput])
     useEffect(()=>{
-        // if(search === 'moins cher'){
-        //     alert(search)
-        //     return setSearchTags(search)
-        // }
         setSearchTags(search.split(' '))
-        
     },[search])
     useEffect(()=>{
         if(sub===true){
@@ -48,12 +43,13 @@ const FormSearch = () => {
             setSub(false)
         }
     },[idSearch])
-    const handleSubmit = (e, del=false) => {
+    const handleSubmit = async (e, del=false) => {
+        e.preventDefault();
+        let [recupId, data] = await ProductSearchByTag({searchTags})
         if(del){
             CTX.setSEARCH([])
             return
         }
-        let [recupId, data] = ProductSearchByTag({searchTags})
         
         recupId = FilterNoRepeat(recupId) //recupId.filter((x,i)=> recupId.indexOf(x)===i)
         e.preventDefault()
