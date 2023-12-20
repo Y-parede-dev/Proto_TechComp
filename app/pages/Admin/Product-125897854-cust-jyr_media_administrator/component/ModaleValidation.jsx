@@ -11,7 +11,7 @@ export const ModaleValidation = ({params}) => {
 
     const POST = async (dataProduct) => {
         try {
-            const response = await fetch("./api/Admin", {
+            const response = await fetch(`${process.env.HOST}/api/Admin`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
