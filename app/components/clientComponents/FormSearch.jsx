@@ -73,8 +73,7 @@ const FormSearch = () => {
         setSearch(e.target.value)
         //STAR:test pour affichage ou non du label
         if(e.target.value.length>0){
-            setShowLabel(false)
-            return
+            return setShowLabel(false)
         }
         setShowLabel(true)
         //END:test pour affichage ou non du label

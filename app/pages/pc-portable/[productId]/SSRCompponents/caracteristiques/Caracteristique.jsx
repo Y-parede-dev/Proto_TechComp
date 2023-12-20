@@ -23,7 +23,7 @@ export const Caracteristique = ({produit})=>{
                 <tr>
                     <td>
                     <div className={styles.configItem}>
-                        <Image loading='eager' alt='processeur' className={styles.iconR} src={iconCpu}/>
+                        <Image alt={`processeur: ${produit.config.cpu}`} loading='eager' className={styles.iconR} src={iconCpu}/>
                         <p>Processeur</p>
                     </div>
                     </td>
@@ -34,7 +34,7 @@ export const Caracteristique = ({produit})=>{
                 <tr>
                     <td>
                     <div className={styles.configItem}>
-                        <Image loading='eager' alt='carte graphique' className={styles.iconR} src={iconGpu}/>
+                        <Image loading='eager' alt={`carte graphique: ${produit.config.gpu}`} className={styles.iconR} src={iconGpu}/>
                         <p>Carte Graphique</p>
                     </div>
                     </td>

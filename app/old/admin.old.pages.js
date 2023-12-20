@@ -4,14 +4,22 @@ import styles from './page.module.css';
 import { descriptions, arrayResolution, arrayGoodBad, arrRamResult, arrGpuResult, arrProcResult } from './dataBrut/databrut';
 import { TableauNotes,  ConfigRender } from './component/componentsCustom';
 import { modelProduit } from './model/model';
-
-import {checkElement,checkRamElement, moyeneElement, setDescribeAuto, setGoodBadPointAuto } from './utils/utils.custom';
+import { Image } from 'next/image';
+import { ref, uploadBytes } from 'firebase/storage';
+import { imageRef, storage } from '@/config/configFirebase/conf.firebase';
+import Head from 'next/head';
+import Notation from '@/app/components/clientComponents/Notation';
+import {PointsCles as PClesClient} from '../../pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
+import DoneIcon from '@mui/icons-material/Done';
+import ClearIcon from '@mui/icons-material/Clear';
+import {checkElement, moyeneElement } from './utils/utils.custom';
 import {ModaleValidation} from './component/ModaleValidation';
 // import fs from 'fs/promises';
 
 const pageAdminAddPutDeleteProduct = () => {
     // ::START::REQ:POST - Sauvegarde un produit dans le fichier json associer
     
+
     // ::END::REQ:POST
     const PageAdminCreateProduct = () => {
         const [dataProduct, setDataProduct] = useState({
@@ -19,11 +27,14 @@ const pageAdminAddPutDeleteProduct = () => {
         })
         const [imagePreview, setImagePreview] = useState(['empty'])
         const [notationGo, setNotationGo] = useState(false);
-        const [notesTemp, setnotesTemp]  = useState({
-            cpu:0,
-            gpu:0,
-            ram:0,
-        })
+        // useEffect(()=>{
+        //     setDataProduct((prevData)=>({
+        //         ...prevData,
+        //         array:{
+        //             publicationContentId:`656e28c9aa6aec63f90bb0b0`
+        //         }
+        //     }))
+        // },[])
         const [openCloseModale, setOpenCloseModale] = useState(false);
         const iconValitation = []
         useEffect(() => {
@@ -39,6 +50,15 @@ const pageAdminAddPutDeleteProduct = () => {
                 document.body.style.overflow = 'visible';
             };
         }, [openCloseModale]);
+        // todo: mettre le save des images et du produit dans le json dans une modales
+
+
+        // const notes = []
+        // for(let i=0;i<11;i++){
+        //     notes.push(i)
+        // }
+        // console.log(notes)
+
         // ::START::bonus Change le denominateur dans la description SEO
         useEffect(()=>{
             if(
@@ -62,6 +82,25 @@ const pageAdminAddPutDeleteProduct = () => {
                 prix: parseInt(prevDataProduct.prix)
             }));
         },[dataProduct.prix]);
+        // useEffect(()=>{
+        //     setDataProduct((prevDataProduct)=>({
+        //         ...prevDataProduct,
+        //         noteDesc:{
+        //             ...prevDataProduct.noteDesc,
+        //             int: parseInt(prevDataProduct.noteDesc.int)
+        //         }
+        //     }));
+        // },[dataProduct.noteDesc.int]);
+        // useEffect(()=>{
+        //     setDataProduct((prevDataProduct)=>({
+        //         ...prevDataProduct,
+        //         noteGaming:{
+        //             ...prevDataProduct.noteGaming,
+        //             int: parseInt(prevDataProduct.noteGaming.int)
+        //         }
+        //     }));
+        // },[dataProduct.noteGaming.int]);
+        // // ::END::
         useEffect(()=>{
             if(dataProduct.config.cpu!=='na'){
                 const notesCheck = {
@@ -69,20 +108,15 @@ const pageAdminAddPutDeleteProduct = () => {
                     gpu: checkElement({element:dataProduct.config.gpu, array:arrGpuResult}),
                     ram: checkElement({element:dataProduct.config.ram, array:arrRamResult}),
                 }
-                setnotesTemp({
-                    cpu:notesCheck.cpu,
-                    gpu:notesCheck.gpu,
-                    ram:notesCheck.ram
-                })
                 const describeCheck = {
-                    rapidite: setDescribeAuto({data:dataProduct,note:notesCheck.ram, element:'rapidite'}), 
-                    gaming: setDescribeAuto({data:dataProduct,note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]}), element:'gaming'}),
-                    durabilite: setDescribeAuto({data:dataProduct,note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]}), element:'durabilite'}),
-                    confort: setDescribeAuto({data:dataProduct,note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]}), element:'confort'}),
+                    rapidite: setDescribeAuto({note:notesCheck.ram, element:'rapidite'}), 
+                    gaming: setDescribeAuto({note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]}), element:'gaming'}),
+                    durabilite: setDescribeAuto({note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]}), element:'durabilite'}),
+                    confort: setDescribeAuto({note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]}), element:'confort'}),
                 }
                 const goodBadPointsCheck = {
-                    good:setGoodBadPointAuto({data: dataProduct,note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})}).good,
-                    bad:setGoodBadPointAuto({data:dataProduct,note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})}).bad
+                    good:setGoodBadPointAuto({note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})}).good,
+                    bad:setGoodBadPointAuto({note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})}).bad
                 }
                 setDataProduct((prevData)=>({
                     ...prevData,
@@ -127,7 +161,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 setDataProduct((prevDataProduct)=>({
                     ...prevDataProduct,
                     id: prevDataProduct.title.replaceAll(' ', '-'),
-                    description: `Découvrez et comparez les caractéritiques, performances et prix de ${dataProduct.denominateur} ${dataProduct.title} sur itek-comparateur.fr notre site de comparateur. Ce ${dataProduct.title} offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur`
+                    description: `Découvrez et comparez les spécifications, performances et prix de ${dataProduct.denominateur} ${dataProduct.title} sur itek-comparateur.fr notre site de comparateur. Cet ${dataProduct.title} offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec ${dataProduct.title}`
                 }));
             } catch (error) {
                 console.error(error);
@@ -191,15 +225,14 @@ const pageAdminAddPutDeleteProduct = () => {
             }))
         },[dataProduct.title,dataProduct.brand, dataProduct.usage, dataProduct.config.cpu,dataProduct.config.gpu])
 
-    const handleSetNotes=(e)=>{
-        e.preventDefault()
+    const handleSetNotes=()=>{
         try{
             if(
                 dataProduct.config.cpu!=="na" &&
                 dataProduct.config.gpu!=="na" &&
                 dataProduct.config.ram!=="na" &&
                 dataProduct.config.stockage!=="na" && 
-                dataProduct.config.screen!=="na"){
+                dataProduct.config.screene!=="na"){
                     setNotationGo(true)
             }
             
@@ -230,36 +263,117 @@ const pageAdminAddPutDeleteProduct = () => {
                                     {/* <TableauNotes parametre={{pointId:point.gaming.id, setDataProduct, notes, isPointCle:true}} /> */}
                                     <div>
                                     <p className={styles.txtChoix} >Description part gaming:</p>
-                                    <p>{point.gaming.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
+                                    <p>{point.gaming.description}</p>
 
                                     </div>
                                 </li>
                                 <li className={styles.listItemPCles}>
+
                                     <h3>{point.rapidite.nom}</h3>
-                                    <p className={styles.txtChoix}>Note rapidite:</p>
-                                    <>{point.rapidite.note}</>
+                                    <p className={styles.txtChoix}>Veillez choisir la note</p>
+                                    <TableauNotes parametre={{pointId:point.rapidite.id, setDataProduct, notes, isPointCle:true}} />
+
                                     <div>
-                                        <p className={styles.txtChoix} >Description part rapidite:</p>
-                                        <p>{point.rapidite.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
+                                    <p className={styles.txtChoix} >Veillez choisir description pour cette partie</p>
+                                        <label htmlFor='description_rapidite'></label>
+                                        <select className={styles.select}
+                                        value={dataProduct.pointsClef[0].rapidite.description}
+                                        name='description_rapidite' id='description_rapidite' onChange={(e)=>{
+                                            setDataProduct((prevDataProduct)=>({
+                                                ...prevDataProduct,
+                                                pointsClef: prevDataProduct.pointsClef.map((point, index)=>{
+                                                    return {
+                                                        ...point,
+                                                        rapidite: {
+                                                            ...point.rapidite,
+                                                            description: e.target.value
+                                                        }
+                                                    }
+                                                })
+                                            }))
+                                        }}>
+                                            {
+                                                descriptions(dataProduct).rapidite.map((e, index)=>[
+                                                    <option value={e} key={index}>{e}</option>
+
+                                                ])
+                                            }
+                                        </select>
+
                                     </div>
                                 </li>
                                 <li className={styles.listItemPCles}>
-                                    <h3>{point.durabilite.nom}</h3>
-                                    <p className={styles.txtChoix}>Note durabilite:</p>
-                                    <>{point.durabilite.note}</>
-                                    <div>
-                                        <p className={styles.txtChoix} >Description part durabilite:</p>
-                                        <p>{point.durabilite.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
-                                    </div>
+
+                                <h3>{point.durabilite.nom}</h3>
+                                <p className={styles.txtChoix}>Veillez choisir la note</p>
+                                <TableauNotes parametre={{pointId:point.durabilite.id, setDataProduct, notes, isPointCle:true}} />
+                                <div>
+                                <p className={styles.txtChoix} >Veillez choisir description pour cette partie</p>
+                                    <label htmlFor='description_durabilite'></label>
+                                    <select className={styles.select}
+                                    value={dataProduct.pointsClef[0].durabilite.description}
+                                    name='description_durabilite' id='description_durabilite' onChange={(e)=>{
+                                        setDataProduct((prevDataProduct)=>({
+                                            ...prevDataProduct,
+                                            pointsClef: prevDataProduct.pointsClef.map((point, index)=>{
+                                                return {
+                                                    ...point,
+                                                    durabilite: {
+                                                        ...point.durabilite,
+                                                        description: e.target.value
+                                                    }
+                                                }
+                                            })
+                                        }))
+                                    }}>
+                                        {
+                                            descriptions(dataProduct).durabilite.map((e, index)=>[
+                                                <option value={e} key={index}>{e}</option>
+
+                                            ])
+                                        }
+                                    </select>
+
+                                </div>
                                 </li>
                                 <li className={styles.listItemPCles}>
-                                    <h3>{point.confort.nom}</h3>
-                                    <p className={styles.txtChoix}>Note confort:</p>
-                                    <>{point.confort.note}</>
-                                    <div>
-                                    <p className={styles.txtChoix} >Description part confort:</p>
-                                    <p>{point.confort.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
-                                    </div>
+
+                                <h3>{point.confort.nom}</h3>
+                                <p className={styles.txtChoix}>Veillez choisir la note</p>
+                                <TableauNotes
+                                parametre={{
+                                pointId:point.confort.id,
+                                setDataProduct,
+                                notes,
+                                isPointCle:true}} />
+                                <div>
+                                    <p className={styles.txtChoix} >Veillez choisir description pour cette partie</p>
+                                    <label htmlFor='description_confort'></label>
+                                    <select className={styles.select}
+                                    value={dataProduct.pointsClef[0].confort.description}
+                                    name='description_confort' id='description_confort' onChange={(e)=>{
+                                        setDataProduct((prevDataProduct)=>({
+                                            ...prevDataProduct,
+                                            pointsClef: prevDataProduct.pointsClef.map((point, index)=>{
+                                                return {
+                                                    ...point,
+                                                    confort: {
+                                                        ...point.confort,
+                                                        description: e.target.value
+                                                    }
+                                                }
+                                            })
+                                        }))
+                                    }}>
+                                        {
+                                            descriptions(dataProduct).confort.map((e, index)=>[
+                                                <option value={e} key={index}>{e}</option>
+
+                                            ])
+                                        }
+                                    </select>
+
+                                </div>
                                 </li>
                             </div>
                         ])
@@ -275,8 +389,23 @@ const pageAdminAddPutDeleteProduct = () => {
                     <h3>{parametres.target==="noteDesc"?
                     "Bureau": "Gaming"}</h3>
                         <li className={styles.listItemPCles}>
-                            <p>Note bureau: {dataProduct.noteDesc.int}</p>
-                            <h4 className={styles.GoddBadTitle}>Bon points</h4>
+                            <TableauNotes parametre={{
+                                pointId:parametres.PointId, setDataProduct: parametres.setDataProduct, notes:parametres.notes, isPointCle:false, target: parametres.target}} />
+                            <h4 className={styles.GoddBadTitle}>Bon point (en choisir au moins 3)</h4>
+                            <select className={styles.select} value={
+                                dataProduct[parametres.target].good &&
+                                dataProduct[parametres.target].good.length>0&&dataProduct[parametres.target].good.slice(-1)[0]}onChange={(e)=>{setDataProduct((prevDataProduct)=>({
+                                ...prevDataProduct,
+                                [parametres.target]: {
+                                    ...prevDataProduct[parametres.target],
+                                    good: [...new Set([...(prevDataProduct[parametres.target].good) || [], e.target.value])]
+                                }
+                            }))}}>
+                                <option>choisir bon point</option>
+                                {arrayGoodBad(dataProduct).good.map((data, index)=>[
+                                    <option value={data} key={index}>{data}</option>
+                                ])}
+                            </select>
                             <ul className={`${styles.renderGoodPoint} ${styles.renderPoint}`}>
                                 {
                                     dataProduct[parametres.target].good?.map((elt, index)=>[
@@ -285,6 +414,19 @@ const pageAdminAddPutDeleteProduct = () => {
                                 }
                             </ul>
                             <h4 className={styles.GoddBadTitle}>Mauvais point (en choisir au moins 1)</h4>
+                            <select className={styles.select} value={
+                                dataProduct[parametres.target].bad &&dataProduct[parametres.target].bad.length>0&&dataProduct[parametres.target].bad.slice(-1)[0]} onChange={(e)=>{setDataProduct((prevDataProduct)=>({
+                                ...prevDataProduct,
+                                [parametres.target]: {
+                                    ...prevDataProduct[parametres.target],
+                                    bad: [...new Set([...(prevDataProduct[parametres.target].bad) || [], e.target.value])]
+                                }
+                            }))}}>
+                                <option>choisir mauvais point</option>
+                                {arrayGoodBad(dataProduct).bad.map((data, index)=>[
+                                    <option value={data} key={index}>{data}</option>
+                                ])}
+                            </select>
                             <ul className={`${styles.renderBadPoint} ${styles.renderPoint}`}>
                                 {
                                     dataProduct[parametres.target].bad?.map((elt, index)=>[
@@ -294,6 +436,7 @@ const pageAdminAddPutDeleteProduct = () => {
                             </ul>
                         </li>
                     </ul>
+
                 </>
             )
         }
@@ -314,6 +457,7 @@ const pageAdminAddPutDeleteProduct = () => {
             const handleChangeimages = (e) => {
                 console.log('image change')
                 console.log(imagePreview)
+                // imagesState.images.forEach(image => URL.revokeObjectURL(image.preview));
                 const selectedImages = Array.from(e.target.files);
                 const imagesWithPrev = selectedImages.map((image)=>({
                     file: image,
@@ -322,6 +466,8 @@ const pageAdminAddPutDeleteProduct = () => {
                 setImagesStates((previmageState)=>({
                     ...previmageState,
                     images:[ ...previmageState.images, ...imagesWithPrev ]}))
+
+                // imagesWithPrev.forEach((img)=>FirebaseImagesUpload(img.file.name, img.file))
             }
             const deleteImage = (e) =>{
                 const imagesTemps = []
@@ -346,9 +492,14 @@ const pageAdminAddPutDeleteProduct = () => {
                     images:[...imagesTemps]
                 }))
                 setImagePreview([...imagesTemps])
+                console.log(imagesTemps)
+                console.log(e.file.name)
+
             }
             useEffect(()=>{
+
                 if(imagesState.images[0]?.file!==undefined){
+
                     setDataProduct((prevDataProduct)=>({
                         ...prevDataProduct,
                         images:[imagesState.images[0].file.name]}))
@@ -423,7 +574,7 @@ const pageAdminAddPutDeleteProduct = () => {
                     </div>
                     <div style={{gridArea:"config"}} className={`${styles.zoneItem} ${styles.zone_config}`}>
                         {ConfigRender(dataProduct, setDataProduct)}
-                        <button onClick={(e)=>handleSetNotes(e)} className={dataProduct.config.os==='na'
+                        <button onClick={handleSetNotes} className={dataProduct.config.os==='na'
                             ?`${styles.disable} ${styles.btnAutoNote}`:styles.btnAutoNote}>get a notes</button>
                     </div>
                     <div style={{gridArea:"baliseAf"}} className={`${styles.zoneItem} ${styles.containerBaliseAffil}`}>
@@ -458,10 +609,9 @@ const pageAdminAddPutDeleteProduct = () => {
                     </div>
                     <div style={{gridArea:"noteD"}} className={`${styles.zoneItem} ${styles.NoteDescContainer}`}>
                         <h2>Details</h2>
-
                         <DetailBureauGaming parametres={{
-                            pointId: dataProduct.noteDesc.int, setDataProduct, isPointCle: false, target: "noteDesc"}}/>
-                        <DetailBureauGaming parametres={{pointId: dataProduct.noteGaming.int, setDataProduct,  isPointCle: false, target: "noteGaming"}}/>
+                            pointId: dataProduct.noteDesc.int, setDataProduct, notes, isPointCle: false, target: "noteDesc"}}/>
+                        <DetailBureauGaming parametres={{pointId: dataProduct.noteGaming.int, setDataProduct, notes, isPointCle: false, target: "noteGaming"}}/>
                         <div className={`${styles.tagZone} ${styles.zone_parametrage}`}>
                         <div className={styles.bgTags}>
 
@@ -491,7 +641,7 @@ const pageAdminAddPutDeleteProduct = () => {
                         <p>titre {dataProduct.title}</p>
                         <ul>
                             <li className={styles.Form_list_elt}>
-                                <p className={styles.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}><span>Description du produit: </span>{dataProduct.description}</p>
+                                <p className={styles.description}><span>Description du produit: </span>{dataProduct.description}</p>
                             </li>
 
                         </ul>
@@ -511,7 +661,6 @@ const pageAdminAddPutDeleteProduct = () => {
                             ...prevDataProduct,
                             usage: e.target.value.split('usage ')[1]
                         }))}} name='conseil' id='conseil'>
-                            <option>Choisir une utilisation</option>
                             <option>usage gaming</option>
                             <option>usage bureau</option>
                             <option>usage gaming/bureau</option>
@@ -521,14 +670,14 @@ const pageAdminAddPutDeleteProduct = () => {
                 </form>
                 <>
                     {openCloseModale?
-                    <ModaleValidation params={{dataProduct, setOpenCloseModale,imagePreview, setImagePreview}}/>:<></>}
+                    <ModaleValidation params={{dataProduct, setOpenCloseModale}}/>:<></>}
                 </>
             </section>
         )
     };
     return(
         <>
-            {/* <PageAdminCreateProduct ></PageAdminCreateProduct> */}
+            <PageAdminCreateProduct ></PageAdminCreateProduct>
         </>
     );
 };

@@ -1,14 +1,13 @@
-import styles from './TableauNotes.module.css';
+import styles from './ComponentCustom.module.css';
 import { ConfigItem } from '../utils/utils.custom';
 export const TableauNotes = ({parametre})=>{
     return(
-        <>
-            <ul>
+            <ul className={`${styles.listNotes}`}>
                 {parametre.notes.map((note, index)=>[
                     <li 
                         key={index}
-                        className={styles.note}
                         value={note}
+                        className={styles.note}
                         onClick={(e)=>{
                             parametre.setDataProduct((old)=>(
                                 parametre.isPointCle?{
@@ -34,7 +33,7 @@ export const TableauNotes = ({parametre})=>{
                     >{note}</li>
                 ])}
             </ul>
-        </>
+        
     )
 }
 const ConfigRow = ({label, target, value, onChange, setDataProduct}) =>{
@@ -42,23 +41,23 @@ const ConfigRow = ({label, target, value, onChange, setDataProduct}) =>{
     <tr>
         <td>{label}</td>
         <td>
-            <input onChange={(e)=>{
+            <input placeholder={value} onChange={(e)=>{
                 onChange({target, element:e.target.value, setDataProduct})
             }}/>
         </td>
-        <td>{value}</td>
     </tr>
     )
 }
 export const ConfigRender = (data, setDataProduct) => {
     return(
         <div className={styles.configContainer}>
-            <table>
-                <thead>
+            <h2>Config du pc portable</h2>
+            <table className={styles.tableConfig}>
+                {/* <thead>
                     <tr>
                         <th>Config du pc portable</th>
                     </tr>
-                </thead>
+                </thead> */}
                 <tbody>
                     {ConfigRow({
                         label: "CPU (processeur)",
@@ -66,6 +65,7 @@ export const ConfigRender = (data, setDataProduct) => {
                         value: data.config.cpu,
                         onChange:ConfigItem,
                         setDataProduct: setDataProduct
+                        
                     })}
                     {ConfigRow({
                         label: "GPU (Carte Graphique)",

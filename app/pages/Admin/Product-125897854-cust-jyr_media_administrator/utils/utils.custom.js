@@ -1,3 +1,5 @@
+import { arrayGoodBad, descriptions } from "../dataBrut/databrut";
+
 export const ConfigItem = (params) => {
     const {target, element, setDataProduct} = params;
     setDataProduct((prevDataProduct)=>({
@@ -7,4 +9,110 @@ export const ConfigItem = (params) => {
             [target]: element
         }
     }))
+}
+const checkPartialMatch = (input, keyword) => {
+    const normalizedInput = input.toLowerCase().replace(/\s/g, '');  // Convertit en minuscules et supprime les espaces
+    const normalizedKeyword = keyword.toLowerCase().replace(/\s/g, '');
+
+    const keywordLength = normalizedKeyword.length;
+    const threshold = Math.ceil(keywordLength * 0.9);  // Correspondance de 90%
+
+    let matchCount = 0;
+
+    for (let i = 0; i < keywordLength; i++) {
+        if (normalizedInput.includes(normalizedKeyword[i])) {
+            matchCount++;
+        }
+    }
+
+    return matchCount >= threshold;
+};
+export const checkElement = (params) => {
+    let note = 0;
+    Object.entries(params.array).forEach(([category, keywords]) => {
+        keywords.forEach((keyword) => {
+            if (checkPartialMatch(params.element, keyword)) {
+                switch (category) {
+                    case 'ultra':
+                        note = 10;
+                        break;
+                    case 'good':
+                        note = 8;
+                        break;
+                    case 'moyen':
+                        note = 7;
+                        break;
+                    case 'bas':
+                        note = 5;
+                        break;
+                    default:
+                        note = 0;
+                }
+                note = Math.max(note, newNote);
+            }
+        });
+    });
+    
+    // params.array.ultra.forEach((isUltra)=>{
+    //     if(params.element.toLowerCase().includes(isUltra.toLowerCase())){
+    //         note = 10;
+    //     };
+    // });
+    // params.array.good.forEach((isPresent)=>{
+    //     if(params.element.toLowerCase().includes(isPresent.toLowerCase())){
+    //         note = 8;
+    //     };
+    // });
+    // params.array.moyen.forEach((isPresent)=>{
+    //     if(params.element.toLowerCase().includes(isPresent.toLowerCase())){
+    //         note = 7;
+    //     };
+    // });
+    // params.array.bas.forEach((isPresent)=>{
+    //     if(params.element.toLowerCase().includes(isPresent.toLowerCase())){
+    //         note = 5;
+    //     };
+    // });
+    return note;
+};
+
+export const moyeneElement = (params) => {
+    const nombresNotes = params.notes.length;
+    let moyene = 0;
+    params.notes.forEach((note)=>{
+        moyene+=note;
+    });
+    moyene = Math.round(moyene / nombresNotes);
+    return moyene;
+};
+export const setDescribeAuto = (params) => {
+    if(params.note>=9){
+        return descriptions(params.data)[params.element].ultra
+    }else if(params.note>=7 && params.note<=8){
+        return descriptions(params.data)[params.element].good
+    }else if(params.note>=5 && params.note<=6){
+        return descriptions(params.data)[params.element].moyen
+    }else{
+        return descriptions(params.data)[params.element].bas
+    }
+};
+export const setGoodBadPointAuto = (params) => {
+    const res = {
+        good:["null"],
+        bad: ["null"]
+    } 
+    if(params.note>= 9){
+        res.good = arrayGoodBad(params.data).good.ultra;
+        res.bad = arrayGoodBad(params.data).bad.ultra
+    }else if(params.note>=7 && params.note<=8){
+        res.good = arrayGoodBad(params.data).good.good;
+        res.bad = arrayGoodBad(params.data).bad.good
+    }else if(params.note>=5 && params.note<=6){
+        res.good = arrayGoodBad(params.data).good.moyen;
+        res.bad = arrayGoodBad(params.data).bad.moyen
+    }else{
+        res.good = arrayGoodBad(params.data).good.bas;
+        res.bad = arrayGoodBad(params.data).bad.bas
+    }
+    return res
 }

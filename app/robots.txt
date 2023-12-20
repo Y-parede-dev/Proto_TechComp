@@ -1,1 +1,15 @@
 no-index
+User-agent: *
+Disallow: /api
+User-agent: *
+Disallow: /components
+User-agent: *
+Disallow: /context
+User-agent: *
+Disallow: /cookies
+User-agent: *
+Disallow: /mediaQueries
+User-agent: *
+Disallow: /structure
+User-agent: *
+Disallow: /pages/Admin

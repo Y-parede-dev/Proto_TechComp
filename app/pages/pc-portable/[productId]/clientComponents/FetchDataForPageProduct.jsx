@@ -5,7 +5,7 @@ import ImageAndLinkAffiliate from "../clientComponents/ImageAndLinkAffiliate";
 import Notation from '@/app/components/clientComponents/Notation';
 import { Caracteristique } from "@/app/pages/pc-portable/[productId]/SSRCompponents/caracteristiques/Caracteristique";
 import SuggestionMap from '@/app/components/suggestion/SuggestionMap';
-import PointsCles from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
+import {PointsCles} from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
 import { useEffect, useState } from "react";
 import {GET} from '@/lib/GetByJson'
 
@@ -64,10 +64,12 @@ export const FetchDataForPageProduct = ({params}) => {
                         <div className={styles.suggestions}>
                         <h2>suggestions d'autres produits</h2>
                         <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portable de la même marque"}/>
+                        <hr/>
                         <SuggestionMap searchSepar={"gaming"} titreRecherche={"PC portable gamer"}/>
+                        <hr/>
                         <SuggestionMap searchSepar={"ultra"} titreRecherche={"PC portable avec écran 4K"}/>
+                        <hr/>
                         <SuggestionMap searchSepar={"tactile"} titreRecherche={"PC portable avec écran tactile"}/>
-                        <SuggestionMap searchSepar={"oled"} titreRecherche={"PC portable avec écran oled"}/>
     
                         </div>
                     </>

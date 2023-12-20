@@ -12,7 +12,7 @@
 }
 .product_card{
   /* max-width: 1240px; */
-  width: 91%;
+  width: 92%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;

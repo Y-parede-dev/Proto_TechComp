@@ -1,10 +1,18 @@
+.suggestions {
+    padding: 15px 0;
+}
+
 .containerListOtherItems {
+    max-width: 1026px;
+    width: 100%;
     position: relative;
 }
 .listCarroussel{
+    min-height: 500px;
+    min-width: 80%;
     scroll-behavior: smooth;
     transition-duration: 490ms;
-    padding: 15px 10px;
+    padding: 15px 12px;
     display: flex;
     position: relative;
     gap: 1.35rem;
@@ -79,9 +87,9 @@
 .litsItemCarroussel>img{
     position: relative;
     object-fit: cover;
-    aspect-ratio: 16/9;
-    width: 80%;
-    /* height: auto; */
+    aspect-ratio: 4/3;
+    width: 90%;
+    height: auto;
 }
 .litsItemCarroussel:hover{
     transform: scale(1.008);
@@ -121,6 +129,8 @@
     background: var(--color-back);
     padding: 50px;
     /* width: 80%; */
+    min-width: 80%;
+    min-height: 80vh;
 }
 
 .spanTags, .spanTagsTitle {

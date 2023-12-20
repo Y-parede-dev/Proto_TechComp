@@ -11,13 +11,13 @@ const Notation = ({produit, param}) =>{
     })
     const refSpec = useRef();
     const changeDesktopGaming = (e, note) => {
-        if(notesState.noteActive&&note=="gaming"){
-            setNodeState((prevData)=>({...prevData, noteActive: notesState.noteActive}));
-            setNodeState((prevData)=>({...prevData, noteActiveGaming: !notesState.noteActiveGaming}));
+        if(notesState?.noteActive&&note=="gaming"){
+            setNodeState((prevData)=>({...prevData, noteActive: notesState?.noteActive}));
+            setNodeState((prevData)=>({...prevData, noteActiveGaming: !notesState?.noteActiveGaming}));
         }
-        if(notesState.noteActiveGaming&&note=="bureau"){
-            setNodeState((prevData)=>({...prevData, noteActiveGaming: notesState.noteActiveGaming}));
-            setNodeState((prevData)=>({...prevData, noteActive: !notesState.noteActive}));
+        if(notesState?.noteActiveGaming&&note=="bureau"){
+            setNodeState((prevData)=>({...prevData, noteActiveGaming: notesState?.noteActiveGaming}));
+            setNodeState((prevData)=>({...prevData, noteActive: !notesState?.noteActive}));
         }
     }
     if(param){
@@ -27,7 +27,7 @@ const Notation = ({produit, param}) =>{
                 <>
                     <div className={styles.notes_contentOnSugg}>
                         <p className={styles.noteOnSugg}>Usage:  {usageIconTest}/ Note: </p>
-                        <>{Note(produit.noteGaming.int)}</>          
+                        <>{Note(produit?.noteGaming.int)}</>          
                     </div>
                 </>
             )
@@ -38,7 +38,7 @@ const Notation = ({produit, param}) =>{
                 <>
                     <div className={styles.notes_contentOnSugg}>
                         <p className={styles.noteOnSugg}>Usage:  {usageScreenTest}/ Note: </p>
-                        <>{Note(produit.noteDesc.int)}</>          
+                        <>{Note(produit?.noteDesc.int)}</>          
                     </div>
                 </>
             )
@@ -51,27 +51,27 @@ const Notation = ({produit, param}) =>{
                 <div className={styles.containerNoteDetails}>
                     <div className={styles.tabs}>
                         <ul className={styles.choiseNote}>
-                            <li className={notesState.noteActive?`${styles.note} ${styles.noteBureau}`:`${styles.noteBureau} ${styles.note} ${styles.noteInactive}`} onClick={(e)=>changeDesktopGaming(e, "bureau")}>
+                            <li className={notesState?.noteActive?`${styles.note} ${styles.noteBureau}`:`${styles.noteBureau} ${styles.note} ${styles.noteInactive}`} onClick={(e)=>changeDesktopGaming(e, "bureau")}>
                                 <p>Note bureau</p>
-                                {Note(produit.noteDesc.int)}
+                                {Note(produit?.noteDesc.int)}
                             </li>
-                            <li className={!notesState.noteActiveGaming?`${styles.note} ${styles.noteInactive} ${styles.noteGaming}`: `${styles.noteGaming} ${styles.note}`} onClick={(e)=>changeDesktopGaming(e, "gaming")}>
+                            <li className={!notesState?.noteActiveGaming?`${styles.note} ${styles.noteInactive} ${styles.noteGaming}`: `${styles.noteGaming} ${styles.note}`} onClick={(e)=>changeDesktopGaming(e, "gaming")}>
                                 <p>Note Gaming</p>
-                                {Note(produit.noteGaming.int)}
+                                {Note(produit?.noteGaming.int)}
                             </li>
                         </ul>
                     </div>
-                    { notesState.noteActive?
+                    { notesState?.noteActive?
                         <div className={styles.details}>
                             <h3>Inconvéniants</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>
-                                {produit.noteDesc.bad.map(e=>[
+                                {produit?.noteDesc.bad?.map(e=>[
                                     <li className={`${styles.detailBad} ${styles.detail} ${styles.detailActive}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>
                             <h3>Avantages</h3>
                             <ul className={`${styles.goodNote} ${styles.ListDetail}`}>
-                                {produit.noteDesc.good.map(e=>[
+                                {produit?.noteDesc.good?.map(e=>[
                                     <li className={`${styles.detailGood} ${styles.detail} ${styles.detailActive}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>
@@ -80,13 +80,13 @@ const Notation = ({produit, param}) =>{
                         <div className={styles.details}>
                             <h3>Inconvéniants</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>
-                                {produit.noteGaming.bad.map(e=>[
+                                {produit?.noteGaming.bad?.map(e=>[
                                     <li className={`${styles.detailBad} ${styles.detail}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>
                             <h3>Avantages</h3>
                             <ul className={`${styles.goodNote} ${styles.ListDetail}`}>
-                                {produit.noteGaming.good.map(e=>[
+                                {produit?.noteGaming.good?.map(e=>[
                                     <li className={`${styles.detailGood} ${styles.detail}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>

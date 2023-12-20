@@ -4,7 +4,7 @@ import styles from './Nav.module.css';
 import FormSearch from '@/app/components/clientComponents/FormSearch';
 import { useContext, useState, useEffect} from 'react';
 import { SearchCTX } from '@/app/context/SearchCTX';
-import { ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
+import { ProductSearchByBrand, ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
 import { useRouter } from 'next/navigation';
 import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
@@ -83,6 +83,8 @@ const Nav = ({responsive}) => {
                 }if(by==="price"){
                     [idPresent, DATA] = await ProductSearchByPrice({searchPrice: inptUser, CTX});
                     syntax = inptUser;
+                }if(by==="brand"){
+                    [idPresent, DATA] = await ProductSearchByTag({idPresent});
                 }
                 CTX.setTAG(syntax);
                 idPresent = FilterNoRepeat(idPresent);
@@ -119,12 +121,13 @@ const Nav = ({responsive}) => {
                             <li className={styles.linkOnNav} onClick={()=>setModales({
                                 marquesModale: !modales.marquesModale,
                                 moinsCherModale: modales.moinsCherModale})}>
-                                <Link href={" "}>® Marques</Link>
+                                ® Marques
                             </li>
                             <ul className={styles.listBrand}>
                                 {modales.marquesModale && 
                                     items.marques.map((marque) => [
-                                            <li className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>{marque}</li>
+                                            <li onClick={()=>handle(marque, "brand")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
+                                                <Link href={urlPcPortable}>{marque}</Link></li>
                                         ]
                                     )
                                 }

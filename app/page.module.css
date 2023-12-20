@@ -1,13 +1,23 @@
 .ILLUSTRATOR{
-
+  overflow: hidden;
   background: rgba(0, 0, 0, .3);
-  padding: 25px;
-  font-size: 1.7rem;
+  padding: 0px;
+  /* font-size: 1.7rem; */
   font-weight: 600;
   color: var(--color-first);
   margin: auto;
+  max-height: 650px;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 6px -1px black;
 }
-
+.imageHomePage{
+  transform: translateY(-49px);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .main {
   background: var(--color-back-main);
   position: sticky;
@@ -26,19 +36,41 @@
 .mainContent{
   background: var(--color-back-main);
 
-  max-width: 91%;
+  max-width: 92%;
 }
 .titlePage {
-  padding: 25px 0;
+  color: #113264;
+  font-size: 1.7rem;
+  padding: 35px 0;
 }
 .txtPresentation {
-  color: red;
-  font-size: 1.5rem;
-  border: solid 1px grey;
-  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 0 6px -1px black;
+  font-size: 1.2rem;
+  /* border: solid 1px grey; */
+  border-radius: 25px;
+  background: linear-gradient(to bottom,
+    rgba(var(--color-first-rgb), 1),
+    rgba(var(--color-second-rgb), 1));
+
+  & > .pBienvenue {
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: opacity(10%);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 14px auto;
+    /* color: var(--color-back-main); */
+    & > .pBienvenueH3 {
+      padding: 8px 0;
+    }
+  }
 }
+/* .txtWhite{
+  color: var(--color-back-main);;
+} */
 .top10{
-  padding: 5px 0;
+  padding: 20px 0;
 }
 .listesTop10 {
   list-style: none;

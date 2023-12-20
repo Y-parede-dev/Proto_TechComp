@@ -79,11 +79,11 @@ const ImageAndLinkAffiliate = ({produit}) => {
     return(
         <>
             <div className={styles.imageContainer}>
-                <div><Image loading="eager" width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
+                <div><Image alt={`${produit.title} - principale`} loading="eager" width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
                 <div className={styles.imagesList}>
                     {
                         images.arrayImages.map((imgs)=>[
-                            <Image loading="eager" className={styles.imageItem} key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
+                            <Image alt={`${produit.title} - secondaires`} loading="eager" className={styles.imageItem} key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
 
                         ])
                     }

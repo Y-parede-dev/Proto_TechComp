@@ -4,7 +4,7 @@
         {
             "id":"ASUS-Zenbook-14-UX3402ZA-KN778W",
             "brand":"asus",
-            "resolution":"2560 x 1600",
+            "resolution":"2560 x 1440",
             "title":"ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch",
             "description":"Découvrez et comparez les spécifications, performances et prix de l'ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch sur itek-comparateur.fr notre site de comparateur. Cet ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch offre une expérience immersive avec son écran OLED Touch et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins  avec ASUS Zenbook 14 UX3402ZA-KN778W OLED Touch",
             "tags":[
@@ -222,7 +222,7 @@
             "config":{
                 
                 "cpu":"AMD Ryzen 7 7735HS / 3.2 GHZ",
-                "screen":"15.6 || 144 Hz",
+                "screen":"15.6 | 144 Hz",
                 "gpu":"Nvidia RTX 4050 6GO",
                 "ram":"16GO | DDR5",
                 "stockage":"512GO | SSD M.2",
@@ -312,7 +312,7 @@
             "config":{
                 
                 "cpu":"AMD Ryzen 7 7735HS / 3.2 GHZ",
-                "screen":"15.6 || 144 Hz",
+                "screen":"15.6 | 144 Hz",
                 "gpu":"Nvidia RTX 3050",
                 "ram":"16GO | DDR5",
                 "stockage":"512GO | SSD M.2",

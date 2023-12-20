@@ -1,0 +1,45 @@
+
+.main {
+    position: relative;
+    z-index: 2;
+    background: var(--color-back-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    min-height: 100vh;
+    width: 100%;
+    margin-top: var(--margin-top-main);
+}
+
+.main > form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: 18px;
+    background: rgb(107, 107, 107);
+    border-radius: 9px;
+}
+.main > form > * {
+    color: white;
+}
+
+.main > form > input {
+    color: black
+}
+
+.main > form > input[type="submit"] {
+    cursor: pointer;
+    background: rgb(49, 97, 191);
+    border-radius: 25px;
+    padding: 9px 15px;
+    font-size: 1.1rem;
+    max-width: max-content;
+    margin: auto;
+    transition-duration: 250ms;
+    /* color: white; */
+}
+.main > form > input[type="submit"]:hover {
+
+        transform: scale(1.05);
+    }

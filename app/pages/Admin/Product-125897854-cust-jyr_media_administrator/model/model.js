@@ -41,25 +41,25 @@ export const modelProduit = {
                 nom: 'Gaming',
                 id: "gaming",
                 note: 0,
-                description: "null"
+                description: "describe"
             },
             rapidite:{
                 nom: "Rapidité",
                 id: "rapidite",
                 note: 0,
-                description: "null"
+                description: "describe"
             },
             durabilite:{
                 nom: 'Durabilité',
                 id: "durabilite",
                 note:0,
-                description: "null"
+                description: "describe"
             },
             confort:{
                 nom: "Confort",
                 id: "confort",
                 note:0,
-                description: "null"
+                description: "describe"
             }
         }
     ],
