@@ -1,5 +1,6 @@
 import './globals.css'
 import Script from 'next/script'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Body from './structure/Body'
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -22,7 +23,7 @@ const RootLayout = ({children}) => {
           <Body>{children}</Body>
           <Script src="https://sc.affilizz.com/affilizz.js" async></Script>
           <GoogleTagManager gtmId={process.env.GTMID}/>
-          
+          <SpeedInsights/>
       </body>
     </html>
   )
