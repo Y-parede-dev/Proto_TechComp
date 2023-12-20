@@ -9,7 +9,7 @@ export async function GET(req){
     const jsonData = JSON.parse(currentData);
     try {
         // console.log('Data read successfully:', jsonData.produits);
-        return NextResponse.json({message: 'le get fonctione', data: jsonData.produits}, {status: 200});
+        return NextResponse.json({ message: 'le get fonctione', data: jsonData.produits}, {status: 200});
 
     } catch (error) {
         console.error(error.message);
