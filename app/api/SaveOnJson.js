@@ -8,7 +8,6 @@
 //     // console.log(req)
 
 //     // await cors(req, res)
-//     const filePath = '@/data/dataProduits/produit.test.json';
 //     // console.log(req)
 //     try {
 //         const currentData = await fs.readFile(filePath, 'utf-8');

@@ -7,7 +7,6 @@ import {ProductSearchByTag} from "@/lib/ProductSearch";
 import {SearchCTX, SearchCTXDispach} from '@/app/context/SearchCTX'
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
-// import produits from '@/data/dataProduits/produits.json' assert {type: 'json'}
 import config from '@/config/config.json' assert {type: 'json'}
 import { useRouter } from "next/navigation";
 import GET from "@/lib/GetByJson";

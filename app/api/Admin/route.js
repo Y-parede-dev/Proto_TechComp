@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 // export const dynamic = "force-dynamic";
 // const filePath = './data/dataProduits/produits.test2.json';
 // const filePath = process.env.API_PRODUCT_URL;
-const filePath = '/data/dataProduits/produits.test.json';
+const filePath = path.join(__dirname, "data", "dataProduits", "produits.test.json");
 import { fileExistsCustom } from "../utils/utilsForApi";
 export async function GET(req){
     const currentData = await fs.readFile(filePath, 'utf-8');
