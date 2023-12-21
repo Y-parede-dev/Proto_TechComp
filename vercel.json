@@ -1,7 +1,7 @@
 {
     "headers": [
         {
-            "source": "https://www.itek-comparateur/api/Admin",
+            "source": "/api/Admin",
             "headers": [
                 { "key": "Access-Control-Allow-Credentials", "value": "true" },
                 { "key": "Access-Control-Allow-Origin", "value": "https://www.itek-comparateur"},
