@@ -27,7 +27,7 @@
         "stockage": "cpu",
         "os": "cpu"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 9,
         "good": [
           "Le cpu offre de bonnes performances"
@@ -36,7 +36,7 @@
           "Un pc portable peut puissant."
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 9,
         "good": [
           "Le cpu offre d'excellentes performances"
@@ -111,7 +111,7 @@
         "stockage": "y",
         "os": "u"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [
           "Une faible capacité de stockage"
@@ -120,7 +120,7 @@
           "La capacité de stockage est excellente - y"
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0,
         "good": [
           "La mémoire vive (RAM) est excellente pour les jeux vidéo"
@@ -194,7 +194,7 @@
         "stockage": "d",
         "os": "e"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [
           "Un pc portable peut puissant."
@@ -203,7 +203,7 @@
           "Le z offre d'excellentes performances"
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0,
         "good": [
           "La e offre de correcte performances"
@@ -277,7 +277,7 @@
         "stockage": "dddd",
         "os": "dddd"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [
           "Un pc portable peut puissant."
@@ -286,7 +286,7 @@
           "Le ddd offre de bonnes performances"
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 6,
         "good": [
           "Le ddd offre de bonnes performances"
@@ -360,12 +360,12 @@
         "stockage": "eee",
         "os": "eeee"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -433,7 +433,7 @@
         "stockage": "EZ",
         "os": "EE"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 4,
         "good": [
           "La memoire vive est excellente - E RAM",
@@ -447,7 +447,7 @@
           "Ce pc portable n'est pas fait pour une utilisation gaming."
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 8,
         "good": [
           "Le CPU offre de bonnes performances",
@@ -525,7 +525,7 @@
         "stockage": "de",
         "os": "de"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 4,
         "good": [
           "La de offre de correcte performances"
@@ -534,7 +534,7 @@
           "Une faible capacité de stockage"
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 5,
         "good": [
           "La de offre de correcte performances"
@@ -606,10 +606,10 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 9
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 3
       },
       "array": {
@@ -675,10 +675,10 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 9
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 3
       },
       "array": {
@@ -744,10 +744,10 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 9
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 3
       },
       "array": {
@@ -813,12 +813,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -884,12 +884,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -955,12 +955,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -1026,12 +1026,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -1097,12 +1097,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -1168,12 +1168,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -1239,12 +1239,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0
       },
       "array": {
@@ -1310,12 +1310,12 @@
         "stockage": "na",
         "os": "na"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 0,
         "bad": [],
         "good": []
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 0,
         "bad": [],
         "good": []
@@ -1385,7 +1385,7 @@
         "stockage": "ede",
         "os": "ded"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 8,
         "good": [
           "Le cdsnckl offre de bonnes performances",
@@ -1396,7 +1396,7 @@
           "Le pc est un peut lourd"
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 8,
         "good": [
           "La memoire vive est excellente - 16GO  RAM",
@@ -1472,7 +1472,7 @@
         "stockage": "500GO | SSD",
         "os": "Windows 11"
       },
-      "noteDesc": {
+      "notedesc": {
         "int": 8,
         "good": [
           "Le Intel I7 7500 offre de bonnes performances",
@@ -1483,7 +1483,7 @@
           "Un pc portable peut puissant."
         ]
       },
-      "noteGaming": {
+      "notegaming": {
         "int": 8,
         "good": [
           "Le Intel I7 7500 offre d'excellentes performances"
@@ -1557,7 +1557,7 @@
         "stockage": "500Go",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 3200 x 1800"
         ],
@@ -1567,92 +1567,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 3200 x 1800"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "656e510e4af4d4192c578304"
-      },
-      "btn": {
-        "publicationContentId": "65569ff6fc8c4d5801143c03"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "gaming",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable Asus rog strix Vm de chez acer-65 n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' Asus rog strix Vm Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "Asus rog strix Vm",
-      "brand": "acer-65",
-      "resolution": "3200 x 1800",
-      "id": "Asus-rog-strix-Vm",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' Asus rog strix Vm sur itek-comparateur.fr notre site de comparateur. Ce Asus rog strix Vm offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "acer-65",
-        "gaming",
-        "haut",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 555,
-      "loading": "lazy",
-      "images": [
-        "Firefly-Un-logo-d-un-pc-portable-9526-ConvertImage-ConvertImage.webp"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500Go",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 3200 x 1800"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 3200 x 1800"
         ],
@@ -1727,7 +1642,7 @@
         "stockage": "500Go",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 3200 x 1800"
         ],
@@ -1737,7 +1652,92 @@
         ],
         "int": 0
       },
-      "noteGaming": {
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 3200 x 1800"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "656e510e4af4d4192c578304"
+      },
+      "btn": {
+        "publicationContentId": "65569ff6fc8c4d5801143c03"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "gaming",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable Asus rog strix Vm de chez acer-65 n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' Asus rog strix Vm Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "Asus rog strix Vm",
+      "brand": "acer-65",
+      "resolution": "3200 x 1800",
+      "id": "Asus-rog-strix-Vm",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' Asus rog strix Vm sur itek-comparateur.fr notre site de comparateur. Ce Asus rog strix Vm offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "acer-65",
+        "gaming",
+        "haut",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 555,
+      "loading": "lazy",
+      "images": [
+        "Firefly-Un-logo-d-un-pc-portable-9526-ConvertImage-ConvertImage.webp"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500Go",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 3200 x 1800"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 3200 x 1800"
         ],
@@ -1812,7 +1812,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -1822,7 +1822,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -1898,7 +1898,7 @@
         "stockage": "655",
         "os": "ee"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -1908,93 +1908,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 1920 x 1080"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "empty"
-      },
-      "btn": {
-        "publicationContentId": "empty"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "gaming",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable asu Oled  de chez asus-test n'est pas conçu pour une utilisation gaming. La configuration <strong>Rtx 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' asu Oled  Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "asu Oled ",
-      "brand": "asus-test",
-      "resolution": "1920 x 1080",
-      "id": "asu-Oled-",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' asu Oled  sur itek-comparateur.fr notre site de comparateur. Ce asu Oled  offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "asus-test",
-        "gaming",
-        "bas",
-        "oled",
-        "I7",
-        "Rtx 4080"
-      ],
-      "prix": 555,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "Rtx 4080",
-        "ram": "64",
-        "stockage": "655",
-        "os": "ee"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 1920 x 1080"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -2070,7 +1984,7 @@
         "stockage": "655",
         "os": "ee"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -2080,7 +1994,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -2156,7 +2070,7 @@
         "stockage": "655",
         "os": "ee"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -2166,7 +2080,93 @@
         ],
         "int": 0
       },
-      "noteGaming": {
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 1920 x 1080"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "empty"
+      },
+      "btn": {
+        "publicationContentId": "empty"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "gaming",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable asu Oled  de chez asus-test n'est pas conçu pour une utilisation gaming. La configuration <strong>Rtx 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' asu Oled  Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "asu Oled ",
+      "brand": "asus-test",
+      "resolution": "1920 x 1080",
+      "id": "asu-Oled-",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' asu Oled  sur itek-comparateur.fr notre site de comparateur. Ce asu Oled  offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "asus-test",
+        "gaming",
+        "bas",
+        "oled",
+        "I7",
+        "Rtx 4080"
+      ],
+      "prix": 555,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "Rtx 4080",
+        "ram": "64",
+        "stockage": "655",
+        "os": "ee"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 1920 x 1080"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 1920 x 1080"
         ],
@@ -2241,7 +2241,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2251,92 +2251,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "65563b01ab255a06af305406"
-      },
-      "btn": {
-        "publicationContentId": "656e503eaa6aec63f90bb103"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "bureau",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "ggfgf",
-      "brand": "xs",
-      "resolution": "2560 x 1440",
-      "id": "ggfgf",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "xs",
-        "bureau",
-        "moyen",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 500,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2411,7 +2326,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2421,92 +2336,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "65563b01ab255a06af305406"
-      },
-      "btn": {
-        "publicationContentId": "656e503eaa6aec63f90bb103"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "bureau",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "ggfgf",
-      "brand": "xs",
-      "resolution": "2560 x 1440",
-      "id": "ggfgf",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "xs",
-        "bureau",
-        "moyen",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 500,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2581,7 +2411,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2591,92 +2421,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "65563b01ab255a06af305406"
-      },
-      "btn": {
-        "publicationContentId": "656e503eaa6aec63f90bb103"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "bureau",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "ggfgf",
-      "brand": "xs",
-      "resolution": "2560 x 1440",
-      "id": "ggfgf",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "xs",
-        "bureau",
-        "moyen",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 500,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2751,7 +2496,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2761,92 +2506,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "65563b01ab255a06af305406"
-      },
-      "btn": {
-        "publicationContentId": "656e503eaa6aec63f90bb103"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "bureau",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "ggfgf",
-      "brand": "xs",
-      "resolution": "2560 x 1440",
-      "id": "ggfgf",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "xs",
-        "bureau",
-        "moyen",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 500,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2921,7 +2581,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -2931,92 +2591,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "65563b01ab255a06af305406"
-      },
-      "btn": {
-        "publicationContentId": "656e503eaa6aec63f90bb103"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "bureau",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "ggfgf",
-      "brand": "xs",
-      "resolution": "2560 x 1440",
-      "id": "ggfgf",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "xs",
-        "bureau",
-        "moyen",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 500,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -3091,7 +2666,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -3101,92 +2676,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "array": {
-        "publicationContentId": "65563b01ab255a06af305406"
-      },
-      "btn": {
-        "publicationContentId": "656e503eaa6aec63f90bb103"
-      },
-      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
-      "usage": "bureau",
-      "pointsClef": [
-        {
-          "gaming": {
-            "nom": "Gaming",
-            "id": "gaming",
-            "note": 0,
-            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
-          },
-          "rapidite": {
-            "nom": "Rapidité",
-            "id": "rapidite",
-            "note": 0,
-            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
-          },
-          "durabilite": {
-            "nom": "Durabilité",
-            "id": "durabilite",
-            "note": 0,
-            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
-          },
-          "confort": {
-            "nom": "Confort",
-            "id": "confort",
-            "note": 0,
-            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
-          }
-        }
-      ],
-      "denominateur": "l'"
-    },
-    {
-      "title": "ggfgf",
-      "brand": "xs",
-      "resolution": "2560 x 1440",
-      "id": "ggfgf",
-      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
-      "tags": [
-        "xs",
-        "bureau",
-        "moyen",
-        "I7",
-        "RTX 4080"
-      ],
-      "prix": 500,
-      "loading": "lazy",
-      "images": [
-        "s.png"
-      ],
-      "bonus": "naJM",
-      "config": {
-        "cpu": "I7",
-        "screen": "16",
-        "gpu": "RTX 4080",
-        "ram": "64",
-        "stockage": "500",
-        "os": "11"
-      },
-      "noteDesc": {
-        "good": [
-          "La résolution de l'écran est correcte 2560 x 1440"
-        ],
-        "bad": [
-          "Un pc portable peut puissant.",
-          "Ce pc portable n'est pas fait pour une utilisation gaming."
-        ],
-        "int": 0
-      },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -3261,7 +2751,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -3271,7 +2761,517 @@
         ],
         "int": 0
       },
-      "noteGaming": {
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e503eaa6aec63f90bb103"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "ggfgf",
+      "brand": "xs",
+      "resolution": "2560 x 1440",
+      "id": "ggfgf",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "xs",
+        "bureau",
+        "moyen",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e503eaa6aec63f90bb103"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "ggfgf",
+      "brand": "xs",
+      "resolution": "2560 x 1440",
+      "id": "ggfgf",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "xs",
+        "bureau",
+        "moyen",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e503eaa6aec63f90bb103"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "ggfgf",
+      "brand": "xs",
+      "resolution": "2560 x 1440",
+      "id": "ggfgf",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "xs",
+        "bureau",
+        "moyen",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e503eaa6aec63f90bb103"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "ggfgf",
+      "brand": "xs",
+      "resolution": "2560 x 1440",
+      "id": "ggfgf",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "xs",
+        "bureau",
+        "moyen",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e503eaa6aec63f90bb103"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "ggfgf",
+      "brand": "xs",
+      "resolution": "2560 x 1440",
+      "id": "ggfgf",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "xs",
+        "bureau",
+        "moyen",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "array": {
+        "publicationContentId": "65563b01ab255a06af305406"
+      },
+      "btn": {
+        "publicationContentId": "656e503eaa6aec63f90bb103"
+      },
+      "conseil": "Ce pc n'est pas conseiller pour une utilisation gaming",
+      "usage": "bureau",
+      "pointsClef": [
+        {
+          "gaming": {
+            "nom": "Gaming",
+            "id": "gaming",
+            "note": 0,
+            "description": "Cet ordinateur portable ggfgf de chez xs n'est pas conçu pour une utilisation gaming. La configuration <strong>RTX 4080</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos."
+          },
+          "rapidite": {
+            "nom": "Rapidité",
+            "id": "rapidite",
+            "note": 0,
+            "description": "Cet ordinateur figure dans la moyene basse du marché. Avec son I7, 64 et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, l' ggfgf Vous offre une rapidité dans la moyenne"
+          },
+          "durabilite": {
+            "nom": "Durabilité",
+            "id": "durabilite",
+            "note": 0,
+            "description": "La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans."
+          },
+          "confort": {
+            "nom": "Confort",
+            "id": "confort",
+            "note": 0,
+            "description": "L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général."
+          }
+        }
+      ],
+      "denominateur": "l'"
+    },
+    {
+      "title": "ggfgf",
+      "brand": "xs",
+      "resolution": "2560 x 1440",
+      "id": "ggfgf",
+      "description": "Découvrez et comparez les caractéritiques, performances et prix de l' ggfgf sur itek-comparateur.fr notre site de comparateur. Ce ggfgf offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur",
+      "tags": [
+        "xs",
+        "bureau",
+        "moyen",
+        "I7",
+        "RTX 4080"
+      ],
+      "prix": 500,
+      "loading": "lazy",
+      "images": [
+        "s.png"
+      ],
+      "bonus": "naJM",
+      "config": {
+        "cpu": "I7",
+        "screen": "16",
+        "gpu": "RTX 4080",
+        "ram": "64",
+        "stockage": "500",
+        "os": "11"
+      },
+      "notedesc": {
+        "good": [
+          "La résolution de l'écran est correcte 2560 x 1440"
+        ],
+        "bad": [
+          "Un pc portable peut puissant.",
+          "Ce pc portable n'est pas fait pour une utilisation gaming."
+        ],
+        "int": 0
+      },
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -3346,7 +3346,7 @@
         "stockage": "500",
         "os": "11"
       },
-      "noteDesc": {
+      "notedesc": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],
@@ -3356,7 +3356,7 @@
         ],
         "int": 0
       },
-      "noteGaming": {
+      "notegaming": {
         "good": [
           "La résolution de l'écran est correcte 2560 x 1440"
         ],

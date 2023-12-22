@@ -18,14 +18,14 @@ const ImageAndLinkAffiliate = ({produit}) => {
             defaut: true
         }
         )
-        console.log(typeof(urlImageDefault.image))
-
+        // console.log(typeof(urlImageDefault.image))
+    const publicationContentIdTableau = produit.arrayaff.publicationContentId;
     const [images , setImages] = useState({
         url: produit.images[0],
         default:true,
         arrayImages: []
     })
-
+    console.log(publicationContentIdTableau)
     const urlCustom = `https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produit.brand}%2F${produit.id}`;
 
     useEffect(() => {
@@ -46,7 +46,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
                                                         list(foldItemRef)
                                                             .then((resItems)=>{
                                                                 const arrayTemp = []
-                                                                resItems.items.map((item)=>{
+                                                                resItems.items?.map((item)=>{
                                                                     if(!images.arrayImages.includes(item.name)){
                                                                         arrayTemp.push(item.name)
                                                                     }
@@ -73,7 +73,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
     const GetByAffiliz = async({prod}) => {
         
         return(
-            <affilizz-rendering-component publication-content-id={prod.array.publicationContentId} loading={prod.loading}></affilizz-rendering-component>
+            <affilizz-rendering-component publication-content-id={prod.arrayaff.publicationContentId} loading={prod.loading}></affilizz-rendering-component>
         )
     } 
     return(
@@ -82,7 +82,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
                 <div><Image alt={`${produit.title} - principale`} loading="eager" width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
                 <div className={styles.imagesList}>
                     {
-                        images.arrayImages.map((imgs)=>[
+                        images.arrayImages?.map((imgs)=>[
                             <Image alt={`${produit.title} - secondaires`} loading="eager" className={styles.imageItem} key={imgs} width={100} onClick={e=>changeImage(e)} height={100} src={`${urlCustom}%2F${imgs}?alt=media`}></Image>
 
                         ])
@@ -92,7 +92,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
             <div className={styles.array}>
                 <p className={styles.array_price_title}>Meilleurs prix du marché</p>
                 {/* <GetByAffiliz prod={produit}></GetByAffiliz> */}
-                <affilizz-rendering-component publication-content-id={produit.array.publicationContentId} loading={produit.loading}></affilizz-rendering-component>
+                <affilizz-rendering-component publication-content-id={publicationContentIdTableau} loading={produit.loading}></affilizz-rendering-component>
             </div>
         </>
     )

@@ -53,7 +53,12 @@ export const ModaleValidation = ({params}) => {
     }
     const confirm = () =>{
         POST(dataProduct);
-        params.imagePreview?.forEach((img)=>FirebaseImagesUpload(img.file.name, img.file));
+        try{
+
+            params.imagePreview?.forEach((img)=>FirebaseImagesUpload(img.file.name, img.file));
+        }catch(err){
+
+        }
         // resetState();
         setOpenCloseModale(false)
     }
@@ -72,7 +77,7 @@ export const ModaleValidation = ({params}) => {
         }
     }, []);
     useEffect(()=>{
-        if(dataProduct.noteDesc.good.length>0){
+        if(dataProduct.notedesc.good.length>0){
             setNotesIsOk((prevState)=>({
                 ...prevState,
                 bureau:{
@@ -81,7 +86,7 @@ export const ModaleValidation = ({params}) => {
                 }
             }))
         };
-        if(dataProduct.noteGaming.good.length>0){
+        if(dataProduct.notegaming.good.length>0){
             setNotesIsOk((prevState)=>({
                 ...prevState,
                 gaming:{
@@ -90,7 +95,7 @@ export const ModaleValidation = ({params}) => {
                 }
             }))
         };
-        if(dataProduct.noteDesc.bad.length>0){
+        if(dataProduct.notedesc.bad.length>0){
             setNotesIsOk((prevState)=>({
                 ...prevState,
                 bureau:{
@@ -99,7 +104,7 @@ export const ModaleValidation = ({params}) => {
                 }
             }))
         };
-        if(dataProduct.noteGaming.bad.length>0){
+        if(dataProduct.notegaming.bad.length>0){
             setNotesIsOk((prevState)=>({
                 ...prevState,
                 gaming:{
@@ -199,17 +204,17 @@ export const ModaleValidation = ({params}) => {
                             <div className={styles.prix}>
 
                                 <p className={styles.prixMin}>à partir de</p>
-                                <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={dataProduct?.btn.publicationContentId} loading="lazy"></affilizz-rendering-component>
+                                <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={dataProduct?.btn?.publicationContentId} loading="lazy"></affilizz-rendering-component>
                             </div>
                         </div>
                     </div>
                     
-                    <div className={styles.arrayAff}>
+                    <div className={styles.arrayaff}>
                         <h3>
                             Display tableau Affilizz
                         </h3>
                         <div className={styles.affilizzLink}>
-                            <affilizz-rendering-component  publication-content-id={dataProduct?.array.publicationContentId} loading="lazy"></affilizz-rendering-component>
+                            <affilizz-rendering-component  publication-content-id={dataProduct?.arrayaff.publicationContentId} loading="lazy"></affilizz-rendering-component>
 
                         </div>
                     </div>

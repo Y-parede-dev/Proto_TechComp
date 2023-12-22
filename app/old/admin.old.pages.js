@@ -30,7 +30,7 @@ const pageAdminAddPutDeleteProduct = () => {
         // useEffect(()=>{
         //     setDataProduct((prevData)=>({
         //         ...prevData,
-        //         array:{
+        //         arrayAff:{
         //             publicationContentId:`656e28c9aa6aec63f90bb0b0`
         //         }
         //     }))
@@ -85,21 +85,21 @@ const pageAdminAddPutDeleteProduct = () => {
         // useEffect(()=>{
         //     setDataProduct((prevDataProduct)=>({
         //         ...prevDataProduct,
-        //         noteDesc:{
-        //             ...prevDataProduct.noteDesc,
-        //             int: parseInt(prevDataProduct.noteDesc.int)
+        //         notedesc:{
+        //             ...prevDataProduct.notedesc,
+        //             int: parseInt(prevDataProduct.notedesc?.int)
         //         }
         //     }));
-        // },[dataProduct.noteDesc.int]);
+        // },[dataProduct.notedesc?.int]);
         // useEffect(()=>{
         //     setDataProduct((prevDataProduct)=>({
         //         ...prevDataProduct,
-        //         noteGaming:{
-        //             ...prevDataProduct.noteGaming,
-        //             int: parseInt(prevDataProduct.noteGaming.int)
+        //         notegaming:{
+        //             ...prevDataProduct.notegaming,
+        //             int: parseInt(prevDataProduct.notegaming?.int)
         //         }
         //     }));
-        // },[dataProduct.noteGaming.int]);
+        // },[dataProduct.notegaming?.int]);
         // // ::END::
         useEffect(()=>{
             if(dataProduct.config.cpu!=='na'){
@@ -120,17 +120,17 @@ const pageAdminAddPutDeleteProduct = () => {
                 }
                 setDataProduct((prevData)=>({
                     ...prevData,
-                    noteDesc:{
+                    notedesc:{
                         good:goodBadPointsCheck.good,
                         bad:goodBadPointsCheck.bad,
                         int: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})
                     },
-                    noteGaming:{
+                    notegaming:{
                         good:goodBadPointsCheck.good,
                         bad:goodBadPointsCheck.bad,
                         int: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})
                     },
-                    pointsClef:prevData.pointsClef.map((point)=>({
+                    pointsClef:prevData.pointsclef?.map((point)=>({
                         gaming: {
                             ...point.gaming,
                             description: describeCheck.gaming,
@@ -253,7 +253,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 <>
                     <h2>points clés</h2>
                     <ul className={styles.ulPCles}>
-                        { dataProduct.pointsClef?.map((point, index)=>[
+                        { dataProduct.pointsclef?.map((point, index)=>[
                             <div key={index}>
                                 <li className={styles.listItemPCles}>
 
@@ -277,11 +277,11 @@ const pageAdminAddPutDeleteProduct = () => {
                                     <p className={styles.txtChoix} >Veillez choisir description pour cette partie</p>
                                         <label htmlFor='description_rapidite'></label>
                                         <select className={styles.select}
-                                        value={dataProduct.pointsClef[0].rapidite.description}
+                                        value={dataProduct.pointsclef[0].rapidite.description}
                                         name='description_rapidite' id='description_rapidite' onChange={(e)=>{
                                             setDataProduct((prevDataProduct)=>({
                                                 ...prevDataProduct,
-                                                pointsClef: prevDataProduct.pointsClef.map((point, index)=>{
+                                                pointsClef: prevDataProduct.pointsclef?.map((point, index)=>{
                                                     return {
                                                         ...point,
                                                         rapidite: {
@@ -293,7 +293,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                             }))
                                         }}>
                                             {
-                                                descriptions(dataProduct).rapidite.map((e, index)=>[
+                                                descriptions(dataProduct).rapidite?.map((e, index)=>[
                                                     <option value={e} key={index}>{e}</option>
 
                                                 ])
@@ -311,11 +311,11 @@ const pageAdminAddPutDeleteProduct = () => {
                                 <p className={styles.txtChoix} >Veillez choisir description pour cette partie</p>
                                     <label htmlFor='description_durabilite'></label>
                                     <select className={styles.select}
-                                    value={dataProduct.pointsClef[0].durabilite.description}
+                                    value={dataProduct.pointsclef[0].durabilite.description}
                                     name='description_durabilite' id='description_durabilite' onChange={(e)=>{
                                         setDataProduct((prevDataProduct)=>({
                                             ...prevDataProduct,
-                                            pointsClef: prevDataProduct.pointsClef.map((point, index)=>{
+                                            pointsClef: prevDataProduct.pointsclef?.map((point, index)=>{
                                                 return {
                                                     ...point,
                                                     durabilite: {
@@ -327,7 +327,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                         }))
                                     }}>
                                         {
-                                            descriptions(dataProduct).durabilite.map((e, index)=>[
+                                            descriptions(dataProduct).durabilite?.map((e, index)=>[
                                                 <option value={e} key={index}>{e}</option>
 
                                             ])
@@ -350,11 +350,11 @@ const pageAdminAddPutDeleteProduct = () => {
                                     <p className={styles.txtChoix} >Veillez choisir description pour cette partie</p>
                                     <label htmlFor='description_confort'></label>
                                     <select className={styles.select}
-                                    value={dataProduct.pointsClef[0].confort.description}
+                                    value={dataProduct.pointsclef[0].confort.description}
                                     name='description_confort' id='description_confort' onChange={(e)=>{
                                         setDataProduct((prevDataProduct)=>({
                                             ...prevDataProduct,
-                                            pointsClef: prevDataProduct.pointsClef.map((point, index)=>{
+                                            pointsClef: prevDataProduct.pointsclef?.map((point, index)=>{
                                                 return {
                                                     ...point,
                                                     confort: {
@@ -366,7 +366,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                         }))
                                     }}>
                                         {
-                                            descriptions(dataProduct).confort.map((e, index)=>[
+                                            descriptions(dataProduct).confort?.map((e, index)=>[
                                                 <option value={e} key={index}>{e}</option>
 
                                             ])
@@ -386,7 +386,7 @@ const pageAdminAddPutDeleteProduct = () => {
             return(
                 <>
                     <ul className={styles.listDetails}>
-                    <h3>{parametres.target==="noteDesc"?
+                    <h3>{parametres.target==="notedesc"?
                     "Bureau": "Gaming"}</h3>
                         <li className={styles.listItemPCles}>
                             <TableauNotes parametre={{
@@ -402,7 +402,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                 }
                             }))}}>
                                 <option>choisir bon point</option>
-                                {arrayGoodBad(dataProduct).good.map((data, index)=>[
+                                {arrayGoodBad(dataProduct).good?.map((data, index)=>[
                                     <option value={data} key={index}>{data}</option>
                                 ])}
                             </select>
@@ -423,7 +423,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                 }
                             }))}}>
                                 <option>choisir mauvais point</option>
-                                {arrayGoodBad(dataProduct).bad.map((data, index)=>[
+                                {arrayGoodBad(dataProduct).bad?.map((data, index)=>[
                                     <option value={data} key={index}>{data}</option>
                                 ])}
                             </select>
@@ -459,7 +459,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 console.log(imagePreview)
                 // imagesState.images.forEach(image => URL.revokeObjectURL(image.preview));
                 const selectedImages = Array.from(e.target.files);
-                const imagesWithPrev = selectedImages.map((image)=>({
+                const imagesWithPrev = selectedImages?.map((image)=>({
                     file: image,
                     preview: URL.createObjectURL(image)
                 }))
@@ -475,7 +475,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 console.log(imagePreview)
                 console.log("↑ imagesState ↑")
 
-                imagePreview.map((imageSaved, index)=>{
+                imagePreview?.map((imageSaved, index)=>{
                     console.log("imageSaved file name", imageSaved.file.name)
                     console.log("element file name", e.file.name)
                     console.log("type imageSaved file name", imageSaved.file.name)
@@ -515,7 +515,7 @@ const pageAdminAddPutDeleteProduct = () => {
                     <input onChange={(e)=>{handleChangeimages(e)}} type='file' multiple accept="image/png, image/gif, image/jpeg, image/avif, image/webp"/>
                     <ul className={styles.listImagesPrev}>
                         {imagePreview[0]!=="empty"&&
-                            imagePreview.map((image, index)=>[
+                            imagePreview?.map((image, index)=>[
                                 <li className={styles.imaeItem} key={index}>
                                     <img alt='preview before create' width={100} height={100} src={`${image.preview}`}/>
                                     <span onClick={()=>deleteImage(image)} className={styles.deleteIMG}>X</span>
@@ -554,7 +554,7 @@ const pageAdminAddPutDeleteProduct = () => {
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='resolution'>resolution</label>
                                 <select className={styles.select} name='resolution' id='resolution' onChange={(e)=>{setDataProduct((prevDataProduct)=>({...prevDataProduct,resolution:e.target.value}))}}>
-                                    {arrayResolution.map((elt, index)=>[
+                                    {arrayResolution?.map((elt, index)=>[
                                         <option value={elt} key={index}>{elt}</option>
                                     ])}
                                 </select>
@@ -585,7 +585,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                 <input onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>({
                                         ...prevDataProduct,
-                                        array:{
+                                        arrayAff:{
                                             publicationContentId: splitBaliseAffil(e.target.value)
                                         }
                                     }))
@@ -607,11 +607,11 @@ const pageAdminAddPutDeleteProduct = () => {
                     <div style={{gridArea:"pCles"}} className={`${styles.zoneItem} ${styles.pointsClesContainer}`}>
                         <PointsCles />
                     </div>
-                    <div style={{gridArea:"noteD"}} className={`${styles.zoneItem} ${styles.NoteDescContainer}`}>
+                    <div style={{gridArea:"noteD"}} className={`${styles.zoneItem} ${styles.notedescContainer}`}>
                         <h2>Details</h2>
                         <DetailBureauGaming parametres={{
-                            pointId: dataProduct.noteDesc.int, setDataProduct, notes, isPointCle: false, target: "noteDesc"}}/>
-                        <DetailBureauGaming parametres={{pointId: dataProduct.noteGaming.int, setDataProduct, notes, isPointCle: false, target: "noteGaming"}}/>
+                            pointId: dataProduct.notedesc?.int, setDataProduct, notes, isPointCle: false, target: "notedesc"}}/>
+                        <DetailBureauGaming parametres={{pointId: dataProduct.notegaming?.int, setDataProduct, notes, isPointCle: false, target: "notegaming"}}/>
                         <div className={`${styles.tagZone} ${styles.zone_parametrage}`}>
                         <div className={styles.bgTags}>
 
@@ -620,7 +620,7 @@ const pageAdminAddPutDeleteProduct = () => {
                                 <li className={styles.fulltag}>
                                     <p>Tags: </p>
                                     <ul className={styles.listTags}>
-                                        {dataProduct.tags.length>0&&dataProduct.tags.map((tag, index)=>[
+                                        {dataProduct.tags.length>0&&dataProduct.tags?.map((tag, index)=>[
                                             <li className={`tag_${styles[tag]}`}id={tag} key={index}>{tag} </li>
                                         ])}
                                     </ul>

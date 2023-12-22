@@ -28,10 +28,12 @@ const checkPartialMatch = (input, keyword) => {
     return matchCount >= threshold;
 };
 export const checkElement = (params) => {
+    const normalisedInput = params.element.toLowerCase().replace(/\s/g,'')
     let note = 0;
     Object.entries(params.array).forEach(([category, keywords]) => {
         keywords.forEach((keyword) => {
-            if (checkPartialMatch(params.element, keyword)) {
+            const normalisedKeyword = keyword.toLowerCase().replace(/\s/g,'')
+            if (normalisedKeyword.includes(normalisedInput)) {
                 switch (category) {
                     case 'ultra':
                         note = 10;
@@ -46,9 +48,9 @@ export const checkElement = (params) => {
                         note = 5;
                         break;
                     default:
-                        note = 0;
+                        note = 5;
                 }
-                note = Math.max(note, newNote);
+               return note
             }
         });
     });
@@ -75,7 +77,63 @@ export const checkElement = (params) => {
     // });
     return note;
 };
-
+export const checkElementGpu = (params) => {
+    const normalisedInput = params.element.toLowerCase().replace(/\s/g,'')
+    let note = 0;
+    Object.entries(params.array).forEach(([category, keywords]) => {
+        keywords.forEach((keyword) => {
+            const normalisedKeyword = keyword.toLowerCase().replace(/\s/g,'')
+            if (normalisedKeyword.includes(normalisedInput)) {
+                switch (category) {
+                    case 'ultra':
+                        note = 10;
+                        break;
+                    case 'good':
+                        note = 8;
+                        break;
+                    case 'moyen':
+                        note = 7;
+                        break;
+                    case 'bas':
+                        note = 0;
+                        break;
+                    default:
+                        note = 5;
+                }
+               return note
+            }
+        });
+    });
+   
+    return note;
+};
+export const checkIntElement = (params) => {
+    const normalizedInput = params.val.toLowerCase().replace(/\s/g, '').split('go')[0];
+    const inputToInt = parseInt(normalizedInput);
+    let note = 0;
+    const sortedEntries = Object.entries(params.Obj).sort(([keyA], [keyB]) => keyA.localeCompare(keyB));
+    for (const[cat, threshold] of sortedEntries){
+        if(inputToInt>= threshold){
+            switch (cat) {
+                case 'ultra':
+                    note = 10;
+                    break;
+                case 'good':
+                    note = 8;
+                    break;
+                case 'moyen':
+                    note = 6;
+                    break;
+                case 'bas':
+                    note = 5;
+                    break;
+                default:
+                    note = 0;
+            }
+        }
+    }
+    return note
+}
 export const moyeneElement = (params) => {
     const nombresNotes = params.notes.length;
     let moyene = 0;

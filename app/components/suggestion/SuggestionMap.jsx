@@ -1,5 +1,5 @@
 "use client"
-import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByNoteGaming, ProductSearchById} from "@/lib/ProductSearch"
+import {ProductSearchByTag, ProductSearchByPrice, ProductSearchBynotegaming, ProductSearchById} from "@/lib/ProductSearch"
 import styles from "./SuggestionMap.module.css"
 import Image from 'next/image'
 import Notation from "../clientComponents/Notation"
@@ -69,10 +69,11 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 [ids, data] = ProductSearchById({searchId, CTX})
                 setNeed({ids:ids, data:data});
             }
+            console.log('need', need)
             try{
                 if(isEmpty(ids)) {
                     ids=[]
-                    data.map((elt)=>{
+                    data?.map((elt)=>{
                         ids.push(elt.id)
                         ids = FilterNoRepeat(ids)
                     })
@@ -81,7 +82,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 console.error(err)
             }
         }
-        console.log(need.data)
+        // console.log(need.data)
         rechercheProduits()
             .finally(()=>{
                 setLoader({...loader,isLoading: false});
@@ -122,19 +123,19 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
             <div className={styles.containerListOtherItems}>
                 <h3>{titreRecherche}</h3>
                 <ul className={styles.listCarroussel} ref={scrollElement}>
-                {need.data.map(produitElt=> [
-                    need.ids.map(idSearchReturn=>[
+                {need.data?.map(produitElt=> [
+                    need.ids?.map(idSearchReturn=>[
                     produitElt.id==idSearchReturn&&
                     <Link key={produitElt.id} className={styles.LinkProduit} href={
                         `/pages/pc-portable/${produitElt.id}`}>
                         <li className={styles.litsItemCarroussel}>
-                            <Image loading="lazy" alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
+                            <Image loading="lazy" alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images}?alt=media`}/>
                             <h4>{produitElt.title}</h4>
                             <Notation produit={produitElt} param={produitElt.usage}/>
                             <PointsCles produit={produitElt} param={produitElt.usage}/>
                             <div className={styles.prix}>
                                 <p className={styles.prixMin}>à partir de</p>
-                                <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={produitElt.btn.publicationContentId} loading="lazy"></affilizz-rendering-component>
+                                <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={produitElt.btn?.publicationContentId} loading="lazy"></affilizz-rendering-component>
                             </div>
                         </li>
                     </Link>

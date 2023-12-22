@@ -33,7 +33,7 @@ const Nav = ({responsive}) => {
                 return res
             })
             .catch((error)=>console.error(error))
-            FullData.map((e)=>{
+            FullData?.map((e)=>{
                 marques.push(e.brand)
             })
             setItems({marques: FilterNoRepeat(marques)});
@@ -125,7 +125,7 @@ const Nav = ({responsive}) => {
                             </li>
                             <ul className={styles.listBrand}>
                                 {modales.marquesModale && 
-                                    items.marques.map((marque) => [
+                                    items.marques?.map((marque) => [
                                             <li onClick={()=>handle(marque, "brand")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
                                                 <Link href={urlPcPortable}>{marque}</Link></li>
                                         ]
@@ -147,7 +147,7 @@ const Nav = ({responsive}) => {
                                     {modales.moinsCherModale && 
                                     <ul>
                                         {
-                                            arr_MoinsCher.map((prix)=>[
+                                            arr_MoinsCher?.map((prix)=>[
                                                 <li key={`${prix}-${prix.length}`} className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(prix, "price")}><Link href={urlPcPortable}>moins de {prix.toString()}€</Link></li>
                                             ])
                                         }

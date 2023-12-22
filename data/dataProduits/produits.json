@@ -53,7 +53,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 8.0,
                 "bad": [
                     "L'écran étant très brillant il reflete beaucoup en exterieur."
@@ -66,7 +66,7 @@
                     "La capacité de stockage est excellente"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -142,7 +142,7 @@
                 "stockage":"256GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 6.0,
                 "bad": [
                     "Un pc portable peut puissant.",
@@ -153,7 +153,7 @@
                     "La résolution de l'écran est satisfaisante 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -228,7 +228,7 @@
                 "stockage":"512GO | SSD M.2",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un clavier un peut petit."
@@ -239,7 +239,7 @@
                     "La résolution de l'écran est satisfaisante 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 7.3,
                 "bad": [
                     "un clavier un peut petit"
@@ -318,7 +318,7 @@
                 "stockage":"512GO | SSD M.2",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un clavier un peut petit."
@@ -329,7 +329,7 @@
                     "La résolution de l'écran est satisfaisante 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 7.3,
                 "bad": [
                     "un clavier un peut petit"
@@ -407,7 +407,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -418,7 +418,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -494,7 +494,7 @@
                 "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -505,7 +505,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -582,7 +582,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -593,7 +593,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -671,7 +671,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -682,7 +682,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -761,7 +761,7 @@
                 "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -772,7 +772,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -852,7 +852,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -863,7 +863,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -943,7 +943,7 @@
                 "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -954,7 +954,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1034,7 +1034,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1045,7 +1045,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1124,7 +1124,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1135,7 +1135,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1214,7 +1214,7 @@
                 "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1225,7 +1225,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1304,7 +1304,7 @@
                 "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1315,7 +1315,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1394,7 +1394,7 @@
                 "stockage":"2TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1405,7 +1405,7 @@
                     "La dalle de l'écran (WQXGA) en 240hz offre une rapidité d'affichage excellente pour les jeux compétitif"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -1483,7 +1483,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -1494,7 +1494,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -1569,7 +1569,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -1580,7 +1580,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -1655,7 +1655,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -1666,7 +1666,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -1740,7 +1740,7 @@
                 "stockage":"1000GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -1751,7 +1751,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -1825,7 +1825,7 @@
                 "stockage":"1000GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -1836,7 +1836,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -1910,7 +1910,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -1921,7 +1921,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -1995,7 +1995,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.0,
                 "bad": [
                     "Un écran un peu petit."
@@ -2006,7 +2006,7 @@
                     "La résolution de l'écran est corecte 2K 2880X1800"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                 ],
@@ -2081,7 +2081,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2092,7 +2092,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2170,7 +2170,7 @@
                 "stockage":"1TO | SSD M.2",
                 "os":"Windows 10"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2181,7 +2181,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 8,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2259,7 +2259,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2270,7 +2270,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2349,7 +2349,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2360,7 +2360,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2439,7 +2439,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2450,7 +2450,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2527,7 +2527,7 @@
                 "stockage":"500GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 8,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2538,7 +2538,7 @@
                     "L'écran 1k permet de regarder de films/vidéo dans dans de bonnes conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                     "la configuration de ce pc ne permet pas de le noter sur la partie gaming",
@@ -2613,7 +2613,7 @@
                 "stockage":"500GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 8,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2624,7 +2624,7 @@
                     "L'écran 1k permet de regarder de films/vidéo dans dans de bonnes conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0,
                 "bad": [
                     "la configuration de ce pc ne permet pas de le noter sur la partie gaming",
@@ -2699,7 +2699,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Mac os"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2710,7 +2710,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2786,7 +2786,7 @@
                 "stockage":"1TO | SSD",
                 "os":"Mac os"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est un peu lourd"
@@ -2797,7 +2797,7 @@
                     "L'écran 4k permet de regarder de films/vidéo dans les meilleurs conditions"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 9,
                 "bad": [
                     "Le PC est un peu lourd"

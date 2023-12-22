@@ -19,7 +19,7 @@ const TestFont = ({props}) => {
     const fonts2 = [
 
     ];
-    fonts.map(font => {
+    fonts?.map(font => {
         let classN = font;
         if(font.includes(' ')){
             classN = font.split(' ')[0] + font.split(' ')[1];
@@ -41,7 +41,7 @@ const TestFont = ({props}) => {
         <div className={modaleFontOpen? styles.testFontContainer:`${styles.testFontContainer} ${styles.e}`}>
             <h2>POLICES</h2>
             <ul className={styles.listChoixFont}>
-                {fonts2.map((elt)=>[
+                {fonts2?.map((elt)=>[
                     <li onClick={e=>changeFont(e, elt.name)} key={elt.name} className={`${styles.font} ${styles[elt.className]}`}>{elt.name}</li>
                     
                 ]
@@ -49,7 +49,7 @@ const TestFont = ({props}) => {
             </ul>
             <h2>TAILLE</h2>
             <ul className={styles.listChoixSeize}>
-                {seize.map((elt)=>[
+                {seize?.map((elt)=>[
                     <li onClick={e=>changeSeize(e, elt)} key={elt} className={`${styles.font}`}>{`${elt}%`}</li>
                 ]
                 )}

@@ -5,6 +5,7 @@ import styles from './Notation.module.css'
 import Note from '../notationStyled/Note'
 
 const Notation = ({produit, param}) =>{
+    console.log("params",param)
     const [notesState, setNodeState] = useState({
         noteActive: true,
         noteActiveGaming: false
@@ -27,7 +28,7 @@ const Notation = ({produit, param}) =>{
                 <>
                     <div className={styles.notes_contentOnSugg}>
                         <p className={styles.noteOnSugg}>Usage:  {usageIconTest}/ Note: </p>
-                        <>{Note(produit?.noteGaming.int)}</>          
+                        <>{Note(produit?.notegaming?.int)}</>          
                     </div>
                 </>
             )
@@ -38,7 +39,7 @@ const Notation = ({produit, param}) =>{
                 <>
                     <div className={styles.notes_contentOnSugg}>
                         <p className={styles.noteOnSugg}>Usage:  {usageScreenTest}/ Note: </p>
-                        <>{Note(produit?.noteDesc.int)}</>          
+                        <>{Note(produit?.notedesc?.int)}</>          
                     </div>
                 </>
             )
@@ -53,11 +54,11 @@ const Notation = ({produit, param}) =>{
                         <ul className={styles.choiseNote}>
                             <li className={notesState?.noteActive?`${styles.note} ${styles.noteBureau}`:`${styles.noteBureau} ${styles.note} ${styles.noteInactive}`} onClick={(e)=>changeDesktopGaming(e, "bureau")}>
                                 <p>Note bureau</p>
-                                {Note(produit?.noteDesc.int)}
+                                {Note(produit?.notedesc?.int)}
                             </li>
                             <li className={!notesState?.noteActiveGaming?`${styles.note} ${styles.noteInactive} ${styles.noteGaming}`: `${styles.noteGaming} ${styles.note}`} onClick={(e)=>changeDesktopGaming(e, "gaming")}>
                                 <p>Note Gaming</p>
-                                {Note(produit?.noteGaming.int)}
+                                {Note(produit?.notegaming?.int)}
                             </li>
                         </ul>
                     </div>
@@ -65,13 +66,13 @@ const Notation = ({produit, param}) =>{
                         <div className={styles.details}>
                             <h3>Inconvéniants</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>
-                                {produit?.noteDesc.bad?.map(e=>[
+                                {produit?.notedesc.bad?.map(e=>[
                                     <li className={`${styles.detailBad} ${styles.detail} ${styles.detailActive}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>
                             <h3>Avantages</h3>
                             <ul className={`${styles.goodNote} ${styles.ListDetail}`}>
-                                {produit?.noteDesc.good?.map(e=>[
+                                {produit?.notedesc.good?.map(e=>[
                                     <li className={`${styles.detailGood} ${styles.detail} ${styles.detailActive}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>
@@ -80,13 +81,13 @@ const Notation = ({produit, param}) =>{
                         <div className={styles.details}>
                             <h3>Inconvéniants</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>
-                                {produit?.noteGaming.bad?.map(e=>[
+                                {produit?.notegaming.bad?.map(e=>[
                                     <li className={`${styles.detailBad} ${styles.detail}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>
                             <h3>Avantages</h3>
                             <ul className={`${styles.goodNote} ${styles.ListDetail}`}>
-                                {produit?.noteGaming.good?.map(e=>[
+                                {produit?.notegaming.good?.map(e=>[
                                     <li className={`${styles.detailGood} ${styles.detail}`} key={refSpec}>{e}</li>
                                 ])}
                             </ul>

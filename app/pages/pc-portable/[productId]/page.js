@@ -21,7 +21,7 @@ export async function getServerSideProps() {
   console.log("Appel de generateStaticParams");
   // console.log( " pp ",produits)
   
-  return produits.map((produit) => ({
+  return produits?.map((produit) => ({
     params: {
       productId: produit.id
     },
@@ -36,8 +36,8 @@ export async function generateMetadata({ params }) {
     const produit = allProducts.find((e) => params.productId === e.id);
 
     // console.log("Produit trouvé :", produit);
-   allProducts.map((e)=>{
-    console.log(e.id)
+   allProducts?.map((e)=>{
+    // console.log(e.id)
     if(e.id===params.productId){
       console.log("Produit trouvé :", produit);
     }

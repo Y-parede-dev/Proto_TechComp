@@ -1,6 +1,6 @@
 "use client"
 // refactor a faire
-import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByPriceInOrder, ProductSearchByPriceInDisorder,ProductSearchByBrand, ProductSearchByNoteGaming} from "@/lib/ProductSearch";
+import {ProductSearchByTag, ProductSearchByPrice, ProductSearchByPriceInOrder, ProductSearchByPriceInDisorder,ProductSearchByBrand, ProductSearchBynotegaming} from "@/lib/ProductSearch";
 import styles from "./SuggestionMap.module.css";
 import Image from 'next/image';
 import Notation from "../clientComponents/Notation";
@@ -46,7 +46,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
     try{
         if(isEmpty(ids)) {
             ids=[];
-            data.dataFound.map((elt)=>{
+            data.dataFound?.map((elt)=>{
                 ids.push(elt.id);
                 ids = FilterNoRepeat(ids);
             });
@@ -83,7 +83,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                 e.target.classList.add(styles.t);
             };
             let arrTemp = []; 
-            data.dataFound.map((prod)=>{
+            data.dataFound?.map((prod)=>{
                 arrTemp.push(prod.brand);
                 arrTemp = FilterNoRepeat(arrTemp);
             });
@@ -91,7 +91,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                 stateModale.modaleOpenMarque&&
                 <div className={styles.contentBtn}>
                     <ul className={`${styles.listMarquesSearch} ${styles.childCtBtn}`}>
-                    {arrTemp.map((elt)=>[
+                    {arrTemp?.map((elt)=>[
                         <li key={elt} onClick={(e)=>changeResult(e,elt)}>{elt}</li>
                     ])}
                     </ul>
@@ -222,7 +222,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                         {
                             <>
                                 {` pour: "`}
-                                {CTX.TAG.map(tag=>[
+                                {CTX.TAG?.map(tag=>[
                                     tag==" " || tag==""?<></>:
                                         <span key={tag} className={styles.spanTagsTitle}>
                                             {CTX.TAG.findLast(()=>tag)?
@@ -244,7 +244,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                     {
                     typeof(CTX.TAG)==="number"?
                     <span className={styles.spanTags}>{` à moins de ${CTX.TAG}€`} </span>:
-                    CTX.TAG.map(tag=>[
+                    CTX.TAG?.map(tag=>[
                     tag==" " || tag==""?<></>:
                     
                     <span key={tag} className={styles.spanTags}>{` ${tag},`} </span> ])}
@@ -268,17 +268,17 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                     <FoundBy/>
                 </>
                 <ul className={styles.listItemsResult}>
-                    {data.dataFound.map(produitElt=> [
-                        ids.map(idSearchReturn=>[
+                    {data.dataFound?.map(produitElt=> [
+                        ids?.map(idSearchReturn=>[
                             produitElt.id==idSearchReturn&&
                             <Link key={produitElt.id} className={styles.LinkProduit} href={`/pages/pc-portable/${produitElt.id}`}>
                                 {/* ${produitElt.id} */}
                                 <li className={styles.litsItemCarroussel}>
-                                    <Image loading="eager" alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images[0]}?alt=media`}/>
+                                    <Image loading="eager" alt={`Produit de la marque: ${produitElt.brand} `}  width={200} height={200} src={`https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produitElt.brand}%2F${produitElt.id}%2F${produitElt.images}?alt=media`}/>
                                     <h4>{produitElt.title}</h4>
                                     <Notation produit={produitElt} param={produitElt.usage}/>
                                     <PointsCles produit={produitElt} param={produitElt.usage}/>
-                                    <div className={styles.prix}> <p className={styles.prixMin}>à partir de</p> <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={produitElt.btn.publicationContentId} loading="lazy"></affilizz-rendering-component></div>
+                                    <div className={styles.prix}> <p className={styles.prixMin}>à partir de</p> <affilizz-rendering-component className={styles.affilizzLink} publication-content-id={produitElt.btn?.publicationContentId} loading="lazy"></affilizz-rendering-component></div>
                                     
                                 </li>
                             </Link>

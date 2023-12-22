@@ -49,7 +49,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 10"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.4,
                 "bad": [
                     "Pas d'inconvénients particuliers."
@@ -62,7 +62,7 @@
                     "La capacité de stockage est excellente"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 6.6,
                 "bad": [
                     "Pas d'inconvénients particuliers."
@@ -136,7 +136,7 @@
                 "stockage":"512GO | SSD NVMe",
                 "os":"Windows 10"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.4,
                 "bad": [
                     "Pas d'inconvénients particuliers."
@@ -149,7 +149,7 @@
                     "La capacité de stockage est excellente"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 7.2,
                 "bad": [
                     "Pas d'inconvénients particuliers."
@@ -224,7 +224,7 @@
                 "stockage":"512GO | SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 7.4,
                 "bad": [
                     "Pas d'inconvénients particuliers."
@@ -236,7 +236,7 @@
                     "La résolution de l'écran est satisfaisante (1K/1080p)"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 5.6,
                 "bad": [
                     "les 8Go de mémoire sont rapidement utilisée."
@@ -309,7 +309,7 @@
                 "stockage":"30GO",
                 "os":"Android"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 1.6,
                 "bad": [
                     "très peut de puissance.",
@@ -320,7 +320,7 @@
                     "Faible consomation"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 0.6,
                 "bad": [ 
                     "très peut de puissance.",
@@ -393,7 +393,7 @@
                 "stockage":"1TO | NVMe SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 10,
                 "bad": [
                     "Le PC est lourd (3.0 kg)"
@@ -406,7 +406,7 @@
                     "Le Core i9 i9-13980HX offre d'excellentes performances"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 8.3,
                 "bad": [ 
                     "Pas d'inconvénients particuliers."
@@ -483,7 +483,7 @@
                 "stockage":"1TO | NVMe SSD",
                 "os":"Windows 11"
             },
-            "noteDesc":{
+            "notedesc":{
                 "int": 9.9,
                 "bad": [
                     "Le PC est lourd (2.8 kg)"
@@ -496,7 +496,7 @@
                     "Le Core i9 i9-13980HX offre d'excellentes performances"
                 ]
             },
-            "noteGaming":{
+            "notegaming":{
                 "int": 8.3,
                 "bad": [ 
                     "Pas d'inconvénients particuliers."

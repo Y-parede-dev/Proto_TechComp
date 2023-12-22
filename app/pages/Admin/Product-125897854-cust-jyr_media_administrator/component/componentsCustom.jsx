@@ -3,7 +3,7 @@ import { ConfigItem } from '../utils/utils.custom';
 export const TableauNotes = ({parametre})=>{
     return(
             <ul className={`${styles.listNotes}`}>
-                {parametre.notes.map((note, index)=>[
+                {parametre.notes?.map((note, index)=>[
                     <li 
                         key={index}
                         value={note}
@@ -12,7 +12,7 @@ export const TableauNotes = ({parametre})=>{
                             parametre.setDataProduct((old)=>(
                                 parametre.isPointCle?{
                                 ...old,
-                                pointsClef:old.pointsClef.map((point)=>{
+                                pointsclef:old.pointsclef?.map((point)=>{
                                     return {
                                         ...point,
                                         [parametre.pointId]: {
@@ -41,17 +41,34 @@ const ConfigRow = ({label, target, value, onChange, setDataProduct}) =>{
     <tr>
         <td>{label}</td>
         <td>
-            <input placeholder={value} onChange={(e)=>{
+            <input className={styles.inputDesign} placeholder={value} onChange={(e)=>{
                 onChange({target, element:e.target.value, setDataProduct})
             }}/>
         </td>
     </tr>
     )
 }
-export const ConfigRender = (data, setDataProduct) => {
+export const ConfigRender = (data, setDataProduct, setNotationGo) => {
+    const handleSetNotes=(e)=>{
+        e.preventDefault()
+        try{
+            if(
+                data.config.cpu!=="na" &&
+                data.config.gpu!=="na" &&
+                data.config.ram!=="na" &&
+                data.config.stockage!=="na" && 
+                data.config.screen!=="na"){
+                    setNotationGo(true)
+            }
+            
+        }catch{
+            setNotationGo(false)
+        }
+    }
     return(
         <div className={styles.configContainer}>
             <h2>Config du pc portable</h2>
+            <p className={styles.help}>?</p>
             <table className={styles.tableConfig}>
                 {/* <thead>
                     <tr>
@@ -104,6 +121,8 @@ export const ConfigRender = (data, setDataProduct) => {
                     })}
                 </tbody>
             </table>
+            <button onClick={(e)=>handleSetNotes(e)} className={data.config.os==='na'
+                            ?`${styles.disable} ${styles.btnAutoNote}`:styles.btnAutoNote}>get a notes</button>
         </div>
     )
 }

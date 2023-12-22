@@ -1,0 +1,41 @@
+INSERT INTO produitsTable (id, brand, resolution, title, description, tags, prix, loading, images, bonus, pointsClef, config, notedesc, notegaming, arrayaff, btn, conseil, usage)
+VALUES (
+    'ASUS-VivoBook-X1404ZA-EB273W-14',
+    'asus',
+    '1920 x 1080',
+    'ASUS VivoBook X1404ZA-EB273W 14',
+    'Découvrez et comparez les spécifications, performances et prix de l{quote} ASUS VivoBook X1404ZA-EB273W 14 sur itek-comparateur.fr notre site de comparateur. Cet ASUS VivoBook X1404ZA-EB273W 14 offre une expérience immersive avec son prix bas et sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec l{quote}ASUS VivoBook X1404ZA-EB273W 14',
+    '["ASUS VivoBook", "I3", "pc portable", "petit", "X1404ZA", "X140", "VivoBook-X140", "bureau"]',
+    635,
+    'lazy',
+    '["ASUS-VivoBook-X1404ZA-EB273W-14.jpg"]',
+    'naJM',
+    '[{"gaming": {"nom": "Gaming", "note": 0, "description": "Cet ordinateur portable ASUS VivoBook X1404ZA-EB273W 14 de chez Asus n{quote}est pas conçu pour une utilisation gaming. La configuration <strong>Sans réel carte graphique</strong> de ce pc portable, ne vous permet pas de jouer au jeux vidéos."}}, {"rapidite": {"nom": "Rapidité", "note": 4, "description": "Cet ordinateur figure parmi la moyene basse du marché. Avec son I3 1215U, ses 8 Go de RAM en DDR4 et à son disque SSD rapide. Ce PC est un <strong>choix peut couteux et logique</strong> si vous rechercher simplement à naviguer sur internet, avoir une utilisation bureautique classique."}}, {"durabilite": {"nom": "Durabilité", "note": 9.6, "description": "La configuration de cet ordinateur lui permettra de rester <strong>Fonctionnel pendant 5 ans</strong> voir plus."}}, {"confort": {"nom": "Confort", "note": 8.6, "description": "L{quote}aspect esthétique est très subjectif. Nous apprécions son design simple et épuré ainsi que son poids de 1300 grammes qui en fait un pc portable avec un <strong>excellent confort en général.</strong>"}}]',
+    '{"cpu": "I3 1215U", "screen": "14", "gpu": "Intel UHD Graphics", "ram": "8GO | DDR4", "stockage": "256GO | SSD", "os": "Windows 11"}',
+    '{"int": 6.0, "bad": ["Un pc portable peut puissant.", "Une faible capacité de stockage"], "good": ["La mémoire vive est moyenne", "La résolution de l{quote}écran est satisfaisante 2K 2880X1800"]}',
+    '{"int": 0, "bad": [], "good": ["Ce pc portable n{quote}est pas fait pour une utilisation gaming."]}',
+    '{"publicationContentId":"656fb0e1aa6aec63f90bb394"}',
+    '{"publicationContentId":"656fb0e1aa6aec63f90bb395"}',
+    'il n{quote}est pas conseillé pour les jeux vidéo',
+    'usage Bureau'
+);
+
+Create table p (
+            brand varchar(50),
+            btn jsonb,
+            title varchar(100),
+            tags text[],
+            images text[],
+            description text,
+            id varchar(100),
+            loading varchar(10),
+            usage varchar(100),
+            conseil varchar(100),
+            resolution varchar(100),
+            config jsonb,
+            prix float,
+            bonus varchar(10),
+            arrayaff jsonb,
+            pointsclef jsonb,
+            notedesc jsonb,
+            notegaming jsonb)

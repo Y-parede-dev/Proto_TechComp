@@ -17,17 +17,17 @@ export const modelProduit = {
         stockage:"na",
         os:"na"
     },
-    noteDesc:{
+    notedesc:{
         int:0,
         bad:[],
         good:[],
     },
-    noteGaming:{
+    notegaming:{
         int:0,
         bad:[],
         good:[]
     },
-    array:{
+    arrayaff:{
         publicationContentId:"empty"
     },
     btn:{
@@ -35,7 +35,7 @@ export const modelProduit = {
     },
     conseil: "null",
     usage: "null",
-    pointsClef:[
+    pointsclef:[
         {
             gaming:{
                 nom: 'Gaming',

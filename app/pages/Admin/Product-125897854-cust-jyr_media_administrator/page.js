@@ -5,13 +5,28 @@ import { descriptions, arrayResolution, arrayGoodBad, arrRamResult, arrGpuResult
 import { TableauNotes,  ConfigRender } from './component/componentsCustom';
 import { modelProduit } from './model/model';
 
-import {checkElement,checkRamElement, moyeneElement, setDescribeAuto, setGoodBadPointAuto } from './utils/utils.custom';
+import {checkElement,checkIntElement,checkElementGpu, moyeneElement, setDescribeAuto, setGoodBadPointAuto } from './utils/utils.custom';
 import {ModaleValidation} from './component/ModaleValidation';
+import ClearIcon from '@mui/icons-material/Clear';
+import { useRouter } from 'next/navigation';
 // import fs from 'fs/promises';
 
 const pageAdminAddPutDeleteProduct = () => {
     // ::START::REQ:POST - Sauvegarde un produit dans le fichier json associer
+    let uid = 'wait';
+    const [isAdmin, setIsAdmin] = useState(false);
+    const router = useRouter();
     
+    useEffect(()=>{
+        if(localStorage.getItem('uidAdmin'===process.env.ADMIN_UID)){
+            setIsAdmin(true)
+        }
+    },[])
+    useEffect(()=>{
+        if(!isAdmin){
+            router.replace('/pages/Admin/connect');
+        }
+    },[isAdmin])
     // ::END::REQ:POST
     const PageAdminCreateProduct = () => {
         const [dataProduct, setDataProduct] = useState({
@@ -66,8 +81,8 @@ const pageAdminAddPutDeleteProduct = () => {
             if(dataProduct.config.cpu!=='na'){
                 const notesCheck = {
                     cpu: checkElement({element:dataProduct.config.cpu, array:arrProcResult}),
-                    gpu: checkElement({element:dataProduct.config.gpu, array:arrGpuResult}),
-                    ram: checkElement({element:dataProduct.config.ram, array:arrRamResult}),
+                    gpu: checkElementGpu({element:dataProduct.config.gpu, array:arrGpuResult}),
+                    ram: checkIntElement({val:dataProduct.config.ram, Obj:arrRamResult}),
                 }
                 setnotesTemp({
                     cpu:notesCheck.cpu,
@@ -76,31 +91,31 @@ const pageAdminAddPutDeleteProduct = () => {
                 })
                 const describeCheck = {
                     rapidite: setDescribeAuto({data:dataProduct,note:notesCheck.ram, element:'rapidite'}), 
-                    gaming: setDescribeAuto({data:dataProduct,note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]}), element:'gaming'}),
+                    gaming: setDescribeAuto({data:dataProduct,note:notesCheck.gpu, element:'gaming'}),
                     durabilite: setDescribeAuto({data:dataProduct,note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]}), element:'durabilite'}),
-                    confort: setDescribeAuto({data:dataProduct,note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]}), element:'confort'}),
+                    confort: setDescribeAuto({data:dataProduct,note:notesCheck.ram, element:'confort'}),
                 }
                 const goodBadPointsCheck = {
-                    good:setGoodBadPointAuto({data: dataProduct,note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})}).good,
+                    good:setGoodBadPointAuto({data: dataProduct,note:moyeneElement({notes:[notesCheck.cpu, (notesCheck.gpu>0&&notesCheck.gpu), notesCheck.ram]})}).good,
                     bad:setGoodBadPointAuto({data:dataProduct,note:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})}).bad
                 }
                 setDataProduct((prevData)=>({
                     ...prevData,
-                    noteDesc:{
+                    notedesc:{
                         good:goodBadPointsCheck.good,
                         bad:goodBadPointsCheck.bad,
-                        int: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})
+                        int: notesCheck.cpu
                     },
-                    noteGaming:{
+                    notegaming:{
                         good:goodBadPointsCheck.good,
                         bad:goodBadPointsCheck.bad,
-                        int: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})
+                        int: notesCheck.gpu
                     },
-                    pointsClef:prevData.pointsClef.map((point)=>({
+                    pointsclef:prevData.pointsclef?.map((point)=>({
                         gaming: {
                             ...point.gaming,
                             description: describeCheck.gaming,
-                            note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})
+                            note: notesCheck.gpu
                         },
                         rapidite:{
                             ...point.rapidite,
@@ -110,12 +125,12 @@ const pageAdminAddPutDeleteProduct = () => {
                         durabilite:{
                             ...point.durabilite,
                             description: describeCheck.durabilite,
-                            note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]})
+                            note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]})<5?moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]})+3:moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu, notesCheck.ram]})
                         },
                         confort: {
                             ...point.confort,
                             description: describeCheck.confort,
-                            note: moyeneElement({notes:[notesCheck.cpu, notesCheck.gpu]})
+                            note: notesCheck.ram
                         }
                     }))
                 }))
@@ -191,25 +206,10 @@ const pageAdminAddPutDeleteProduct = () => {
             }))
         },[dataProduct.title,dataProduct.brand, dataProduct.usage, dataProduct.config.cpu,dataProduct.config.gpu])
 
-    const handleSetNotes=(e)=>{
-        e.preventDefault()
-        try{
-            if(
-                dataProduct.config.cpu!=="na" &&
-                dataProduct.config.gpu!=="na" &&
-                dataProduct.config.ram!=="na" &&
-                dataProduct.config.stockage!=="na" && 
-                dataProduct.config.screen!=="na"){
-                    setNotationGo(true)
-            }
-            
-        }catch{
-            setNotationGo(false)
-        }
-    }
+    
         const handleSubmit=(e)=>{
             e.preventDefault();
-            console.log(dataProduct);
+            // console.log(dataProduct);
             setOpenCloseModale(true)
             
 
@@ -220,7 +220,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 <>
                     <h2>points clés</h2>
                     <ul className={styles.ulPCles}>
-                        { dataProduct.pointsClef?.map((point, index)=>[
+                        { dataProduct.pointsclef?.map((point, index)=>[
                             <div key={index}>
                                 <li className={styles.listItemPCles}>
 
@@ -272,10 +272,11 @@ const pageAdminAddPutDeleteProduct = () => {
             return(
                 <>
                     <ul className={styles.listDetails}>
-                    <h3>{parametres.target==="noteDesc"?
+                    <h3>{parametres.target==="notedesc"?
                     "Bureau": "Gaming"}</h3>
                         <li className={styles.listItemPCles}>
-                            <p>Note bureau: {dataProduct.noteDesc.int}</p>
+                            <p>Note {parametres.target==="notedesc"?
+                    "Bureau :": "Gaming :"} {dataProduct[parametres.target]?.int}</p>
                             <h4 className={styles.GoddBadTitle}>Bon points</h4>
                             <ul className={`${styles.renderGoodPoint} ${styles.renderPoint}`}>
                                 {
@@ -315,7 +316,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 console.log('image change')
                 console.log(imagePreview)
                 const selectedImages = Array.from(e.target.files);
-                const imagesWithPrev = selectedImages.map((image)=>({
+                const imagesWithPrev = selectedImages?.map((image)=>({
                     file: image,
                     preview: URL.createObjectURL(image)
                 }))
@@ -329,7 +330,7 @@ const pageAdminAddPutDeleteProduct = () => {
                 console.log(imagePreview)
                 console.log("↑ imagesState ↑")
 
-                imagePreview.map((imageSaved, index)=>{
+                imagePreview?.map((imageSaved, index)=>{
                     console.log("imageSaved file name", imageSaved.file.name)
                     console.log("element file name", e.file.name)
                     console.log("type imageSaved file name", imageSaved.file.name)
@@ -360,19 +361,19 @@ const pageAdminAddPutDeleteProduct = () => {
                 }
             }, [imagesState.images])
             return(
-                <>
-                    <input onChange={(e)=>{handleChangeimages(e)}} type='file' multiple accept="image/png, image/gif, image/jpeg, image/avif, image/webp"/>
+                <div className={styles.containerImageDwl}>
+                    <input className={styles.inputFile} onChange={(e)=>{handleChangeimages(e)}} type='file' multiple accept="image/png, image/gif, image/jpeg, image/avif, image/webp"/>
                     <ul className={styles.listImagesPrev}>
                         {imagePreview[0]!=="empty"&&
-                            imagePreview.map((image, index)=>[
+                            imagePreview?.map((image, index)=>[
                                 <li className={styles.imaeItem} key={index}>
                                     <img alt='preview before create' width={100} height={100} src={`${image.preview}`}/>
-                                    <span onClick={()=>deleteImage(image)} className={styles.deleteIMG}>X</span>
+                                    <span onClick={()=>deleteImage(image)} className={styles.deleteIMG}><ClearIcon/></span>
                                 </li>
                             ])
                         }
                     </ul>
-                </>
+                </div>
             )
         }
         return(
@@ -380,12 +381,12 @@ const pageAdminAddPutDeleteProduct = () => {
                 <h1>Ajout de produit</h1>
                 <form className={`${styles.formProduct}`} onSubmit={(e)=>handleSubmit(e)}>
 
-                    <div style={{gridArea:"info"}} className={`${styles.zoneItem} ${styles.zone_infoDebase}`}>
+                    <div className={`${styles.zoneItem} ${styles.zone_infoDebase}`}>
                         <h2>Informations de base</h2>
                         <ul className={styles.Form_list}>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='titre'>Titre</label>
-                                <input
+                                <input className={styles.inputDesign}
                                 placeholder={dataProduct.title}
                                 onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>
@@ -397,52 +398,51 @@ const pageAdminAddPutDeleteProduct = () => {
                             </li>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='marque'>marque</label>
-                                <input placeholder={dataProduct.brand} onChange={(e)=>setDataProduct((prevDataProduct)=>({...prevDataProduct, brand:e.target.value}))} name='marque' id='marque' required/>
-                                <p>{dataProduct.brand}</p>
+                                <input className={styles.inputDesign} placeholder={dataProduct.brand} onChange={(e)=>setDataProduct((prevDataProduct)=>({...prevDataProduct, brand:e.target.value}))} name='marque' id='marque' required/>
+                                {/* <p>{dataProduct.brand}</p> */}
                             </li>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='resolution'>resolution</label>
                                 <select className={styles.select} name='resolution' id='resolution' onChange={(e)=>{setDataProduct((prevDataProduct)=>({...prevDataProduct,resolution:e.target.value}))}}>
-                                    {arrayResolution.map((elt, index)=>[
+                                    {arrayResolution?.map((elt, index)=>[
                                         <option value={elt} key={index}>{elt}</option>
                                     ])}
                                 </select>
                             </li>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='prix'>Prix</label>
-                                <input placeholder='Uniquement un nombre entier' inputMode='numeric' pattern='[0-9]*' type='text' onChange={(e)=>{setDataProduct((prevDataProduct)=>({...prevDataProduct, prix: e.target.value}))}}/>
-                                <p>{dataProduct.prix}€</p>
-                            </li>
-                            <li className={styles.Form_list_eltImgs}>
-                                <h3>Images</h3>
-                                <ImagesGestion />
-                                <p> <i> <span style={{color: "red"}}>‼ Attention ‼</span> images veillez ajouter les 4 images du produit la premiere doit être l'image vue de face du pc dans la mesure du possible </i> </p>
+                                <input className={styles.inputDesign} placeholder='Uniquement un nombre entier' inputMode='numeric' pattern='[0-9]*' type='text' onChange={(e)=>{setDataProduct((prevDataProduct)=>({...prevDataProduct, prix: e.target.value}))}}/>
+                                {/* <p>{dataProduct.prix}€</p> */}
                             </li>
                         </ul>
+                        <div className={styles.Form_list_eltImgs}>
+                            <h3>Images</h3>
+                            <ImagesGestion />
+                            <p> <i> <span style={{color: "red"}}>‼ Attention ‼</span> images veillez ajouter les 4 images du produit la premiere doit être l'image vue de face du pc dans la mesure du possible </i> </p>
+                        </div>
                         <p className={styles.productID}>ID du produit: <span>{dataProduct.id}</span></p>
                     </div>
-                    <div style={{gridArea:"config"}} className={`${styles.zoneItem} ${styles.zone_config}`}>
-                        {ConfigRender(dataProduct, setDataProduct)}
-                        <button onClick={(e)=>handleSetNotes(e)} className={dataProduct.config.os==='na'
-                            ?`${styles.disable} ${styles.btnAutoNote}`:styles.btnAutoNote}>get a notes</button>
+                    <div className={`${styles.zoneItem} ${styles.zone_config}`}>
+                        {ConfigRender(dataProduct, setDataProduct, setNotationGo)}
+                        
                     </div>
-                    <div style={{gridArea:"baliseAf"}} className={`${styles.zoneItem} ${styles.containerBaliseAffil}`}>
+                    <div className={`${styles.zoneItem} ${styles.containerBaliseAffil}`}>
                         <h2>Balises affilizz</h2>
-                        <ul>
-                            <li>
+                        <ul className={styles.balisesList}>
+                            <li className={styles.balise}>
                                 <label htmlFor='tableauAff'>Balise tableau</label>
-                                <input onChange={(e)=>{
+                                <input className={styles.inputDesign} onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>({
                                         ...prevDataProduct,
-                                        array:{
+                                        arrayaff:{
                                             publicationContentId: splitBaliseAffil(e.target.value)
                                         }
                                     }))
                                 }} name='tableauAff' id="tableauAff"/>
                             </li>
-                            <li>
+                            <li className={styles.balise}>
                             <label htmlFor='btnAff'>Balise bouton</label>
-                            <input onChange={(e)=>{
+                            <input className={styles.inputDesign} onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>({
                                         ...prevDataProduct,
                                         btn:{
@@ -453,40 +453,40 @@ const pageAdminAddPutDeleteProduct = () => {
                             </li>
                         </ul>
                     </div>
-                    <div style={{gridArea:"pCles"}} className={`${styles.zoneItem} ${styles.pointsClesContainer}`}>
+                    <div className={`${styles.zoneItem} ${styles.pointsClesContainer}`}>
                         <PointsCles />
                     </div>
-                    <div style={{gridArea:"noteD"}} className={`${styles.zoneItem} ${styles.NoteDescContainer}`}>
+                    <div className={`${styles.zoneItem} ${styles.notedescContainer}`}>
                         <h2>Details</h2>
 
                         <DetailBureauGaming parametres={{
-                            pointId: dataProduct.noteDesc.int, setDataProduct, isPointCle: false, target: "noteDesc"}}/>
-                        <DetailBureauGaming parametres={{pointId: dataProduct.noteGaming.int, setDataProduct,  isPointCle: false, target: "noteGaming"}}/>
+                            pointId: dataProduct.notedesc?.int, setDataProduct, isPointCle: false, target: "notedesc"}}/>
+                        <DetailBureauGaming parametres={{pointId: dataProduct.notegaming?.int, setDataProduct,  isPointCle: false, target: "notegaming"}}/>
                         <div className={`${styles.tagZone} ${styles.zone_parametrage}`}>
-                        <div className={styles.bgTags}>
-
-                            <h3>Partie Tags code promo</h3>
-                            <ul>
-                                <li className={styles.fulltag}>
-                                    <p>Tags: </p>
-                                    <ul className={styles.listTags}>
-                                        {dataProduct.tags.length>0&&dataProduct.tags.map((tag, index)=>[
-                                            <li className={`tag_${styles[tag]}`}id={tag} key={index}>{tag} </li>
-                                        ])}
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div className={styles.Form_list_elt}>bonus: <input placeholder='naJM par défaut'/></div>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
+                    <div className={styles.bgTags}>
+                        <h3>Partie Tags code promo</h3>
+                        <ul>
+                            <li className={styles.fulltag}>
+                                <p>Tags: </p>
+                                <ul className={styles.listTags}>
+                                    {dataProduct.tags.length>0&&dataProduct.tags.map((tag, index)=>[
+                                        <li className={`tag_${styles[tag]}`}id={tag} key={index}>{tag} </li>
+                                    ])}
+                                </ul>
+                            </li>
+                            <li>
+                                <div className={styles.Form_list_elt}>bonus: <input placeholder='naJM par défaut'/></div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
                     
                     
                     
 
-                    <div style={{gridArea:"seo"}} className={`${styles.zoneItem} ${styles.zone_SEO}`}>
+                    <div className={`${styles.zoneItem} ${styles.zone_SEO}`}>
                         <h2>Partie SEO</h2>
                         <p>titre {dataProduct.title}</p>
                         <ul>
@@ -498,7 +498,7 @@ const pageAdminAddPutDeleteProduct = () => {
                     </div>
                     
                     
-                    <div style={{gridArea:"conseil"}} className={`${styles.zoneItem} ${styles.Conseil}`}>
+                    <div className={`${styles.zoneItem} ${styles.Conseil}`}>
                         <label htmlFor='conseil'>Conseil</label>
                         <select className={styles.select} value={dataProduct.conseil} onChange={(e)=>{setDataProduct((prevDataProduct)=>({
                             ...prevDataProduct,
@@ -526,10 +526,20 @@ const pageAdminAddPutDeleteProduct = () => {
             </section>
         )
     };
-    return(
-        <>
-            {/* <PageAdminCreateProduct ></PageAdminCreateProduct> */}
-        </>
-    );
+
+    // if(typeof(window)!==undefined){
+    //     uid=localStorage.getItem('uidAdmin')
+    // }
+    if(isAdmin){
+        return(
+            <>
+                <PageAdminCreateProduct ></PageAdminCreateProduct>
+            </>
+        );
+    }
+    else{
+        return(<>redirect</>)
+    }
+    
 };
 export default pageAdminAddPutDeleteProduct;

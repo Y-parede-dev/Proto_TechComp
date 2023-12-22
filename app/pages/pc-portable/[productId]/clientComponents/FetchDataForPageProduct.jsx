@@ -18,7 +18,7 @@ export const FetchDataForPageProduct = ({params}) => {
 
             const req = await GET();
         
-            req.map((prod)=>{
+            req?.map((prod)=>{
                 
                 if(prod.id===params){
                     
@@ -36,7 +36,7 @@ export const FetchDataForPageProduct = ({params}) => {
             
     }, [params])
     useEffect(()=>{
-        console.log(produit)
+        // console.log(produit)
     },[isLoading===false])
     if(isLoading){
         return(<>Chargement des ressources</>)

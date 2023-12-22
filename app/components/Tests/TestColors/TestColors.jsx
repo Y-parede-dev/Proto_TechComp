@@ -33,7 +33,7 @@ const TestColors = ({props}) => {
 
     const changeTheme = (elt) => {
         setTheme(elt.target.textContent)
-        themesContent.map((theme)=>{
+        themesContent?.map((theme)=>{
             if(theme.name == elt.target.textContent){
                 root.style.setProperty('--color-first', theme.text);
                 root.style.setProperty('--color-second', theme.textSecond);
@@ -70,7 +70,7 @@ const TestColors = ({props}) => {
                 <div className={styles.containerColors}>
                 <h2>THEMES</h2>
                 <ul className={styles.listColors}>
-                    { themesContent.map((theme)=>[
+                    { themesContent?.map((theme)=>[
                         <li className={`${styles.themeDef} ${styles[theme.className]}`} onClick={e=>changeTheme(e)}>
                             <p>{theme.name}</p>
                         </li>
