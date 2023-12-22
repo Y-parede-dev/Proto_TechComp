@@ -13,20 +13,20 @@ import { useRouter } from 'next/navigation';
 
 const pageAdminAddPutDeleteProduct = () => {
     // ::START::REQ:POST - Sauvegarde un produit dans le fichier json associer
-    let uid = 'wait';
-    const [isAdmin, setIsAdmin] = useState(false);
-    const router = useRouter();
+    // let uid = 'wait';
+    // const [isAdmin, setIsAdmin] = useState(false);
+    // const router = useRouter();
     
-    useEffect(()=>{
-        if(localStorage.getItem('uidAdmin'===process.env.ADMIN_UID)){
-            setIsAdmin(true)
-        }
-    },[])
-    useEffect(()=>{
-        if(!isAdmin){
-            router.replace('/pages/Admin/connect');
-        }
-    },[isAdmin])
+    // useEffect(()=>{
+    //     if(localStorage.getItem('uidAdmin'===process.env.ADMIN_UID)){
+    //         setIsAdmin(true)
+    //     }
+    // },[])
+    // useEffect(()=>{
+    //     if(!isAdmin){
+    //         router.replace('/pages/Admin/connect');
+    //     }
+    // },[isAdmin])
     // ::END::REQ:POST
     const PageAdminCreateProduct = () => {
         const [dataProduct, setDataProduct] = useState({
@@ -530,16 +530,17 @@ const pageAdminAddPutDeleteProduct = () => {
     // if(typeof(window)!==undefined){
     //     uid=localStorage.getItem('uidAdmin')
     // }
-    if(isAdmin){
-        return(
-            <>
-                <PageAdminCreateProduct ></PageAdminCreateProduct>
-            </>
-        );
-    }
-    else{
-        return(<>redirect</>)
-    }
+    return(<>redirect</>)
+    // if(isAdmin){
+    //     return(
+    //         <>
+    //             <PageAdminCreateProduct ></PageAdminCreateProduct>
+    //         </>
+    //     );
+    // }
+    // else{
+    //     return(<>redirect</>)
+    // }
     
 };
 export default pageAdminAddPutDeleteProduct;
