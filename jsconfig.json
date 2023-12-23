@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@/page":["./pages"],
+      "@/pcPortable":["./pages/pc-portable"],
+      "@/product":["./pages/pc-portable/[productId]"]
+    }
+  }
+}

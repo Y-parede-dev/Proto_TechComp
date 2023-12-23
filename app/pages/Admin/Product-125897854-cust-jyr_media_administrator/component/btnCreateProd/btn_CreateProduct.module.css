@@ -1,0 +1,24 @@
+.btnSubmit{
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 0 10px -3px black;
+    cursor: no-drop;
+    
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    top: -55px;
+    right: 15px;
+    transition-duration: 260ms;
+}
+.btnSubmit:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px -1px black;
+}
+.btnSubmit__fullData{
+    background: green;
+    cursor: pointer;
+}
+.btnSubmit__noData{
+    background: red;
+}

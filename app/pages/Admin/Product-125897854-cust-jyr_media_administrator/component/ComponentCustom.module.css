@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*HELP*/
+.help {
+    position: absolute;
+
+}
+
+.configContainer{
+    position: relative;
+    box-shadow: 0 0 6px -1px #122f5a;
+    background: rgba(0,0,0,0.6);
+    border-radius: 25px;
+    margin: -16px;
+}
+.configContainer > h2{
+    margin: -16px 0!important;
+}
+/*  automatisation note  */
+
+.btnAutoNote{
+    color: rgb(12, 56, 90)!important;
+    background: linear-gradient(to bottom, transparent, rgb(var(--color-first-rgb)), rgb(var(--color-second-rgb)));
+    background-color: rgb(var(--color-first-rgb));
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 3;
+    padding: 5px 7px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 16px;
+    box-shadow: black 0 0 6px -3px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    transition-duration: 250ms;
+}
+.disable{
+    background: #a09d9d!important;
+    color: #444343!important;
+}
+.btnAutoNote:hover{
+    background: linear-gradient(to top, transparent, rgb(var(--color-first-rgb)), rgb(var(--color-second-rgb)));
+    background-color: rgb(var(--color-first-rgb));
+    transform: scale(1.1);
+}
+.disable:hover{
+    cursor:no-drop;
+    color: white!important;
+    transform: scale(1);
+    background: red!important;
+}
+
+
+  /* fin automatisation note  */
+.listNotes{
+    display: grid;
+    grid-template-areas: 
+        "note-0 note-1 note-2 note-3 note-4 note-10"
+        "note-5 note-6 note-7 note-8 note-9 note-10";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: .6rem .8rem;
+    padding: 13px!important;
+    background: rgba(120,120,145,1);
+    border-radius: 25px;
+    filter: brightness(0.98);
+    margin: 20px 6px;
+}
+
+.note{
+    font-family: 'Poppins', sans-serif;
+    color: white!important;
+    text-shadow: 0 0 3px black;
+    font-size: x-large;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 19px;
+    display: flex;
+    box-shadow: 0 0 7px -3px black;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition-duration: 250ms;
+}
+.valid::after{
+    content:'V'
+}
+.note:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 9px -3px black;
+
+}
+.listNotes li:nth-child(1){
+    background: red;
+}
+.listNotes li:nth-child(2){
+    background: rgb(255, 51, 0);
+
+}
+.listNotes li:nth-child(3){
+    background: rgb(249, 92, 1);
+}
+.listNotes li:nth-child(4){
+    background: orange;
+}
+.listNotes li:nth-child(5){
+    background: yellow;
+}
+.listNotes li:nth-child(6){
+    background: yellow;
+}
+.listNotes li:nth-child(7){
+    background: #d9ff00;
+}
+.listNotes li:nth-child(8){
+    background: #b8ff00;
+}
+.listNotes li:nth-child(9){
+    background: #73ff00;
+}
+.listNotes li:nth-child(10){
+    background: rgb(140, 187, 1)
+}
+.listNotes li:nth-child(11){
+    grid-area: note-10;
+    background: green;
+}
+.tableConfig{
+    background: #eaeaea;
+    border-collapse: separate;
+    border-spacing: 8px;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    gap: 1rem;
+    margin: 32px 0 0;
+    font-size: 1.01rem;
+}
+
+.tableConfig tr{
+    padding: 8px 0;
+}
+.tableConfig tr input{
+    font-size: 1rem;
+    padding: 2px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 3px -2px black;
+
+}

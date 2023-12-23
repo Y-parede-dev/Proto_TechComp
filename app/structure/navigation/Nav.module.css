@@ -1,0 +1,106 @@
+.ContainerNavLeft{
+    z-index: 2;
+    grid-area: nav;
+    position: sticky;
+    top: var(--height-header);
+    bottom: 0;
+    height: calc(100vh - var(--height-header));
+    background: var(--color-back);
+    margin: 0;
+    max-width: 500px;
+    border-right: 1px solid var(--color-border);
+
+}
+.NavLeft{
+    padding: 0 18px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.NavLeft ul{
+    list-style: none;
+}
+.titleCategoryListItem{
+    font-size: 1.2rem;
+    color: var(--color-cat-nav);
+    text-transform: uppercase;
+    font-weight: 800;
+    background: var(--color-back-cat-nav);
+    border-radius: 22px;
+    max-width: fit-content;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+
+}
+.listTitles {
+    padding: 22px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    min-height: 100%;
+    height:max-content
+}
+.listItems > li {
+    padding: 25px 8px 0;
+}
+.listItems, .listItems ul{
+    padding: 6px 0;
+}
+.listItems a {
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px;
+}
+.linkOnNav{
+    /* margin-left: 13px; */
+    color: var(--color-link);
+    /* color: var(--color-txt-second);  */
+}
+.linkOnNav a{
+    color: var(--color-link);
+
+    /* color: var(--color-txt-second);  */
+
+    /* color: var(--color-hover);  */
+    /* padding: 25px; */
+    border-radius: 0;
+    transition-duration: 250ms;
+}
+.linkOnNav a:hover{
+    background: var(--color-link-back-hover);
+    color: var(--color-link-hover);
+    border-radius: 38px;
+
+}
+/* .linkOnNav a {
+    padding: 25px;
+} */
+.onPriceLink{
+    padding: 15px 0 0px 20px;
+}
+
+@media screen and (max-width:1369px) {
+    .btnNavBarForMobile{
+        position: absolute;
+        right: -47.4px;
+        top:86px;
+        z-index: -2;
+        background: white;
+        padding: 18.5px 22px 18.5px 10px ;
+        border: 1px solid var(--color-border);
+        border-left: none;
+        border-radius: 0 25px 25px 0;
+    }
+    .ContainerNavLeft{
+        height: calc(100%- var(--height-header));
+        z-index: 3;
+        position: fixed;
+        transform: translateX(-100%);
+        transition-duration: 800ms;
+        /* overflow-x: visible;
+        overflow-y: hidden; */
+    }
+    .NavShow{
+        transform: translateX(00px);
+    }
+}

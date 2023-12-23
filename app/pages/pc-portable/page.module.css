@@ -1,0 +1,67 @@
+
+.ILLUSTRATOR{
+
+  background: rgba(0, 0, 0, .3);
+  padding: 25px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: orange;
+  margin: auto;
+}
+.section {
+  position: relative;
+  z-index: 2;
+  background: var(--color-back-main);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 6rem; */
+  min-height: 100vh;
+  width: 100%;
+  margin-top: var(--margin-top-main);
+}
+
+.titlePagePcPortable {
+  padding: 40px 0;
+}
+.product_card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "card notes"
+                      "card array";
+  padding: 10px;
+  background: var(--color-back);
+  border: solid;
+  flex-direction: row;
+}
+.product_card_title{
+  padding: 3rem 0;
+}
+.notes_content{
+  grid-area: notes;
+  justify-content: center;
+
+}
+.notes {
+  display: flex;
+  gap: 5px;
+}
+.card{
+  grid-area: card;
+
+}
+.array{
+  grid-area: array;
+}
+.array, .notes_content{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.array_price_title{
+  font-size: 20px;
+  font-weight: 500;
+}

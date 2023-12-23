@@ -1,0 +1,56 @@
+
+.ulPCles{
+    padding: 16px 0 0;
+    margin: 0 -16px;
+    overflow: hidden;
+
+    position: relative;
+    background: #264760;
+}
+.ulPCles {
+    border-radius: 0 0 25px 25px;
+    margin: 0 -16px -16px;
+}
+.ulPCles>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.zoneItem ul{
+    padding: 16px 0 0;
+  
+}
+.listItemPCles{
+    padding: 16px;
+    background: #eaeaea;
+}
+.listItemPCles > h3, .listDetails > h3 {
+    background: rgba(120,120,145,1);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: -16px -16px 0;
+    color: #122f5a;
+}
+.listItemPCles{
+    padding: 16px;
+    background: #eaeaea;
+}
+.listItemPCles > * {
+padding: 5px 0;
+}
+.listItemPCles > h3 {
+    background: #787891!important;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: -16px -16px 0;
+    color: #122f5a;
+}
+/* .listDetails>h3, .listItemPCles>h3 {
+    background: #787891;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: -16px -16px 0;
+    color: #122f5a;
+    padding: 5px 0;
+} */

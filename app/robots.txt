@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /api
+Disallow: /components
+Disallow: /context
+Disallow: /cookies
+Disallow: /mediaQueries
+Disallow: /structure
+Disallow: /pages/Admin
+
+Allow: /
+Allow: /public
+Allow: /pages/pc-portables
+Allow: /pages/pc-portables/*

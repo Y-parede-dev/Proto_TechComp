@@ -1,0 +1,40 @@
+
+.listDetails:last-child{
+    border-radius: 0 0 25px 25px;
+}
+.listDetails{
+    padding: 32px 0 0!important;
+    margin: 0 -16px;
+    overflow: hidden;
+
+    position: relative;
+    background: #264760;
+}
+.listDetails > h3 {
+    background: #787891!important;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: -16px -16px 0;
+    color: #122f5a;
+    padding: 5px 0;
+}
+.listItemPCles{
+    padding: 16px;
+    background: #eaeaea;
+}
+.renderPoint{
+    background: rgba(120,120,145,1);
+    padding: 25px!important;
+}
+
+.renderPoint>li{
+
+color: #122f5a;
+}
+.renderGoodPoint>li{
+list-style: '✅';
+
+}
+.renderBadPoint>li{
+list-style: '⛔';
+}
