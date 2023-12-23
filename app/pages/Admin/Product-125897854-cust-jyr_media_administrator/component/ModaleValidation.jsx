@@ -4,7 +4,7 @@ import styles from '../page.module.css';
 import DoneIcon from '@mui/icons-material/Done';
 import ClearIcon from '@mui/icons-material/Clear';
 import Notation from '@/app/components/clientComponents/Notation';
-import {PointsCles as PClesClient} from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
+import {PointsCles as PClesClient} from '/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
 import { ref, uploadBytes } from 'firebase/storage';
 import { storage, imageRef } from '@/config/configFirebase/conf.firebase';
 export const ModaleValidation = ({params}) => {
