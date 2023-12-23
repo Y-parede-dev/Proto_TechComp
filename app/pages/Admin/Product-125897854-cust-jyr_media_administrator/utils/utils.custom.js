@@ -28,83 +28,64 @@ const checkPartialMatch = (input, keyword) => {
     return matchCount >= threshold;
 };
 export const checkElement = (params) => {
-    const normalisedInput = params.element.toLowerCase().replace(/\s/g,'')
-    let note = 0;
-    Object.entries(params.array).forEach(([category, keywords]) => {
-        keywords.forEach((keyword) => {
-            const normalisedKeyword = keyword.toLowerCase().replace(/\s/g,'')
-            if (normalisedKeyword.includes(normalisedInput)) {
-                switch (category) {
-                    case 'ultra':
-                        note = 10;
-                        break;
-                    case 'good':
-                        note = 8;
-                        break;
-                    case 'moyen':
-                        note = 7;
-                        break;
-                    case 'bas':
-                        note = 5;
-                        break;
-                    default:
-                        note = 5;
-                }
-               return note
+    const normalisedInput = params.element.toLowerCase().replace(/\s/g, '');
+
+    // Vérifier si l'input inclut l'un des éléments du tableau pour chaque catégorie
+    for (const [category, keywords] of Object.entries(params.array)) {
+        if (keywords.some(keyword => normalisedInput.includes(keyword.toLowerCase().replace(/\s/g, '')))) {
+            // Attribuer une note en fonction de la catégorie
+            switch (category) {
+                case 'ultra':
+                    return 10;
+                case 'good':
+                    return 8;
+                case 'moyen':
+                    return 7;
+                case 'bas':
+                    return 5;
+                default:
+                    return 5;
             }
-        });
-    });
-    
-    // params.array.ultra.forEach((isUltra)=>{
-    //     if(params.element.toLowerCase().includes(isUltra.toLowerCase())){
-    //         note = 10;
-    //     };
-    // });
-    // params.array.good.forEach((isPresent)=>{
-    //     if(params.element.toLowerCase().includes(isPresent.toLowerCase())){
-    //         note = 8;
-    //     };
-    // });
-    // params.array.moyen.forEach((isPresent)=>{
-    //     if(params.element.toLowerCase().includes(isPresent.toLowerCase())){
-    //         note = 7;
-    //     };
-    // });
-    // params.array.bas.forEach((isPresent)=>{
-    //     if(params.element.toLowerCase().includes(isPresent.toLowerCase())){
-    //         note = 5;
-    //     };
-    // });
-    return note;
+        }
+    }
+
+    // Si l'élément n'est pas trouvé dans l'input, retourner une note par défaut
+    return 0;
 };
 export const checkElementGpu = (params) => {
-    const normalisedInput = params.element.toLowerCase().replace(/\s/g,'')
-    let note = 0;
-    Object.entries(params.array).forEach(([category, keywords]) => {
-        keywords.forEach((keyword) => {
-            const normalisedKeyword = keyword.toLowerCase().replace(/\s/g,'')
-            if (normalisedKeyword.includes(normalisedInput)) {
-                switch (category) {
-                    case 'ultra':
-                        note = 10;
-                        break;
-                    case 'good':
-                        note = 8;
-                        break;
-                    case 'moyen':
-                        note = 7;
-                        break;
-                    case 'bas':
-                        note = 0;
-                        break;
-                    default:
-                        note = 5;
-                }
-               return note
+    const normalisedInput = params.element.toLowerCase().replace(/\s/g, '');
+    let note=0;
+    // Vérifier si l'input inclut l'un des éléments du tableau pour chaque catégorie
+    for (const [category, keywords] of Object.entries(params.array)) {
+        if (keywords.some(keyword => normalisedInput.includes(keyword.toLowerCase().replace(/\s/g, '')))) {
+            // Attribuer une note en fonction de la catégorie
+            switch (category) {
+                case 'ultra':
+                    note=10;
+                    break
+                case 'good':
+                    note=8;
+                    break
+                case 'moyen':
+                    note=7;
+                    break
+                case 'bas':
+                    note=0;
+                    break
+                default:
+                    note=0;
+                    break;
             }
-        });
-    });
-   
+        }
+    }
+    if(note===0){
+        if(
+            params.element.toLowerCase().includes('geforce')||
+            params.element.toLowerCase().includes('radeon')){
+                note=5
+        }
+    }
+    // Si l'élément n'est pas trouvé dans l'input, retourner une note par défaut
     return note;
 };
 export const checkIntElement = (params) => {

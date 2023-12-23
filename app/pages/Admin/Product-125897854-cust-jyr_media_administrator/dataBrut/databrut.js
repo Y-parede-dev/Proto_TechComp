@@ -2,7 +2,7 @@ export const descriptions = (dataProduct) => {
     return {
         gaming: {
             ultra: `Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} est conçu pour une utilisation gaming optimal. La configuration de ce pc portable avec sa <strong>${dataProduct.config.gpu}</strong>, vous permet de jouer au derniers jeux sortie.`,
-            good: `C\'est l\'ordinateur portable gaming par excellence ${dataProduct.denominateur} <strong>${dataProduct.title}</strong> et sa <strong>configuration gaming</strong> est un choix logique si vous rechercher une experience gaming de plus que correct.`,
+            good: `C\'est l\'ordinateur portable gaming par excellence ${dataProduct.denominateur} <strong>${dataProduct.title}</strong> et sa <strong>configuration gaming</strong> est un choix logique si vous rechercher une experience gaming plus que correct.`,
             moyen:`Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>${dataProduct.config.gpu}</strong>, vous permet de jouer a certain jeux.`,
             bas:`Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} n\'est pas conçu pour une utilisation gaming. La configuration <strong>${dataProduct.config.gpu}</strong>de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos.`
         },

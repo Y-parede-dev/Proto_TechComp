@@ -7,7 +7,10 @@
 
 # testing
 /coverage
+/**/*.old.js
+/**/old
 
+/old
 # next.js
 /.next/
 /out/

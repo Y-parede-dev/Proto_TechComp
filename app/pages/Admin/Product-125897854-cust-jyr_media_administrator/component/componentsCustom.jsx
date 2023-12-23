@@ -41,7 +41,7 @@ const ConfigRow = ({label, target, value, onChange, setDataProduct}) =>{
     <tr>
         <td>{label}</td>
         <td>
-            <input className={styles.inputDesign} placeholder={value} onChange={(e)=>{
+            <input required className={styles.inputDesign} placeholder={value} onChange={(e)=>{
                 onChange({target, element:e.target.value, setDataProduct})
             }}/>
         </td>
@@ -113,7 +113,7 @@ export const ConfigRender = (data, setDataProduct, setNotationGo) => {
                         setDataProduct: setDataProduct
                     })}
                     {ConfigRow({
-                        label: "Os (modele: Window 11)",
+                        label: "Os (modele: Windows 11)",
                         target: 'os',
                         value: data.config.os,
                         onChange:ConfigItem,
