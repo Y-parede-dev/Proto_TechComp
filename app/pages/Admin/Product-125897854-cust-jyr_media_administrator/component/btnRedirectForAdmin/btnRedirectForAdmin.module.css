@@ -1,0 +1,7 @@
+.main {
+    position: relative;
+    z-index: 2;
+    background: var(--color-back-main);
+   
+    margin-top: var(--margin-top-main);
+  }

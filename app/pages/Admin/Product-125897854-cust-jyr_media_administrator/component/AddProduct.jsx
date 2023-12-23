@@ -16,8 +16,6 @@ import { useDropzone } from 'react-dropzone';
 import { BtnCreateProduct } from './btnCreateProd/btn_CreateProduct';
 const AddProduct = () => {
     // ::START::REQ:POST - Sauvegarde un produit dans le fichier json associer
-    let uid = 'wait';
-    const {isAuth, getUser} = "getAuthServerSession()"
     const router = useRouter();
     let isAdmin = false;
     useEffect(()=>{

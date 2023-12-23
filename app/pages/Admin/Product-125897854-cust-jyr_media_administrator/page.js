@@ -1,7 +1,6 @@
 import AddProduct from './component/AddProduct'
 import {getCookies} from './serverActions/getCookies'
-
-
+import { BtnRedirect } from './component/btnRedirectForAdmin/btn_redirectAdmin'
 const page = async () => {
     try{
         const cookieUidAdmin = await getCookies()
@@ -13,12 +12,15 @@ const page = async () => {
             )
         }else{
             <>
-                <p>redirect on progress ...</p>
+                
+                <BtnRedirect/>
             </>
         }
 
     }catch(error){
-        return <>Erreur de cookies, vous n'etes pas administrateur du site</>
+        return <>
+                <BtnRedirect/>
+            </>
     }
 }    
 
