@@ -8,7 +8,7 @@ const page = async () => {
         if(cookieUidAdmin.value ===process.env.ADMIN_UID){
             return(
                 <>
-                    <AddProduct></AddProduct>
+                    {/* <AddProduct></AddProduct> */}
                 </>
             )
         }else{
