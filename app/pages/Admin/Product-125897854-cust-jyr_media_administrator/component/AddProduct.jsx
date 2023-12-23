@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import styles from './AddProduct.module.css';
 import { descriptions, arrayResolution, arrayGoodBad, arrRamResult, arrGpuResult, arrProcResult } from '../dataBrut/databrut';
-import { TableauNotes,  ConfigRender } from './componentsCustom';
+import {  ConfigRender } from './componentsCustom';
 import { modelProduit } from '../model/model';
 
 import {checkElement,checkIntElement,checkElementGpu, moyeneElement, setDescribeAuto, setGoodBadPointAuto } from '../utils/utils.custom';
