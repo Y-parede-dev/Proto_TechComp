@@ -5,7 +5,6 @@ import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndP
 import styles from './page.module.css'
 import {auth, googleProvider} from "@/config/configFirebase/conf.firebase"
 import { useEffect, useState } from 'react';
-import bcrypt from 'bcryptjs';
 import { useRouter } from 'next/navigation';
 
 import Cookies from 'js-cookie';
@@ -54,8 +53,7 @@ const UserSignWithEmail = () => {
 
     const CheckExistUser = async (e) => {
         e.preventDefault()
-        const salt = bcrypt.genSaltSync(10)
-        const hashed = bcrypt.hashSync(userInfo.password, salt)
+        
         const verifIsExistUidCookies = () => {
             try{
                 const cookieUidExist = Cookies.get('uidAdmin');
@@ -121,8 +119,7 @@ const UserSignWithEmail = () => {
 //     const CreateUser = (e) => {
 //         e.preventDefault()
 //         // console.log(userInfo)
-//         const salt = bcrypt.genSaltSync(10)
-//         const hashed = bcrypt.hashSync(userInfo.password, salt)
+//        
 //         createUserWithEmailAndPassword(auth, userInfo.email, userInfo.password)
 //             .then((userCredential)=>{
 //                 const user = userCredential.user;
