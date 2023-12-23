@@ -4,5 +4,6 @@ export const VideoTuto = () =>{
     return(
     <div className={styles.videoTutoContainer}>
         <VideoPlayer/>
+        
     </div>)
 }
