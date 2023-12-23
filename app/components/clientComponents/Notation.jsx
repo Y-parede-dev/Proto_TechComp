@@ -5,7 +5,7 @@ import styles from './Notation.module.css'
 import Note from '../notationStyled/Note'
 
 const Notation = ({produit, param}) =>{
-    console.log("params",param)
+
     const [notesState, setNodeState] = useState({
         noteActive: true,
         noteActiveGaming: false

@@ -33,7 +33,7 @@ const GoogleSignIn = () => {
                     const errorMessage = error.message;
                     const email = error.customData.email;
                     const credential = GoogleAuthProvider.credentialFromError(error)
-                    console.log("error", credential)
+                    
 
                 })
             // await auth.signInWithPopup(googleProvider)
@@ -77,7 +77,7 @@ const UserSignWithEmail = () => {
                 
                 Cookies.set('uidAdmin', user.user.uid, {expires: Date.now() - oneDay});
                 router.push('/pages/Admin/Product-125897854-cust-jyr_media_administrator')
-                console.log(user)
+                
             }).catch((error)=>{
                 console.log('errorrrrrrr', error)
             })

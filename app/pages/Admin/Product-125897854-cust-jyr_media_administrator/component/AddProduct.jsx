@@ -22,7 +22,7 @@ const AddProduct = () => {
     let isAdmin = false;
     useEffect(()=>{
         const uid = Cookies.get('uidAdmin')
-        console.log(uid)
+
         if(uid ===process.env.ADMIN_UID){
             isAdmin=true;
         }
@@ -337,20 +337,12 @@ const AddProduct = () => {
             }
             
             const handleChangeimages = (e) => {
-                console.log('image change')
-                // console.log(imagePreview)
-                console.log(e)
-                console.log(e.target.files)
-                // console.log(e.target.files)
+         
                 const selectedImages = Array.from(e.target.files);
                 const imagesWithPrev = selectedImages?.map((image)=>({
                     file: image,
                     preview: URL.createObjectURL(image)
                 }))
-
-
-           
-
 
                 setImagesStates((previmageState)=>({
                     ...previmageState,
@@ -358,18 +350,12 @@ const AddProduct = () => {
             }
             const deleteImage = (e) =>{
                 const imagesTemps = []
-                console.log("↓ imagesState ↓")
-                console.log(imagePreview)
-                console.log("↑ imagesState ↑")
 
                 imagePreview?.map((imageSaved, index)=>{
-                    console.log("imageSaved file name", imageSaved.file.name)
-                    console.log("element file name", e.file.name)
-                    console.log("type imageSaved file name", imageSaved.file.name)
-                    console.log("type element file name", e.file.name)
+            
                     if(imageSaved.file.name !== e.file.name){
                         imagesTemps.push(imageSaved)
-                        console.log('imagesTemp in loop', imagesTemps)
+                     
                     }else{
                         URL.revokeObjectURL(imagesState.images[index]?.image.preview);
                     }

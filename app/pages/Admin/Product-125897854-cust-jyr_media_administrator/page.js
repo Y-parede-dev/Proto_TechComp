@@ -1,6 +1,5 @@
 import AddProduct from './component/AddProduct'
 import {getCookies} from './serverActions/getCookies'
-console.log(AddProduct)
 
 
 const page = async () => {

@@ -10,18 +10,16 @@ import { request } from "http";
 import { createKysely } from "@vercel/postgres-kysely";
 import { sql } from "@vercel/postgres";
 
-
 export async function GET(req){
     try {
         const db = createKysely()
         const result = await db
             .selectFrom('produitstable').selectAll()
             .execute()
-        // console.log(result)
+        
         return NextResponse.json({ message: 'le get fonctione', data: result}, {status: 200});
-
     } catch (error) {
-        // console.error(error.message);
+        
         return NextResponse.json({error: error.message}, {status: 400});
     }
 }
@@ -30,31 +28,13 @@ export async function POST(req){
     try {
         const { createKysely } = require('@vercel/postgres-kysely');
 
-// Supposons que votre table produits existe déjà
     const db = createKysely();
     let body = await req.json();
     delete body.denominateur;
-    // delete body.pointsclef;
-    // delete body.notedesc;
-    // delete body.notegaming;
-    // delete body.brand;
-    // delete body.btn;
-    // delete body.title;
-    // delete body.tags;
-    // delete body.images;
-    // delete body.description;
-    // delete body.id;
-    // delete body.resolution;
-    // delete body.loading;
-    // delete body.config;
-    // delete body.bonus;
 
-
-    
     await db
         .insertInto('produitstable')
         .values({
-          
             brand:body.brand,
             btn:JSON.stringify(body.btn),
             title:body.title,

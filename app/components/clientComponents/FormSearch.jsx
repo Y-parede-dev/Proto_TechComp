@@ -2,14 +2,11 @@
 // refactor a faire
 import {useContext, useEffect, useState} from "react"
 import styles from "./FormSearch.module.css"
-import Icon from '@mui/material/Icon';
 import {ProductSearchByTag} from "@/lib/ProductSearch";
 import {SearchCTX, SearchCTXDispach} from '@/app/context/SearchCTX'
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
-import config from '@/config/config.json' assert {type: 'json'}
 import { useRouter } from "next/navigation";
-import GET from "@/lib/GetByJson";
 import { FilterNoRepeat } from "@/lib/FonctionsUtiles";
 
 const FormSearch = () => {
@@ -75,7 +72,6 @@ const FormSearch = () => {
             return setShowLabel(false)
         }
         setShowLabel(true)
-        //END:test pour affichage ou non du label
     }
     return (
         <form className={styles.formSearch} onSubmit={handleSubmit}>

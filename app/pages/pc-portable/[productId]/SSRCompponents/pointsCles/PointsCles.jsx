@@ -3,7 +3,7 @@ import BarStyled from "@/app/components/detailsProductBarStyled/BarStyled"
 import styles from "./PointsCles.module.css"
 // refactor a faire
 export const PointsCles = ({produit, param}) => {
-    console.log(produit)
+
     if(param){
         return(
             <div className={styles.pointsClesSugContainer}>

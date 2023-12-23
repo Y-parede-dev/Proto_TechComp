@@ -25,7 +25,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
         default:true,
         arrayImages: []
     })
-    console.log(publicationContentIdTableau)
+
     const urlCustom = `https://firebasestorage.googleapis.com/v0/b/${process.env.NEXT_PUBLIC_FB_PROJECT_ID}.appspot.com/o/pcPortables%2F${produit.brand}%2F${produit.id}`;
 
     useEffect(() => {

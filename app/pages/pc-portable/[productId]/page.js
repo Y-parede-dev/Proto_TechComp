@@ -18,7 +18,7 @@ import { FetchDataForPageProduct } from './clientComponents/FetchDataForPageProd
 
 export async function getServerSideProps() {
   const produits = await GET();
-  console.log("Appel de generateStaticParams");
+
   // console.log( " pp ",produits)
   
   return produits?.map((produit) => ({
@@ -30,7 +30,7 @@ export async function getServerSideProps() {
 }
 export async function generateMetadata({ params }) {
   try {
-    console.log("params", params)
+   
     const allProducts = await GET();
     // Trouvez le produit spécifique par l'ID
     const produit = allProducts.find((e) => params.productId === e.id);
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }) {
 }
 const Page = ({params}) => {
 
-  console.log("params", params)
+
   return (
       <>
         <FetchDataForPageProduct params={params.productId}></FetchDataForPageProduct>

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import styles from './TestFont.module.css';
 import { Font } from '@/lib/ClassCustoms';
 const TestFont = ({props}) => {
-    // console.log(props)
+
     const {modaleFontOpen, setmodaleFontOpen, body} = props;
     // const [body, setBody]= useState(null);
 

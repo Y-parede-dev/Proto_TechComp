@@ -1,16 +1,14 @@
 import { NextResponse } from "next/server"
 import fs from 'fs/promises';
 import path from "path";
-// export const dynamic = "force-dynamic";
-// const filePath = './data/dataProduits/produits.test2.json';
-// const filePath = process.env.API_PRODUCT_URL;
+
 const filePath = path.join(__dirname, "data", "dataProduits", "produits.test.json");
 import { fileExistsCustom } from "../utils/utilsForApi";
 export async function GET(req){
     const currentData = await fs.readFile(filePath, 'utf-8');
     const jsonData = JSON.parse(currentData);
     try {
-        // console.log('Data read successfully:', jsonData.produits);
+        
         return NextResponse.json({ message: 'le get fonctione', data: jsonData.produits}, {status: 200});
 
     } catch (error) {

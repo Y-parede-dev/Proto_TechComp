@@ -6,7 +6,7 @@ import styles from './btn_CreateProduct.module.css'
 export const BtnCreateProduct = ({data}) => {
     // const {data} = params
     
-    console.log(data)
+
     const [btn, setBtn] = useState({
         value:'⛔ Création impossible! ⛔',
         classNameCustom:`${styles.btnSubmit} ${styles.btnSubmit__noData}`
@@ -15,8 +15,7 @@ export const BtnCreateProduct = ({data}) => {
     let iscomplete = false;
     useEffect(()=>{
         for (const [parametre, valeur] of Object.entries(data)){
-            console.log(parametre)
-            console.log(valeur)
+
             if(
                 valeur === 'null' ||
                 valeur === 'na' ||
