@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
-import styles from '../page.module.css';
+import styles from './Modale.module.css';
 import DoneIcon from '@mui/icons-material/Done';
 import ClearIcon from '@mui/icons-material/Clear';
 import Notation from '@/app/components/clientComponents/Notation';

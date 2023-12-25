@@ -69,7 +69,6 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
                 [ids, data] = ProductSearchById({searchId, CTX})
                 setNeed({ids:ids, data:data});
             }
-            console.log('need', need)
             try{
                 if(isEmpty(ids)) {
                     ids=[]

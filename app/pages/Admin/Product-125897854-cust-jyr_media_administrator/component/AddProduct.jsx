@@ -4,7 +4,7 @@ import styles from './AddProduct.module.css';
 import { descriptions, arrayResolution, arrayGoodBad, arrRamResult, arrGpuResult, arrProcResult } from '../dataBrut/databrut';
 import {  ConfigRender } from './componentsCustom';
 import { modelProduit } from '../model/model';
-
+import { PointsCles } from './PointsClesServ/PointsCles';
 import {checkElement,checkIntElement,checkElementGpu, moyeneElement, setDescribeAuto, setGoodBadPointAuto } from '../utils/utils.custom';
 import {ModaleValidation} from './ModaleValidation';
 import ClearIcon from '@mui/icons-material/Clear';
@@ -14,10 +14,14 @@ import Cookies from 'js-cookie';
 import { useDropzone } from 'react-dropzone';
 // import fs from 'fs/promises';
 import { BtnCreateProduct } from './btnCreateProd/btn_CreateProduct';
+import { VideoTuto } from './videoTuto/VideoTuto';
+import HelpIcon from '@mui/icons-material/Help';
+import { DetailBureauGaming } from './DetailsServ/Details';
 const AddProduct = () => {
     // ::START::REQ:POST - Sauvegarde un produit dans le fichier json associer
     const router = useRouter();
     let isAdmin = false;
+    // useEffect COOKIES
     useEffect(()=>{
         const uid = Cookies.get('uidAdmin')
 
@@ -25,15 +29,14 @@ const AddProduct = () => {
             isAdmin=true;
         }
     },[])
-    // useEffect(()=>{
-    //     if(!isAdmin){
-    //         router.replace('/pages/Admin/connect');
-    //     }
-    // },[])
-    // ::END::REQ:POST
+    // useEffect COOKIES
     const PageAdminCreateProduct = () => {
         const [dataProduct, setDataProduct] = useState({
             ...modelProduit
+        })
+        const [modaleTuto, setmodaleTuto] = useState({
+            status:false,
+            classNameCustom:`${styles.closeModaleTuto} ${styles.modaleTuto}`,
         })
         const [imagePreview, setImagePreview] = useState(['empty'])
         const [notationGo, setNotationGo] = useState(false);
@@ -43,7 +46,7 @@ const AddProduct = () => {
             ram:0,
         })
         const [openCloseModale, setOpenCloseModale] = useState(false);
-        const iconValitation = []
+        // useEffect COOKIES
         useEffect(() => {
             // Ajouter la classe pour bloquer le défilement
             if (openCloseModale) {
@@ -87,11 +90,7 @@ const AddProduct = () => {
                     gpu: checkElementGpu({element:dataProduct.config.gpu, array:arrGpuResult}),
                     ram: checkIntElement({val:dataProduct.config.ram, Obj:arrRamResult}),
                 }
-                setnotesTemp({
-                    cpu:notesCheck.cpu,
-                    gpu:notesCheck.gpu,
-                    ram:notesCheck.ram
-                })
+                
                 const describeCheck = {
                     rapidite: setDescribeAuto({data:dataProduct,note:notesCheck.ram, element:'rapidite'}), 
                     gaming: setDescribeAuto({data:dataProduct,note:notesCheck.gpu, element:'gaming'}),
@@ -208,99 +207,11 @@ const AddProduct = () => {
                 ]
             }))
         },[dataProduct.title,dataProduct.brand, dataProduct.usage, dataProduct.config.cpu,dataProduct.config.gpu])
-
-    
         const handleSubmit=(e)=>{
             e.preventDefault();
-            // console.log(dataProduct);
             setOpenCloseModale(true)
-            
-
         };
-        const PointsCles = () => {
-            const ref = useRef();
-            return (
-                <>
-                    <h2>points clés</h2>
-                    <ul className={styles.ulPCles}>
-                        { dataProduct.pointsclef?.map((point, index)=>[
-                            <div key={index}>
-                                <li className={styles.listItemPCles}>
 
-                                    <h3>{point.gaming.nom}</h3>
-                                    <p className={styles.txtChoix}>Note gaming:</p>
-                                    <>{point.gaming.note}</>
-                                    {/* <TableauNotes parametre={{pointId:point.gaming.id, setDataProduct, notes, isPointCle:true}} /> */}
-                                    <div>
-                                    <p className={styles.txtChoix} >Description part gaming:</p>
-                                    <p>{point.gaming.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
-
-                                    </div>
-                                </li>
-                                <li className={styles.listItemPCles}>
-                                    <h3>{point.rapidite.nom}</h3>
-                                    <p className={styles.txtChoix}>Note rapidite:</p>
-                                    <>{point.rapidite.note}</>
-                                    <div>
-                                        <p className={styles.txtChoix} >Description part rapidite:</p>
-                                        <p>{point.rapidite.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
-                                    </div>
-                                </li>
-                                <li className={styles.listItemPCles}>
-                                    <h3>{point.durabilite.nom}</h3>
-                                    <p className={styles.txtChoix}>Note durabilite:</p>
-                                    <>{point.durabilite.note}</>
-                                    <div>
-                                        <p className={styles.txtChoix} >Description part durabilite:</p>
-                                        <p>{point.durabilite.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
-                                    </div>
-                                </li>
-                                <li className={styles.listItemPCles}>
-                                    <h3>{point.confort.nom}</h3>
-                                    <p className={styles.txtChoix}>Note confort:</p>
-                                    <>{point.confort.note}</>
-                                    <div>
-                                    <p className={styles.txtChoix} >Description part confort:</p>
-                                    <p>{point.confort.description?.replaceAll('<strong>',"").replaceAll('</strong>',"")}</p>
-                                    </div>
-                                </li>
-                            </div>
-                        ])
-                        }
-                    </ul>
-                </>
-            )
-        }
-        const DetailBureauGaming = ({parametres}) => {
-            return(
-                <>
-                    <ul className={styles.listDetails}>
-                    <h3>{parametres.target==="notedesc"?
-                    "Bureau": "Gaming"}</h3>
-                        <li className={styles.listItemPCles}>
-                            <p>Note {parametres.target==="notedesc"?
-                    "Bureau :": "Gaming :"} {dataProduct[parametres.target]?.int}</p>
-                            <h4 className={styles.GoddBadTitle}>Bon points</h4>
-                            <ul className={`${styles.renderGoodPoint} ${styles.renderPoint}`}>
-                                {
-                                    dataProduct[parametres.target].good?.map((elt, index)=>[
-                                        <li key={index}>{elt}</li>
-                                    ])
-                                }
-                            </ul>
-                            <h4 className={styles.GoddBadTitle}>Mauvais point (en choisir au moins 1)</h4>
-                            <ul className={`${styles.renderBadPoint} ${styles.renderPoint}`}>
-                                {
-                                    dataProduct[parametres.target].bad?.map((elt, index)=>[
-                                        <li key={index}>{elt}</li>
-                                    ])
-                                }
-                            </ul>
-                        </li>
-                    </ul>
-                </>
-            )
-        }
         const splitBaliseAffil = (balise) => {
             const match = /publication-content-id="([^"]*)"/.exec(balise);
             if (match) {
@@ -333,9 +244,7 @@ const AddProduct = () => {
                     </div>
                 )
             }
-            
             const handleChangeimages = (e) => {
-         
                 const selectedImages = Array.from(e.target.files);
                 const imagesWithPrev = selectedImages?.map((image)=>({
                     file: image,
@@ -394,6 +303,25 @@ const AddProduct = () => {
                 </div>
             )
         }
+        useEffect(()=>{
+            if(!modaleTuto.status){
+                setmodaleTuto((prevData)=>({
+                    ...prevData,
+                    classNameCustom:`${styles.closeModaleTuto} ${styles.modaleTuto}`
+                }))
+            }else{
+                 setmodaleTuto((prevData)=>({
+                    ...prevData,
+                    classNameCustom:`${styles.openModaleTuto} ${styles.modaleTuto}`
+                }))
+            }
+        },[modaleTuto.status])
+        const toggleOpenCloseModale = () => {
+            setmodaleTuto((prevSate)=>({
+                ...prevSate, 
+                status:!prevSate.status
+            }))
+        }
         return(
             <section className={`${styles.main}`}>
                 <h1>Ajout de produit</h1>
@@ -404,7 +332,7 @@ const AddProduct = () => {
                         <ul className={styles.Form_list}>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='titre'>Titre</label>
-                                <input required className={styles.inputDesign}
+                                <input  className={styles.inputDesign}
                                 placeholder={dataProduct.title}
                                 onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>
@@ -416,7 +344,7 @@ const AddProduct = () => {
                             </li>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='marque'>marque</label>
-                                <input required className={styles.inputDesign} placeholder={dataProduct.brand} onChange={(e)=>setDataProduct((prevDataProduct)=>({...prevDataProduct, brand:e.target.value}))} name='marque' id='marque'/>
+                                <input  className={styles.inputDesign} placeholder={dataProduct.brand} onChange={(e)=>setDataProduct((prevDataProduct)=>({...prevDataProduct, brand:e.target.value}))} name='marque' id='marque'/>
                                 {/* <p>{dataProduct.brand}</p> */}
                             </li>
                             <li className={styles.Form_list_elt}>
@@ -429,7 +357,7 @@ const AddProduct = () => {
                             </li>
                             <li className={styles.Form_list_elt}>
                                 <label htmlFor='prix'>Prix</label>
-                                <input required className={styles.inputDesign} placeholder='Uniquement un nombre entier' inputMode='numeric' pattern='[0-9]*' type='text' onChange={(e)=>{setDataProduct((prevDataProduct)=>({...prevDataProduct, prix: e.target.value}))}}/>
+                                <input  className={styles.inputDesign} placeholder='Uniquement un nombre entier' inputMode='numeric' pattern='[0-9]*' type='text' onChange={(e)=>{setDataProduct((prevDataProduct)=>({...prevDataProduct, prix: e.target.value}))}}/>
                                 {/* <p>{dataProduct.prix}€</p> */}
                             </li>
                         </ul>
@@ -449,7 +377,7 @@ const AddProduct = () => {
                         <ul className={styles.balisesList}>
                             <li className={styles.balise}>
                                 <label htmlFor='tableauAff'>Balise tableau</label>
-                                <input required className={styles.inputDesign} onChange={(e)=>{
+                                <input  className={styles.inputDesign} onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>({
                                         ...prevDataProduct,
                                         arrayaff:{
@@ -460,7 +388,7 @@ const AddProduct = () => {
                             </li>
                             <li className={styles.balise}>
                             <label htmlFor='btnAff'>Balise bouton</label>
-                            <input required className={styles.inputDesign} onChange={(e)=>{
+                            <input  className={styles.inputDesign} onChange={(e)=>{
                                     setDataProduct((prevDataProduct)=>({
                                         ...prevDataProduct,
                                         btn:{
@@ -472,14 +400,16 @@ const AddProduct = () => {
                         </ul>
                     </div>
                     <div className={`${styles.zoneItem} ${styles.pointsClesContainer}`}>
-                        <PointsCles />
+                        <PointsCles data={dataProduct} />
                     </div>
                     <div className={`${styles.zoneItem} ${styles.notedescContainer}`}>
                         <h2>Details</h2>
 
                         <DetailBureauGaming parametres={{
+                            data:dataProduct,
                             pointId: dataProduct.notedesc?.int, setDataProduct, isPointCle: false, target: "notedesc"}}/>
-                        <DetailBureauGaming parametres={{pointId: dataProduct.notegaming?.int, setDataProduct,  isPointCle: false, target: "notegaming"}}/>
+                        <DetailBureauGaming parametres={{
+                            data:dataProduct,pointId: dataProduct.notegaming?.int, setDataProduct,  isPointCle: false, target: "notegaming"}}/>
                         <div className={`${styles.tagZone} ${styles.zone_parametrage}`}>
                         
                     </div>
@@ -536,7 +466,8 @@ const AddProduct = () => {
                         </select>
                     </div>
                     <div className={styles.btnSubmit}>
-                        <BtnCreateProduct data={dataProduct}/>
+                        <BtnCreateProduct params={{data:dataProduct, handleSubmit}}/>
+                       
                     </div>
                     
                 </form>
@@ -544,6 +475,13 @@ const AddProduct = () => {
                     {openCloseModale?
                     <ModaleValidation params={{dataProduct, setOpenCloseModale,imagePreview, setImagePreview}}/>:<></>}
                 </>
+                <div className={`${styles.videoTuto} ${modaleTuto.classNameCustom}`}>
+                    <VideoTuto/>
+                    <div onClick={(e)=>toggleOpenCloseModale(e)} className={styles.opencloseTuto}>
+                    {!modaleTuto.status?
+                        <HelpIcon />:
+                        <ClearIcon/>}</div>
+                </div>
             </section>
         )
     };

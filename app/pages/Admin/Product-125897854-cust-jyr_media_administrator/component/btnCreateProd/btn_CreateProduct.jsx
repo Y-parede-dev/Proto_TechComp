@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 
 import styles from './btn_CreateProduct.module.css'
-export const BtnCreateProduct = ({data}) => {
-    // const {data} = params
+export const BtnCreateProduct = ({params}) => {
+    const {data, handleSubmit} = params
     
 
     const [btn, setBtn] = useState({
@@ -13,6 +13,7 @@ export const BtnCreateProduct = ({data}) => {
        
     })
     let iscomplete = false;
+
     useEffect(()=>{
         for (const [parametre, valeur] of Object.entries(data)){
 
@@ -35,7 +36,7 @@ export const BtnCreateProduct = ({data}) => {
         }
     },[data])
     return(
-            <input value={btn.value} className={btn.classNameCustom} type='submit'></input>
+            <input onClick={(e)=>e.preventDefault} value={btn.value} className={btn.classNameCustom} type='submit'></input>
         
     )
 }

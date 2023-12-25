@@ -1,0 +1,236 @@
+
+.containerFullModale{
+    z-index: 999;
+    backdrop-filter: blur(4px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .blurBackModale{
+    background-color: rgba(0, 0, 0, .6);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .containerCardAndAffilateArray, .containerInfo, .arrayaff{
+    position: relative;
+    padding: 35px;
+    background: linear-gradient(to top, rgba(5, 136, 240, .9), rgba(17, 50, 100,.9));
+    color :rgba(5, 136, 240, 1);
+    width: max-content;
+    border-radius: 28px;
+    box-shadow: 0 0 10px -2px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .containerInfo{
+    gap: 1.25rem;
+  } 
+  .validationProduitInfo > h4{
+    font-size: 21px;
+    padding: 12px;
+    margin: -12px -12px 3px;
+    background: rgb(43, 43, 44);
+    color: rgb(200, 201, 201);
+    
+  }
+  .validationProduitInfo {
+    padding: 12px;
+    background: rgb(92, 92, 92);
+    box-shadow:  0 0 8px -2px;
+  }
+  
+  .litsItemCarroussel{
+    position: relative;
+    padding: 8px;
+    background: var(--color-back-main);
+    position: relative;
+    width: max-content;
+    margin: auto;
+    border-radius: 18px;
+    align-items: center;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 450px;
+    justify-content: space-between;
+    box-shadow: 0 0 8px -2px;
+  
+  }
+  .affilizzLink{
+    min-width: 425px;
+    min-height: 294px;
+    background: linear-gradient(to top, rgba(5, 136, 240, .9), rgba(17, 50, 100,.9));
+    overflow: hidden;
+    box-shadow: 0 0 8px -2px;
+    border-radius: 22px;
+  }
+  .litsItemCarroussel > div{
+    max-width: 320px;
+    width: 220;
+    justify-content: space-evenly;
+  
+  }
+  .imgMod{
+      object-fit: contain;
+      width: 100%;
+      height: 228%;
+      aspect-ratio: 4/3;
+  
+  }
+  .prixMin{
+    font-size: 1.04rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .arrayaff{
+  
+    flex-direction: column;
+    gap: 0;}
+  .arrayaff > h3{
+    color: white;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 18px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 18px;
+  }
+  
+  .hrInside{
+    border: #a09d9d solid 1px;
+  }
+  
+  .validModale {
+    cursor: pointer;
+    font-size: 1.30rem;
+    border-radius: 27px;
+    border: none;
+    box-shadow: 0 0 6px -2px black;
+    font-weight: 700;
+    position: absolute;
+    bottom: 15px;
+    right: 8%; 
+    overflow: hidden;
+    transition-duration: 250ms;
+    
+  
+  }
+  .validModale > div{
+    background: rgba(17, 50, 100,.9);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .barr{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(5, 136, 240, .9));
+    transition-duration: 300ms;
+  
+    transform: translateY(100%);
+  }
+  .txtBtn{
+    color: #ebebeb;
+    padding: 15px;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+    transition-duration: 220ms;
+    
+  }
+  .validModale p:hover{
+    color: white;
+  }
+  .txtBtn:hover + .barr{
+    transform: translateY(0);
+  }
+  .valid{
+    color: greenyellow!important;
+  }
+  .error{
+    color: #e6ff00!important;
+  }
+  .ClearIcon, .closeModale, .DoneIcon{
+    cursor: pointer;
+  }
+  .ClearIcon{
+    
+    fill: red!important;
+    
+  }
+  .closeModale > svg {
+    fill: white!important;
+    transition-duration: 250ms;
+  
+  }
+  .closeModale{
+    border: none;
+    box-shadow: 0 0 8px -2px black;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 32px;
+    width: 32px;
+    border-radius: 20px;
+    transition-duration: 250ms;
+    background: red;
+  }
+  .closeModale > svg:hover{
+    fill: red!important;
+  }
+  .closeModale:hover{
+    background: white;
+  }
+  .validModale:hover, .closeModale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 0px black;
+  
+  }
+  .contentInfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .contentInfo > div {
+    font-size: 1.188rem;
+  }
+  
+  .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .info > p{
+    color: rgb(196, 214, 214);
+  }
+  .DoneIcon{
+    fill: greenyellow!important;
+  }
+  .DoneIcon, .ClearIcon {
+    padding: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px -1px;
+    transition-duration: 400ms;
+  }
+  .DoneIcon:hover, .ClearIcon:hover{
+    transform: scale(1.2);
+  }

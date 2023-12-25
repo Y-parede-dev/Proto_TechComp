@@ -29,6 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
+    "react-youtube": "^10.1.0",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
@@ -36,6 +37,7 @@
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
     "eslint": "^8.43.0",
+    "file-loader": "^6.2.0",
     "install": "^0.13.0",
     "next-sitemap": "^4.2.3"
   }

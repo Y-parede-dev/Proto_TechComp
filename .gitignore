@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+/Proto_TechComp
 # dependencies
 /node_modules
 /.pnp

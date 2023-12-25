@@ -85,16 +85,16 @@ const UserSignWithEmail = () => {
         <>
             <form onSubmit={(e)=>CheckExistUser(e)}>
                 <label>email</label>
-                <input required onChange={(e)=>{setUserInfo((prevData)=>({
+                <input  onChange={(e)=>{setUserInfo((prevData)=>({
                     ...prevData,
                     email:e.target.value
                 }))}} type="email"/>
                 <label>password</label>
-                <input required onChange={(e)=>{setUserInfo((prevData)=>({
+                <input  onChange={(e)=>{setUserInfo((prevData)=>({
                     ...prevData,
                     password :e.target.value
                 }))}} type="password"/>
-                <input required type='submit' value={'se connecter'}/>
+                <input  type='submit' value={'se connecter'}/>
             </form>
         </>
     )
@@ -135,16 +135,16 @@ const UserSignWithEmail = () => {
 //         <>
 //             <form onSubmit={(e)=>CreateUser(e)}>
 //                 <label>email</label>
-//                 <input required onChange={(e)=>{setUserInfo((prevData)=>({
+//                 <input  onChange={(e)=>{setUserInfo((prevData)=>({
 //                     ...prevData,
 //                     email:e.target.value
 //                 }))}} type="email"/>
 //                 <label>password</label>
-//                 <input required onChange={(e)=>{setUserInfo((prevData)=>({
+//                 <input  onChange={(e)=>{setUserInfo((prevData)=>({
 //                     ...prevData,
 //                     password :e.target.value
 //                 }))}} type="password"/>
-//                 <input required type='submit' value={'Create'}/>
+//                 <input  type='submit' value={'Create'}/>
 //             </form>
 //         </>
 //     )

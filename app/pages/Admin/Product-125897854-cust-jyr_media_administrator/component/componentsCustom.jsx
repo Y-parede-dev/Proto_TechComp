@@ -41,7 +41,7 @@ const ConfigRow = ({label, target, value, onChange, setDataProduct}) =>{
     <tr>
         <td>{label}</td>
         <td>
-            <input required className={styles.inputDesign} placeholder={value} onChange={(e)=>{
+            <input  className={styles.inputDesign} placeholder={value} onChange={(e)=>{
                 onChange({target, element:e.target.value, setDataProduct})
             }}/>
         </td>
