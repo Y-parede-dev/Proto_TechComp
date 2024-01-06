@@ -11,7 +11,7 @@
 // import Notation from '@/app/components/clientComponents/Notation'
 // import SuggestionMap from '@/app/components/suggestion/SuggestionMap'
 // import {PointsCles} from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles'
-import {DATA, GET} from '@/lib/GetByJson'
+import {GET} from '@/lib/GetByJson'
 import { FetchDataForPageProduct } from './clientComponents/FetchDataForPageProduct'
 
 // console.log(data)
