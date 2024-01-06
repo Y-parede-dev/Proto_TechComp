@@ -69,7 +69,7 @@ export const FetchDataForPageProduct = ({params}) => {
                         <hr/>
                         <SuggestionMap searchSepar={"ultra"} titreRecherche={"PC portable avec écran 4K"}/>
                         <hr/>
-                        <SuggestionMap searchSepar={"tactile"} titreRecherche={"PC portable avec écran tactile"}/>
+                        <SuggestionMap searchSepar={"Oled"} titreRecherche={"PC portable avec écran Oled"}/>
     
                         </div>
                     </>

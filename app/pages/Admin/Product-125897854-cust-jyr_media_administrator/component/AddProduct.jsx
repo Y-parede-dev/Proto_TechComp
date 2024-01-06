@@ -17,6 +17,7 @@ import { BtnCreateProduct } from './btnCreateProd/btn_CreateProduct';
 import { VideoTuto } from './videoTuto/VideoTuto';
 import HelpIcon from '@mui/icons-material/Help';
 import { DetailBureauGaming } from './DetailsServ/Details';
+import { FrameAffiliate } from './FrameAffiliz/FrameAff';
 const AddProduct = () => {
     // ::START::REQ:POST - Sauvegarde un produit dans le fichier json associer
     const router = useRouter();
@@ -481,6 +482,9 @@ const AddProduct = () => {
                     {!modaleTuto.status?
                         <HelpIcon />:
                         <ClearIcon/>}</div>
+                </div>
+                <div className={`${styles.frameAffilizz}`}>
+                    <FrameAffiliate/>
                 </div>
             </section>
         )
