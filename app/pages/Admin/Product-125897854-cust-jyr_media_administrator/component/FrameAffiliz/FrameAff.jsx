@@ -1,7 +1,8 @@
 export const FrameAffiliate = () => {
+    const url = `${process.env.HOST}/api/Admin/FrameAffiliz`
     return (
         <iframe
-            src="http://localhost:3000/api/Admin/FrameAffiliz"
+            src= {url}
             title="Frame Affilizz"
             width="600"
             height="600"
