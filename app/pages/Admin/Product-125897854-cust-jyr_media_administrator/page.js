@@ -11,10 +11,12 @@ const page = async () => {
                 </>
             )
         }else{
-            <>
-                
-                <BtnRedirect/>
-            </>
+            return(
+                <>
+                    
+                    <BtnRedirect/>
+                </>
+            )
         }
 
     }catch(error){
