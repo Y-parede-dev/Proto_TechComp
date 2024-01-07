@@ -9,40 +9,40 @@ import { useRouter } from 'next/navigation';
 
 import Cookies from 'js-cookie';
 
-const handle = (e) =>{
-    e.preventDefault();
-}
+// const handle = (e) =>{
+//     e.preventDefault();
+// }
 
-const GoogleSignIn = () => {
-    const signInWithGoogle = async (e) => {
-        e.preventDefault()
-        try{
-            console.log('tentative de connexion en cour')
+// const GoogleSignIn = () => {
+//     const signInWithGoogle = async (e) => {
+//         e.preventDefault()
+//         try{
+//             console.log('tentative de connexion en cour')
 
-            signInWithPopup(auth, googleProvider)
-                .then((result)=>{
-                    const credential = GoogleAuthProvider.credentialFromResult(result);
-                    const token = credential.accessToken;
-                    const user = result.user;
-                    // console.log(credential)
-                    // console.log(user)
+//             signInWithPopup(auth, googleProvider)
+//                 .then((result)=>{
+//                     const credential = GoogleAuthProvider.credentialFromResult(result);
+//                     const token = credential.accessToken;
+//                     const user = result.user;
+//                     // console.log(credential)
+//                     // console.log(user)
 
-                }).catch((error) => {
-                    const errorCode= error.code;
-                    const errorMessage = error.message;
-                    const email = error.customData.email;
-                    const credential = GoogleAuthProvider.credentialFromError(error)
+//                 }).catch((error) => {
+//                     const errorCode= error.code;
+//                     const errorMessage = error.message;
+//                     const email = error.customData.email;
+//                     const credential = GoogleAuthProvider.credentialFromError(error)
                     
 
-                })
-            // await auth.signInWithPopup(googleProvider)
-        }catch(error){
-            console.log('Erreur de connexion: ', error)
+//                 })
+//             // await auth.signInWithPopup(googleProvider)
+//         }catch(error){
+//             console.log('Erreur de connexion: ', error)
 
-        }
-    }
-    return(<div onClick={e=>signInWithGoogle(e)}>wait</div>)
-}
+//         }
+//     }
+//     return(<div onClick={e=>signInWithGoogle(e)}>wait</div>)
+// }
 const UserSignWithEmail = () => {
     const router = useRouter()
     const [userInfo, setUserInfo] =  useState({
@@ -119,7 +119,7 @@ const UserSignWithEmail = () => {
 //     const CreateUser = (e) => {
 //         e.preventDefault()
 //         // console.log(userInfo)
-//        
+       
 //         createUserWithEmailAndPassword(auth, userInfo.email, userInfo.password)
 //             .then((userCredential)=>{
 //                 const user = userCredential.user;

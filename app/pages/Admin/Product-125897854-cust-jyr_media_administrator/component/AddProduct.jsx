@@ -483,9 +483,9 @@ const AddProduct = () => {
                         <HelpIcon />:
                         <ClearIcon/>}</div>
                 </div>
-                <div className={`${styles.frameAffilizz}`}>
+                {/* <div className={`${styles.frameAffilizz}`}>
                     <FrameAffiliate/>
-                </div>
+                </div> */}
             </section>
         )
     };
@@ -500,11 +500,3 @@ const AddProduct = () => {
     
 
 export default AddProduct;
-
-
-
-
-
-
-
-
