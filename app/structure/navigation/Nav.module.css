@@ -72,6 +72,17 @@
     border-radius: 38px;
 
 }
+.linkOnNavBrand > p:hover {
+    cursor: pointer;
+    background: var(--color-link-back-hover);
+    color: var(--color-link-hover);
+    border-radius: 38px;
+}
+.linkOnNavBrand > p {
+    color: var(--color-link);
+    padding: 10px;
+}
+
 /* .linkOnNav a {
     padding: 25px;
 } */

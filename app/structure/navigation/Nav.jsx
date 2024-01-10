@@ -118,10 +118,10 @@ const Nav = ({responsive}) => {
                             <li onClick={()=>handle("pc portable", "tag")} className={styles.linkOnNav}>
                                 <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
                             </li>
-                            <li className={styles.linkOnNav} onClick={()=>setModales({
+                            <li className={`${styles.linkOnNav} ${styles.linkOnNavBrand}`} onClick={()=>setModales({
                                 marquesModale: !modales.marquesModale,
                                 moinsCherModale: modales.moinsCherModale})}>
-                                ® Marques
+                                <p>🔖 Marques</p>
                             </li>
                             <ul className={styles.listBrand}>
                                 {modales.marquesModale && 
