@@ -20,7 +20,9 @@ const nextConfig = {
         POSTGRES_HOST:process.env.POSTGRES_HOST,
         POSTGRES_PASSWORD:process.env.POSTGRES_PASSWORD,
         POSTGRES_DATABASE:process.env.POSTGRES_DATABASE,
-        ADMIN_UID:process.env.ADMIN_UID
+        ADMIN_UID:process.env.ADMIN_UID,
+        MODO_UID:process.env.MODO_UID,
+        MARKETING_UID: process.env.MARKETING_UID
     },
     images:{
         remotePatterns:[

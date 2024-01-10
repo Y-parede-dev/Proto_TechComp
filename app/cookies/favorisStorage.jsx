@@ -1,7 +1,7 @@
 "use client"
 import Cookies from "js-cookie";
-import { useEffect, useState, useRef, useContext } from "react";
-import { SearchCTX } from "../context/SearchCTX";
+// import { useEffect, useState, useRef, useContext } from "react";
+// import { SearchCTX } from "../context/SearchCTX";
 export const SaveFav = (props) => {
     const localStorageElt = localStorage.getItem('favoris');
     let favoris = [];
