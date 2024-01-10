@@ -10,6 +10,9 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { Test as Tests } from '../components/Tests/Tests'
 import { FavExist } from '../cookies/favorisStorage'
+import { BannerAdsTop } from '../components/pub/top'
+import { BannerAdsLeft } from '../components/pub/left'
+import { BannerAdsRight } from '../components/pub/right'
 
 // import { useClient } from 'next/client';
 
@@ -60,7 +63,19 @@ const Body = ({children}) => {
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
                     {/* <div className={styles.AdsContainer}></div> */}
-                    
+                    <div className={styles.adsTop}>
+
+                        <BannerAdsTop/>
+                    </div>
+                    <div className={styles.adsLeft}>
+
+                        <BannerAdsLeft/>
+                    </div>
+                    <div className={styles.adsRight}>
+
+                        <BannerAdsRight/>
+                    </div>
+                   
                     {/* <Link className={styles.adsBanners} href='https://www.acer.com'>
                         <div className={styles.AdsContainer}></div>
                     </Link> */}
