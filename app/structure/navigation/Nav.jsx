@@ -126,7 +126,7 @@ const Nav = ({responsive}) => {
                             <ul className={styles.listBrand}>
                                 {modales.marquesModale && 
                                     items.marques?.map((marque) => [
-                                            <li onClick={()=>handle(marque, "brand")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
+                                            <li onClick={()=>handle(marque, "tag")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
                                                 <Link href={urlPcPortable}>{marque}</Link></li>
                                         ]
                                     )
