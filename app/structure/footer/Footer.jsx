@@ -13,7 +13,7 @@ const Footer = () => {
 
             </div>
             <div className={styles.txtFooter}>
-                <p>2023 - Tous droits réservés - {config.title}</p>
+                <p>2024 - Tous droits réservés - ©{config.title}</p>
                 <p>Trouvé votre futur {config.productType} sur {config.title}</p>
                 <p>{config.title} recherche pour vous les meilleurs choix en therme de {config.productType}</p>
             </div>

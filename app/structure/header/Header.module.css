@@ -50,3 +50,9 @@
     margin-left: 0;
 }
 
+@media screen and (max-width: 1369px) {
+    .header {
+        justify-content: center;
+        align-items: center;
+    }
+}

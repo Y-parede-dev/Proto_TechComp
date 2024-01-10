@@ -72,6 +72,8 @@
     width: max-content;
     padding: 20px 12px;
     max-width: 298px;
+    max-height: 490px;
+    height: 490px;
     min-width: 293px;
     border: solid 1px var(--color-border) ;
     border-radius: .5rem;
@@ -241,17 +243,22 @@ div.affilizz-cta > a {
 
 @media screen and (max-width:1369px) {
     .listCarroussel{
-        padding: 5px 15px;
-        flex-direction: column;
+        /* padding: 5px 15px;
+        flex-direction: column; */
         overflow-y: scroll;
         overflow-x: hidden;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .listItemsResult{
-
-        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-flow: wrap;
+        align-items: center;
     }
     .arrows{
         display: none;
     }
-  }
+}
