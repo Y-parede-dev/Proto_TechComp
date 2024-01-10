@@ -20,10 +20,13 @@
 }
 .adsTop,.adsLeft, .adsRight{position: relative; background-color:#0E2532;}
 .adsTop > img,.adsLeft > img, .adsRight > img{position: fixed;}
+
 .adsLeft, .adsRight{
-    width: 300px;
-    margin: 0;
-    padding: 120px 0;
+    width: 160px;
+    max-width: 160px;
+    margin: 0 auto;
+    margin-top: 136px;
+    /* padding: 196px 0 0; */
     position: relative;
     height: 600px;
 }
