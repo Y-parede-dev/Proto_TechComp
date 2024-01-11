@@ -9,12 +9,26 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { Test as Tests } from '../components/Tests/Tests'
-import { FavExist } from '../cookies/favorisStorage'
+import { FavExist } from '../../public/cookies/favorisStorage'
 import { BannerAdsTop } from '../components/pub/top'
 import { BannerAdsLeft } from '../components/pub/left'
 import { BannerAdsRight } from '../components/pub/right'
+import { ConsentCookiesCustom } from '../cookiesConscent'
 
-// import { useClient } from 'next/client';
+// Importez le package vanilla-cookieconsent
+// import CookieConsent from 'vanilla-cookieconsent';
+// import * as styleCookies from "vanilla-cookieconsent";
+
+// Initialisez la bannière de consentement des cookies
+// CookieConsent.run({
+//     // Configurez les options selon vos besoins
+//     autorun: true,
+//     delay: 0,
+//     mode: 'opt-in', // ou 'opt-out' selon vos préférences
+//     cookie_expiration: 182, // 182 jours = 6 mois
+//     // Ajoutez d'autres options de configuration selon vos besoins
+//     // ...
+// });
 
 export const metadata = {
     title: {
@@ -43,7 +57,7 @@ const Body = ({children}) => {
 
     const [widthScreen, setwidthScreenCss] = useState(0)
     const [desktopDesign, setDesktopDesign] = useState(true);
-
+    ConsentCookiesCustom();
     useEffect(()=>{
         FavExist()
     },[])

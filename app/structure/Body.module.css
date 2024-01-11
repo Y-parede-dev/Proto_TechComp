@@ -2,10 +2,10 @@
     position: relative;
     display: grid;
 
-    grid-template-columns: .5fr 2.5fr .5fr;
+    grid-template-columns: auto auto auto;
     /* grid-template-rows: 160px 20fr 1fr; */
     grid-template-areas: 
-    "pubLeft pubtop pubRight"
+    "pubtop pubtop pubtop"
     "pubLeft contenu pubRight";
     gap:0;
 }
@@ -25,7 +25,7 @@
     width: 160px;
     max-width: 160px;
     margin: 0 auto;
-    margin-top: 136px;
+    margin-top: 15px;
     /* padding: 196px 0 0; */
     position: relative;
     height: 600px;
@@ -55,7 +55,15 @@
     width: 100%;
     margin: auto;
 }
-
+@media screen and (min-width:1640px) {
+    /* .mainOnBody{
+        
+        grid-template-areas: 
+        "pubLeft pubtop pubRight"
+        "pubLeft contenu pubRight";
+        gap:0;
+    } */
+}
 @media screen and (max-width:1369px) {
     
 }

@@ -3,7 +3,7 @@
 import { useContext, useEffect, useReducer, useState } from "react"
 import styles from './ImageAndLinkAffiliate.module.css'
 import Image from 'next/image'
-import { SaveFav } from "@/app/cookies/favorisStorage";
+import { SaveFav } from "@/public/cookies/favorisStorage";
 import { SearchCTX } from "@/app/context/SearchCTX";
 import {imageRef} from "@/config/configFirebase/conf.firebase";
 import { list } from "firebase/storage";
