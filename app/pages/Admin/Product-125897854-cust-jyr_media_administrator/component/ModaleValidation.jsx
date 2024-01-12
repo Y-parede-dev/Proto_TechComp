@@ -7,6 +7,7 @@ import Notation from '@/app/components/clientComponents/Notation';
 import {PointsCles as PClesClient} from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
 import { ref, uploadBytes } from 'firebase/storage';
 import { storage, imageRef } from '@/config/configFirebase/conf.firebase';
+import { modelProduit } from '../model/model';
 export const ModaleValidation = ({params}) => {
 
     const POST = async (dataProduct) => {
@@ -19,6 +20,7 @@ export const ModaleValidation = ({params}) => {
                 ,body: JSON.stringify(dataProduct),
             })
             const data = await response.json();
+            console.log(data)
             if(data.success){
                 console.log("produit ajouté avec success")
             }
@@ -30,7 +32,12 @@ export const ModaleValidation = ({params}) => {
         }
     }
 
-    const{dataProduct, setOpenCloseModale} = params;
+    const{
+        dataProduct, 
+        setDataProduct, 
+        setOpenCloseModale, 
+        imagePreview, 
+        setImagePreview} = params;
     const [configIsOk, setConfigIsOk] = useState(false);
     const [notesIsOk, setNotesIsOk] = useState({
         bureau:{
@@ -56,10 +63,13 @@ export const ModaleValidation = ({params}) => {
         try{
 
             params.imagePreview?.forEach((img)=>FirebaseImagesUpload(img.file.name, img.file));
+            
         }catch(err){
-
+            return alert(err)    
         }
-        // resetState();
+        setDataProduct({...modelProduit})
+        window.location.reload()
+        // ressetState();
         setOpenCloseModale(false)
     }
     useEffect(()=>{
@@ -148,7 +158,6 @@ export const ModaleValidation = ({params}) => {
                                 </div>
                                 <hr/>
                                 <div className={styles.infoCol}>
-                               
                                     <p>Bon points Bureau</p>
                                     <div className={styles.info}>
                                     {notesIsOk.bureau.good ?

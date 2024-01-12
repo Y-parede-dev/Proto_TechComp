@@ -56,10 +56,10 @@ export async function POST(req){
             })
         .execute();
     
-        return NextResponse.json({message: 'le POST fonctione'}, {status: 201});
+        return NextResponse.json({message: 'le POST fonctione', sucess:true}, {status: 201});
     } catch (error) {
         console.error(error.message)
         console.error(error)
-        return NextResponse.json({error: error, error_message: error.message}, {status: 400});
+        return NextResponse.json({error: error, error_message: error.message, sucess: false}, {status: 400});
     }
 }

@@ -8,19 +8,26 @@ export const VideoPlayer = ({params}) => {
         default: "OugkGDlz8O4",
         other: undefined
     }
-    if(params.id){
-        videoid.other = params.id;
+    try {
+        if(params.id){
+            videoid.other = params.id;
+        }    
+    } catch (error) {
+        
     }
     const onReady = (e) => {
         const player = e.target;
-        if(params.id){
-            player.playVideo()
-            console.log("E start ");
-            console.log(e);
-            console.log(e.target);
-            console.log("E end ");
+        try{
 
-        }
+            if(params.id){
+                player.playVideo()
+                console.log("E start ");
+                console.log(e);
+                console.log(e.target);
+                console.log("E end ");
+    
+            }
+        }catch(e){}
     };
     const onError = (error) => {
         console.log(error)

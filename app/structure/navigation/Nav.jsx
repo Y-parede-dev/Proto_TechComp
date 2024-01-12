@@ -25,11 +25,10 @@ const Nav = ({responsive}) => {
     })
     useEffect(()=>{
         const recupData = async ()=>{
-            let dataCust;
+            // let dataCust;
             const marques = [];
             const FullData = await GET()
             .then((res)=>{
-                // console.log(res)
                 return res
             })
             .catch((error)=>console.error(error))
@@ -40,7 +39,6 @@ const Nav = ({responsive}) => {
         }
         recupData()
     },[]);
-    const router = useRouter();
     const [sea,setSea] = useState(false);
     const CTX = useContext(SearchCTX);
     const arr_MoinsCher = [500, 1000, 1500, 2000, 3000];
@@ -49,9 +47,7 @@ const Nav = ({responsive}) => {
         window.onresize = ()=>{
             responsive.setwidthScreenCss(screen.width);
         }
-    }catch(err){
-        
-    };
+    }catch(err){};
         useEffect(()=>{
             if(localStorage.getItem('favoris')!=null){
                 const nombreFav = localStorage.getItem('favoris').split(',').length 
@@ -103,7 +99,15 @@ const Nav = ({responsive}) => {
     const handle = (input, by)=>{
         setSea(true);
         setBy(by);
-        setinptUser(input);
+        let inputNormalise = "null";
+        try{
+            if(input.includes('pc')){
+                inputNormalise = input.replace("pc ", "");
+                setinptUser(inputNormalise);
+            };
+        }catch(noPcWord){
+            setinptUser(input);
+        };
     };
     const navBar = (
         <div className={`${styles.ContainerNavLeft} ${showNavBar? styles.NavShow:''}`}>
@@ -151,17 +155,13 @@ const Nav = ({responsive}) => {
                                                 <li key={`${prix}-${prix.length}`} className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(prix, "price")}><Link href={urlPcPortable}>moins de {prix.toString()}€</Link></li>
                                             ])
                                         }
-                                        {/* <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(1000, "price")}><Link href={urlPcPortable}>moins de 1000€</Link></li>
-                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(2000, "price")}><Link href={urlPcPortable}>moins de 2000€</Link></li> */}
                                     </ul>
                                     }
-
                                 </ul>
                             </li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc gaming", "tag")}><Link href={urlPcPortable}>PC portable Gaming</Link></li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc bureau", "tag")}><Link href={urlPcPortable}>PC portable Bureau</Link></li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc portable", "tag")}><Link href={urlPcPortable}>Tous les PC portable</Link></li>
-                            
                         </ul>
                     </li>
                     <li>
@@ -176,7 +176,6 @@ const Nav = ({responsive}) => {
                         </ul>
                     </li>
                 </ul>
-                
             </nav>
             {!responsive.desktopDesign?<div onClick={()=>toggleShowNav()} className={styles.btnNavBarForMobile}><p>{showNavBar?"<<":">>"}</p></div>:""}
         </div>
