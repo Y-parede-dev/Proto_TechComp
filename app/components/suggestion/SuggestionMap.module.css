@@ -123,6 +123,7 @@
 
 .listItemsResult{
     /* .listCarousel*/
+    width: 100%;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,6 +134,7 @@
     /* width: 80%; */
     min-width: 80%;
     min-height: 80vh;
+    width: calc(100% - 100px);
 }
 
 .spanTags, .spanTagsTitle {

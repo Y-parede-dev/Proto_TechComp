@@ -51,11 +51,8 @@ const Body = ({children}) => {
         <>
             <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT, NUMBERFAVACTUAL, setNUMBERFAVACTUAL}} >
                 <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
-                {/* <Tests/> */}
-                
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
-                    {/* <div className={styles.AdsContainer}></div> */}
                     <div className={styles.adsTop}>
 
                         <BannerAdsTop/>
@@ -68,10 +65,6 @@ const Body = ({children}) => {
 
                         <BannerAdsRight/>
                     </div>
-                   
-                    {/* <Link className={styles.adsBanners} href='https://www.acer.com'>
-                        <div className={styles.AdsContainer}></div>
-                    </Link> */}
                     <div className={styles.content}>{children}</div>
                 </main>
                 <Footer/>

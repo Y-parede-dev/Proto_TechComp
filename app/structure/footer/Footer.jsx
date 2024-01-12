@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <div className={styles.txtFooter}>
                 <p>2024 - Tous droits réservés - ©{config.title}</p>
-                <p>Trouvé votre futur {config.productType} sur {config.title}</p>
+                <p>Trouvé votre futur {config.productType} sur <Link style={{color:"white"}} href={`https://${config.title}.fr`}>{config.title}.fr</Link></p>
                 <p>{config.title} recherche pour vous les meilleurs choix en therme de {config.productType}</p>
             </div>
         </footer>
