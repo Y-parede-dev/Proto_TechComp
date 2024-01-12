@@ -6,29 +6,10 @@ import Footer from './footer/Footer'
 import Nav from './navigation/Nav'
 import { SearchCTX } from '../context/SearchCTX'
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import { Test as Tests } from '../components/Tests/Tests'
-import { FavExist } from '../../public/cookies/favorisStorage'
 import { BannerAdsTop } from '../components/pub/top'
 import { BannerAdsLeft } from '../components/pub/left'
 import { BannerAdsRight } from '../components/pub/right'
-import { ConsentCookiesCustom } from '../cookiesConscent'
-
-// Importez le package vanilla-cookieconsent
-// import CookieConsent from 'vanilla-cookieconsent';
-// import * as styleCookies from "vanilla-cookieconsent";
-
-// Initialisez la bannière de consentement des cookies
-// CookieConsent.run({
-//     // Configurez les options selon vos besoins
-//     autorun: true,
-//     delay: 0,
-//     mode: 'opt-in', // ou 'opt-out' selon vos préférences
-//     cookie_expiration: 182, // 182 jours = 6 mois
-//     // Ajoutez d'autres options de configuration selon vos besoins
-//     // ...
-// });
+import { ConsentCookiesCustom } from '../cookies/cookiesConscent'
 
 export const metadata = {
     title: {
@@ -58,9 +39,7 @@ const Body = ({children}) => {
     const [widthScreen, setwidthScreenCss] = useState(0)
     const [desktopDesign, setDesktopDesign] = useState(true);
     ConsentCookiesCustom();
-    useEffect(()=>{
-        FavExist()
-    },[])
+    
     useEffect(()=>{
         if(SEARCH.length > 0){
             SETIDPRESENT(true)

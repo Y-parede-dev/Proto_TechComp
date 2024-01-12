@@ -6,6 +6,7 @@ Disallow: /cookies
 Disallow: /mediaQueries
 Disallow: /structure
 Disallow: /pages/Admin
+Disallow: /pages/cookies
 
 Allow: /
 Allow: /public

@@ -8,9 +8,15 @@ export default function sitemap() {
         priority: 0.7,
       },
       {
+        url: 'https://itek-comparateur.fr/pages/pc-portable',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      },
+      {
         url: 'https://itek-comparateur.fr/pages/pc-portable/*',
         lastModified: new Date(),
-        changeFrequency: 'dayly',
+        changeFrequency: 'weekly',
         priority: 1,
       },
     ]
