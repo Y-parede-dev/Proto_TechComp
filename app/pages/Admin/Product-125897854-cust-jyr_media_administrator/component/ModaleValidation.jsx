@@ -52,6 +52,7 @@ export const ModaleValidation = ({params}) => {
     const FirebaseImagesUpload = (filename, img) => {
         const storageRef = ref(storage, `pcPortables/${dataProduct.brand}/${dataProduct.id}/${filename}`);
         uploadBytes(storageRef, img)
+        window.location.reload();""
 
     }
 
@@ -68,7 +69,7 @@ export const ModaleValidation = ({params}) => {
             return alert(err)    
         }
         setDataProduct({...modelProduit})
-        window.location.reload()
+        
         // ressetState();
         setOpenCloseModale(false)
     }
