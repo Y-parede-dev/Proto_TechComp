@@ -1,7 +1,6 @@
 import { arrayGoodBad, descriptions } from "../dataBrut/databrut";
 
 export const ConfigItem = (params) => {
-    console.log(params)
     const {target, element, setDataProduct} = params;
     setDataProduct((prevDataProduct)=>({
         ...prevDataProduct,

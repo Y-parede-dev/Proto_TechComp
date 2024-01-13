@@ -10,6 +10,7 @@ import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
 import Cookies from 'js-cookie';
 import {GET,  GetDataOnFireBase } from '@/lib/GetByJson';
+import {GET as GetBrand} from '@/lib/GetBrand';
 // refactor a faire
 const Nav = ({responsive}) => {
     const [inptUser, setinptUser] = useState([]);
@@ -27,15 +28,16 @@ const Nav = ({responsive}) => {
         const recupData = async ()=>{
             // let dataCust;
             const marques = [];
-            const FullData = await GET()
+            const FullData = await GetBrand()
             .then((res)=>{
                 return res
             })
             .catch((error)=>console.error(error))
             FullData?.map((e)=>{
+                console.log(e.brand)
                 marques.push(e.brand)
             })
-            setItems({marques: FilterNoRepeat(marques)});
+            setItems({marques:[...marques]});
         }
         recupData()
     },[]);

@@ -9,15 +9,25 @@ import { fileExistsCustom } from "../utils/utilsForApi";
 import { request } from "http";
 import { createKysely } from "@vercel/postgres-kysely";
 import { sql } from "@vercel/postgres";
-
+import { performance } from 'perf_hooks';
 export async function GET(req){
     try {
+        const start = performance.now();
         const db = createKysely()
+        const page = req.nextUrl.searchParams.get('page') || 1;
+        const pageSize = req.nextUrl.searchParams.get('pageSize') || 12;
         const result = await db
-            .selectFrom('produitstable').selectAll()
-            .execute()
+            // .selectFrom('produitstable').selectAll()
+            // .execute();
+            .selectFrom('produitstable')
+            .offset((page - 1) * pageSize)
+            .limit(pageSize)
+            .selectAll()
+            .execute();
         
-        return NextResponse.json({ message: 'le get fonctione', data: result}, {status: 200});
+        const end = performance.now();
+        console.log(`Temps d'exécution du backend : ${end - start} millisecondes`);
+        return NextResponse.json({ message: 'le get fonctione', data: result }, {status: 200});
     } catch (error) {
         
         return NextResponse.json({error: error.message}, {status: 400});

@@ -3,7 +3,6 @@ import YouTube from "react-youtube";
 import styles from './Youtube.module.css'
 
 export const VideoPlayer = ({params}) => {
-    console.log(params)
     const videoid = {
         default: "OugkGDlz8O4",
         other: undefined
@@ -21,11 +20,6 @@ export const VideoPlayer = ({params}) => {
 
             if(params.id){
                 player.playVideo()
-                console.log("E start ");
-                console.log(e);
-                console.log(e.target);
-                console.log("E end ");
-    
             }
         }catch(e){}
     };

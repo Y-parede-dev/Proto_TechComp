@@ -11,6 +11,7 @@ import { SearchCTX } from "@/app/context/SearchCTX";
 import { Modal, Slider } from '@mui/material';
 import {Stack} from '@mui/material';
 import { FilterNoRepeat } from "@/lib/FonctionsUtiles";
+import { GET as  GetTotalPage} from "@/lib/GetNbPages";
 
 const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherche='votre recherche'})=> {
     const CTX = useContext(SearchCTX);
@@ -18,6 +19,12 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
         modaleOpenPrix: false,
         modaleOpenMarque: false
     })
+    // const [currentPage, setCurrentPage] = useState(1)
+    const [pages, setPages] = useState({
+        currentPage:1,
+        totalPages: 0
+    })
+
     const [data, setData] = useState({
         idPresent: "null",
         dataFound:[]
@@ -25,13 +32,20 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
     // let idPresent, data = [];
     const [value,setValue]= useState(5000);
     
+    useEffect(()=>{
+        const FetchNbPage = async()=>{
+            const result =  await GetTotalPage()
+            setPages((prevData)=>({...prevData, totalPages: result}))
+        }
+        FetchNbPage()
+    },[])
     let ids = CTX.SEARCH ;
     let searchTags = CTX.TAG;
     useEffect(()=>{
         const SetSearch = async () => {
 
             if(by =="tag"){
-                const [rec__Id, rec__Data] = await ProductSearchByTag({searchTags});
+                const [rec__Id, rec__Data] = await ProductSearchByTag({searchTags, page: pages.currentPage});
                 setData(()=>({
                     idPresent:rec__Id,
                     dataFound: rec__Data
@@ -39,7 +53,7 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
             }
         }
         SetSearch();
-    },[by])
+    },[by, pages.currentPage])
     function isEmpty(obj) {
         return Object.keys(obj).length === 0;
     };
@@ -285,6 +299,36 @@ const ListeProduitsPagePcPortable = ({searchSepar, page, by="tag", titreRecherch
                         ])
                     ])}
                 </ul>
+
+                <div className={styles.btnpagination}>
+                    <span onClick={(e)=>setPages((prevData)=>({
+                        ...prevData,
+                        currentPage:1
+                    }))}>first</span>
+                    {pages.currentPage>1&&
+                        <span onClick={(e)=>setPages((prevData)=>({
+                            ...prevData,
+                            currentPage:parseInt(pages.currentPage-1)}))}>{pages.currentPage-1}</span>
+                    }
+
+                    <span>{pages.currentPage}</span>
+                    {
+                        pages.currentPage +1 <=pages.totalPages&&
+                            <span onClick={(e)=>setPages((prevData)=>({
+                                ...prevData,
+                                currentPage:pages.currentPage+1}))}>{pages.currentPage+1}</span>
+                    }
+                    {
+                        pages.currentPage +2 <=pages.totalPages&&
+                            <span onClick={(e)=>setPages((prevData)=>({
+                                ...prevData,
+                                currentPage:parseInt(pages.currentPage-2)}))}>{pages.currentPage+2}</span>
+                    }
+                    <span onClick={(e)=>setPages((prevData)=>({
+                        ...prevData,
+                        currentPage: pages.totalPages
+                    }))}>last</span>
+                </div>
             </div>
         </div>
     );

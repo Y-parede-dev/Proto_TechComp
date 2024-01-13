@@ -1,14 +1,15 @@
 import Link from "next/link"
 import FormSearch from "../../components/clientComponents/FormSearch"
 import styles from './Header.module.css';
-import logo from './logo/1.png' // autre possibilité 2.png
+// import logo from './logo/1.png' 
+import config from '@/config/config.json' assert {type:'json'};
 import Image from "next/image";
 // refactor a faire
 const Header = ({responsive}) => {
     
     return (
         <header className={styles.header}>
-            <Link className={styles.tilteLink} href='/'><Image src={logo} loading='eager' alt="itek comparateur" height={70} width={354}/> </Link>
+            <Link className={styles.tilteLink} href='/'><Image src={config.logo} loading='eager' alt="itek comparateur" height={70} width={354}/> </Link>
             {/* <p className={styles.title}><Link className={styles.tilteLink} href='/'><span className={styles.title_first_letter}>itech</span><span className={styles.title_second_letter}>C</span>omparateur</Link></p> */}
             {responsive.desktopDesign?
                 <>

@@ -4,7 +4,8 @@
       "@/*": ["./*"],
       "@/page":["./pages"],
       "@/pcPortable":["./pages/pc-portable"],
-      "@/product":["./pages/pc-portable/[productId]"]
+      "@/product":["./pages/pc-portable/[productId]"],
+      "@/config":["./config"]
     }
   }
 }

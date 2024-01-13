@@ -128,16 +128,7 @@ body{
   background-color: var(--color-first); */
   background-color:#0E2532
 }
-@media screen and (min-width:1640px) {
-  body{
-    grid-template-columns: 1fr 4fr;
 
-    grid-template-areas:  "header header"
-                          "nav content"
-                          "nav content"
-                          "nav footer" ;
-  }
-}
 img{
   object-fit: contain;
 }
@@ -192,6 +183,20 @@ img{
     --color-table-even:  var(--color-back-main);
   }
 } */
+
+/* Media Q value min*/
+@media screen and (min-width:1640px) {
+  body{
+    grid-template-columns: auto 1fr;
+
+    grid-template-areas:  "header header"
+                          "nav content"
+                          "nav content"
+                          "nav footer" ;
+  }
+}
+/* Media Q value min ::end*/
+/* Media Q value max*/
 @media screen and (max-width:1369px) {
   :root{
     --height-header:103px;
@@ -205,3 +210,4 @@ img{
                           "footer" ;
   }
 }
+/* Media Q value max ::end*/

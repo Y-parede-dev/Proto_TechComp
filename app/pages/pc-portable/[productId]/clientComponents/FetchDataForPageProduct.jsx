@@ -17,6 +17,7 @@ export const FetchDataForPageProduct = ({params}) => {
             setIsLoading(true)
 
             const req = await GET();
+            /*MODIFIER ET CREE FONCTION GET BY ID QUI DANS LE BACKEND VA RECHERCHER DANS LA BDD BY ID*/
         
             req?.map((prod)=>{
                 
