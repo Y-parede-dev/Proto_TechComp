@@ -5,11 +5,7 @@ import FormSearch from '@/app/components/clientComponents/FormSearch';
 import { useContext, useState, useEffect} from 'react';
 import { SearchCTX } from '@/app/context/SearchCTX';
 import { ProductSearchByBrand, ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
-import { useRouter } from 'next/navigation';
-import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
-import Cookies from 'js-cookie';
-import {GET,  GetDataOnFireBase } from '@/lib/GetByJson';
 import {GET as GetBrand} from '@/lib/GetBrand';
 // refactor a faire
 const Nav = ({responsive}) => {
@@ -75,14 +71,14 @@ const Nav = ({responsive}) => {
             let syntax;
             const SetSearch =   async () => {
                 if(by==="tag"){
-                    [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser]});
+                    [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser], page: 1});
                     syntax = [inptUser];
     
                 }if(by==="price"){
                     [idPresent, DATA] = await ProductSearchByPrice({searchPrice: inptUser, CTX});
                     syntax = inptUser;
                 }if(by==="brand"){
-                    [idPresent, DATA] = await ProductSearchByTag({idPresent});
+                    [idPresent, DATA] = await ProductSearchByBrand({brand:inptUser});
                 }
                 CTX.setTAG(syntax);
                 idPresent = FilterNoRepeat(idPresent);
@@ -132,7 +128,7 @@ const Nav = ({responsive}) => {
                             <ul className={styles.listBrand}>
                                 {modales.marquesModale && 
                                     items.marques?.map((marque) => [
-                                            <li onClick={()=>handle(marque, "tag")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
+                                            <li onClick={()=>handle(marque, "brand")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
                                                 <Link href={urlPcPortable}>{marque}</Link></li>
                                         ]
                                     )

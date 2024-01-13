@@ -70,14 +70,14 @@ const AddProduct = () => {
                 dataProduct.brand==='hp'){
                 setDataProduct({denominateur:'le'})
             };
-        },[dataProduct.brand]);
+        },[dataProduct.prix]);
 
         useEffect(()=>{
             setDataProduct((prevDataProduct)=>({
                 ...prevDataProduct,
                 brand: prevDataProduct.brand.toLowerCase()
             }))
-        }, [dataProduct.brand]);
+        }, [dataProduct.prix]);
         useEffect(()=>{
             setDataProduct((prevDataProduct)=>({
                 ...prevDataProduct,
