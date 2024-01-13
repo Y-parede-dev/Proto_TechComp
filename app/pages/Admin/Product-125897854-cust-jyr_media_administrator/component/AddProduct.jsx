@@ -62,15 +62,20 @@ const AddProduct = () => {
             };
         }, [openCloseModale]);
         // ::START::bonus Change le denominateur dans la description SEO
-        useEffect(()=>{
-            if(
-                dataProduct.brand==='dell'    ||
-                dataProduct.brand==='lenovo'  ||
-                dataProduct.brand==='samsung' ||
-                dataProduct.brand==='hp'){
-                setDataProduct({denominateur:'le'})
-            };
-        },[dataProduct.prix]);
+        // useEffect(()=>{
+        //     if(
+        //         dataProduct.brand==='dell'    ||
+        //         dataProduct.brand==='lenovo'  ||
+        //         dataProduct.brand==='samsung' ||
+        //         dataProduct.brand==='hp'      ||
+        //         dataProduct.brand==='msi' 
+        //         ){
+        //         setDataProduct((prevDataProduct)=>({
+        //             ...prevDataProduct,
+        //             denominateur:'le'
+        //         }))
+        //     };
+        // },[dataProduct.brand]);
 
         useEffect(()=>{
             setDataProduct((prevDataProduct)=>({
@@ -145,7 +150,7 @@ const AddProduct = () => {
                 setDataProduct((prevDataProduct)=>({
                     ...prevDataProduct,
                     id: prevDataProduct.title.replaceAll(' ', '-'),
-                    description: `Découvrez et comparez les caractéritiques, performances et prix de ${dataProduct.denominateur} ${dataProduct.title} sur itek-comparateur.fr notre site de comparateur. Ce ${dataProduct.title} offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur`
+                    description: `Découvrez et comparez les caractéritiques, performances et prix ${dataProduct.denominateur} ${dataProduct.title} sur itek-comparateur.fr notre site de comparateur. Ce ${dataProduct.title} offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur`
                 }));
             } catch (error) {
                 console.error(error);
