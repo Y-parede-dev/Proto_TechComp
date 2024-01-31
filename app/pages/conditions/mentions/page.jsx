@@ -1,7 +1,7 @@
 const Mentions = () => {
     return(
         <>
-        MENTIONS
+            MENTIONS
         </>
     )
 }

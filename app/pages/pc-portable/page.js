@@ -9,7 +9,7 @@ const Product = () => {
   const content = (
     <section className={styles.section}>
       <h1 className={styles.titlePagePcPortable}>Comparateur PC portables</h1>
-      <div className={styles.ILLUSTRATOR}>
+      {/* <div className={styles.ILLUSTRATOR}>
         <VideoPlayer params={{id:'zm2jlUwownQ', opts:{
           // autoplay:1,
           width:'700px',
@@ -21,7 +21,7 @@ const Product = () => {
             // autoplay:1,
         }}}}/>
         <div className={styles.filterNoTouch}></div>
-      </div>
+      </div> */}
       <ListeProduitsPagePcPortable />
     </section>
   )

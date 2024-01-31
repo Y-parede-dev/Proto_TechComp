@@ -38,7 +38,8 @@ const Home = () => {
           <h1 className={styles.titlePage}>Votre comparateur pour ordinateur portable au meilleurs prix</h1>
           <div>
             <div className={styles.ILLUSTRATOR}>
-              <Image alt='pc portable illustration' height={729} width={1020} className={styles.imageHomePage} src={config.imageHomepage}></Image></div>
+              <Image alt='pc portable illustration' height={729} width={1020} className={styles.imageHomePage} src={config.imageHomepage}></Image>
+            </div>
             <div className={styles.txtPresentation}>
               <TextePresentation />
             </div>

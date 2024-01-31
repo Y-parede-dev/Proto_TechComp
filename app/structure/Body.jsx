@@ -6,6 +6,7 @@ import Footer from './footer/Footer'
 import Nav from './navigation/Nav'
 import { SearchCTX } from '../context/SearchCTX'
 import { useState, useEffect } from 'react'
+import { BannerAds } from '../components/pub/Banner'
 import { BannerAdsTop } from '../components/pub/top'
 import { BannerAdsLeft } from '../components/pub/left'
 import { BannerAdsRight } from '../components/pub/right'
@@ -53,7 +54,11 @@ const Body = ({children}) => {
                 <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
-                    <div className={styles.adsTop}>
+                    
+                    <div className={styles.bannerAds}>
+                        <BannerAds></BannerAds>
+                    </div>
+                    {/* <div className={styles.adsTop}>
 
                         <BannerAdsTop/>
                     </div>
@@ -64,7 +69,7 @@ const Body = ({children}) => {
                     <div className={styles.adsRight}>
 
                         <BannerAdsRight/>
-                    </div>
+                    </div> */}
                     <div className={styles.content}>{children}</div>
                 </main>
                 <Footer/>
