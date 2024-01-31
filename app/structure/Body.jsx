@@ -56,7 +56,7 @@ const Body = ({children}) => {
                 <main className={styles.mainOnBody}>
                     
                     <div className={styles.bannerAds}>
-                        <BannerAds></BannerAds>
+                        {/* <BannerAds></BannerAds> */}
                     </div>
                     {/* <div className={styles.adsTop}>
 

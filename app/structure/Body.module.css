@@ -11,6 +11,9 @@
 .bannerAds {
     position: absolute;
     margin: auto;
+    background: url(https://dev.itek-comparateur.fr/images/banner1600X1300.jpg) no-repeat scroll center top transparent;
+    width: 100%;height: 100%;
+
 }
 .adsTop{
     grid-area: pubtop;
@@ -47,5 +50,10 @@
 @media screen and (min-width:1640px) {
 }
 @media screen and (max-width:1369px) {
-    
+    .bannerAds{
+        display: none;
+    }
+    .content {
+        max-width: 100%;
+    }
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PUBIMG from "@/public/images/banner1600X1300.jpg";
+import PUBIMG from "@/public/images/banner.jpg";
 import Link from "next/link";
 
 export const BannerAds = () => {
@@ -10,6 +10,7 @@ export const BannerAds = () => {
                 src={PUBIMG}
                 width={1626}
                 height={1300}
+                style={{margin:"auto", maxWidth:"100%"}}
                 alt="baniere pub Habillage"/>
         </Link>
     )

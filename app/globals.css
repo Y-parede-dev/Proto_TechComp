@@ -200,6 +200,7 @@ img{
 @media screen and (max-width:1369px) {
   :root{
     --height-header:103px;
+    --margin-top-main: 0px;
   }
   body{
     display: grid;
