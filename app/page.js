@@ -4,6 +4,7 @@ import SuggestionMap from './components/suggestion/SuggestionMap'
 import Image from 'next/image'
 import imageHomepage from "@/public/images/imageHomepage.webp"
 import config from "@/config/config.json" assert{type:"json"}
+import { AdsLarge } from './components/pub/Large'
 // refactor a faire
 const Home = () => {
   
@@ -53,6 +54,7 @@ const Home = () => {
             <li>
               <SuggestionMap searchSepar={"gaming"} titreRecherche={"> Les pc portables gamers"}/>
             </li>
+            <AdsLarge></AdsLarge>
             <li>
               <SuggestionMap searchSepar={"bureau"} titreRecherche={"> Les pc portables bureautique"}/>
             </li>

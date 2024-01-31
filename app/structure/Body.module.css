@@ -11,6 +11,7 @@
 .bannerAds {
     position: absolute;
     margin: auto;
+    cursor: pointer;
     background: url(https://dev.itek-comparateur.fr/images/banner.jpg) no-repeat scroll center top transparent;
     width: 100%;height: 100%;
 

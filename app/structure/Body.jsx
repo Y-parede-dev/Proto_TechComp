@@ -55,7 +55,7 @@ const Body = ({children}) => {
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
                     
-                    <div className={styles.bannerAds}>
+                    <div onClick={()=>window.open('https://clk.tradedoubler.com/click?p=320984&a=3342379&g=25082228', "_blank")} className={styles.bannerAds}>
                         {/* <BannerAds></BannerAds> */}
                     </div>
                     {/* <div className={styles.adsTop}>
