@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;400&display=swap'); */
 :root {
-  
+  /* breakpoint utile:1330px (width)  suppression pub des coté*/
   --height-header: 104px;
   --color-first: rgb(17, 50, 100);
   --color-second: rgb(5, 136, 240);
@@ -106,7 +106,7 @@
 
   --color-error: #c91010;
 
-  --margin-top-main: 142px;
+  --margin-top-main: 300px;
   --height-header:104px;
 }
 *{
@@ -116,17 +116,17 @@
 }
 body{
   font-family: var(--font-family-first);
-  background: var(--color-table-even);
+  /* background: var(--color-table-even); */
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-areas:  "header header"
-                        "nav content"
-                        "nav content"
-                        "nav footer" ;
+  grid-template-columns:  auto;
+  grid-template-areas:  "header"
+                        "content"
+                        "footer" ;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(5, 136, 240, .9), rgba(17, 50, 100,.9));
-  background-color: var(--color-first);
+  /* background: linear-gradient(to bottom, rgba(5, 136, 240, .9), rgba(17, 50, 100,.9));
+  background-color: var(--color-first); */
+  background-color:#0E2532
 }
 
 img{
@@ -183,9 +183,24 @@ img{
     --color-table-even:  var(--color-back-main);
   }
 } */
+
+/* Media Q value min*/
+@media screen and (min-width:1640px) {
+  body{
+    grid-template-columns: auto 1fr;
+
+    grid-template-areas:  "header header"
+                          "nav content"
+                          "nav content"
+                          "nav footer" ;
+  }
+}
+/* Media Q value min ::end*/
+/* Media Q value max*/
 @media screen and (max-width:1369px) {
   :root{
     --height-header:103px;
+    --margin-top-main: 0px;
   }
   body{
     display: grid;
@@ -196,3 +211,4 @@ img{
                           "footer" ;
   }
 }
+/* Media Q value max ::end*/

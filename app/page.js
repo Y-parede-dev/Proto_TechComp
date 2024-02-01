@@ -3,6 +3,8 @@ import styles from './page.module.css'
 import SuggestionMap from './components/suggestion/SuggestionMap'
 import Image from 'next/image'
 import imageHomepage from "@/public/images/imageHomepage.webp"
+import config from "@/config/config.json" assert{type:"json"}
+import { AdsLarge } from './components/pub/Large'
 // refactor a faire
 const Home = () => {
   
@@ -37,7 +39,8 @@ const Home = () => {
           <h1 className={styles.titlePage}>Votre comparateur pour ordinateur portable au meilleurs prix</h1>
           <div>
             <div className={styles.ILLUSTRATOR}>
-              <Image alt='pc portable illustration' className={styles.imageHomePage} src={imageHomepage}></Image></div>
+              <Image alt='pc portable illustration' height={729} width={1020} className={styles.imageHomePage} src={config.imageHomepage}></Image>
+            </div>
             <div className={styles.txtPresentation}>
               <TextePresentation />
             </div>
@@ -51,6 +54,7 @@ const Home = () => {
             <li>
               <SuggestionMap searchSepar={"gaming"} titreRecherche={"> Les pc portables gamers"}/>
             </li>
+            <AdsLarge></AdsLarge>
             <li>
               <SuggestionMap searchSepar={"bureau"} titreRecherche={"> Les pc portables bureautique"}/>
             </li>

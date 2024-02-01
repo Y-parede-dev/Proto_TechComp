@@ -1,36 +1,60 @@
 .mainOnBody{
+    z-index: 4;
     position: relative;
     /* display: grid; */
-
-    /* grid-template-columns: .5fr 2.5fr .5fr; */
-    /* grid-template-rows: 160px 20fr 1fr; */
-    /* grid-template-areas: 
-    "pub pub pub"
-    "pub content pub"; */
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "pubtop pubtop pubtop"
+    "pubLeft contenu pubRight";
     gap:0;
 }
-.adsBanners{
+.bannerAds {
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+    background: url(https://dev.itek-comparateur.fr/images/banner.jpg) no-repeat scroll center top transparent;
+    width: 100%;height: 100%;
 
 }
-.AdsContainer{
-    /* cursor: pointer; */
-    grid-area: 1/1/4/4;
-    z-index: 0;
-    height: 100%;
-    width: -webkit-fill-available;
-    position: fixed;
-    background: rgb(var(--color-first-rgb));
-    /* background: url(https://www.laptopspirit.fr/wp-content/uploads/new/2023/09/acer30s.png) no-repeat scroll center top transparent; */
-    background-size: 100% 100%;
-    background-color: var(--color-back);
-}
-.content {
-    grid-area: 2 / 2 / 4 / 3;
-    max-width: 1125.3px;
+.adsTop{
+    grid-area: pubtop;
+    height: 90px;
     width: 100%;
+    max-width: 728px;
+    padding: 0 ;
     margin: auto;
 }
-
+.adsTop,.adsLeft, .adsRight{position: relative; background-color:#0E2532;}
+.adsTop > img,.adsLeft > img, .adsRight > img{position: fixed;}
+.adsLeft, .adsRight{
+    width: 160px;
+    max-width: 160px;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: relative;
+    height: 600px;
+}
+.adsLeft{
+    grid-area: pubLeft;
+}
+.adsRight{
+    grid-area: pubRight;
+}
+.content {
+    grid-area: contenu;
+    grid-area: 2 / 2 / 4 / 3;
+    max-width: 1000.3px;
+    width: 100%;
+    /* min-width: 100%; */
+    margin: auto;
+}
+@media screen and (min-width:1640px) {
+}
 @media screen and (max-width:1369px) {
-    
+    .bannerAds{
+        display: none;
+    }
+    .content {
+        max-width: 100%;
+    }
 }

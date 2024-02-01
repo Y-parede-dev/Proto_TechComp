@@ -5,11 +5,8 @@ import FormSearch from '@/app/components/clientComponents/FormSearch';
 import { useContext, useState, useEffect} from 'react';
 import { SearchCTX } from '@/app/context/SearchCTX';
 import { ProductSearchByBrand, ProductSearchByPrice, ProductSearchByTag } from '@/lib/ProductSearch';
-import { useRouter } from 'next/navigation';
-import config from '@/config/config.json' assert{type:"json"};
 import { FilterNoRepeat } from '@/lib/FonctionsUtiles';
-import Cookies from 'js-cookie';
-import {GET,  GetDataOnFireBase } from '@/lib/GetByJson';
+import {GET as GetBrand} from '@/lib/GetBrand';
 // refactor a faire
 const Nav = ({responsive}) => {
     const [inptUser, setinptUser] = useState([]);
@@ -25,22 +22,21 @@ const Nav = ({responsive}) => {
     })
     useEffect(()=>{
         const recupData = async ()=>{
-            let dataCust;
+            // let dataCust;
             const marques = [];
-            const FullData = await GET()
+            const FullData = await GetBrand()
             .then((res)=>{
-                // console.log(res)
                 return res
             })
             .catch((error)=>console.error(error))
             FullData?.map((e)=>{
+                console.log(e.brand)
                 marques.push(e.brand)
             })
-            setItems({marques: FilterNoRepeat(marques)});
+            setItems({marques:[...marques]});
         }
         recupData()
     },[]);
-    const router = useRouter();
     const [sea,setSea] = useState(false);
     const CTX = useContext(SearchCTX);
     const arr_MoinsCher = [500, 1000, 1500, 2000, 3000];
@@ -49,9 +45,7 @@ const Nav = ({responsive}) => {
         window.onresize = ()=>{
             responsive.setwidthScreenCss(screen.width);
         }
-    }catch(err){
-        
-    };
+    }catch(err){};
         useEffect(()=>{
             if(localStorage.getItem('favoris')!=null){
                 const nombreFav = localStorage.getItem('favoris').split(',').length 
@@ -77,14 +71,14 @@ const Nav = ({responsive}) => {
             let syntax;
             const SetSearch =   async () => {
                 if(by==="tag"){
-                    [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser]});
+                    [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser], page: 1});
                     syntax = [inptUser];
     
                 }if(by==="price"){
                     [idPresent, DATA] = await ProductSearchByPrice({searchPrice: inptUser, CTX});
                     syntax = inptUser;
                 }if(by==="brand"){
-                    [idPresent, DATA] = await ProductSearchByTag({idPresent});
+                    [idPresent, DATA] = await ProductSearchByBrand({brand:inptUser});
                 }
                 CTX.setTAG(syntax);
                 idPresent = FilterNoRepeat(idPresent);
@@ -103,7 +97,15 @@ const Nav = ({responsive}) => {
     const handle = (input, by)=>{
         setSea(true);
         setBy(by);
-        setinptUser(input);
+        let inputNormalise = "null";
+        try{
+            if(input.includes('pc')){
+                inputNormalise = input.replace("pc ", "");
+                setinptUser(inputNormalise);
+            };
+        }catch(noPcWord){
+            setinptUser(input);
+        };
     };
     const navBar = (
         <div className={`${styles.ContainerNavLeft} ${showNavBar? styles.NavShow:''}`}>
@@ -126,7 +128,7 @@ const Nav = ({responsive}) => {
                             <ul className={styles.listBrand}>
                                 {modales.marquesModale && 
                                     items.marques?.map((marque) => [
-                                            <li onClick={()=>handle(marque, "tag")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
+                                            <li onClick={()=>handle(marque, "brand")} className={`${styles.linkOnNav} ${styles.onPriceLink} ${styles.brandLink}`} key={marque}>
                                                 <Link href={urlPcPortable}>{marque}</Link></li>
                                         ]
                                     )
@@ -151,17 +153,13 @@ const Nav = ({responsive}) => {
                                                 <li key={`${prix}-${prix.length}`} className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(prix, "price")}><Link href={urlPcPortable}>moins de {prix.toString()}€</Link></li>
                                             ])
                                         }
-                                        {/* <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(1000, "price")}><Link href={urlPcPortable}>moins de 1000€</Link></li>
-                                        <li className={`${styles.linkOnNav} ${styles.onPriceLink}`} onClick={()=>handle(2000, "price")}><Link href={urlPcPortable}>moins de 2000€</Link></li> */}
                                     </ul>
                                     }
-
                                 </ul>
                             </li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc gaming", "tag")}><Link href={urlPcPortable}>PC portable Gaming</Link></li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc bureau", "tag")}><Link href={urlPcPortable}>PC portable Bureau</Link></li>
                             <li className={styles.linkOnNav} onClick={()=>handle("pc portable", "tag")}><Link href={urlPcPortable}>Tous les PC portable</Link></li>
-                            
                         </ul>
                     </li>
                     <li>
@@ -176,7 +174,6 @@ const Nav = ({responsive}) => {
                         </ul>
                     </li>
                 </ul>
-                
             </nav>
             {!responsive.desktopDesign?<div onClick={()=>toggleShowNav()} className={styles.btnNavBarForMobile}><p>{showNavBar?"<<":">>"}</p></div>:""}
         </div>

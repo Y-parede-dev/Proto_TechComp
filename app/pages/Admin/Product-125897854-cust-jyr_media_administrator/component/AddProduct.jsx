@@ -62,22 +62,27 @@ const AddProduct = () => {
             };
         }, [openCloseModale]);
         // ::START::bonus Change le denominateur dans la description SEO
-        useEffect(()=>{
-            if(
-                dataProduct.brand==='dell'    ||
-                dataProduct.brand==='lenovo'  ||
-                dataProduct.brand==='samsung' ||
-                dataProduct.brand==='hp'){
-                setDataProduct({denominateur:'le'})
-            };
-        },[dataProduct.brand]);
+        // useEffect(()=>{
+        //     if(
+        //         dataProduct.brand==='dell'    ||
+        //         dataProduct.brand==='lenovo'  ||
+        //         dataProduct.brand==='samsung' ||
+        //         dataProduct.brand==='hp'      ||
+        //         dataProduct.brand==='msi' 
+        //         ){
+        //         setDataProduct((prevDataProduct)=>({
+        //             ...prevDataProduct,
+        //             denominateur:'le'
+        //         }))
+        //     };
+        // },[dataProduct.brand]);
 
         useEffect(()=>{
             setDataProduct((prevDataProduct)=>({
                 ...prevDataProduct,
                 brand: prevDataProduct.brand.toLowerCase()
             }))
-        }, [dataProduct.brand]);
+        }, [dataProduct.prix]);
         useEffect(()=>{
             setDataProduct((prevDataProduct)=>({
                 ...prevDataProduct,
@@ -145,7 +150,7 @@ const AddProduct = () => {
                 setDataProduct((prevDataProduct)=>({
                     ...prevDataProduct,
                     id: prevDataProduct.title.replaceAll(' ', '-'),
-                    description: `Découvrez et comparez les caractéritiques, performances et prix de ${dataProduct.denominateur} ${dataProduct.title} sur itek-comparateur.fr notre site de comparateur. Ce ${dataProduct.title} offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur`
+                    description: `Découvrez et comparez les caractéritiques, performances et prix ${dataProduct.denominateur} ${dataProduct.title} sur itek-comparateur.fr notre site de comparateur. Ce ${dataProduct.title} offre une expérience immersive avec sa configuration optimisée. Trouvez le meilleur prix et faites le bon choix pour vos besoins avec Itek Comparateur`
                 }));
             } catch (error) {
                 console.error(error);
@@ -449,17 +454,27 @@ const AddProduct = () => {
                     
                     <div className={`${styles.zoneItem} ${styles.Conseil}`}>
                         <label htmlFor='conseil'>Conseil</label>
-                        <select className={styles.select} value={dataProduct.conseil} onChange={(e)=>{setDataProduct((prevDataProduct)=>({
+                        <select 
+                        className={styles.select} 
+                        value={dataProduct.conseil} 
+                        onChange={(e)=>{
+                            setDataProduct((prevDataProduct)=>({
                             ...prevDataProduct,
                             conseil: e.target.value
                         }))}} name='conseil' id='conseil'>
+                            <option>Choisir</option>
                             <option>Ce pc est conseiller pour une utilisation gaming</option>
                             <option>Ce pc n'est pas conseiller pour une utilisation gaming</option>
                         </select>
-                        <select className={styles.select} value={dataProduct.usage} onChange={(e)=>{setDataProduct((prevDataProduct)=>({
+                        <label htmlFor='usage'>Utilisation</label>
+                        <select 
+                        className={styles.select} 
+                        value={dataProduct.usage} 
+                        onChange={(e)=>{
+                            setDataProduct((prevDataProduct)=>({
                             ...prevDataProduct,
                             usage: e.target.value.split('usage ')[1]
-                        }))}} name='conseil' id='conseil'>
+                        }))}} name='usage' id='usage'>
                             <option>Choisir une utilisation</option>
                             <option>usage gaming</option>
                             <option>usage bureau</option>
@@ -474,7 +489,7 @@ const AddProduct = () => {
                 </form>
                 <>
                     {openCloseModale?
-                    <ModaleValidation params={{dataProduct, setOpenCloseModale,imagePreview, setImagePreview}}/>:<></>}
+                    <ModaleValidation params={{dataProduct, setDataProduct, setOpenCloseModale,imagePreview, setImagePreview}}/>:<></>}
                 </>
                 <div className={`${styles.videoTuto} ${modaleTuto.classNameCustom}`}>
                     <VideoTuto/>

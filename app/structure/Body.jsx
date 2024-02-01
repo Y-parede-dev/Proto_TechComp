@@ -6,12 +6,11 @@ import Footer from './footer/Footer'
 import Nav from './navigation/Nav'
 import { SearchCTX } from '../context/SearchCTX'
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import { Test as Tests } from '../components/Tests/Tests'
-import { FavExist } from '../cookies/favorisStorage'
-
-// import { useClient } from 'next/client';
+import { BannerAds } from '../components/pub/Banner'
+import { BannerAdsTop } from '../components/pub/top'
+import { BannerAdsLeft } from '../components/pub/left'
+import { BannerAdsRight } from '../components/pub/right'
+import { ConsentCookiesCustom } from '../cookies/cookiesConscent'
 
 export const metadata = {
     title: {
@@ -40,10 +39,8 @@ const Body = ({children}) => {
 
     const [widthScreen, setwidthScreenCss] = useState(0)
     const [desktopDesign, setDesktopDesign] = useState(true);
-
-    useEffect(()=>{
-        FavExist()
-    },[])
+    ConsentCookiesCustom();
+    
     useEffect(()=>{
         if(SEARCH.length > 0){
             SETIDPRESENT(true)
@@ -55,15 +52,24 @@ const Body = ({children}) => {
         <>
             <SearchCTX.Provider value={{setSEARCH, setTAG, SEARCH, TAG, IDPRESENT, NUMBERFAVACTUAL, setNUMBERFAVACTUAL}} >
                 <Header responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
-                {/* <Tests/> */}
-                
                 <Nav responsive={{widthScreen, setwidthScreenCss, desktopDesign, setDesktopDesign}}/>
                 <main className={styles.mainOnBody}>
-                    {/* <div className={styles.AdsContainer}></div> */}
                     
-                    {/* <Link className={styles.adsBanners} href='https://www.acer.com'>
-                        <div className={styles.AdsContainer}></div>
-                    </Link> */}
+                    <div onClick={()=>window.open('https://clk.tradedoubler.com/click?p=320984&a=3342379&g=25082228', "_blank")} className={styles.bannerAds}>
+                        {/* <BannerAds></BannerAds> */}
+                    </div>
+                    {/* <div className={styles.adsTop}>
+
+                        <BannerAdsTop/>
+                    </div>
+                    <div className={styles.adsLeft}>
+
+                        <BannerAdsLeft/>
+                    </div>
+                    <div className={styles.adsRight}>
+
+                        <BannerAdsRight/>
+                    </div> */}
                     <div className={styles.content}>{children}</div>
                 </main>
                 <Footer/>

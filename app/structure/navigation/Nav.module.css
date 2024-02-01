@@ -1,7 +1,7 @@
 .ContainerNavLeft{
-    z-index: 2;
+    z-index: 3;
     grid-area: nav;
-    position: sticky;
+    position: fixed;
     top: var(--height-header);
     bottom: 0;
     height: calc(100vh - var(--height-header));
@@ -12,7 +12,7 @@
 
 }
 .NavLeft{
-    padding: 0 18px;
+    padding: 0;
     height: 100%;
     overflow-y: scroll;
 }
@@ -89,6 +89,12 @@
 } */
 .onPriceLink{
     padding: 15px 0 0px 20px;
+}
+@media screen and (min-width:1640px) {
+    .ContainerNavLeft{
+        position: sticky;
+    }
+    
 }
 
 @media screen and (max-width:1369px) {

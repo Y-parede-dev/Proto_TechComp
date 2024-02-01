@@ -22,8 +22,19 @@ const Notation = ({produit, param}) =>{
         }
     }
     if(param){
-        if(param == "usage gaming"){
-            let usageIconTest = "🎮"
+        const usageIconTest = "🎮";
+        const usageScreenTest = "💻";
+        if(param.includes("gaming/bureau")){
+            return(
+                <>
+                    <div className={styles.notes_contentOnSugg}>
+                        <p className={styles.noteOnSugg}>Usage:  [{usageIconTest} {usageScreenTest}]/ Note: </p>
+                        <>{Note(produit?.notegaming?.int)}</>          
+                    </div>
+                </>
+            )
+        }
+        else if(param == "usage gaming" || param.includes("gaming")){
             return(
                 <>
                     <div className={styles.notes_contentOnSugg}>
@@ -34,7 +45,6 @@ const Notation = ({produit, param}) =>{
             )
         }
         else{
-            let usageScreenTest = "💻"
             return(
                 <>
                     <div className={styles.notes_contentOnSugg}>
