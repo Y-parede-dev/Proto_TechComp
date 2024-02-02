@@ -74,7 +74,7 @@ const Notation = ({produit, param}) =>{
                     </div>
                     { notesState?.noteActive?
                         <div className={styles.details}>
-                            <h3>Inconvéniants</h3>
+                            <h3>Inconvénients</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>
                                 {produit?.notedesc.bad?.map(e=>[
                                     <li className={`${styles.detailBad} ${styles.detail} ${styles.detailActive}`} key={refSpec}>{e}</li>
@@ -89,7 +89,7 @@ const Notation = ({produit, param}) =>{
                         </div>
                         :
                         <div className={styles.details}>
-                            <h3>Inconvéniants</h3>
+                            <h3>Inconvénients</h3>
                             <ul className={`${styles.badNote} ${styles.ListDetail}`}>
                                 {produit?.notegaming.bad?.map(e=>[
                                     <li className={`${styles.detailBad} ${styles.detail}`} key={refSpec}>{e}</li>

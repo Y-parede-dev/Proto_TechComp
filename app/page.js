@@ -36,7 +36,7 @@ const Home = () => {
       <section className={styles.main}>
         <div className={styles.mainContent}>
           <div className={`${styles.containerAds} ${styles.leaderBoardAdsContainer}`}></div>
-          <h1 className={styles.titlePage}>Votre comparateur pour ordinateur portable au meilleurs prix</h1>
+          <h1 className={styles.titlePage}>Votre comparateur pour ordinateur portable au meilleur prix</h1>
           <div>
             <div className={styles.ILLUSTRATOR}>
               <Image alt='pc portable illustration' height={729} width={1020} className={styles.imageHomePage} src={config.imageHomepage}></Image>
