@@ -64,13 +64,13 @@ export const FetchDataForPageProduct = ({params}) => {
                     <>
                         <div className={styles.suggestions}>
                         <h2>suggestions d'autres produits</h2>
-                        <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portable de la même marque"}/>
+                        <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portables de la même marque"}/>
                         <hr/>
-                        <SuggestionMap searchSepar={"gaming"} titreRecherche={"PC portable gamer"}/>
+                        <SuggestionMap searchSepar={"gaming"} titreRecherche={"PC portables gamer"}/>
                         <hr/>
-                        <SuggestionMap searchSepar={"ultra"} titreRecherche={"PC portable avec écran 4K"}/>
+                        <SuggestionMap searchSepar={"ultra"} titreRecherche={"PC portables avec écran 4K"}/>
                         <hr/>
-                        <SuggestionMap searchSepar={"Oled"} titreRecherche={"PC portable avec écran Oled"}/>
+                        <SuggestionMap searchSepar={"Oled"} titreRecherche={"PC portables avec écran Oled"}/>
     
                         </div>
                     </>

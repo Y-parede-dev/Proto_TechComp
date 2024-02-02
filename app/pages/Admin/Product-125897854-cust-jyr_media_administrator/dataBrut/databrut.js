@@ -1,71 +1,71 @@
 export const descriptions = (dataProduct) => {
     return {
         gaming: {
-            ultra: `Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} est conçu pour une utilisation gaming optimal. La configuration de ce pc portable avec sa <strong>${dataProduct.config.gpu}</strong>, vous permet de jouer au derniers jeux sortie.`,
-            good: `C\'est l\'ordinateur portable gaming par excellence ${dataProduct.denominateur} <strong>${dataProduct.title}</strong> et sa <strong>configuration gaming</strong> est un choix logique si vous rechercher une experience gaming plus que correct.`,
-            moyen:`Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} est conçu pour une utilisation bureautique optimal. La configuration de ce pc portable avec sa <strong>${dataProduct.config.gpu}</strong>, vous permet de jouer a certain jeux.`,
-            bas:`Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} n\'est pas conçu pour une utilisation gaming. La configuration <strong>${dataProduct.config.gpu}</strong> de ce pc portable, ne vous permétra pas de jouer aux jeux vidéos.`
+            ultra: `Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} est conçu pour une utilisation gaming optimale. La configuration de ce PC portable avec sa <strong>${dataProduct.config.gpu}</strong> vous permet de jouer aux derniers jeux sortis.`,
+            good: `C'est l'ordinateur portable gaming par excellence ${dataProduct.denominator} <strong>${dataProduct.title}</strong>, et sa <strong>configuration gaming</strong> est un choix logique si vous recherchez une expérience gaming plus que correcte.`,
+            moyen: `Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} est conçu pour une utilisation bureautique optimale. La configuration de ce PC portable avec sa <strong>${dataProduct.config.gpu}</strong> vous permet de jouer à certains jeux.`,
+            bas: `Cet ordinateur portable ${dataProduct.title} de chez ${dataProduct.brand} n'est pas conçu pour une utilisation gaming. La configuration <strong>${dataProduct.config.gpu}</strong> de ce PC portable ne vous permettra pas de jouer aux jeux vidéos.`
         },
         rapidite: {
-            ultra:`Cet ordinateur figure parmi les plus rapide du marché. Avec son ${dataProduct.config.cpu}, ses ${dataProduct.config.ram} et son disque SSD ultra rapide. Ce PC est un <strong>choix logique</strong> si vous rechercher a jouer au dernier jeux sortie avec un temp de chargement réduit grace a son SSD`,
-            good:`Cet ordinateur figure parmi les plus rapide du marché. Avec son ${dataProduct.config.cpu}, ses ${dataProduct.config.ram} et son disque SSD ultra rapide. Ce PC est un <strong>choix logique</strong> si vous rechercher a jouer au dernier jeux sortie avec un temp de chargement réduit grace a son SSD`,
-            moyen:`Cet ordinateur figure dans la moyene du marché. Avec son ${dataProduct.config.cpu}, ${dataProduct.config.ram} et son disque SSD super rapide. Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique intermerdiaire, ${dataProduct.denominateur} ${dataProduct.title} Vous offre une rapidité optimale`,
-            bas:`Cet ordinateur figure dans la moyene basse du marché. Avec son ${dataProduct.config.cpu}, ${dataProduct.config.ram} et à son disque SSD . Ce PC est un <strong>choix logique</strong> si vous avez une utilisation Bureautique, ${dataProduct.denominateur} ${dataProduct.title} Vous offre une rapidité dans la moyenne`
+            ultra: `Cet ordinateur figure parmi les plus rapides du marché. Avec son ${dataProduct.config.cpu}, ses ${dataProduct.config.ram} et son disque SSD ultra-rapide, ce PC est un <strong>choix logique</strong> si vous recherchez à jouer aux derniers jeux sortis avec un temps de chargement réduit grâce à son SSD.`,
+            good: `Cet ordinateur figure parmi les plus rapides du marché. Avec son ${dataProduct.config.cpu}, ses ${dataProduct.config.ram} et son disque SSD ultra-rapide, ce PC est un <strong>choix logique</strong> si vous recherchez à jouer aux derniers jeux sortis avec un temps de chargement réduit grâce à son SSD.`,
+            moyen: `Cet ordinateur figure dans la moyenne du marché. Avec son ${dataProduct.config.cpu}, ${dataProduct.config.ram} et son disque SSD super rapide, ce PC est un <strong>choix logique</strong> si vous avez une utilisation bureautique intermédiaire. ${dataProduct.denominator} ${dataProduct.title} vous offre une rapidité optimale.`,
+            bas: `Cet ordinateur figure dans la moyenne basse du marché. Avec son ${dataProduct.config.cpu}, ${dataProduct.config.ram} et son disque SSD, ce PC est un <strong>choix logique</strong> si vous avez une utilisation bureautique. ${dataProduct.denominator} ${dataProduct.title} vous offre une rapidité dans la moyenne.`
         },
         durabilite: {
-            ultra:`La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans.`,
-            good:`La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans.`,
-            moyen:`La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans.`,
-            bas:`La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC Portables en vente est de 3 ans.`        
+            ultra: `La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC portables en vente est de 3 ans.`,
+            good: `La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC portables en vente est de 3 ans.`,
+            moyen: `La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC portables en vente est de 3 ans.`,
+            bas: `La configuration de cet ordinateur lui permettra de rester <strong>compétitif pendant environ 4 ans</strong> (de 3 à 5 ans). La moyenne pour les PC portables en vente est de 3 ans.`
         },
         confort: {
-            ultra: `L\'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général.`,
-            good: `L\'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général.`,
-            moyen: `L\'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général.`,
-            bas: `L\'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un pc portable avec un <strong>Bon confort</strong> en général.`
+            ultra: `L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un PC portable avec un <strong>bon confort</strong> en général.`,
+            good: `L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un PC portable avec un <strong>bon confort</strong> en général.`,
+            moyen: `L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un PC portable avec un <strong>bon confort</strong> en général.`,
+            bas: `L'aspect esthétique est très subjectif. Nous apprécions son design efficace qui en fait un PC portable avec un <strong>bon confort</strong> en général.`
         }
     };
 };
+
 export const arrayResolution = [`1920 x 1080`, `2560 x 1440`, `3200 x 1800`, `3840 x 2160`];
 
 export const arrayGoodBad = (dataProduct) => {
     return {
-        good:{
-            ultra:[
-                `La memoire vive est excellente - ${dataProduct.config.ram.split("|")[0]} RAM`,
-                `Le ${dataProduct.config.cpu} offre d\'excellentes performances`,
-                `Une exelente combinaison de composants pour des performance optimales`,
-                `La ${dataProduct.config.gpu} offre d\'excellentes performances`,
-                `Les ${dataProduct.config.ram.split("|")[0]} de Mémoire en ${dataProduct.config.ram.split("|")[1]} vous offre une rapidité extreme`,
+        good: {
+            ultra: [
+                `La mémoire vive est excellente - ${dataProduct.config.ram.split("|")[0]} RAM`,
+                `Le ${dataProduct.config.cpu} offre d'excellentes performances`,
+                `Une excellente combinaison de composants pour des performances optimales`,
+                `La ${dataProduct.config.gpu} offre d'excellentes performances`,
+                `Les ${dataProduct.config.ram.split("|")[0]} de mémoire en ${dataProduct.config.ram.split("|")[1]} vous offrent une rapidité extrême`,
             ],
-            good:[
+            good: [
                 `La capacité de stockage est excellente - ${dataProduct.config.stockage.split("|")[0]}`,
                 `Le ${dataProduct.config.cpu} offre de bonnes performances`,
-                `La mémoire vive (RAM) est excellente pour les jeux vidéo`,
-
+                `La mémoire vive (RAM) est excellente pour les jeux vidéos`,
             ],
-            moyen:[
-                `La ${dataProduct.config.gpu} offre de correcte performances`,
-                `Les ${dataProduct.config.ram.split("|")[0]} de Mémoire en ${dataProduct.config.ram.split("|")[1]} vous offre une rapidité correct`,
+            moyen: [
+                `La ${dataProduct.config.gpu} offre de correctes performances`,
+                `Les ${dataProduct.config.ram.split("|")[0]} de mémoire en ${dataProduct.config.ram.split("|")[1]} vous offrent une rapidité correcte`,
             ],
-            bas:[
-                `La résolution de l\'écran est correcte ${dataProduct.resolution}`,
+            bas: [
+                `La résolution de l'écran est correcte ${dataProduct.resolution}`,
             ]
         },
-        bad:{
-            ultra:[
-                `Le pc est un peut lourd`,
+        bad: {
+            ultra: [
+                `Le PC est un peu lourd`,
             ],
-            good:[
-                `Le pc est un peut lourd`,
+            good: [
+                `Le PC est un peu lourd`,
             ],
-            moyen:[
-                `Peut etre facilement dépasser dans les jeux gourmands`,
-                `Ce pc portable n\'est pas fait pour une utilisation gaming optimal.`,
+            moyen: [
+                `Peut être facilement dépassé dans les jeux gourmands`,
+                `Ce PC portable n'est pas fait pour une utilisation gaming optimale.`,
             ],
-            bas:[
-                `Un pc portable peut puissant.`,
-                `Ce pc portable n\'est pas fait pour une utilisation gaming.`,
+            bas: [
+                `Un PC portable peu puissant.`,
+                `Ce PC portable n'est pas fait pour une utilisation gaming.`,
             ]
         }
     };
@@ -211,7 +211,7 @@ export const arrRamResult = {
 //             `Une exelente combinaison de composants pour des performance optimales`,
 //             `Un choix qualité prix optimal`,
 //             `Très léger pour un PC portable gaming perfomant`,
-//             `La mémoire vive (RAM) est excellente pour les jeux vidéo`,
+//             `La mémoire vive (RAM) est excellente pour les jeux vidéos`,
 //             `La résolution de l\'écran est satisfaisante ${dataProduct.resolution}`,
 //             `La ${dataProduct.config.gpu} offre d\'excellentes performances`,
 //             `La ${dataProduct.config.gpu} offre de correcte performances`,

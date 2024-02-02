@@ -144,7 +144,7 @@ const Nav = ({responsive}) => {
                                     <li onClick={()=>setModales({
                                         moinsCherModale: !modales.moinsCherModale,
                                         marquesModale: modales.marquesModale})} className={styles.linkOnNav}>
-                                        <Link href={" "}>PC portable moins chers</Link>
+                                        <Link href={" "}>PC portables moins chers</Link>
                                     </li>
                                     {modales.moinsCherModale && 
                                     <ul>
