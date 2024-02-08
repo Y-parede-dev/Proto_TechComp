@@ -16,7 +16,7 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
     const scrollElement = useRef(null)
     const [loader, setLoader] = useState({
         isLoading:true,
-        nbDefaultElt: 12,
+        nbDefaultElt: 900,
         ListEltLoading: ({nombre}) => {
             const elt = Array.from({length: nombre}, (_, index) => {
                 <li key={index}>
