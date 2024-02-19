@@ -1,5 +1,5 @@
 .ContainerNavLeft{
-    z-index: 3;
+    z-index: 5;
     grid-area: nav;
     position: fixed;
     top: var(--height-header);
