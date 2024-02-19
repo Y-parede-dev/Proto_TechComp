@@ -111,7 +111,7 @@
     }
     .ContainerNavLeft{
         height: calc(100%- var(--height-header));
-        z-index: 3;
+        /* z-index: 3; */
         position: fixed;
         transform: translateX(-100%);
         transition-duration: 800ms;
