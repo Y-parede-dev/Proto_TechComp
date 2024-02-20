@@ -43,23 +43,24 @@ const Nav = ({responsive}) => {
     const urlPcPortable = "/pages/pc-portable";
     try{
         window.onresize = ()=>{
+            console.log(screen)
             responsive.setwidthScreenCss(screen.width);
         }
     }catch(err){};
-        useEffect(()=>{
-            if(localStorage.getItem('favoris')!=null){
-                const nombreFav = localStorage.getItem('favoris').split(',').length 
-                CTX.setNUMBERFAVACTUAL(nombreFav)
-            }
-        }, [CTX])
+        // useEffect(()=>{
+        //     if(localStorage.getItem('favoris')!=null){
+        //         const nombreFav = localStorage.getItem('favoris').split(',').length 
+        //         CTX.setNUMBERFAVACTUAL(nombreFav)
+        //     }
+        // }, [CTX])
     useEffect(()=>{
         responsive.setwidthScreenCss(screen.width);
     },[]);
     useEffect(()=>{
-        if(responsive.widthScreen<= 1369){
+        if(responsive.widthScreen<= 1640){
             responsive.setDesktopDesign(false);
         }
-        if(responsive.widthScreen> 1369){
+        if(responsive.widthScreen> 1640){
             responsive.setDesktopDesign(true);
         }
     },[responsive.widthScreen]);

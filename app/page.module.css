@@ -13,7 +13,7 @@
   box-shadow: 0 0 6px -1px black;
 }
 .imageHomePage{
-  transform: translateY(-302px);
+  /* transform: translateY(-302px); */
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -74,4 +74,14 @@
 }
 .listesTop10 {
   list-style: none;
+}
+@media screen and (max-width:1369px) {
+  .ILLUSTRATOR{
+    max-height: fit-content;
+  }
+  .imageHomePage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }

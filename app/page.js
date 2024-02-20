@@ -35,7 +35,7 @@ const Home = () => {
   return (
       <section className={styles.main}>
         <div className={styles.mainContent}>
-          <div className={`${styles.containerAds} ${styles.leaderBoardAdsContainer}`}></div>
+          {/* <div className={`${styles.containerAds} ${styles.leaderBoardAdsContainer}`}></div> */}
           <h1 className={styles.titlePage}>Votre comparateur pour ordinateur portable au meilleur prix</h1>
           <div>
             <div className={styles.ILLUSTRATOR}>

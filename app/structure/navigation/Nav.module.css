@@ -97,7 +97,7 @@
     
 }
 
-@media screen and (max-width:1369px) {
+@media screen and (max-width:1640px) {
     .btnNavBarForMobile{
         position: absolute;
         right: -47.4px;
