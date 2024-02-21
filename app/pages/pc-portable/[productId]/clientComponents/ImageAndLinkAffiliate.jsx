@@ -78,7 +78,7 @@ const ImageAndLinkAffiliate = ({produit}) => {
     return(
         <>
             <div className={styles.imageContainer}>
-                <div><Image alt={`${produit.title} - principale`} loading="eager" width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
+                <div className={styles.currentImg}><Image alt={`${produit.title} - principale`} loading="eager" width={400} height={400} src={`${urlCustom}%2F${urlImageDefault.image}?alt=media`}></Image></div>
                 <div className={styles.imagesList}>
                     {
                         images.arrayImages?.map((imgs)=>[

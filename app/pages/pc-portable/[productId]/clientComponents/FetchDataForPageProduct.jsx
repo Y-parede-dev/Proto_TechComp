@@ -8,6 +8,7 @@ import SuggestionMap from '@/app/components/suggestion/SuggestionMap';
 import {PointsCles} from '@/app/pages/pc-portable/[productId]/SSRCompponents/pointsCles/PointsCles';
 import { useEffect, useState } from "react";
 import {GET} from '@/lib/GetByJson'
+import { AdsLarge } from "@/app/components/pub/Large";
 
 export const FetchDataForPageProduct = ({params}) => {
     const [produit, setProduit] = useState(null);
@@ -64,12 +65,19 @@ export const FetchDataForPageProduct = ({params}) => {
                     <>
                         <div className={styles.suggestions}>
                         <h2>suggestions d'autres produits</h2>
+                        <AdsLarge></AdsLarge>
                         <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portables de la même marque"}/>
                         <hr/>
+                        <AdsLarge></AdsLarge>
+
                         <SuggestionMap searchSepar={"gaming"} titreRecherche={"PC portables gamer"}/>
                         <hr/>
+                        <AdsLarge></AdsLarge>
+
                         <SuggestionMap searchSepar={"ultra"} titreRecherche={"PC portables avec écran 4K"}/>
                         <hr/>
+                        <AdsLarge></AdsLarge>
+
                         <SuggestionMap searchSepar={"Oled"} titreRecherche={"PC portables avec écran Oled"}/>
     
                         </div>

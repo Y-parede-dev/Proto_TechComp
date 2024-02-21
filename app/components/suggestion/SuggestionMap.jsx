@@ -44,9 +44,9 @@ const SuggestionMap = ({searchSepar, page, by = "tag", titreRecherche='votre rec
 
     const scrollOnX = (direction) => {
         if(direction === 'left'){
-            scrollElement.current.scrollLeft -= 342
+            scrollElement.current.scrollLeft -= 305
         }else{
-            scrollElement.current.scrollLeft += 342
+            scrollElement.current.scrollLeft += 305
         }
     }
     const arrayTemp = []

@@ -70,10 +70,25 @@
 }
 
 @media screen and (max-width:1369px) {
+    .currentImg {
+        margin: auto;
+    }
+    .currentImg > img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
     .imageContainer {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .imagesList{
+        margin: auto;
         flex-direction: row;
+    }
+}
+@media screen and (max-width:480px){
+    .imagesList > img{
+        width: 80px;
+        height: auto;
     }
 }
