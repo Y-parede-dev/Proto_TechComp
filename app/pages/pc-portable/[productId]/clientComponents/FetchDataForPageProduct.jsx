@@ -65,7 +65,7 @@ export const FetchDataForPageProduct = ({params}) => {
                     <>
                         <div className={styles.suggestions}>
                         <h2>suggestions d'autres produits</h2>
-                        <AdsLarge></AdsLarge>
+                        
                         <SuggestionMap searchSepar={produit.brand} titreRecherche={"PC portables de la même marque"}/>
                         <hr/>
                         <AdsLarge></AdsLarge>
