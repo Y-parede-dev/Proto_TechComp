@@ -9,7 +9,7 @@ export const AdsLarge = () => {
                 src={PUBIMG}
                 width={750}
                 height="auto"
-                style={{margin:'auto', width:'750px', display:'block', maxWidth: '90%'}}
+                style={{margin:'auto', width:'750px', display:'block', maxWidth: '90%', padding: '25px 0'}}
                 alt="baniere pub large"/>
         </Link>
     )

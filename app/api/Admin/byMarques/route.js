@@ -8,7 +8,7 @@ export async function GET(req){
         const result = await db
             .selectFrom('produitstable')
             .selectAll()
-            .where('brand', '==', req.nextUrl.searchParams.get('brand'))
+            .where('Brand', '==', req.nextUrl.searchParams.get('brand'))
             .execute();
         
         const end = performance.now();

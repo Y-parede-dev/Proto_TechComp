@@ -74,12 +74,15 @@ const Nav = ({responsive}) => {
                 if(by==="tag"){
                     [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser], page: 1});
                     syntax = [inptUser];
+                    console.log(inptUser)
     
                 }if(by==="price"){
                     [idPresent, DATA] = await ProductSearchByPrice({searchPrice: inptUser, CTX});
                     syntax = inptUser;
-                }if(by==="brand"){
-                    [idPresent, DATA] = await ProductSearchByBrand({brand:inptUser});
+                }
+                if(by==="brand"){
+                    [idPresent, DATA] = await ProductSearchByTag({searchTags:[inptUser]});
+                    syntax =  [inptUser];
                 }
                 CTX.setTAG(syntax);
                 idPresent = FilterNoRepeat(idPresent);
@@ -121,7 +124,7 @@ const Nav = ({responsive}) => {
                             <li onClick={()=>handle("pc portable", "tag")} className={styles.linkOnNav}>
                                 <Link href={urlPcPortable} >💻 Tous nos PC portable</Link>
                             </li>
-                            <li className={`${styles.linkOnNav} ${styles.linkOnNavBrand}`} onClick={()=>setModales({
+                            {/* <li className={`${styles.linkOnNav} ${styles.linkOnNavBrand}`} onClick={()=>setModales({
                                 marquesModale: !modales.marquesModale,
                                 moinsCherModale: modales.moinsCherModale})}>
                                 <p>🔖 Marques</p>
@@ -134,7 +137,7 @@ const Nav = ({responsive}) => {
                                         ]
                                     )
                                 }
-                            </ul>
+                            </ul> */}
                         </ul>
                     </li>
                     <li>
