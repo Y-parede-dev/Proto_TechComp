@@ -23,7 +23,7 @@ const RootLayout = ({children}) => {
       <body>
           <Body>{children}</Body>
           <GoogleTagManager gtmId={process.env.GTMID}/>
-          <GoogleAnalytics gaId={process.env.GAID}/>
+          {/* <GoogleAnalytics gaId={process.env.GAID}/> */}
           <SpeedInsights/>
       </body>
     </html>
