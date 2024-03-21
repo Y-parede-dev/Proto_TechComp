@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Body from './structure/Body'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager, GoogleAnalytics  } from '@next/third-parties/google'
 
 // refactor a faire
 const RootLayout = ({children}) => {
@@ -18,10 +18,12 @@ const RootLayout = ({children}) => {
         {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1583645471852701" crossOrigin="anonymous"></Script> */}
         <meta name="google-adsense-account" content="ca-pub-1583645471852701"></meta>
         <Script src="https://sc.affilizz.com/affilizz.js" async></Script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QWZK3CX8P"></script>
       </head>
       <body>
           <Body>{children}</Body>
           <GoogleTagManager gtmId={process.env.GTMID}/>
+          <GoogleAnalytics gaId={process.env.GAID}/>
           <SpeedInsights/>
       </body>
     </html>

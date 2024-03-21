@@ -13,6 +13,7 @@ const nextConfig = {
         FB_MEASUREMENT_ID:process.env.FB_MEASUREMENT_ID,
         NEXT_PUBLIC_FB_PROJECT_ID:process.env.NEXT_PUBLIC_FB_PROJECT_ID,
         GTMID:process.env.GTMID,
+        GAID:process.env.GAID,
         POSTGRES_URL:process.env.POSTGRES_URL,
         POSTGRES_PRISMA_URL:process.env.POSTGRES_PRISMA_URL,
         POSTGRES_URL_NON_POOLING:process.env.POSTGRES_URL_NON_POOLING,
